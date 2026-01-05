@@ -1,0 +1,140 @@
+graph TD
+    %% Core Trading Pipeline
+    assets[(assets)]
+    prices[(prices)]
+    clob[(clob)]
+    perpetuals[(perpetuals)]
+    subaccounts[(subaccounts)]
+    
+    %% Asset Flow
+    bridge[(bridge)]
+    sending[(sending)]
+    
+    %% Account Management
+    accountplus[(accountplus)]
+    
+    %% Time-based Operations
+    epochs[(epochs)]
+    vest[(vest)]
+    vault[(vault)]
+    
+    %% Reward System
+    rewards[(rewards)]
+    stats[(stats)]
+    affiliates[(affiliates)]
+    
+    %% Governance
+    govplus[(govplus)]
+    delaymsg[(delaymsg)]
+    
+    %% Other Modules
+    blocktime[(blocktime)]
+    feetiers[(feetiers)]
+    ratelimit[(ratelimit)]
+    revshare[(revshare)]
+    listing[(listing)]
+    leverage[(leverage)]
+    
+    %% Connections
+    
+    %% assets connections
+    assets --- subaccounts
+    assets --- clob
+    assets --- sending
+    assets --- vault
+    assets --- prices
+    assets --- bridge
+    
+    %% prices connections
+    prices --- clob
+    prices --- perpetuals
+    prices --- subaccounts
+    
+    %% clob connections
+    clob --- perpetuals
+    clob --- subaccounts
+    clob --- stats
+    clob --- feetiers
+    clob --- revshare
+    clob --- vault
+    clob --- listing
+    
+    %% perpetuals connections
+    perpetuals --- subaccounts
+    perpetuals --- vault
+    perpetuals --- listing
+    
+    %% subaccounts connections
+    subaccounts --- bridge
+    subaccounts --- sending
+    
+    %% bridge connections
+    bridge --- sending
+    
+    %% sending connections
+    
+    %% epochs connections
+    epochs --- rewards
+    epochs --- vault
+    epochs --- vest
+    
+    %% rewards connections
+    rewards --- stats
+    rewards --- affiliates
+    
+    %% stats connections
+    stats --- affiliates
+    
+    %% govplus connections
+    govplus --- delaymsg
+    
+    %% delaymsg connections
+    
+    %% vault connections
+    vault --- listing
+    
+    %% vest connections
+    
+    %% affiliates connections
+    
+    %% accountplus connections
+    accountplus -.-> assets
+    accountplus -.-> prices
+    accountplus -.-> clob
+    accountplus -.-> perpetuals
+    accountplus -.-> subaccounts
+    accountplus -.-> bridge
+    accountplus -.-> sending
+    accountplus -.-> epochs
+    accountplus -.-> rewards
+    accountplus -.-> stats
+    accountplus -.-> affiliates
+    accountplus -.-> vault
+    accountplus -.-> vest
+    accountplus -.-> govplus
+    accountplus -.-> delaymsg
+    accountplus -.-> blocktime
+    accountplus -.-> feetiers
+    accountplus -.-> ratelimit
+    accountplus -.-> revshare
+    accountplus -.-> listing
+    accountplus -.-> leverage
+    
+    %% blocktime connections
+    blocktime --- epochs
+    
+    %% feetiers connections
+    
+    %% ratelimit connections
+    
+    %% revshare connections
+    revshare --- rewards
+    
+    %% listing connections
+    
+    %% leverage connections (would integrate)
+    leverage -.-> clob
+    leverage -.-> subaccounts
+    
+    classDef module fill:#f9f,stroke:#333;
+    class assets,prices,clob,perpetuals,subaccounts,bridge,sending,epochs,rewards,stats,affiliates,govplus,delaymsg,vault,vest,accountplus,blocktime,feetiers,ratelimit,revshare,listing,leverage module;
