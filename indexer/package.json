@@ -1,0 +1,29 @@
+{
+  "name": "indexer",
+  "version": "0.0.1",
+  "description": "Indexer Monorepo",
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "build:all": "pnpm recursive run build --workspace-concurrency=Infinity",
+    "build:prod:all": "pnpm recursive run build:prod",
+    "build:watch:all": "pnpm run --parallel build:watch",
+    "lint:all": "pnpm run --parallel lint",
+    "lint:fix:all": "pnpm run --parallel lint:fix",
+    "coverage:all": "pnpm recursive run --workspace-concurrency=1 coverage",
+    "test:all": "pnpm recursive run --workspace-concurrency=1 test",
+    "test:clean:all": "pnpm recursive run --workspace-concurrency=1 test:clean",
+    "postinstall": "patch-package"
+  },
+  "author": "",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "@milahu/patch-package": "6.4.14"
+  },
+  "devDependencies": {
+    "@types/ws": "8.5.10"
+  },
+  "packageManager": "pnpm@10.12.4+sha1.88a0ccfe72d6345dede50dc9d6158400be2420eb"
+}
