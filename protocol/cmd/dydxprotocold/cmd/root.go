@@ -119,7 +119,7 @@ func NewRootCmdWithInterceptors(
 
 	rootCmd := &cobra.Command{
 		Use:   constants.AppDaemonName,
-		Short: "Start dydxprotocol app",
+		Short: "Start Tradeview app",
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
 			// set the default command outputs
 			cmd.SetOut(cmd.OutOrStdout())

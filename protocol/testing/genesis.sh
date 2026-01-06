@@ -25,7 +25,7 @@ DEFAULT_SUBACCOUNT_QUOTE_BALANCE_VAULT=1000000000
 MEGAVAULT_MAIN_VAULT_ACCOUNT_ADDR="dydx18tkxrnrkqc2t0lr3zxr5g6a4hdvqksylxqje4r"
 DEFAULT_MEGAVAULT_MAIN_VAULT_QUOTE_BALANCE=0 # 0 USDC
 NATIVE_TOKEN_WHOLE_COIN="tvx"
-COIN_NAME="dYdX V4 Testnet Token"
+COIN_NAME="Tradeview V4 Testnet Token"
 # Each testnet validator has 1 million whole coins of native token.
 TESTNET_VALIDATOR_NATIVE_TOKEN_BALANCE=1000000$EIGHTEEN_ZEROS # 1e24 or 1 million native tokens.
 # Each testnet validator self-delegates 500k whole coins of native token.
