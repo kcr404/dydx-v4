@@ -131,7 +131,7 @@
 
 ### 20. **Rewards**
 
-- Treasury account `rewards_treasury`, denom `adv4tnt`, market ID `1`, fee multiplier `990000 ppm`.
+- Treasury account `rewards_treasury`, denom `atvx`, market ID `1`, fee multiplier `990000 ppm`.
 
 ### 21. **Slashing**
 
@@ -150,7 +150,7 @@
 
 ### 24. **Vesting**
 
-- Two vest entries for community and rewards, both using `adv4tnt` token, start `2023‑01‑01`, end `2025‑01‑01`.
+- Two vest entries for community and rewards, both using `atvx` token, start `2023‑01‑01`, end `2025‑01‑01`.
 
 ---
 

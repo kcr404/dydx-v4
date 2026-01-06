@@ -16,7 +16,7 @@ import (
 var (
 	GENESIS_REWARD_PARAMS = rewardstypes.Params{
 		TreasuryAccount:  "test_treasury",
-		Denom:            "adv4tnt",
+		Denom:            "atvx",
 		DenomExponent:    -18,
 		MarketId:         1234,
 		FeeMultiplierPpm: 700_000,
@@ -36,7 +36,7 @@ func TestUpdateRewardsModuleParams(t *testing.T) {
 				Authority: authtypes.NewModuleAddress(govtypes.ModuleName).String(),
 				Params: rewardstypes.Params{
 					TreasuryAccount:  "test_treasury",
-					Denom:            "adv4tnt",
+					Denom:            "atvx",
 					DenomExponent:    -5,
 					MarketId:         0,
 					FeeMultiplierPpm: 700_001,

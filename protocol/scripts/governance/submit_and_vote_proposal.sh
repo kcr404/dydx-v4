@@ -34,7 +34,7 @@ if [ "$NETWORK" = "testnet" ]; then
         --fees 200000000000adydx \
         --keyring-backend test
 else
-    # Local/staging uses dydxprotocold and adv4tnt
+    # Local/staging uses dydxprotocold and atvx
     dydxprotocold tx gov submit-proposal "$PROPOSAL_FILE" \
         --from "$FROM_ACCOUNT" \
         --keyring-backend test \

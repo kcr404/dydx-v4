@@ -1,8 +1,9 @@
 package keeper_test
 
 import (
-	sdkmath "cosmossdk.io/math"
 	"testing"
+
+	sdkmath "cosmossdk.io/math"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
@@ -241,7 +242,7 @@ func TestDelayedCompleteBridgeMessages(t *testing.T) {
 					DelayMsgAuthority,
 					types.ModuleName,
 					constants.AliceAccAddress.String(),
-					sdk.NewCoin("adv4tnt", sdkmath.NewInt(100)),
+					sdk.NewCoin("atvx", sdkmath.NewInt(100)),
 				),
 				100,
 			)

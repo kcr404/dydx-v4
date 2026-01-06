@@ -5,15 +5,16 @@ package types
 
 import (
 	fmt "fmt"
+	io "io"
+	math "math"
+	math_bits "math/bits"
+	time "time"
+
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	_ "github.com/cosmos/gogoproto/types"
 	github_com_cosmos_gogoproto_types "github.com/cosmos/gogoproto/types"
 	github_com_dydxprotocol_v4_chain_protocol_dtypes "github.com/dydxprotocol/v4-chain/protocol/dtypes"
-	io "io"
-	math "math"
-	math_bits "math/bits"
-	time "time"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -92,7 +93,7 @@ type Limiter struct {
 	Period time.Duration `protobuf:"bytes,1,opt,name=period,proto3,stdduration" json:"period"`
 	// baseline_minimum is the minimum maximum withdrawal coin amount within the
 	// time period.
-	// e.g. 100_000_000_000 uusdc for 100k USDC; 5e22 adv4tnt for 50k DV4TNT
+	// e.g. 100_000_000_000 uusdc for 100k USDC; 5e22 atvx for 50k DV4TNT
 	BaselineMinimum github_com_dydxprotocol_v4_chain_protocol_dtypes.SerializableInt `protobuf:"bytes,3,opt,name=baseline_minimum,json=baselineMinimum,proto3,customtype=github.com/dydxprotocol/v4-chain/protocol/dtypes.SerializableInt" json:"baseline_minimum"`
 	// baseline_tvl_ppm is the maximum ratio of TVL withdrawable in
 	// the time period, in part-per-million.

@@ -100,7 +100,7 @@ const GenesisState = `{
           "address": "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4",
           "coins": [
             {
-              "denom": "adv4tnt",
+              "denom": "atvx",
               "amount": "1000000000000000000000000"
             },
             {
@@ -113,7 +113,7 @@ const GenesisState = `{
           "address": "dydx1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9wvmh70",
           "coins": [
             {
-              "denom": "adv4tnt",
+              "denom": "atvx",
               "amount": "1000000000000000000000000"
             },
             {
@@ -135,7 +135,7 @@ const GenesisState = `{
           "address": "dydx1wau5mja7j7zdavtfq9lu7ejef05hm6ffenlcsn",
           "coins": [
             {
-              "denom": "adv4tnt",
+              "denom": "atvx",
               "amount": "1000000000000000000000000"
             },
             {
@@ -148,7 +148,7 @@ const GenesisState = `{
           "address": "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs",
           "coins": [
             {
-              "denom": "adv4tnt",
+              "denom": "atvx",
               "amount": "1000000000000000000000000"
             },
             {
@@ -161,7 +161,7 @@ const GenesisState = `{
           "address": "dydx1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
           "coins": [
             {
-              "denom": "adv4tnt",
+              "denom": "atvx",
               "amount": "100000000000"
             },
             {
@@ -174,7 +174,7 @@ const GenesisState = `{
           "address": "dydx1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv",
           "coins": [
             {
-              "denom": "adv4tnt",
+              "denom": "atvx",
               "amount": "1000000000"
             }
           ]
@@ -331,7 +331,7 @@ const GenesisState = `{
     "crisis": {
       "constant_fee": {
         "amount": "1000",
-        "denom": "adv4tnt"
+        "denom": "atvx"
       }
     },
     "delaymsg": {
@@ -590,7 +590,7 @@ const GenesisState = `{
                   "key": "YiARx8259Z+fGFUxQLrz/5FU2RYRT6f5yzvt7D7CrQM="
                 },
                 "value": {
-                  "denom": "adv4tnt",
+                  "denom": "atvx",
                   "amount": "500000000000000000000000"
                 }
               }
@@ -652,7 +652,7 @@ const GenesisState = `{
                   "key": "ytLfs1W6E2I41iteKC/YwjyZ/51+CAYCHYxmRHiBeY4="
                 },
                 "value": {
-                  "denom": "adv4tnt",
+                  "denom": "atvx",
                   "amount": "500000000000000000000000"
                 }
               }
@@ -714,7 +714,7 @@ const GenesisState = `{
                   "key": "yG29kRfZ/hgAE1I7uWjbKQJJL4/gX/05XBnfB+m196A="
                 },
                 "value": {
-                  "denom": "adv4tnt",
+                  "denom": "atvx",
                   "amount": "500000000000000000000000"
                 }
               }
@@ -776,7 +776,7 @@ const GenesisState = `{
                   "key": "+P8YiogqqQY+iD96yEa9OJx6EgieU95u9eR3pzxfDp0="
                 },
                 "value": {
-                  "denom": "adv4tnt",
+                  "denom": "atvx",
                   "amount": "500000000000000000000000"
                 }
               }
@@ -825,7 +825,7 @@ const GenesisState = `{
         "min_deposit": [
           {
             "amount": "10000000",
-            "denom": "adv4tnt"
+            "denom": "atvx"
           }
         ],
         "min_initial_deposit_ratio": "0.000000000000000000",
@@ -839,7 +839,7 @@ const GenesisState = `{
         "expedited_min_deposit": [
           {
             "amount": "50000000",
-            "denom": "adv4tnt"
+            "denom": "atvx"
           }
         ],
         "voting_period": "172800s"
@@ -4409,7 +4409,7 @@ const GenesisState = `{
     "rewards": {
       "params": {
         "treasury_account":"rewards_treasury",
-        "denom":"adv4tnt",
+        "denom":"atvx",
         "denom_exponent":-18,
         "market_id":1,
         "fee_multiplier_ppm":990000
@@ -4452,7 +4452,7 @@ const GenesisState = `{
       "last_total_power": "0",
       "last_validator_powers": [],
       "params": {
-        "bond_denom": "adv4tnt",
+        "bond_denom": "atvx",
         "historical_entries": 10000,
         "max_entries": 7,
         "max_validators": 100,
@@ -4578,14 +4578,14 @@ const GenesisState = `{
     "vest": {
       "vest_entries": [
         {
-          "denom": "adv4tnt",
+          "denom": "atvx",
           "end_time": "2025-01-01T00:00:00Z",
           "start_time": "2023-01-01T00:00:00Z",
           "treasury_account": "community_treasury",
           "vester_account": "community_vester"
         },
         {
-          "denom": "adv4tnt",
+          "denom": "atvx",
           "end_time": "2025-01-01T00:00:00Z",
           "start_time": "2023-01-01T00:00:00Z",
           "treasury_account": "rewards_treasury",
