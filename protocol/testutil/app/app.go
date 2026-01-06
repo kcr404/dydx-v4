@@ -45,7 +45,7 @@ import (
 	marketmapmoduletypes "github.com/dydxprotocol/slinky/x/marketmap/types"
 	"github.com/dydxprotocol/v4-chain/protocol/app"
 	appconstants "github.com/dydxprotocol/v4-chain/protocol/app/constants"
-	"github.com/dydxprotocol/v4-chain/protocol/cmd/dydxprotocold/cmd"
+	"github.com/dydxprotocol/v4-chain/protocol/cmd/tradeviewd/cmd"
 	"github.com/dydxprotocol/v4-chain/protocol/indexer"
 	"github.com/dydxprotocol/v4-chain/protocol/testutil/appoptions"
 	"github.com/dydxprotocol/v4-chain/protocol/testutil/constants"
@@ -1248,7 +1248,7 @@ func launchValidatorInDir(
 
 	appCaptor := make(chan *app.App, 1)
 	// Set up the root command using https://github.com/dydxprotocol/v4-chain/blob/
-	// 1fa21ed5d848ed7cc6a98053838cadb68422079f/protocol/cmd/dydxprotocold/main.go#L12 as a basis.
+	// 1fa21ed5d848ed7cc6a98053838cadb68422079f/protocol/cmd/tradeviewd/main.go#L12 as a basis.
 	option := cmd.GetOptionWithCustomStartCmd()
 	rootCmd := cmd.NewRootCmdWithInterceptors(
 		option,
