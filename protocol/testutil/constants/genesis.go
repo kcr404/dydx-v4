@@ -55,28 +55,28 @@ const GenesisState = `{
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4",
+          "address": "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs",
+          "address": "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp",
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "dydx1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9wvmh70",
+          "address": "tradeview1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9ulcrq7",
           "pub_key": null,
           "account_number": "2",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "dydx1wau5mja7j7zdavtfq9lu7ejef05hm6ffenlcsn",
+          "address": "tradeview1wau5mja7j7zdavtfq9lu7ejef05hm6fftquvwz",
           "pub_key": null,
           "account_number": "3",
           "sequence": "0"
@@ -97,7 +97,7 @@ const GenesisState = `{
       },
       "balances": [
         {
-          "address": "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4",
+          "address": "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy",
           "coins": [
             {
               "denom": "atvx",
@@ -110,7 +110,7 @@ const GenesisState = `{
           ]
         },
         {
-          "address": "dydx1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9wvmh70",
+          "address": "tradeview1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9ulcrq7",
           "coins": [
             {
               "denom": "atvx",
@@ -132,7 +132,7 @@ const GenesisState = `{
           ]
         },
         {
-          "address": "dydx1wau5mja7j7zdavtfq9lu7ejef05hm6ffenlcsn",
+          "address": "tradeview1wau5mja7j7zdavtfq9lu7ejef05hm6fftquvwz",
           "coins": [
             {
               "denom": "atvx",
@@ -145,7 +145,7 @@ const GenesisState = `{
           ]
         },
         {
-          "address": "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs",
+          "address": "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp",
           "coins": [
             {
               "denom": "atvx",
@@ -583,7 +583,7 @@ const GenesisState = `{
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4",
+                "delegator_address": "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy",
                 "validator_address": "dydxvaloper199tqg4wdlnu4qjlxchpd7seg454937hjxg9yhy",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
@@ -645,7 +645,7 @@ const GenesisState = `{
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "dydx1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9wvmh70",
+                "delegator_address": "tradeview1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9ulcrq7",
                 "validator_address": "dydxvaloper1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9tjdp47",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
@@ -707,7 +707,7 @@ const GenesisState = `{
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "dydx1wau5mja7j7zdavtfq9lu7ejef05hm6ffenlcsn",
+                "delegator_address": "tradeview1wau5mja7j7zdavtfq9lu7ejef05hm6fftquvwz",
                 "validator_address": "dydxvaloper1wau5mja7j7zdavtfq9lu7ejef05hm6ffudfwmz",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
@@ -769,7 +769,7 @@ const GenesisState = `{
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs",
+                "delegator_address": "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp",
                 "validator_address": "dydxvaloper10fx7sy6ywd5senxae9dwytf8jxek3t2ga89u8p",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
@@ -4480,7 +4480,7 @@ const GenesisState = `{
           ],
           "id": {
             "number": 0,
-            "owner": "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4"
+            "owner": "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
           },
           "margin_enabled": true
         },
@@ -4494,7 +4494,7 @@ const GenesisState = `{
           ],
           "id": {
             "number": 0,
-            "owner": "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs"
+            "owner": "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
           },
           "margin_enabled": true
         },
@@ -4508,7 +4508,7 @@ const GenesisState = `{
           ],
           "id": {
             "number": 0,
-            "owner": "dydx1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9wvmh70"
+            "owner": "tradeview1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9ulcrq7"
           },
           "margin_enabled": true
         },
@@ -4522,7 +4522,7 @@ const GenesisState = `{
           ],
           "id": {
             "number": 0,
-            "owner": "dydx1wau5mja7j7zdavtfq9lu7ejef05hm6ffenlcsn"
+            "owner": "tradeview1wau5mja7j7zdavtfq9lu7ejef05hm6fftquvwz"
           },
           "margin_enabled": true
         },

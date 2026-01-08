@@ -63,7 +63,7 @@ func TestUserFeeTier(t *testing.T) {
 	}{
 		"Success": {
 			req: &types.QueryUserFeeTierRequest{
-				User: "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4",
+				User: "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy",
 			},
 			res: &types.QueryUserFeeTierResponse{
 				Index: 0,

@@ -2232,7 +2232,7 @@ function edit_genesis() {
 	dasel put -t string -f "$GENESIS" ".app_state.vault.operator_params.metadata.description" -v 'Governance Module Account'
 	# Set total shares and owner shares.
 	if [ -z "${INPUT_TEST_ACCOUNTS[0]}" ]; then
-		vault_owner_address='dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4' # alice as default vault owner
+		vault_owner_address='tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy' # alice as default vault owner
 	else
 		vault_owner_address="${INPUT_TEST_ACCOUNTS[0]}"
 	fi

@@ -14,8 +14,8 @@ import json
 from typing import Dict, Any, List
 import time
 
-alice_address = "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4"
-bob_address = "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs"
+alice_address = "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
+bob_address = "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
 mainnet_node = "https://dydx-ops-rpc.kingnodes.com:443"
 mainnet_chain = "dydx-mainnet-1"
 PROPOSAL_STATUS_PASSED = 3

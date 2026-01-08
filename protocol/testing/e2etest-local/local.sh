@@ -53,10 +53,10 @@ MONIKERS=(
 
 # Define all test accounts for the chain.
 TEST_ACCOUNTS=(
-	"dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4" # alice
-	"dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs" # bob
-	"dydx1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9wvmh70" # carl
-	"dydx1wau5mja7j7zdavtfq9lu7ejef05hm6ffenlcsn" # dave
+	"tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy" # alice
+	"tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp" # bob
+	"tradeview1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9ulcrq7" # carl
+	"tradeview1wau5mja7j7zdavtfq9lu7ejef05hm6fftquvwz" # dave
 )
 
 FAUCET_ACCOUNTS=(
