@@ -83,7 +83,7 @@ const GenesisState = `{
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "dydx1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
+          "address": "tradeview1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
           "pub_key": null,
           "account_number": "4",
           "sequence": "0"
@@ -123,7 +123,7 @@ const GenesisState = `{
           ]
         },
         {
-          "address": "dydx1v88c3xv9xyv3eetdx0tvcmq7ung3dywp5upwc6",
+          "address": "tradeview1v88c3xv9xyv3eetdx0tvcmq7ung3dywp5upwc6",
           "coins": [
             {
               "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
@@ -158,7 +158,7 @@ const GenesisState = `{
           ]
         },
         {
-          "address": "dydx1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
+          "address": "tradeview1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
           "coins": [
             {
               "denom": "atvx",
@@ -171,7 +171,7 @@ const GenesisState = `{
           ]
         },
         {
-          "address": "dydx1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv",
+          "address": "tradeview1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv",
           "coins": [
             {
               "denom": "atvx",
@@ -340,7 +340,7 @@ const GenesisState = `{
           "id": 0,
           "msg": {
             "@type": "/dydxprotocol.feetiers.MsgUpdatePerpetualFeeParams",
-            "authority": "dydx1mkkvp26dngu6n8rmalaxyp3gwkjuzztq5zx6tr",
+            "authority": "tradeview1mkkvp26dngu6n8rmalaxyp3gwkjuzztqx39w4j",
             "params": {
               "tiers": [
                 {
@@ -3960,8 +3960,8 @@ const GenesisState = `{
         }
       },
       "params": {
-        "admin": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
-        "market_authorities": ["dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"]
+        "admin": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
+        "market_authorities": ["tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4"]
       }
     },
     "prices": {
@@ -4401,7 +4401,7 @@ const GenesisState = `{
     },
     "revshare": {
       "params": {
-        "address": "dydx17xpfvakm2amg962yls6f84z3kell8c5leqdyt2",
+        "address": "tradeview17xpfvakm2amg962yls6f84z3kell8c5ltnws4m",
         "revenue_share_ppm": 0,
         "valid_days": 0
       }
@@ -4536,7 +4536,7 @@ const GenesisState = `{
           ],
           "id": {
             "number": 0,
-            "owner": "dydx1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m"
+            "owner": "tradeview1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m"
           },
           "margin_enabled": true
         }
@@ -4563,7 +4563,7 @@ const GenesisState = `{
         "activation_threshold_quote_quantums": "1000000000"
       },
       "operator_params": {
-        "operator": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+        "operator": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
         "metadata": {
           "name": "Governance",
           "description": "Governance Module Account"

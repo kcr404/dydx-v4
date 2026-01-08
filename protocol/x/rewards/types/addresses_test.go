@@ -1,11 +1,12 @@
 package types_test
 
 import (
+	"testing"
+
 	"github.com/dydxprotocol/v4-chain/protocol/x/rewards/types"
 	"github.com/stretchr/testify/require"
-	"testing"
 )
 
 func TestTreasuryModuleAddress(t *testing.T) {
-	require.Equal(t, "dydx16wrau2x4tsg033xfrrdpae6kxfn9kyuerr5jjp", types.TreasuryModuleAddress.String())
+	require.Equal(t, "tradeview16wrau2x4tsg033xfrrdpae6kxfn9kyue3shxvs", types.TreasuryModuleAddress.String())
 }

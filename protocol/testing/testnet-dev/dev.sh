@@ -74,7 +74,7 @@ TEST_ACCOUNTS=(
 )
 
 FAUCET_ACCOUNTS=(
-	"dydx1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m" # main faucet
+	"tradeview192936pzplde75h3kzrel6x78ay9g3t2zrwvanc" # main faucet
 	"dydx10du0qegtt73ynv5ctenh565qha27ptzr6dz8c3" # backup #1
 	"dydx1axstmx84qtv0avhjwek46v6tcmyc8agu03nafv" # backup #2
 )
@@ -82,8 +82,8 @@ FAUCET_ACCOUNTS=(
 # Addresses of vaults.
 # Can use ../scripts/vault/get_vault.go to generate a vault's address.
 VAULT_ACCOUNTS=(
-	"dydx1c0m5x87llaunl5sgv3q5vd7j5uha26d2q2r2q0" # BTC vault
-	"dydx14rplxdyycc6wxmgl8fggppgq4774l70zt6phkw" # ETH vault
+	"tradeview13wgsy5pngyj0cuvwtd7x5ekvegx8vjlgq5rht9" # BTC vault
+	"tradeview13lw3eqw7aq93nrt0l6hhkj9c8xywgxz6dpmstk" # ETH vault
 	"dydx190te44zcctdgk0qmqtenve2m00g3r2dn7ntd72" # LINK vault
 	"dydx1a83cjn83vqh5ss2vccg6uuaeky7947xldp9r2e" # POL vault
 	"dydx1nkz8xcar6sxedw0yva6jzjplw7hfg6pp6e7h0l" # CRV vault

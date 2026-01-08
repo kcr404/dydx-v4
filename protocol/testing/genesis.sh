@@ -11,18 +11,18 @@ EIGHTEEN_ZEROS="$NINE_ZEROS$NINE_ZEROS"
 
 # Address of the `subaccounts` module account.
 # Obtained from `authtypes.NewModuleAddress(subaccounttypes.ModuleName)`.
-SUBACCOUNTS_MODACC_ADDR="dydx1v88c3xv9xyv3eetdx0tvcmq7ung3dywp5upwc6"
-REWARDS_VESTER_ACCOUNT_ADDR="dydx1ltyc6y4skclzafvpznpt2qjwmfwgsndp458rmp"
+SUBACCOUNTS_MODACC_ADDR="tradeview1v88c3xv9xyv3eetdx0tvcmq7ung3dywpx0z6xt"
+REWARDS_VESTER_ACCOUNT_ADDR="tradeview1ltyc6y4skclzafvpznpt2qjwmfwgsndp88yh9s"
 # Address of the `bridge` module account.
 # Obtained from `authtypes.NewModuleAddress(bridgetypes.ModuleName)`.
-BRIDGE_MODACC_ADDR="dydx1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv"
+BRIDGE_MODACC_ADDR="tradeview1zlefkpe3g0vvm9a4h0jf9000lmqutlh9qa38wa"
 USDC_DENOM="ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
 REWARD_TOKEN="atvx"
 NATIVE_TOKEN="atvx" # public testnet token
 DEFAULT_SUBACCOUNT_QUOTE_BALANCE=100000000000000000
 DEFAULT_SUBACCOUNT_QUOTE_BALANCE_FAUCET=900000000000000000
 DEFAULT_SUBACCOUNT_QUOTE_BALANCE_VAULT=1000000000
-MEGAVAULT_MAIN_VAULT_ACCOUNT_ADDR="dydx18tkxrnrkqc2t0lr3zxr5g6a4hdvqksylxqje4r"
+MEGAVAULT_MAIN_VAULT_ACCOUNT_ADDR="tradeview18tkxrnrkqc2t0lr3zxr5g6a4hdvqksyl5n3dtj"
 DEFAULT_MEGAVAULT_MAIN_VAULT_QUOTE_BALANCE=0 # 0 USDC
 NATIVE_TOKEN_WHOLE_COIN="tvx"
 COIN_NAME="Tradeview V4 Testnet Token"
@@ -2227,7 +2227,7 @@ function edit_genesis() {
 	# Set default quoting params.
 	dasel put -t int -f "$GENESIS" ".app_state.vault.default_quoting_params.spread_min_ppm" -v '3000'
 	# Set operator params.
-	dasel put -t string -f "$GENESIS" ".app_state.vault.operator_params.operator" -v 'dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky'
+	dasel put -t string -f "$GENESIS" ".app_state.vault.operator_params.operator" -v 'tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4'
 	dasel put -t string -f "$GENESIS" ".app_state.vault.operator_params.metadata.name" -v 'Governance'
 	dasel put -t string -f "$GENESIS" ".app_state.vault.operator_params.metadata.description" -v 'Governance Module Account'
 	# Set total shares and owner shares.

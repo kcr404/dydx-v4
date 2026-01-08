@@ -84,7 +84,7 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "dydx1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
+          "address": "tradeview192936pzplde75h3kzrel6x78ay9g3t2zrwvanc",
           "pub_key": null,
           "account_number": "4",
           "sequence": "0"
@@ -101,7 +101,7 @@
       },
       "balances": [
         {
-          "address": "dydx1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv",
+          "address": "tradeview1zlefkpe3g0vvm9a4h0jf9000lmqutlh9qa38wa",
           "coins": [
             {
               "denom": "atvx",
@@ -136,7 +136,7 @@
           ]
         },
         {
-          "address": "dydx1v88c3xv9xyv3eetdx0tvcmq7ung3dywp5upwc6",
+          "address": "tradeview1v88c3xv9xyv3eetdx0tvcmq7ung3dywpx0z6xt",
           "coins": [
             {
               "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
@@ -171,7 +171,7 @@
           ]
         },
         {
-          "address": "dydx1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
+          "address": "tradeview192936pzplde75h3kzrel6x78ay9g3t2zrwvanc",
           "coins": [
             {
               "denom": "atvx",
@@ -184,7 +184,7 @@
           ]
         },
         {
-          "address": "dydx1ltyc6y4skclzafvpznpt2qjwmfwgsndp458rmp",
+          "address": "tradeview1ltyc6y4skclzafvpznpt2qjwmfwgsndp88yh9s",
           "coins": [
             {
               "denom": "atvx",
@@ -718,7 +718,7 @@
           "id": 0,
           "msg": {
             "@type": "/dydxprotocol.feetiers.MsgUpdatePerpetualFeeParams",
-            "authority": "dydx1mkkvp26dngu6n8rmalaxyp3gwkjuzztq5zx6tr",
+            "authority": "tradeview1mkkvp26dngu6n8rmalaxyp3gwkjuzztqx39w4j",
             "params": {
               "tiers": [
                 {
@@ -3465,9 +3465,9 @@
       "last_updated": "0",
       "params": {
         "market_authorities": [
-          "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"
+          "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4"
         ],
-        "admin": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"
+        "admin": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4"
       }
     },
     "params": null,
@@ -4402,7 +4402,7 @@
     },
     "revshare": {
       "params": {
-        "address": "dydx17xpfvakm2amg962yls6f84z3kell8c5leqdyt2",
+        "address": "tradeview17xpfvakm2amg962yls6f84z3kell8c5ltnws4m",
         "revenue_share_ppm": 0,
         "valid_days": 0
       }
@@ -4455,7 +4455,7 @@
       "subaccounts": [
         {
           "id": {
-            "owner": "dydx1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
+            "owner": "tradeview192936pzplde75h3kzrel6x78ay9g3t2zrwvanc",
             "number": 0
           },
           "margin_enabled": true,
@@ -4469,7 +4469,7 @@
         },
         {
           "id": {
-            "owner": "dydx1c0m5x87llaunl5sgv3q5vd7j5uha26d2q2r2q0",
+            "owner": "tradeview13wgsy5pngyj0cuvwtd7x5ekvegx8vjlgq5rht9",
             "number": 0
           },
           "margin_enabled": true,
@@ -4483,7 +4483,7 @@
         },
         {
           "id": {
-            "owner": "dydx14rplxdyycc6wxmgl8fggppgq4774l70zt6phkw",
+            "owner": "tradeview13lw3eqw7aq93nrt0l6hhkj9c8xywgxz6dpmstk",
             "number": 0
           },
           "margin_enabled": true,
@@ -4550,7 +4550,7 @@
       },
       "all_owner_share_unlocks": [],
       "operator_params": {
-        "operator": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+        "operator": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
         "metadata": {
           "name": "Governance",
           "description": "Governance Module Account"

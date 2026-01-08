@@ -272,7 +272,7 @@
       },
       "balances": [
         {
-          "address": "dydx1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv",
+          "address": "tradeview1zlefkpe3g0vvm9a4h0jf9000lmqutlh9qa38wa",
           "coins": [
             {
               "denom": "adydx",
@@ -1054,7 +1054,7 @@
           "id": 0,
           "msg": {
             "@type": "/dydxprotocol.feetiers.MsgUpdatePerpetualFeeParams",
-            "authority": "dydx1mkkvp26dngu6n8rmalaxyp3gwkjuzztq5zx6tr",
+            "authority": "tradeview1mkkvp26dngu6n8rmalaxyp3gwkjuzztqx39w4j",
             "params": {
               "tiers": [
                 {

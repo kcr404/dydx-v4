@@ -61,7 +61,7 @@ TEST_ACCOUNTS=(
 )
 
 FAUCET_ACCOUNTS=(
-	"dydx1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m" # main faucet
+	"tradeview192936pzplde75h3kzrel6x78ay9g3t2zrwvanc" # main faucet
 )
 
 # Define dependencies for this script.

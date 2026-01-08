@@ -410,8 +410,8 @@
       }
     },
     "params": {
-      "admin": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
-      "market_authorities": ["dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"]
+      "admin": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
+      "market_authorities": ["tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4"]
     }
   },
   "prices": {
@@ -467,7 +467,7 @@
   },
   "revshare": {
     "params": {
-      "address": "dydx17xpfvakm2amg962yls6f84z3kell8c5leqdyt2",
+      "address": "tradeview17xpfvakm2amg962yls6f84z3kell8c5ltnws4m",
       "revenue_share_ppm": 0,
       "valid_days": 0
     }
@@ -541,7 +541,7 @@
       "activation_threshold_quote_quantums": "1000000000"
     },
     "operator_params": {
-      "operator": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+      "operator": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
       "metadata": {
         "name": "Governance",
         "description": "Governance Module Account"

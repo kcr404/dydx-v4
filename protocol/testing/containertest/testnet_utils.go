@@ -12,7 +12,7 @@ import (
 	testapp "github.com/dydxprotocol/v4-chain/protocol/testutil/app"
 )
 
-const GovModuleAddress = "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"
+const GovModuleAddress = "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4"
 
 var NodeAddresses = []string{
 	constants.AliceAccAddress.String(),

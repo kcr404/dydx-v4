@@ -82,11 +82,11 @@ def make_alice_authority(node, chain):
             "messages": [
                 {
                     "@type": "/slinky.marketmap.v1.MsgParams",
-                    "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                    "authority": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
                     "params": {
-                        "admin": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "admin": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
                         "market_authorities": [
-                            "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                            "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
                             alice_address
                         ]
                     }

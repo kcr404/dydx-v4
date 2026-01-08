@@ -100,7 +100,7 @@ def main():
                     "messages": [
                         {
                         "@type": "/dydxprotocol.revshare.MsgSetOrderRouterRevShare",
-                        "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                        "authority": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
                         "order_router_rev_share": {
                             "address": args.order_router_addr,
                             "sharePpm": args.order_router_ppm,
