@@ -66,8 +66,8 @@ FAUCET_ACCOUNTS=(
 # Addresses of vaults.
 # Can use ../scripts/vault/get_vault.go to generate a vault's address.
 VAULT_ACCOUNTS=(
-	"tradeview13wgsy5pngyj0cuvwtd7x5ekvegx8vjlgq5rht9" # BTC vault
-	"tradeview13lw3eqw7aq93nrt0l6hhkj9c8xywgxz6dpmstk" # ETH vault
+	"tradeview1c0m5x87llaunl5sgv3q5vd7j5uha26d2jeq777" # BTC vault
+	"tradeview14rplxdyycc6wxmgl8fggppgq4774l70zefzrgl" # ETH vault
 )
 # Number of each vault, which for CLOB vaults is the ID of the clob pair it quotes on.
 VAULT_NUMBERS=(

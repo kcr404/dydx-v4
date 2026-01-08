@@ -136,8 +136,8 @@ FAUCET_ACCOUNTS=(
 # Addresses of vaults.
 # Can use ../scripts/vault/get_vault.go to generate a vault's address.
 VAULT_ACCOUNTS=(
-	"tradeview13wgsy5pngyj0cuvwtd7x5ekvegx8vjlgq5rht9" # BTC vault
-	"tradeview13lw3eqw7aq93nrt0l6hhkj9c8xywgxz6dpmstk" # ETH vault
+	"tradeview1c0m5x87llaunl5sgv3q5vd7j5uha26d2jeq777" # BTC vault
+	"tradeview14rplxdyycc6wxmgl8fggppgq4774l70zefzrgl" # ETH vault
 	"dydx190te44zcctdgk0qmqtenve2m00g3r2dn7ntd72" # LINK vault
 	"dydx1a83cjn83vqh5ss2vccg6uuaeky7947xldp9r2e" # POL vault
 	"dydx1nkz8xcar6sxedw0yva6jzjplw7hfg6pp6e7h0l" # CRV vault
