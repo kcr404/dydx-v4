@@ -120,7 +120,8 @@ create_validators() {
 		echo "${MNEMONICS[$i]}" | tradeviewd keys add "${MONIKERS[$i]}" --recover --keyring-backend=test --home "$VAL_HOME_DIR"
 
 		for acct in "${TEST_ACCOUNTS[@]}"; do
-			tradeviewd add-genesis-account "$acct" 100000000000000000$USDC_DENOM,$TESTNET_VALIDATOR_NATIVE_TOKEN_BALANCE$NATIVE_TOKEN --home "$VAL_HOME_DIR"		done
+			tradeviewd add-genesis-account "$acct" 100000000000000000$USDC_DENOM,$TESTNET_VALIDATOR_NATIVE_TOKEN_BALANCE$NATIVE_TOKEN --home "$VAL_HOME_DIR"
+		done
 		for acct in "${FAUCET_ACCOUNTS[@]}"; do
 			tradeviewd add-genesis-account "$acct" 900000000000000000$USDC_DENOM,$TESTNET_VALIDATOR_NATIVE_TOKEN_BALANCE$NATIVE_TOKEN --home "$VAL_HOME_DIR"
 		done
