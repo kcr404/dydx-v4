@@ -1,0 +1,53 @@
+STEP-BY-STEP COMMANDS FOR HUMMINGBOT
+=====================================
+
+You are currently at the Hummingbot prompt (>>>)
+
+STEP 1: Import the pre-configured strategy
+-------------------------------------------
+Type exactly:
+  import conf_pure_market_making_strategy_0
+
+Press Enter
+
+STEP 2: Start the strategy
+---------------------------
+Type exactly:
+  start
+
+Press Enter
+
+STEP 3: Monitor your bot
+-------------------------
+Type:
+  status
+
+This shows current orders and performance
+
+STEP 4: View trade history
+---------------------------
+Type:
+  history
+
+STEP 5: Check profit/loss
+--------------------------
+Type:
+  pnl
+
+OTHER USEFUL COMMANDS:
+----------------------
+stop          - Stop the bot
+config        - View configuration
+balance       - Check balances
+help          - Show all commands
+exit          - Exit Hummingbot
+
+TROUBLESHOOTING:
+----------------
+If you see "Strategy not found":
+  - Make sure you typed: import conf_pure_market_making_strategy_0
+  - Check the file exists: ls conf/strategies/
+
+If you see Binance errors:
+  - This is normal, paper trading doesn't need real exchange connection
+  - The strategy will still work in simulation mode

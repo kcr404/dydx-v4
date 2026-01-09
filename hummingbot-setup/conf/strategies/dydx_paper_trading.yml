@@ -1,0 +1,38 @@
+# Paper Trading Strategy for dYdX Local Chain
+# This uses paper_trade mode to simulate trading
+
+strategy: pure_market_making
+
+# Use paper_trade exchange (simulated)
+exchange: paper_trade
+
+# Market to trade (simulated BTC-USDT)
+market: BTC-USDT
+
+# Spread configuration
+bid_spread: 0.5
+ask_spread: 0.5
+
+# Order size
+order_amount: 0.01
+
+# How often to refresh orders (seconds)
+order_refresh_time: 30
+
+# Inventory management
+inventory_skew_enabled: true
+inventory_target_base_pct: 50
+
+# Order levels
+order_levels: 2
+order_level_spread: 0.2
+order_level_amount: 0.01
+
+# Filled order delay
+filled_order_delay: 60
+
+# Hanging orders
+hanging_orders_enabled: false
+
+# Ping pong
+ping_pong_enabled: true

@@ -1,0 +1,21 @@
+strategy: pure_market_making
+
+exchange: paper_trade
+market: BTC-USDT
+
+bid_spread: 1.0
+ask_spread: 1.0
+
+order_amount: 0.01
+
+order_refresh_time: 30
+
+inventory_skew_enabled: False
+
+order_levels: 1
+
+filled_order_delay: 60
+
+hanging_orders_enabled: False
+
+ping_pong_enabled: False

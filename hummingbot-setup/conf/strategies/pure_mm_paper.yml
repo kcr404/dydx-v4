@@ -1,0 +1,29 @@
+# Pure Market Making Strategy - Paper Trading
+strategy: pure_market_making
+
+# Exchange and Market
+exchange: paper_trade
+market: BTC-USDT
+
+# Order Configuration
+bid_spread: 0.5
+ask_spread: 0.5
+order_amount: 0.01
+order_refresh_time: 30
+
+# Inventory Management
+inventory_skew_enabled: True
+inventory_target_base_pct: 50
+
+# Multiple Order Levels
+order_levels: 3
+order_level_spread: 0.2
+order_level_amount: 0.01
+
+# Risk Management
+filled_order_delay: 60
+hanging_orders_enabled: False
+hanging_orders_cancel_pct: 10
+
+# Ping Pong
+ping_pong_enabled: True

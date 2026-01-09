@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  hummingbot:
+    image: hummingbot/hummingbot:latest
+    container_name: hummingbot-dydx
+    volumes:
+      - ./conf:/conf
+      - ./logs:/logs
+      - ./data:/data
+      - ./scripts:/scripts
+    network_mode: "host"
+    stdin_open: true
+    tty: true
+    environment:
+      - CONFIG_PASSWORD=abc
+    restart: unless-stopped

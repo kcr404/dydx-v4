@@ -1,0 +1,76 @@
+---
+config:
+  theme: mc
+  layout: dagre
+---
+flowchart LR
+ subgraph CLIENTS["Clients / External"]
+    direction TB
+        traders["Traders and UI"]
+        wallets["Wallets"]
+        bots["Bots and Market Makers"]
+  end
+ subgraph API_L["API Layer"]
+    direction TB
+        api["Public RPC and API Gateway"]
+  end
+ subgraph MODULES["On-chain Modules"]
+    direction TB
+        clob["x_clob"]
+        perp["x_perpetuals"]
+        subacc["x_subaccounts"]
+        fee["x_feecollector"]
+  end
+ subgraph CHAIN["Chain Core"]
+    direction TB
+        nodes["Validators and Full Nodes"]
+        MODULES
+        memclob["memclob Orderbook and Matching Engine"]
+        kv[("Chain KV State")]
+  end
+ subgraph ORACLE["Oracle and Sidecars"]
+    direction TB
+        exchanges["External Exchanges"]
+        fetchers["Price Fetcher Daemons"]
+        slinky["SLINKY Oracle Service"]
+        bridge["Bridge and Other Sidecars"]
+  end
+ subgraph INDEXER["Indexer and Streams"]
+    direction TB
+        idx["Indexer Service"]
+        pg[("Postgres DB")]
+        kafka["Kafka Stream"]
+  end
+ subgraph MONITOR["Monitoring and Ops"]
+    direction TB
+        prometheus["Prometheus"]
+        grafana["Grafana"]
+        alert["Alert Manager"]
+        ops["Operators and SRE"]
+        runbooks["Runbooks / On-call"]
+  end
+    traders --> wallets
+    wallets --> api
+    bots --> api
+    api --> nodes
+    nodes --> clob & perp & subacc & fee & kv & idx & prometheus
+    clob --> memclob
+    memclob --> nodes
+    clob -- order events --> idx
+    perp -- funding events --> idx
+    exchanges --> fetchers
+    fetchers --> slinky
+    bridge --> slinky
+    slinky --> nodes & prometheus & idx
+    idx --> pg & kafka & prometheus
+    prometheus --> grafana & alert
+    grafana --> ops
+    alert --> ops
+    ops --> runbooks & nodes
+
+    style CLIENTS fill:#f3f7ff,stroke:#1f77b4,stroke-width:1px
+    style API_L fill:#fff7e6,stroke:#ff7f0e,stroke-width:1px
+    style CHAIN fill:#fff0f6,stroke:#d62728,stroke-width:1px
+    style ORACLE fill:#eef9f1,stroke:#2ca02c,stroke-width:1px
+    style INDEXER fill:#fffbea,stroke:#9467bd,stroke-width:1px
+    style MONITOR fill:#f0fff4,stroke:#17becf,stroke-width:1px

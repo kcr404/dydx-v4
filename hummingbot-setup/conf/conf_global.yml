@@ -1,0 +1,39 @@
+# Global Configuration for Hummingbot
+# This file contains global settings for Hummingbot
+
+# Paper Trading Mode
+paper_trade_enabled: true
+paper_trade_account_balance: 100000
+
+# Logging
+log_level: INFO
+
+# Kill Switch
+kill_switch_enabled: false
+
+# Telegram Integration
+telegram_enabled: false
+
+# Error Log Sharing
+send_error_logs: false
+
+# Anonymous Usage Statistics
+anonymized_metrics_enabled: false
+
+# PMM Script
+pmm_script_enabled: false
+
+# Balance Limit
+balance_asset_limit: {}
+
+# Rate Oracle
+rate_oracle_source: binance
+
+# Global Token
+global_token: USDT
+
+# Paper Trade Exchanges
+paper_trade_exchanges:
+  - binance
+  - coinbase_pro
+  - kraken

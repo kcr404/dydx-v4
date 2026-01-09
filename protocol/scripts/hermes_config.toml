@@ -1,0 +1,76 @@
+# Hermes Config for Local dYdX <-> Noble
+# Note: You must manually add keys for these chains using 'hermes keys add'
+
+[global]
+log_level = 'info'
+
+[mode]
+
+[mode.clients]
+enabled = true
+refresh = true
+misbehaviour = true
+
+[mode.connections]
+enabled = false
+
+[mode.channels]
+enabled = false
+
+[mode.packets]
+enabled = true
+clear_interval = 100
+clear_on_start = true
+tx_confirmation = false
+
+[rest]
+enabled = true
+host = '127.0.0.1'
+port = 3000
+
+[telemetry]
+enabled = true
+host = '127.0.0.1'
+port = 3001
+
+[[chains]]
+id = 'localdydxprotocol'
+rpc_addr = 'http://127.0.0.1:26657'
+grpc_addr = 'http://127.0.0.1:9090'
+event_source = { mode = 'push', url = 'ws://127.0.0.1:26657/websocket', batch_delay = '500ms' }
+rpc_timeout = '10s'
+account_prefix = 'dydx'
+key_name = 'alice'
+store_prefix = 'ibc'
+default_gas = 100000
+max_gas = 4000000
+gas_price = { price = 0.025, denom = 'adv4tnt' }
+gas_multiplier = 1.1
+max_msg_num = 30
+max_tx_size = 2097152
+clock_drift = '5s'
+max_block_time = '30s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+address_type = { derivation = 'cosmos' }
+
+[[chains]]
+id = 'grand-1' # Noble Testnet (Check accurate ID)
+rpc_addr = 'https://rpc.testnet.noble.xyz:443' 
+grpc_addr = 'https://grpc.testnet.noble.xyz:443' # Check if this is open
+event_source = { mode = 'pull', interval = '1s' } # Websocket might be flaky on public RPCs
+rpc_timeout = '20s'
+account_prefix = 'noble'
+key_name = 'relayer'
+store_prefix = 'ibc'
+default_gas = 100000
+max_gas = 4000000
+gas_price = { price = 0.025, denom = 'uusdc' } # Check noble gas
+gas_multiplier = 1.1
+max_msg_num = 30
+max_tx_size = 2097152
+clock_drift = '5s'
+max_block_time = '30s'
+trusting_period = '14days'
+trust_threshold = { numerator = '1', denominator = '3' }
+address_type = { derivation = 'cosmos' }

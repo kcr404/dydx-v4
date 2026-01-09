@@ -1,0 +1,54 @@
+{
+  "summary": "Comprehensive analysis of dYdX v4 protocol margin trading implementation",
+  "modules_analyzed": 22,
+  "key_files": [
+    "protocol/x/clob/keeper/msg_server_place_order.go - Order placement handler",
+    "protocol/x/clob/keeper/orders.go - Order validation and state management",
+    "protocol/x/clob/keeper/liquidations.go - Liquidation engine",
+    "protocol/x/clob/memclob/memclob.go - In-memory orderbook",
+    "protocol/x/clob/abci.go - CLOB lifecycle (EndBlocker, PrepareCheckState)",
+    "protocol/x/perpetuals/abci.go - Funding rate processing",
+    "protocol/x/perpetuals/keeper/perpetual.go - Funding calculations",
+    "protocol/x/subaccounts/keeper/transfer.go - Fee distribution"
+  ],
+  "proto_messages": [
+    "Order (clob/order.proto) - order_id, side, quantums, subticks, time_in_force, reduce_only",
+    "Subaccount (subaccounts/subaccount.proto) - id, asset_positions, perpetual_positions, margin_enabled",
+    "Perpetual (perpetuals/perpetual.proto) - params, funding_index, open_interest",
+    "LiquidityTier (perpetuals/perpetual.proto) - initial_margin_ppm, maintenance_fraction_ppm"
+  ],
+  "handlers": {
+    "MsgPlaceOrder": "protocol/x/clob/keeper/msg_server_place_order.go:HandleMsgPlaceOrder",
+    "PlaceStatefulOrder": "protocol/x/clob/keeper/orders.go:PlaceStatefulOrder - validates, checks collateral, writes to state",
+    "PlaceShortTermOrder": "protocol/x/clob/keeper/orders.go:PlaceShortTermOrder - CheckTx flow, calls memclob"
+  },
+  "endblockers": {
+    "clob_endblocker": "Prunes expired orders, generates TWAP suborders, triggers conditional orders",
+    "clob_prepare_check_state": "Replays operations, liquidates subaccounts, deleverages, gates withdrawals",
+    "perpetuals_endblocker": "Processes funding samples and ticks every 8 hours"
+  },
+  "fee_distribution": "DistributeFees in transfer.go - splits fees between revenue shares (market mapper, affiliates) and fee collector",
+  "memclob": "In-memory CLOB with price-time priority, purges invalid state, generates offchain updates",
+  "dependencies": "clob → subaccounts → assets; clob → perpetuals → prices; perpetuals → epochs",
+  "wbs_summary": "18 tasks across 7 epics: Margin Engine (3 tasks), Liquidations (3 tasks), Funding (2 tasks), Order Matching (3 tasks), Fees (2 tasks), Testing (2 tasks), Monitoring (2 tasks)",
+  "critical_findings": [
+    "Sophisticated margin system with cross/isolated modes",
+    "Liquidation uses fillable price calculation with insurance fund backstop",
+    "8-hour funding rate from premium sampling (median of votes, averaged samples)",
+    "Memclob handles short-term orders, state stores long-term/conditional",
+    "Revenue share distribution to multiple recipients before fee collector"
+  ],
+  "gaps": [
+    "MISSING: Explicit cross-margin collateral pooling enforcement",
+    "INCOMPLETE: Custom IMF (leverage) implementation - proto exists, handler needs completion",
+    "MISSING: Margin call notifications before liquidation",
+    "INCOMPLETE: Insurance fund governance mechanisms"
+  ],
+  "recommendations": [
+    "Review collateralization checks in PlaceStatefulOrder",
+    "Complete custom IMF implementation (MsgUpdateLeverage handler)",
+    "Optimize liquidation order generation (currently on-demand)",
+    "Add performance testing for memclob (target: 10k orders/sec)",
+    "Implement monitoring for insurance fund levels and liquidation rates"
+  ]
+}
