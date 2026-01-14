@@ -3,6 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "build",
+    "skipLibCheck": true,
+    "types": ["jest", "node"],
   },
   "include": [
     "src",

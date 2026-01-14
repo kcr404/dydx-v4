@@ -210,7 +210,7 @@ flowchart TD
 ```mermaid
 graph TB
     subgraph "TWAP Trigger Store"
-        TriggerStore[(Trigger Store\nKey: [timestamp][suborderId]\nValue: empty)]
+        TriggerStore["Trigger Store<br/>Key: timestamp+suborderId<br/>Value: empty"]
         
         subgraph "Scheduled Suborders"
             T0[T=0: First Suborder\nIMMEDIATE]
@@ -286,7 +286,7 @@ flowchart LR
         SizeStart --> CalcOriginal[originalQuantumsPerLeg =\noriginalQuantums / totalLegs]
         CalcOriginal --> CalcRemaining[remainingQuantumsPerLeg =\nremainingQuantums / remainingLegs]
         CalcRemaining --> CalcMax[maxSuborderSize =\noriginalQuantumsPerLeg * 3]
-        CalcMax --> TakeMin[suborderQuantums =\nmin(remaining, max)]
+        CalcMax --> TakeMin["suborderQuantums =<br/>min of remaining and max"]
         TakeMin --> RoundDown[Round down to\nStepBaseQuantums]
         RoundDown --> CheckZero{Result = 0?}
         CheckZero -->|Yes| NoOrder[Cannot place suborder]
@@ -440,11 +440,11 @@ graph TB
 stateDiagram-v2
     [*] --> Placed: User Places Conditional Order
     
-    Placed --> Untriggered: SetLongTermOrderPlacement\nUntriggeredConditionalOrderKeyPrefix
+    Placed --> Untriggered: SetLongTermOrderPlacement<br/>UntriggeredConditionalOrderKeyPrefix
     
-    Untriggered --> Untriggered: EndBlocker:\nPrice Condition NOT Met
+    Untriggered --> Untriggered: EndBlocker<br/>Price Condition NOT Met
     
-    Untriggered --> Triggered: EndBlocker:\nPrice Condition MET\nMustTriggerConditionalOrder
+    Untriggered --> Triggered: EndBlocker<br/>Price Condition MET<br/>MustTriggerConditionalOrder
     
     Triggered --> OnOrderbook: PrepareCheckState:\nPlaceConditionalOrdersTriggeredInLastBlock\nAddPreexistingStatefulOrder
     
@@ -494,8 +494,8 @@ flowchart TB
         
         CalcRange --> Bounds[upperBound = oracle + maxRange\nlowerBound = oracle - maxRange]
         
-        Bounds --> ClampMin[clampedMin = Clamp(minTrade, lower, upper)]
-        Bounds --> ClampMax[clampedMax = Clamp(maxTrade, lower, upper)]
+        Bounds --> ClampMin["clampedMin = Clamp of minTrade"]
+        Bounds --> ClampMax["clampedMax = Clamp of maxTrade"]
     end
     
     Oracle --> TriggerA[Trigger Attempt 1:\nOracle Price]

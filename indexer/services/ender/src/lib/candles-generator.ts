@@ -319,7 +319,10 @@ export class CandlesGenerator {
       return _.some(
         Object.values(CandleResolution),
         (resolution: CandleResolution) => {
-          const startedAtISOString: string = this.resolutionStartTimes.get(resolution)!.toISO();
+          const startTime = this.resolutionStartTimes.get(resolution);
+          if (!startTime) return false;
+          const startedAtISOString: string = startTime.toISO() || '';
+          if (!startedAtISOString) return false;
           const existingCandle: CandleFromDatabase | undefined = getCandle(ticker, resolution);
           return existingCandle === undefined || existingCandle.startedAt !== startedAtISOString;
         },
@@ -378,7 +381,7 @@ export class CandlesGenerator {
     orderbookMidPrice: OrderbookMidPrice,
   ): Promise<CandleFromDatabase> {
     const candle: CandleCreateObject = {
-      startedAt: startedAt.toISO(),
+      startedAt: startedAt.toISO() || '',
       ticker,
       resolution,
       low: blockCandleUpdate.low,
@@ -389,8 +392,8 @@ export class CandlesGenerator {
       usdVolume: blockCandleUpdate.usdVolume,
       trades: blockCandleUpdate.trades,
       startingOpenInterest: openInterestMap[ticker] ?? '0',
-      orderbookMidPriceClose: orderbookMidPrice,
-      orderbookMidPriceOpen: orderbookMidPrice,
+      orderbookMidPriceClose: orderbookMidPrice || '',
+      orderbookMidPriceOpen: orderbookMidPrice || '',
     };
 
     return CandleTable.create(candle, this.writeOptions);
@@ -410,7 +413,7 @@ export class CandlesGenerator {
     orderbookMidPrice: OrderbookMidPrice,
   ): Promise<CandleFromDatabase> {
     const candle: CandleCreateObject = {
-      startedAt: startedAt.toISO(),
+      startedAt: startedAt.toISO() || '',
       ticker,
       resolution,
       low: existingCandle.close,

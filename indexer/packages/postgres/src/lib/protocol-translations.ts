@@ -309,7 +309,7 @@ export function getGoodTilBlock(order: IndexerOrder): number | undefined {
 
 // Gets `goodTilBlockTime` from an `Order` as an ISO string, undefined if it does not exist.
 export function getGoodTilBlockTime(order: IndexerOrder): IsoString | undefined {
-  if (order.goodTilBlockTime !== undefined) {
+  if (order.goodTilBlockTime !== undefined && order.goodTilBlockTime !== null) {
     // `goodTilBlockTime` is the unix timestamp in seconds
     // Reference:
     // https://github.com/dydxprotocol/v4/blob/main/proto/dydxprotocol/clob/order.proto#L138-L144

@@ -1,10 +1,12 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "build"
+    "outDir": "build",
+    "skipLibCheck": true,
+    "types": ["jest", "node"]
   },
   "include": [
     "src",
-    "__tests__",
+    "__tests__"
   ]
 }

@@ -6,9 +6,13 @@
       "big.js": ["@types/big.js"]
     },
     "outDir": "build",
+    "skipLibCheck": true,
+    "types": ["jest", "node"],
   },
   "include": [
-    "src",
-    "__tests__",
+    "src"
+  ],
+  "exclude": [
+    "__tests__"
   ]
 }

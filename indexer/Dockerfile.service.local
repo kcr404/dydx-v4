@@ -1,5 +1,5 @@
 # Dockerfile to containerize services locally
-FROM dydxprotocol/indexer-node:16-alpine-m1
+FROM node:18-alpine
 ENV NODE_ENV=development
 ARG service
 
@@ -7,6 +7,9 @@ RUN apk add --no-cache bash jq aws-cli
 RUN adduser -S dydx
 RUN mkdir -p /home/dydx/app
 RUN chown dydx -R /home/dydx/app
+
+# Enable corepack to use exact pnpm version from package.json
+RUN corepack enable && corepack prepare pnpm@10.12.4 --activate
 
 WORKDIR /home/dydx/app
 
@@ -18,6 +21,7 @@ COPY ./patches ./patches
 
 # Copy package.json from all packages being run
 COPY ./packages/base/package.json ./packages/base/
+COPY ./packages/dev/package.json ./packages/dev/
 COPY ./packages/kafka/package.json ./packages/kafka/
 COPY ./packages/postgres/package.json ./packages/postgres/
 COPY ./packages/redis/package.json ./packages/redis/
@@ -28,6 +32,7 @@ COPY ./packages/notifications/package.json ./packages/notifications/
 
 # Copy build files from all packages being run
 COPY ./packages/base/build ./packages/base/build/
+COPY ./packages/dev/build ./packages/dev/build/
 COPY ./packages/kafka/build ./packages/kafka/build/
 COPY ./packages/postgres/build ./packages/postgres/build/
 COPY ./packages/redis/build ./packages/redis/build/
@@ -57,7 +62,7 @@ COPY ./scripts/container-run.sh /home/dydx/app/services/$service/scripts/
 RUN chown dydx -R /home/dydx/app
 
 USER dydx
-RUN pnpm i --loglevel warn --production --frozen-lockfile --unsafe-perm
+RUN pnpm i --loglevel warn --production --force --unsafe-perm
 
 WORKDIR /home/dydx/app/services/$service
 
