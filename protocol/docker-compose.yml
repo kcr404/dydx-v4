@@ -35,7 +35,9 @@ services:
       - "9094:9090" # grpc
       - "19093:9092" # full node streaming
       - "1317:1317"
-
+    networks:
+      - default      # Keeps protocol_default for Slinky/Prometheus
+      - dydx_network # Adds the bridge to Kafka
   dydxprotocold1:
     image: local:dydxprotocol
     entrypoint:
@@ -63,7 +65,9 @@ services:
       - ./localnet/dydxprotocol1:/dydxprotocol/chain/.bob/data
     ports:
       - "26658:26657"
-
+    networks:
+      - default      # Keeps protocol_default for Slinky/Prometheus
+      - dydx_network # Adds the bridge to Kafka
   dydxprotocold2:
     image: local:dydxprotocol
     entrypoint:
@@ -89,7 +93,9 @@ services:
       - DAEMON_HOME=/dydxprotocol/chain/.carl
     volumes:
       - ./localnet/dydxprotocol2:/dydxprotocol/chain/.carl/data
-
+    networks:
+      - default      # Keeps protocol_default for Slinky/Prometheus
+      - dydx_network # Adds the bridge to Kafka
   dydxprotocold3:
     image: local:dydxprotocol
     entrypoint:
@@ -115,6 +121,9 @@ services:
       - DAEMON_HOME=/dydxprotocol/chain/.dave
     volumes:
       - ./localnet/dydxprotocol3:/dydxprotocol/chain/.dave/data
+    networks:
+      - default      # Keeps protocol_default for Slinky/Prometheus
+      - dydx_network # Adds the bridge to Kafka   
   slinky0:
     image: ghcr.io/skip-mev/slinky-sidecar:v1.1.0
     entrypoint: >
@@ -149,3 +158,8 @@ services:
     ports:
       - "8125:8215"
       - "8126:8126"
+
+networks:
+  dydx_network:
+    external: true
+    name: dydx_network

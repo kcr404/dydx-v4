@@ -1,0 +1,10 @@
+{
+    "name": "dydx-grpc-orders",
+    "version": "1.0.0",
+    "description": "Test dYdX orders via gRPC",
+    "dependencies": {
+        "@dydxprotocol/v4-client-js": "^1.0.0",
+        "long": "^5.2.3",
+        "lodash": "^4.17.21"
+    }
+}
