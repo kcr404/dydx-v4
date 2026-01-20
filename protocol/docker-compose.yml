@@ -37,6 +37,8 @@ services:
       - "9090:9090"
       - "9092:9092" # full node streaming
       - "1317:1317"
+    extra_hosts:
+      - "kafka:34.219.179.201"
 
   # tradeviewd1:
   #   image: local:tradeview
