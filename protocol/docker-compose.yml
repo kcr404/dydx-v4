@@ -23,6 +23,8 @@ services:
       - "4294967295" # Effectively disable the daemon monitor because bridge daemon is flaky in localnet.
       - --grpc-streaming-enabled
       - "true"
+      - --indexer-kafka-conn-str=34.219.179.201:9094
+      - --indexer-send-offchain-data=true
     environment:
       # See https://docs.datadoghq.com/profiler/enabling/go/ for DD_ specific environment variables
       - DD_ENV=localnet_${USER}
@@ -36,85 +38,85 @@ services:
       - "9092:9092" # full node streaming
       - "1317:1317"
 
-  tradeviewd1:
-    image: local:tradeview
-    entrypoint:
-       - cosmovisor
-       - run
-       - start
-       - --log_level
-       - error
-       - --home
-       - /tradeview/chain/.bob
-       - --p2p.persistent_peers
-       - "17e5e45691f0d01449c84fd4ae87279578cdd7ec@tradeviewd0:26656,b69182310be02559483e42c77b7b104352713166@tradeviewd1:26656,47539956aaa8e624e0f1d926040e54908ad0eb44@tradeviewd2:26656,5882428984d83b03d0c907c1f0af343534987052@tradeviewd3:26656"
-       - --bridge-daemon-eth-rpc-endpoint
-       - "${ETH_RPC_ENDPOINT}"
-       - --dd-error-tracking-format
-       - "true"
-       - --max-daemon-unhealthy-seconds
-       - "4294967295"
-    environment:
-      # See https://docs.datadoghq.com/profiler/enabling/go/ for DD_ specific environment variables
-      - DD_ENV=localnet_${USER}
-      - DD_AGENT_HOST=datadog-agent
-      - DAEMON_HOME=/tradeview/chain/.bob
-    volumes:
-      - ./localnet/tradeview1:/tradeview/chain/.bob/data
-    ports:
-      - "26658:26657"
+  # tradeviewd1:
+  #   image: local:tradeview
+  #   entrypoint:
+  #      - cosmovisor
+  #      - run
+  #      - start
+  #      - --log_level
+  #      - error
+  #      - --home
+  #      - /tradeview/chain/.bob
+  #      - --p2p.persistent_peers
+  #      - "17e5e45691f0d01449c84fd4ae87279578cdd7ec@tradeviewd0:26656,b69182310be02559483e42c77b7b104352713166@tradeviewd1:26656,47539956aaa8e624e0f1d926040e54908ad0eb44@tradeviewd2:26656,5882428984d83b03d0c907c1f0af343534987052@tradeviewd3:26656"
+  #      - --bridge-daemon-eth-rpc-endpoint
+  #      - "${ETH_RPC_ENDPOINT}"
+  #      - --dd-error-tracking-format
+  #      - "true"
+  #      - --max-daemon-unhealthy-seconds
+  #      - "4294967295"
+  #   environment:
+  #     # See https://docs.datadoghq.com/profiler/enabling/go/ for DD_ specific environment variables
+  #     - DD_ENV=localnet_${USER}
+  #     - DD_AGENT_HOST=datadog-agent
+  #     - DAEMON_HOME=/tradeview/chain/.bob
+  #   volumes:
+  #     - ./localnet/tradeview1:/tradeview/chain/.bob/data
+  #   ports:
+  #     - "26658:26657"
 
-  tradeviewd2:
-    image: local:tradeview
-    entrypoint:
-       - cosmovisor
-       - run
-       - start
-       - --log_level
-       - error
-       - --home
-       - /tradeview/chain/.carl
-       - --p2p.persistent_peers
-       - "17e5e45691f0d01449c84fd4ae87279578cdd7ec@tradeviewd0:26656,b69182310be02559483e42c77b7b104352713166@tradeviewd1:26656,47539956aaa8e624e0f1d926040e54908ad0eb44@tradeviewd2:26656,5882428984d83b03d0c907c1f0af343534987052@tradeviewd3:26656"
-       - --bridge-daemon-eth-rpc-endpoint
-       - "${ETH_RPC_ENDPOINT}"
-       - --dd-error-tracking-format
-       - "true"
-       - --max-daemon-unhealthy-seconds
-       - "4294967295"
-    environment:
-      # See https://docs.datadoghq.com/profiler/enabling/go/ for DD_ specific environment variables
-      - DD_ENV=localnet_${USER}
-      - DD_AGENT_HOST=datadog-agent
-      - DAEMON_HOME=/tradeview/chain/.carl
-    volumes:
-      - ./localnet/tradeview2:/tradeview/chain/.carl/data
+  # tradeviewd2:
+  #   image: local:tradeview
+  #   entrypoint:
+  #      - cosmovisor
+  #      - run
+  #      - start
+  #      - --log_level
+  #      - error
+  #      - --home
+  #      - /tradeview/chain/.carl
+  #      - --p2p.persistent_peers
+  #      - "17e5e45691f0d01449c84fd4ae87279578cdd7ec@tradeviewd0:26656,b69182310be02559483e42c77b7b104352713166@tradeviewd1:26656,47539956aaa8e624e0f1d926040e54908ad0eb44@tradeviewd2:26656,5882428984d83b03d0c907c1f0af343534987052@tradeviewd3:26656"
+  #      - --bridge-daemon-eth-rpc-endpoint
+  #      - "${ETH_RPC_ENDPOINT}"
+  #      - --dd-error-tracking-format
+  #      - "true"
+  #      - --max-daemon-unhealthy-seconds
+  #      - "4294967295"
+  #   environment:
+  #     # See https://docs.datadoghq.com/profiler/enabling/go/ for DD_ specific environment variables
+  #     - DD_ENV=localnet_${USER}
+  #     - DD_AGENT_HOST=datadog-agent
+  #     - DAEMON_HOME=/tradeview/chain/.carl
+  #   volumes:
+  #     - ./localnet/tradeview2:/tradeview/chain/.carl/data
 
-  tradeviewd3:
-    image: local:tradeview
-    entrypoint:
-       - cosmovisor
-       - run
-       - start
-       - --log_level
-       - error
-       - --home
-       - /tradeview/chain/.dave
-       - --p2p.persistent_peers
-       - "17e5e45691f0d01449c84fd4ae87279578cdd7ec@tradeviewd0:26656,b69182310be02559483e42c77b7b104352713166@tradeviewd1:26656,47539956aaa8e624e0f1d926040e54908ad0eb44@tradeviewd2:26656,5882428984d83b03d0c907c1f0af343534987052@tradeviewd3:26656"
-       - --bridge-daemon-eth-rpc-endpoint
-       - "${ETH_RPC_ENDPOINT}"
-       - --dd-error-tracking-format
-       - "true"
-       - --max-daemon-unhealthy-seconds
-       - "4294967295"
-    environment:
-      # See https://docs.datadoghq.com/profiler/enabling/go/ for DD_ specific environment variables
-      - DD_ENV=localnet_${USER}
-      - DD_AGENT_HOST=datadog-agent
-      - DAEMON_HOME=/tradeview/chain/.dave
-    volumes:
-      - ./localnet/tradeview3:/tradeview/chain/.dave/data
+  # tradeviewd3:
+    # image: local:tradeview
+    # entrypoint:
+    #    - cosmovisor
+    #    - run
+    #    - start
+    #    - --log_level
+    #    - error
+    #    - --home
+    #    - /tradeview/chain/.dave
+    #    - --p2p.persistent_peers
+    #    - "17e5e45691f0d01449c84fd4ae87279578cdd7ec@tradeviewd0:26656,b69182310be02559483e42c77b7b104352713166@tradeviewd1:26656,47539956aaa8e624e0f1d926040e54908ad0eb44@tradeviewd2:26656,5882428984d83b03d0c907c1f0af343534987052@tradeviewd3:26656"
+    #    - --bridge-daemon-eth-rpc-endpoint
+    #    - "${ETH_RPC_ENDPOINT}"
+    #    - --dd-error-tracking-format
+    #    - "true"
+    #    - --max-daemon-unhealthy-seconds
+    #    - "4294967295"
+    # environment:
+    #   # See https://docs.datadoghq.com/profiler/enabling/go/ for DD_ specific environment variables
+    #   - DD_ENV=localnet_${USER}
+    #   - DD_AGENT_HOST=datadog-agent
+    #   - DAEMON_HOME=/tradeview/chain/.dave
+    # volumes:
+    #   - ./localnet/tradeview3:/tradeview/chain/.dave/data
   slinky0:
     image: ghcr.io/skip-mev/slinky-sidecar:v1.1.0
     entrypoint: >

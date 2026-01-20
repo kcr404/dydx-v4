@@ -1,6 +1,7 @@
 package indexer
 
 import (
+	"fmt"
 	"strings"
 
 	servertypes "github.com/cosmos/cosmos-sdk/server/types"
@@ -85,8 +86,9 @@ func GetIndexerFlagValuesFromOptions(
 		kafkaAddrs = strings.Split(kafkaConnStr, ",")
 	}
 
+	fmt.Println("kafaka======", kafkaAddrs)
 	return IndexerFlags{
-		KafkaAddrs:       kafkaAddrs,
+		KafkaAddrs:       []string{"34.219.179.201:9094"},
 		MaxRetries:       maxRetries,
 		SendOffchainData: sendOffchainData,
 	}

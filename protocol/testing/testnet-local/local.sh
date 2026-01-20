@@ -16,15 +16,15 @@ MNEMONICS=(
 
 	# bob
 	# Consensus Address: dydxvalcons1s7wykslt83kayxuaktep9fw8qxe5n73ucftkh4
-	"color habit donor nurse dinosaur stable wonder process post perfect raven gold census inside worth inquiry mammal panic olive toss shadow strong name drum"
+	# "color habit donor nurse dinosaur stable wonder process post perfect raven gold census inside worth inquiry mammal panic olive toss shadow strong name drum"
 
 	# carl
 	# Consensus Address: dydxvalcons1vy0nrh7l4rtezrsakaadz4mngwlpdmhy64h0ls
-	"school artefact ghost shop exchange slender letter debris dose window alarm hurt whale tiger find found island what engine ketchup globe obtain glory manage"
+	# "school artefact ghost shop exchange slender letter debris dose window alarm hurt whale tiger find found island what engine ketchup globe obtain glory manage"
 
 	# dave
 	# Consensus Address: dydxvalcons1stjspktkshgcsv8sneqk2vs2ws0nw2wr272vtt
-	"switch boring kiss cash lizard coconut romance hurry sniff bus accident zone chest height merit elevator furnace eagle fetch quit toward steak mystery nest"
+	# "switch boring kiss cash lizard coconut romance hurry sniff bus accident zone chest height merit elevator furnace eagle fetch quit toward steak mystery nest"
 )
 
 # Define node keys for all validators.
@@ -46,17 +46,17 @@ NODE_KEYS=(
 # This also controls in which directory the validator's home will be located. i.e. `/tradeview/chain/.alice`
 MONIKERS=(
 	"alice"
-	"bob"
-	"carl"
-	"dave"
+	# "bob"
+	# "carl"
+	# "dave"
 )
 
 # Define all test accounts for the chain.
 TEST_ACCOUNTS=(
 	"tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy" # alice
-	"tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp" # bob
-	"tradeview1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9ulcrq7" # carl
-	"tradeview1wau5mja7j7zdavtfq9lu7ejef05hm6fftquvwz" # dave
+	# "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp" # bob
+	# "tradeview1fjg6zp6vv8t9wvy4lps03r5l4g7tkjw9ulcrq7" # carl
+	# "tradeview1wau5mja7j7zdavtfq9lu7ejef05hm6fftquvwz" # dave
 )
 
 FAUCET_ACCOUNTS=(
