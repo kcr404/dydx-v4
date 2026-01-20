@@ -32,7 +32,7 @@ services:
       - ./localnet/dydxprotocol0:/dydxprotocol/chain/.alice/data
     ports:
       - "26657:26657"
-      - "9094:9090" # grpc
+      - "9096:9090" # grpc
       - "19093:9092" # full node streaming
       - "1317:1317"
     networks:
