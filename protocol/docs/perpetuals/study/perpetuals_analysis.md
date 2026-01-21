@@ -45,10 +45,10 @@ graph TB
     Epochs -->|New Funding Sample Epoch| Keeper
     Epochs -->|New Funding Tick Epoch| Keeper
     
-    Keeper -->|Aggregate (Median)| Votes
+    Keeper -->|"Aggregate (Median)"| Votes
     Votes -->|Create Sample| Samples
     
-    Keeper -->|Aggregate (Avg - Tails)| Samples
+    Keeper -->|"Aggregate (Avg - Tails)"| Samples
     Samples -->|Calculate Rate| Indices
     
     %% Dependencies
