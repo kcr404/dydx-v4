@@ -23,7 +23,7 @@ services:
       - "4294967295" # Effectively disable the daemon monitor because bridge daemon is flaky in localnet.
       - --grpc-streaming-enabled
       - "true"
-      - --indexer-kafka-conn-str=34.219.179.201:9094
+      - --indexer-kafka-conn-str=34.219.179.201:9092
       - --indexer-send-offchain-data=true
     environment:
       # See https://docs.datadoghq.com/profiler/enabling/go/ for DD_ specific environment variables
