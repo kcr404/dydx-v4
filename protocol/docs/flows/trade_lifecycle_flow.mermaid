@@ -1,0 +1,36 @@
+sequenceDiagram
+    participant User
+    participant Gateway as Validator/Gateway
+    participant Mempool as Mempool (Gossip)
+    participant Proposer as Block Proposer
+    participant Slinky as Slinky Oracle
+    participant Consensus as Consensus Engine
+    participant Chain as dYdX Chain
+    participant Indexer
+
+    Note over User, Gateway: Short-Term (Optimistic) or Long-Term (Stateful) Order
+
+    User->>Gateway: MsgPlaceOrder (Signed)
+    Gateway->>Gateway: Validate Basic
+    Gateway->>Mempool: Gossip Order
+
+    loop Every Block (Propose)
+        Slinky->>Proposer: Fetch Latest Prices
+        Proposer->>Proposer: Run In-Memory Matching (CLOB)
+        Proposer->>Proposer: Generate MsgProposedOperations (Matches)
+        Proposer->>Proposer: Inject MsgUpdateMarketPrices (Oracle)
+        Proposer->>Consensus: Trace Block Proposal (ABCI PrepareProposal)
+    end
+
+    loop Every Block (Validate)
+        Consensus->>Chain: ProcessProposal
+        Chain->>Chain: Validate Oracle Prices (Stateful)
+        Chain->>Chain: Verify Matches vs. State
+        Chain-->>Consensus: Accept/Reject
+    end
+
+    Consensus->>Chain: Commit Block (DeliverTx)
+    Chain->>Chain: Update Balances & Positions
+    Chain->>Indexer: Emit Events (OrderFilled, Funding, etc.)
+    Indexer->>Indexer: Update Database
+    Indexer-->>User: Serve Data (API/WS)

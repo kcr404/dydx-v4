@@ -1,0 +1,63 @@
+graph TB
+    subgraph "External Modules"
+        CLOB[CLOB Module]
+        Prices[Prices Module]
+        Epochs[Epochs Module]
+    end
+
+    subgraph "Perpetuals Module"
+        Keeper[Perpetuals Keeper]
+        
+        subgraph "Funding Mechanism"
+            Votes[Premium Votes Store]
+            Samples[Premium Samples Store]
+            Indices[Funding Indices]
+        end
+        
+        subgraph "State Management"
+            Params[Perpetual Params]
+            Liquidity[Liquidity Tiers]
+            Markets[Perpetual Markets]
+        end
+    end
+
+    subgraph "ABCI Lifecycle"
+        CheckTx[CheckTx]
+        EndBlock[EndBlocker]
+    end
+
+    %% Flows
+    CheckTx -->|MsgAddPremiumVotes| Votes
+    
+    EndBlock -->|Trigger| Epochs
+    Epochs -->|New Funding Sample Epoch| Keeper
+    Epochs -->|New Funding Tick Epoch| Keeper
+    
+    Keeper -->|Aggregate (Median)| Votes
+    Votes -->|Create Sample| Samples
+    
+    Keeper -->|Aggregate (Avg - Tails)| Samples
+    Samples -->|Calculate Rate| Indices
+    
+    %% Dependencies
+    Keeper <-->|Bidirectional| CLOB
+    Keeper -->|Get Oracle Price| Prices
+    Keeper -->|Get Epoch Info| Epochs
+    
+    %% Internal State
+    Keeper -->|Manage| Params
+    Keeper -->|Manage| Liquidity
+    Keeper -->|Manage| Markets
+    
+    %% Funding Calculation
+    Indices -->|Update Funding Index| Markets
+    
+    classDef external fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef core fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef state fill:#dfd,stroke:#333,stroke-width:2px;
+    classDef flow fill:#fdd,stroke:#333,stroke-width:2px;
+    
+    class CLOB,Prices,Epochs external;
+    class Keeper,Votes,Samples,Indices core;
+    class Params,Liquidity,Markets state;
+    class CheckTx,EndBlock flow;
