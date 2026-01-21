@@ -32,7 +32,7 @@ const (
 // AddIndexerFlagsToCmd adds the required flags to instantiate a connection to Kafka during App
 // initialization to a command. These flags should be applied to the `start` command of the
 // V4 Cosmos application.
-// E.g. `dydxprotocold start --indexer-kafka-conn-str kafka:9092
+// E.g. `dydxprotocold start --indexer-kafka-conn-str kafka:9094
 func AddIndexerFlagsToCmd(cmd *cobra.Command) {
 	cmd.
 		Flags().
@@ -41,7 +41,7 @@ func AddIndexerFlagsToCmd(cmd *cobra.Command) {
 			"",
 			"Comma delimited list of Kafka Broker addresses in the form of <url>:<port> to connect to "+
 				"for sending data to the Indexer, no connections to Kafka Brokers will be made if the "+
-				"value is an empty string. E.g. \"localhost:9092,localhost:29092\"",
+				"value is an empty string. E.g. \"localhost:9094,localhost:29092\"",
 		)
 	cmd.
 		Flags().

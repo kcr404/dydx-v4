@@ -59,23 +59,23 @@ func TestGetIndexerFlagValuesFromOptions(t *testing.T) {
 			},
 		},
 		"Sets KafkaAddrs to slice of 1 string if no commas in kafkaConnStr": {
-			kafkaConnStr:     "kafka:9092",
+			kafkaConnStr:     "kafka:9094",
 			maxRetries:       0,
 			nilConnStr:       false,
 			sendOffchainData: true,
 			expectedIndexerFlags: indexer.IndexerFlags{
-				KafkaAddrs:       []string{"kafka:9092"},
+				KafkaAddrs:       []string{"kafka:9094"},
 				MaxRetries:       0,
 				SendOffchainData: true,
 			},
 		},
 		"Sets KafkaAddrs to slice of multiple strings if commas in kafkaConnStr": {
-			kafkaConnStr:     "kafka:9092,kafka:9093,kafka:9094",
+			kafkaConnStr:     "kafka:9094,kafka:9093",
 			maxRetries:       0,
 			nilConnStr:       false,
 			sendOffchainData: true,
 			expectedIndexerFlags: indexer.IndexerFlags{
-				KafkaAddrs:       []string{"kafka:9092", "kafka:9093", "kafka:9094"},
+				KafkaAddrs:       []string{"kafka:9094", "kafka:9093"},
 				MaxRetries:       0,
 				SendOffchainData: true,
 			},
@@ -92,7 +92,7 @@ func TestGetIndexerFlagValuesFromOptions(t *testing.T) {
 			},
 		},
 		"Sets KafkaAddrs to empty slice and MaxRetries to default if kafkaConnStr is nil": {
-			kafkaConnStr:     "kafka:9092",
+			kafkaConnStr:     "kafka:9094",
 			maxRetries:       5,
 			nilConnStr:       true,
 			sendOffchainData: false,
