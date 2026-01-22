@@ -20,8 +20,9 @@ async function placeShortTermOrder() {
     try {
         // Initialize clients
         console.log("Step 1: Initializing clients...");
-        const aliceWallet = await LocalWallet.fromMnemonic(ALICE_MNEMONIC, 'dydx');
-        const bobWallet = await LocalWallet.fromMnemonic(BOB_MNEMONIC, 'dydx');
+        // Updated for TradeView rebranding
+        const aliceWallet = await LocalWallet.fromMnemonic(ALICE_MNEMONIC, 'tradeview');
+        const bobWallet = await LocalWallet.fromMnemonic(BOB_MNEMONIC, 'tradeview');
 
         const aliceClient = await CompositeClient.connect(NETWORK);
         const bobClient = await CompositeClient.connect(NETWORK);

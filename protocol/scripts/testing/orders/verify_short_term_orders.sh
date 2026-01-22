@@ -10,8 +10,8 @@ echo "========================================="
 echo ""
 
 # Configuration
-ALICE="dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4"
-BOB="dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs"
+ALICE="tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
+BOB="tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
 CLOB_PAIR_ID=35  # TEST-USD market
 
 # Get latest block height
@@ -44,7 +44,7 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 echo "Alice's subaccount (owner: $ALICE, number: 0):"
-docker exec protocol-dydxprotocold0-1 dydxprotocold query subaccounts get \
+docker exec protocol-tradeviewd0-1 tradeviewd query subaccounts get \
     "$ALICE" 0 --node tcp://localhost:26657 --output json 2>/dev/null | \
     jq '{
         perpetual_positions: .subaccount.perpetual_positions,
