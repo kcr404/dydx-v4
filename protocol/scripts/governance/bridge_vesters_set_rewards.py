@@ -19,7 +19,7 @@ NINE_ZEROS="000000000"
 ### TODO: update below fields as needed                                ###
 ########################################################################## 
 TITLE="TODO: Fill in proposal title" 
-NATIVE_TOKEN_DENOM="atvx" # TODO: Replace with production token 
+NATIVE_TOKEN_DENOM="adv4tnt" # TODO: Replace with production token 
 PROPOSAL_BODY="""
 TODO: Fill in proposal content. 
 Include detailed description of the proposal, links to governance discussion forums (if applicable).
@@ -57,10 +57,10 @@ VOTING_PERIOD_DAYS = 4
 ########################################################################## 
 ### Script contants - do not change                                    ###
 ########################################################################## 
-GOV_MODULE_ADDRESS="tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4" # Governance module account
-COMMUNITY_VESTER_ADDRESS="tradeview1wxje320an3karyc6mjw4zghs300dmrjkuqaj48"
-REWARDS_VESTER_ADDRESS="tradeview1ltyc6y4skclzafvpznpt2qjwmfwgsndp88yh9s"
-DELAY_MSG_MODULE_ADDRESS="tradeview1mkkvp26dngu6n8rmalaxyp3gwkjuzztqx39w4j"
+GOV_MODULE_ADDRESS="dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky" # Governance module account
+COMMUNITY_VESTER_ADDRESS="dydx1wxje320an3karyc6mjw4zghs300dmrjkwn7xtk"
+REWARDS_VESTER_ADDRESS="dydx1ltyc6y4skclzafvpznpt2qjwmfwgsndp458rmp"
+DELAY_MSG_MODULE_ADDRESS="dydx1mkkvp26dngu6n8rmalaxyp3gwkjuzztq5zx6tr"
 DEPOSIT=f"10000{NINE_ZEROS}{NINE_ZEROS}{NATIVE_TOKEN_DENOM}" # 10,000 native tokens
 OUTPUT_FILE='proposal_bridge_vesters_set_rewards.json'
 

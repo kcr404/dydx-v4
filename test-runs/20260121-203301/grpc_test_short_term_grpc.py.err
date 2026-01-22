@@ -1,0 +1,7 @@
+./protocol/scripts/testing/orders/test_short_term_grpc.py: line 5: $'\nShort-Term Order Submission via gRPC\nAlternative Python implementation using grpcurl\n': command not found
+./protocol/scripts/testing/orders/test_short_term_grpc.py: line 7: import: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc.py: line 8: import: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc.py: line 9: import: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc.py: line 10: from: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc.py: line 12: syntax error near unexpected token `('
+./protocol/scripts/testing/orders/test_short_term_grpc.py: line 12: `def get_current_height():'

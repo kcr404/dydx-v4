@@ -1,0 +1,3 @@
+./protocol/scripts/testing/orders/verify_short_term_orders.sh
+./protocol/scripts/testing/orders/test_short_term_working.sh
+./hummingbot-setup/demo.sh

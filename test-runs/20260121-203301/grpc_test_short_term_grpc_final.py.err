@@ -1,0 +1,9 @@
+./protocol/scripts/testing/orders/test_short_term_grpc_final.py: line 5: $'\nSHORT-TERM ORDERS VIA PYTHON CLIENT\nFollowing official dYdX v4 documentation\n': command not found
+./protocol/scripts/testing/orders/test_short_term_grpc_final.py: line 7: import: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc_final.py: line 8: import: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc_final.py: line 9: from: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc_final.py: line 10: from: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc_final.py: line 13: ALICE_MNEMONIC: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc_final.py: line 14: BOB_MNEMONIC: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc_final.py: line 16: syntax error near unexpected token `('
+./protocol/scripts/testing/orders/test_short_term_grpc_final.py: line 16: `async def main():'

@@ -12,11 +12,11 @@
 
 # Constants
 NINE_ZEROS="000000000"
-AUTHORITY="tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4"
+AUTHORITY="dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"
 
 # Customizable proposal fields
 TITLE="Enable trading on all markets"
-NATIVE_TOKEN_DENOM="atvx"
+NATIVE_TOKEN_DENOM="adv4tnt"
 DEPOSIT="10000${NINE_ZEROS}${NINE_ZEROS}${NATIVE_TOKEN_DENOM}" # 10,000 native tokens
 SUMMARY="Use MsgUpdateClobPair to change the status of all CLOB pairs to ACTIVE. All other fields remain unchanged."
 

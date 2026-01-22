@@ -1,0 +1,3 @@
+./indexer/node_modules/.pnpm/@dydxprotocol+v4-client-js@1.22.0/node_modules/@dydxprotocol/v4-client-js/build/node_modules/@dydxprotocol/v4-proto/src/codegen/cosmos/store/streaming/abci/grpc.js: line 1: use strict: command not found
+./indexer/node_modules/.pnpm/@dydxprotocol+v4-client-js@1.22.0/node_modules/@dydxprotocol/v4-client-js/build/node_modules/@dydxprotocol/v4-proto/src/codegen/cosmos/store/streaming/abci/grpc.js: line 2: syntax error near unexpected token `('
+./indexer/node_modules/.pnpm/@dydxprotocol+v4-client-js@1.22.0/node_modules/@dydxprotocol/v4-client-js/build/node_modules/@dydxprotocol/v4-proto/src/codegen/cosmos/store/streaming/abci/grpc.js: line 2: `var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {'

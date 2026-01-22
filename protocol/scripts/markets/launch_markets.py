@@ -14,8 +14,8 @@ import json
 from typing import Dict, Any, List
 import time
 
-alice_address = "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
-bob_address = "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
+alice_address = "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4"
+bob_address = "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs"
 mainnet_node = "https://dydx-ops-rpc.kingnodes.com:443"
 mainnet_chain = "dydx-mainnet-1"
 PROPOSAL_STATUS_PASSED = 3
@@ -82,11 +82,11 @@ def make_alice_authority(node, chain):
             "messages": [
                 {
                     "@type": "/slinky.marketmap.v1.MsgParams",
-                    "authority": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
+                    "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
                     "params": {
-                        "admin": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
+                        "admin": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
                         "market_authorities": [
-                            "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
+                            "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
                             alice_address
                         ]
                     }

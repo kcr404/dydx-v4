@@ -1,0 +1,6 @@
+./protocol/scripts/testing/orders/test_short_term_grpc.js: line 2: /bin: Is a directory
+./protocol/scripts/testing/orders/test_short_term_grpc.js: line 3: audits: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc.js: line 4: audits: command not found
+./protocol/scripts/testing/orders/test_short_term_grpc.js: line 5: audits/: Is a directory
+./protocol/scripts/testing/orders/test_short_term_grpc.js: line 7: syntax error near unexpected token `('
+./protocol/scripts/testing/orders/test_short_term_grpc.js: line 7: `const { CompositeClient, Network, OrderFlags, Order_Side, Order_TimeInForce } = require('@dydxprotocol/v4-client-js');'

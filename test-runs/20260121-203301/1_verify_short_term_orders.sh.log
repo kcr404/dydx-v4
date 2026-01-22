@@ -1,0 +1,65 @@
+=========================================
+  Short-Term Order Verification
+=========================================
+
+📊 Current block height: 
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Method 1: Checking MsgProposedOperations
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Method 2: Checking Subaccount State
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Alice's subaccount (owner: dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4, number: 0):
+
+Bob's subaccount (owner: dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs, number: 0):
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Method 3: CLOB Pair State
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CLOB Pair 35 (TEST-USD) configuration:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Method 4: Indexer Database Check
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Recent orders in indexer database:
+   ⚠️  Indexer database not accessible
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Method 5: Indexer REST API
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Checking Comlink health:
+   ✅ Comlink is responding: {"errors":[{"msg":"No blocks found"}]}
+
+Alice's orders via API:
+{
+  "errors": [
+    {
+      "msg": "Internal Server Error"
+    }
+  ]
+}
+
+=========================================
+  Verification Summary
+=========================================
+
+✅ Short-term orders are submitted via gRPC
+✅ They appear in blocks as MsgProposedOperations
+✅ They do NOT appear in /tx endpoint (by design)
+
+To verify execution:
+  1. Check for MsgProposedOperations in blocks
+  2. Monitor subaccount positions for changes
+  3. Query indexer database (if Ender is processing)
+  4. Use indexer REST API (if Comlink/Redis are healthy)
+
+Note: Short-term orders are MemClob operations,
+      not standalone transactions in the tx index.
+

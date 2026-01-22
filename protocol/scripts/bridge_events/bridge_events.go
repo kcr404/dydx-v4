@@ -2,14 +2,13 @@ package main
 
 import (
 	"context"
+	sdkmath "cosmossdk.io/math"
 	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
 	"math/big"
 	"sort"
-
-	sdkmath "cosmossdk.io/math"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
@@ -48,7 +47,7 @@ func main() {
 	var denom, totalSupply, rpcNode, bridgeAddress string
 	var toBlock int64
 	var verbose bool
-	flag.StringVar(&denom, "denom", "atvx", "token denom")
+	flag.StringVar(&denom, "denom", "adv4tnt", "token denom")
 	flag.StringVar(&totalSupply, "totalsupply", "1000000000000000000000000000", "token's total supply (base 10)")
 	flag.StringVar(&rpcNode, "rpc", "https://eth-sepolia.g.alchemy.com/v2/demo", "rpc node url")
 	flag.StringVar(&bridgeAddress, "address", "0xcca9D5f0a3c58b6f02BD0985fC7F9420EA24C1f0", "bridge address")

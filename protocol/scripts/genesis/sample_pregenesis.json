@@ -67,7 +67,7 @@
     "bank": {
       "balances": [
         {
-          "address": "tradeview1zlefkpe3g0vvm9a4h0jf9000lmqutlh9qa38wa",
+          "address": "dydx1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv",
           "coins": [
             {
               "amount": "1000000000000000000000000000",
@@ -592,7 +592,7 @@
           "id": 0,
           "msg": {
             "@type": "/dydxprotocol.feetiers.MsgUpdatePerpetualFeeParams",
-            "authority": "tradeview1mkkvp26dngu6n8rmalaxyp3gwkjuzztqx39w4j",
+            "authority": "dydx1mkkvp26dngu6n8rmalaxyp3gwkjuzztq5zx6tr",
             "params": {
               "tiers": [
                 {
@@ -3089,9 +3089,9 @@
         }
       },
       "params": {
-        "admin": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
+        "admin": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
         "market_authorities": [
-          "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4"
+          "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"
         ]
       }
     },
@@ -3991,7 +3991,7 @@
     },
     "revshare": {
       "params": {
-        "address": "tradeview17xpfvakm2amg962yls6f84z3kell8c5ltnws4m",
+        "address": "dydx17xpfvakm2amg962yls6f84z3kell8c5leqdyt2",
         "revenue_share_ppm": 0,
         "valid_days": 0
       }
@@ -4069,11 +4069,11 @@
           "description": "Governance Module Account",
           "name": "Governance"
         },
-        "operator": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4"
+        "operator": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"
       },
       "owner_shares": [
         {
-          "owner": "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy",
+          "owner": "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4",
           "shares": {
             "num_shares": "0"
           }

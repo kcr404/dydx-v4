@@ -1,0 +1,11 @@
+=== Test run started: 20260121-203301 ===
+NODE_RPC=http://35.94.117.235:26657
+KAFKA_BROKER=34.219.179.201:9092
+[20:33:02] WARN: Could not parse node status. See ./test-runs/20260121-203301/node_status.err
+[20:33:07] WARN: Kafka 34.219.179.201:9092 not reachable by nc
+[20:33:07] No kafka consumer tool found (kcat/kafkacat/kafka-console-consumer.sh). To sample topics install kcat or use dockerized consumer.
+[20:33:07] grpcurl not found; to enable gRPC introspection install grpcurl
+[20:33:13] Found 3 candidate test files:
+script failed or timed out: ./protocol/scripts/testing/orders/test_short_term_working.sh (check ./test-runs/20260121-203301/2_test_short_term_working.sh.log ./test-runs/20260121-203301/2_test_short_term_working.sh.err)
+script failed or timed out: ./hummingbot-setup/demo.sh (check ./test-runs/20260121-203301/3_demo.sh.log ./test-runs/20260121-203301/3_demo.sh.err)
+[20:33:28] No kafka consumer available for tailing. Install kcat or use dockerized consumer

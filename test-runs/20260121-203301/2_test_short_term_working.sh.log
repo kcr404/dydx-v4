@@ -1,0 +1,13 @@
+=========================================
+  SHORT-TERM ORDER - BLOCK INCLUSION TEST
+=========================================
+
+Step 1: Pre-flight checks...
+   Current height: 
+   Mempool size:  txs
+
+Step 2: Placing orders with IMMEDIATE GTB...
+   GTB: 3 (current + 3)
+   Client ID: 862390
+
+[Alice] Placing BUY order...
