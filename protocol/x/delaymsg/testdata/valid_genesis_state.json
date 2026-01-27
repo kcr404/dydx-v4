@@ -3,7 +3,7 @@
     {
       "id": 1,
       "msg": {
-        "@type": "/dydxprotocol.bridge.MsgCompleteBridge",
+        "@type": "/tradeview.bridge.MsgCompleteBridge",
         "authority": "tradeview1mkkvp26dngu6n8rmalaxyp3gwkjuzztqx39w4j",
         "event": {
           "id": 1,

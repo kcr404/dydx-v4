@@ -408,7 +408,7 @@ func TestBridge_AcknowledgedEventIdGreaterThanRecognizedEventId(t *testing.T) {
 	abciResponse, err := tApp.App.Query(
 		context.Background(),
 		&abcitypes.RequestQuery{
-			Path: "/dydxprotocol.bridge.Query/RecognizedEventInfo",
+			Path: "/tradeview.bridge.Query/RecognizedEventInfo",
 			Data: tApp.App.AppCodec().MustMarshal(&reiRequest),
 		},
 	)

@@ -15,7 +15,7 @@ impl ::prost::Name for IndexerTendermintEventWrapper {
         "dydxprotocol.indexer.indexer_manager.IndexerTendermintEventWrapper".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.indexer_manager.IndexerTendermintEventWrapper".into()
+        "/tradeview.indexer.indexer_manager.IndexerTendermintEventWrapper".into()
     }
 }
 /// IndexerEventsStoreValue represents the type of the value of the
@@ -32,7 +32,7 @@ impl ::prost::Name for IndexerEventsStoreValue {
         "dydxprotocol.indexer.indexer_manager.IndexerEventsStoreValue".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.indexer_manager.IndexerEventsStoreValue".into()
+        "/tradeview.indexer.indexer_manager.IndexerEventsStoreValue".into()
     }
 }
 /// IndexerTendermintEvent contains the base64 encoded event proto emitted from
@@ -127,7 +127,7 @@ impl ::prost::Name for IndexerTendermintEvent {
         "dydxprotocol.indexer.indexer_manager.IndexerTendermintEvent".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.indexer_manager.IndexerTendermintEvent".into()
+        "/tradeview.indexer.indexer_manager.IndexerTendermintEvent".into()
     }
 }
 /// IndexerTendermintBlock contains all the events for the block along with
@@ -152,6 +152,6 @@ impl ::prost::Name for IndexerTendermintBlock {
         "dydxprotocol.indexer.indexer_manager.IndexerTendermintBlock".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.indexer_manager.IndexerTendermintBlock".into()
+        "/tradeview.indexer.indexer_manager.IndexerTendermintBlock".into()
     }
 }

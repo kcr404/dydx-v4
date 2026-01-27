@@ -100,7 +100,7 @@ def main():
                 affiliate_parameters_msg = {
                     "messages": [
                         {
-                            "@type": "/dydxprotocol.affiliates.MsgUpdateAffiliateParameters",
+                            "@type": "/tradeview.affiliates.MsgUpdateAffiliateParameters",
                             "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
                             "affiliate_parameters": {
                                 "maximum_30d_commission_per_referred_quote_quantums": int(args.max_30d_commission),

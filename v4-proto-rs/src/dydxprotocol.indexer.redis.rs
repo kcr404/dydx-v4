@@ -77,6 +77,6 @@ impl ::prost::Name for RedisOrder {
         "dydxprotocol.indexer.redis.RedisOrder".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.redis.RedisOrder".into()
+        "/tradeview.indexer.redis.RedisOrder".into()
     }
 }

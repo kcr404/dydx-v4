@@ -22,7 +22,7 @@ impl ::prost::Name for AssetPosition {
         "dydxprotocol.subaccounts.AssetPosition".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.AssetPosition".into()
+        "/tradeview.subaccounts.AssetPosition".into()
     }
 }
 /// PerpetualPositions are an account’s positions of a `Perpetual`.
@@ -50,7 +50,7 @@ impl ::prost::Name for PerpetualPosition {
         "dydxprotocol.subaccounts.PerpetualPosition".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.PerpetualPosition".into()
+        "/tradeview.subaccounts.PerpetualPosition".into()
     }
 }
 /// SubaccountId defines a unique identifier for a Subaccount.
@@ -71,7 +71,7 @@ impl ::prost::Name for SubaccountId {
         "dydxprotocol.subaccounts.SubaccountId".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.SubaccountId".into()
+        "/tradeview.subaccounts.SubaccountId".into()
     }
 }
 /// Subaccount defines a single sub-account for a given address.
@@ -101,7 +101,7 @@ impl ::prost::Name for Subaccount {
         "dydxprotocol.subaccounts.Subaccount".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.Subaccount".into()
+        "/tradeview.subaccounts.Subaccount".into()
     }
 }
 /// StreamSubaccountUpdate provides information on a subaccount update. Used in
@@ -135,7 +135,7 @@ impl ::prost::Name for StreamSubaccountUpdate {
         "dydxprotocol.subaccounts.StreamSubaccountUpdate".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.StreamSubaccountUpdate".into()
+        "/tradeview.subaccounts.StreamSubaccountUpdate".into()
     }
 }
 /// SubaccountPerpetualPosition provides information on a subaccount's updated
@@ -156,7 +156,7 @@ impl ::prost::Name for SubaccountPerpetualPosition {
         "dydxprotocol.subaccounts.SubaccountPerpetualPosition".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.SubaccountPerpetualPosition".into()
+        "/tradeview.subaccounts.SubaccountPerpetualPosition".into()
     }
 }
 /// SubaccountAssetPosition provides information on a subaccount's updated asset
@@ -177,7 +177,7 @@ impl ::prost::Name for SubaccountAssetPosition {
         "dydxprotocol.subaccounts.SubaccountAssetPosition".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.SubaccountAssetPosition".into()
+        "/tradeview.subaccounts.SubaccountAssetPosition".into()
     }
 }
 /// GenesisState defines the subaccounts module's genesis state.
@@ -193,7 +193,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.subaccounts.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.GenesisState".into()
+        "/tradeview.subaccounts.GenesisState".into()
     }
 }
 /// QueryGetSubaccountRequest is request type for the Query RPC method.
@@ -211,7 +211,7 @@ impl ::prost::Name for QueryGetSubaccountRequest {
         "dydxprotocol.subaccounts.QueryGetSubaccountRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.QueryGetSubaccountRequest".into()
+        "/tradeview.subaccounts.QueryGetSubaccountRequest".into()
     }
 }
 /// QuerySubaccountResponse is response type for the Query RPC method.
@@ -227,7 +227,7 @@ impl ::prost::Name for QuerySubaccountResponse {
         "dydxprotocol.subaccounts.QuerySubaccountResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.QuerySubaccountResponse".into()
+        "/tradeview.subaccounts.QuerySubaccountResponse".into()
     }
 }
 /// QueryAllSubaccountRequest is request type for the Query RPC method.
@@ -245,7 +245,7 @@ impl ::prost::Name for QueryAllSubaccountRequest {
         "dydxprotocol.subaccounts.QueryAllSubaccountRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.QueryAllSubaccountRequest".into()
+        "/tradeview.subaccounts.QueryAllSubaccountRequest".into()
     }
 }
 /// QuerySubaccountAllResponse is response type for the Query RPC method.
@@ -265,7 +265,7 @@ impl ::prost::Name for QuerySubaccountAllResponse {
         "dydxprotocol.subaccounts.QuerySubaccountAllResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.QuerySubaccountAllResponse".into()
+        "/tradeview.subaccounts.QuerySubaccountAllResponse".into()
     }
 }
 /// QueryGetWithdrawalAndTransfersBlockedInfoRequest is a request type for
@@ -284,7 +284,7 @@ impl ::prost::Name for QueryGetWithdrawalAndTransfersBlockedInfoRequest {
             .into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.QueryGetWithdrawalAndTransfersBlockedInfoRequest"
+        "/tradeview.subaccounts.QueryGetWithdrawalAndTransfersBlockedInfoRequest"
             .into()
     }
 }
@@ -307,7 +307,7 @@ impl ::prost::Name for QueryGetWithdrawalAndTransfersBlockedInfoResponse {
             .into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.QueryGetWithdrawalAndTransfersBlockedInfoResponse"
+        "/tradeview.subaccounts.QueryGetWithdrawalAndTransfersBlockedInfoResponse"
             .into()
     }
 }
@@ -326,7 +326,7 @@ impl ::prost::Name for QueryCollateralPoolAddressRequest {
         "dydxprotocol.subaccounts.QueryCollateralPoolAddressRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.QueryCollateralPoolAddressRequest".into()
+        "/tradeview.subaccounts.QueryCollateralPoolAddressRequest".into()
     }
 }
 /// QueryCollateralPoolAddressResponse is a response type for fetching the
@@ -344,7 +344,7 @@ impl ::prost::Name for QueryCollateralPoolAddressResponse {
         "dydxprotocol.subaccounts.QueryCollateralPoolAddressResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.subaccounts.QueryCollateralPoolAddressResponse".into()
+        "/tradeview.subaccounts.QueryCollateralPoolAddressResponse".into()
     }
 }
 /// Generated client implementations.
@@ -458,7 +458,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.subaccounts.Query/Subaccount",
+                "/tradeview.subaccounts.Query/Subaccount",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -483,7 +483,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.subaccounts.Query/SubaccountAll",
+                "/tradeview.subaccounts.Query/SubaccountAll",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -513,7 +513,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.subaccounts.Query/GetWithdrawalAndTransfersBlockedInfo",
+                "/tradeview.subaccounts.Query/GetWithdrawalAndTransfersBlockedInfo",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -543,7 +543,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.subaccounts.Query/CollateralPoolAddress",
+                "/tradeview.subaccounts.Query/CollateralPoolAddress",
             );
             let mut req = request.into_request();
             req.extensions_mut()

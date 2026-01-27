@@ -17,7 +17,7 @@ impl ::prost::Name for IndexerSubaccountId {
         "dydxprotocol.indexer.protocol.v1.IndexerSubaccountId".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.protocol.v1.IndexerSubaccountId".into()
+        "/tradeview.indexer.protocol.v1.IndexerSubaccountId".into()
     }
 }
 /// IndexerPerpetualPosition are an account’s positions of a `Perpetual`.
@@ -48,7 +48,7 @@ impl ::prost::Name for IndexerPerpetualPosition {
         "dydxprotocol.indexer.protocol.v1.IndexerPerpetualPosition".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.protocol.v1.IndexerPerpetualPosition".into()
+        "/tradeview.indexer.protocol.v1.IndexerPerpetualPosition".into()
     }
 }
 /// IndexerAssetPosition define an account’s positions of an `Asset`.
@@ -74,7 +74,7 @@ impl ::prost::Name for IndexerAssetPosition {
         "dydxprotocol.indexer.protocol.v1.IndexerAssetPosition".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.protocol.v1.IndexerAssetPosition".into()
+        "/tradeview.indexer.protocol.v1.IndexerAssetPosition".into()
     }
 }
 /// IndexerOrderId refers to a single order belonging to a Subaccount.
@@ -117,7 +117,7 @@ impl ::prost::Name for IndexerOrderId {
         "dydxprotocol.indexer.protocol.v1.IndexerOrderId".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.protocol.v1.IndexerOrderId".into()
+        "/tradeview.indexer.protocol.v1.IndexerOrderId".into()
     }
 }
 /// IndexerOrderV1 represents a single order belonging to a `Subaccount`
@@ -355,7 +355,7 @@ impl ::prost::Name for IndexerOrder {
         "dydxprotocol.indexer.protocol.v1.IndexerOrder".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.protocol.v1.IndexerOrder".into()
+        "/tradeview.indexer.protocol.v1.IndexerOrder".into()
     }
 }
 /// TwapParameters represents the necessary configuration for a TWAP order.
@@ -383,7 +383,7 @@ impl ::prost::Name for TwapParameters {
         "dydxprotocol.indexer.protocol.v1.TwapParameters".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.protocol.v1.TwapParameters".into()
+        "/tradeview.indexer.protocol.v1.TwapParameters".into()
     }
 }
 /// BuilderCodeParameters represents the metadata for the partner or builder of
@@ -405,7 +405,7 @@ impl ::prost::Name for BuilderCodeParameters {
         "dydxprotocol.indexer.protocol.v1.BuilderCodeParameters".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.protocol.v1.BuilderCodeParameters".into()
+        "/tradeview.indexer.protocol.v1.BuilderCodeParameters".into()
     }
 }
 /// Status of the CLOB.

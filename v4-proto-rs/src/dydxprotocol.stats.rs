@@ -13,7 +13,7 @@ impl ::prost::Name for Params {
         "dydxprotocol.stats.Params".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.Params".into()
+        "/tradeview.stats.Params".into()
     }
 }
 /// GenesisState defines the stats module's genesis state.
@@ -30,7 +30,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.stats.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.GenesisState".into()
+        "/tradeview.stats.GenesisState".into()
     }
 }
 /// BlockStats is used to store stats transiently within the scope of a block.
@@ -62,7 +62,7 @@ pub mod block_stats {
             "dydxprotocol.stats.BlockStats.Fill".into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.stats.BlockStats.Fill".into()
+            "/tradeview.stats.BlockStats.Fill".into()
         }
     }
 }
@@ -73,7 +73,7 @@ impl ::prost::Name for BlockStats {
         "dydxprotocol.stats.BlockStats".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.BlockStats".into()
+        "/tradeview.stats.BlockStats".into()
     }
 }
 /// StatsMetadata stores metadata for the x/stats module
@@ -91,7 +91,7 @@ impl ::prost::Name for StatsMetadata {
         "dydxprotocol.stats.StatsMetadata".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.StatsMetadata".into()
+        "/tradeview.stats.StatsMetadata".into()
     }
 }
 /// EpochStats stores stats for a particular epoch
@@ -121,7 +121,7 @@ pub mod epoch_stats {
             "dydxprotocol.stats.EpochStats.UserWithStats".into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.stats.EpochStats.UserWithStats".into()
+            "/tradeview.stats.EpochStats.UserWithStats".into()
         }
     }
 }
@@ -132,7 +132,7 @@ impl ::prost::Name for EpochStats {
         "dydxprotocol.stats.EpochStats".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.EpochStats".into()
+        "/tradeview.stats.EpochStats".into()
     }
 }
 /// GlobalStats stores global stats
@@ -149,7 +149,7 @@ impl ::prost::Name for GlobalStats {
         "dydxprotocol.stats.GlobalStats".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.GlobalStats".into()
+        "/tradeview.stats.GlobalStats".into()
     }
 }
 /// UserStats stores stats for a User
@@ -169,7 +169,7 @@ impl ::prost::Name for UserStats {
         "dydxprotocol.stats.UserStats".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.UserStats".into()
+        "/tradeview.stats.UserStats".into()
     }
 }
 /// CachedStakeAmount stores the last calculated total staked amount for address
@@ -190,7 +190,7 @@ impl ::prost::Name for CachedStakeAmount {
         "dydxprotocol.stats.CachedStakeAmount".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.CachedStakeAmount".into()
+        "/tradeview.stats.CachedStakeAmount".into()
     }
 }
 /// QueryParamsRequest is a request type for the Params RPC method.
@@ -203,7 +203,7 @@ impl ::prost::Name for QueryParamsRequest {
         "dydxprotocol.stats.QueryParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.QueryParamsRequest".into()
+        "/tradeview.stats.QueryParamsRequest".into()
     }
 }
 /// QueryParamsResponse is a response type for the Params RPC method.
@@ -219,7 +219,7 @@ impl ::prost::Name for QueryParamsResponse {
         "dydxprotocol.stats.QueryParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.QueryParamsResponse".into()
+        "/tradeview.stats.QueryParamsResponse".into()
     }
 }
 /// QueryStatsMetadataRequest is a request type for the StatsMetadata RPC method.
@@ -232,7 +232,7 @@ impl ::prost::Name for QueryStatsMetadataRequest {
         "dydxprotocol.stats.QueryStatsMetadataRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.QueryStatsMetadataRequest".into()
+        "/tradeview.stats.QueryStatsMetadataRequest".into()
     }
 }
 /// QueryStatsMetadataResponse is a response type for the StatsMetadata RPC
@@ -249,7 +249,7 @@ impl ::prost::Name for QueryStatsMetadataResponse {
         "dydxprotocol.stats.QueryStatsMetadataResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.QueryStatsMetadataResponse".into()
+        "/tradeview.stats.QueryStatsMetadataResponse".into()
     }
 }
 /// QueryGlobalStatsRequest is a request type for the GlobalStats RPC method.
@@ -262,7 +262,7 @@ impl ::prost::Name for QueryGlobalStatsRequest {
         "dydxprotocol.stats.QueryGlobalStatsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.QueryGlobalStatsRequest".into()
+        "/tradeview.stats.QueryGlobalStatsRequest".into()
     }
 }
 /// QueryGlobalStatsResponse is a response type for the GlobalStats RPC method.
@@ -278,7 +278,7 @@ impl ::prost::Name for QueryGlobalStatsResponse {
         "dydxprotocol.stats.QueryGlobalStatsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.QueryGlobalStatsResponse".into()
+        "/tradeview.stats.QueryGlobalStatsResponse".into()
     }
 }
 /// QueryUserStatsRequest is a request type for the UserStats RPC method.
@@ -294,7 +294,7 @@ impl ::prost::Name for QueryUserStatsRequest {
         "dydxprotocol.stats.QueryUserStatsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.QueryUserStatsRequest".into()
+        "/tradeview.stats.QueryUserStatsRequest".into()
     }
 }
 /// QueryUserStatsResponse is a request type for the UserStats RPC method.
@@ -310,7 +310,7 @@ impl ::prost::Name for QueryUserStatsResponse {
         "dydxprotocol.stats.QueryUserStatsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.QueryUserStatsResponse".into()
+        "/tradeview.stats.QueryUserStatsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -424,7 +424,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.stats.Query/Params",
+                "/tradeview.stats.Query/Params",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -449,7 +449,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.stats.Query/StatsMetadata",
+                "/tradeview.stats.Query/StatsMetadata",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -474,7 +474,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.stats.Query/GlobalStats",
+                "/tradeview.stats.Query/GlobalStats",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -499,7 +499,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.stats.Query/UserStats",
+                "/tradeview.stats.Query/UserStats",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -524,7 +524,7 @@ impl ::prost::Name for MsgUpdateParams {
         "dydxprotocol.stats.MsgUpdateParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.MsgUpdateParams".into()
+        "/tradeview.stats.MsgUpdateParams".into()
     }
 }
 /// MsgUpdateParamsResponse is the Msg/UpdateParams response type.
@@ -537,7 +537,7 @@ impl ::prost::Name for MsgUpdateParamsResponse {
         "dydxprotocol.stats.MsgUpdateParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.stats.MsgUpdateParamsResponse".into()
+        "/tradeview.stats.MsgUpdateParamsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -651,7 +651,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.stats.Msg/UpdateParams",
+                "/tradeview.stats.Msg/UpdateParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()

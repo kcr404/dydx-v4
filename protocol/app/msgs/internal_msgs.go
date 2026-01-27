@@ -110,125 +110,125 @@ var (
 	// Custom modules
 	InternalMsgSamplesDydxCustom = map[string]sdk.Msg{
 		// affiliates
-		"/dydxprotocol.affiliates.MsgUpdateAffiliateTiers":              &affiliates.MsgUpdateAffiliateTiers{},
-		"/dydxprotocol.affiliates.MsgUpdateAffiliateTiersResponse":      nil,
-		"/dydxprotocol.affiliates.MsgUpdateAffiliateWhitelist":          &affiliates.MsgUpdateAffiliateWhitelist{},
-		"/dydxprotocol.affiliates.MsgUpdateAffiliateWhitelistResponse":  nil,
-		"/dydxprotocol.affiliates.MsgUpdateAffiliateParameters":         &affiliates.MsgUpdateAffiliateParameters{},
-		"/dydxprotocol.affiliates.MsgUpdateAffiliateParametersResponse": nil,
-		"/dydxprotocol.affiliates.MsgUpdateAffiliateOverrides":          &affiliates.MsgUpdateAffiliateOverrides{},
-		"/dydxprotocol.affiliates.MsgUpdateAffiliateOverridesResponse":  nil,
+		"/tradeview.affiliates.MsgUpdateAffiliateTiers":              &affiliates.MsgUpdateAffiliateTiers{},
+		"/tradeview.affiliates.MsgUpdateAffiliateTiersResponse":      nil,
+		"/tradeview.affiliates.MsgUpdateAffiliateWhitelist":          &affiliates.MsgUpdateAffiliateWhitelist{},
+		"/tradeview.affiliates.MsgUpdateAffiliateWhitelistResponse":  nil,
+		"/tradeview.affiliates.MsgUpdateAffiliateParameters":         &affiliates.MsgUpdateAffiliateParameters{},
+		"/tradeview.affiliates.MsgUpdateAffiliateParametersResponse": nil,
+		"/tradeview.affiliates.MsgUpdateAffiliateOverrides":          &affiliates.MsgUpdateAffiliateOverrides{},
+		"/tradeview.affiliates.MsgUpdateAffiliateOverridesResponse":  nil,
 
 		// accountplus
-		"/dydxprotocol.accountplus.MsgSetActiveState":         &accountplus.MsgSetActiveState{},
-		"/dydxprotocol.accountplus.MsgSetActiveStateResponse": nil,
+		"/tradeview.accountplus.MsgSetActiveState":         &accountplus.MsgSetActiveState{},
+		"/tradeview.accountplus.MsgSetActiveStateResponse": nil,
 
 		// blocktime
-		"/dydxprotocol.blocktime.MsgUpdateDowntimeParams":          &blocktime.MsgUpdateDowntimeParams{},
-		"/dydxprotocol.blocktime.MsgUpdateDowntimeParamsResponse":  nil,
-		"/dydxprotocol.blocktime.MsgUpdateSynchronyParams":         &blocktime.MsgUpdateSynchronyParams{},
-		"/dydxprotocol.blocktime.MsgUpdateSynchronyParamsResponse": nil,
+		"/tradeview.blocktime.MsgUpdateDowntimeParams":          &blocktime.MsgUpdateDowntimeParams{},
+		"/tradeview.blocktime.MsgUpdateDowntimeParamsResponse":  nil,
+		"/tradeview.blocktime.MsgUpdateSynchronyParams":         &blocktime.MsgUpdateSynchronyParams{},
+		"/tradeview.blocktime.MsgUpdateSynchronyParamsResponse": nil,
 
 		// bridge
-		"/dydxprotocol.bridge.MsgCompleteBridge":              &bridge.MsgCompleteBridge{},
-		"/dydxprotocol.bridge.MsgCompleteBridgeResponse":      nil,
-		"/dydxprotocol.bridge.MsgUpdateEventParams":           &bridge.MsgUpdateEventParams{},
-		"/dydxprotocol.bridge.MsgUpdateEventParamsResponse":   nil,
-		"/dydxprotocol.bridge.MsgUpdateProposeParams":         &bridge.MsgUpdateProposeParams{},
-		"/dydxprotocol.bridge.MsgUpdateProposeParamsResponse": nil,
-		"/dydxprotocol.bridge.MsgUpdateSafetyParams":          &bridge.MsgUpdateSafetyParams{},
-		"/dydxprotocol.bridge.MsgUpdateSafetyParamsResponse":  nil,
+		"/tradeview.bridge.MsgCompleteBridge":              &bridge.MsgCompleteBridge{},
+		"/tradeview.bridge.MsgCompleteBridgeResponse":      nil,
+		"/tradeview.bridge.MsgUpdateEventParams":           &bridge.MsgUpdateEventParams{},
+		"/tradeview.bridge.MsgUpdateEventParamsResponse":   nil,
+		"/tradeview.bridge.MsgUpdateProposeParams":         &bridge.MsgUpdateProposeParams{},
+		"/tradeview.bridge.MsgUpdateProposeParamsResponse": nil,
+		"/tradeview.bridge.MsgUpdateSafetyParams":          &bridge.MsgUpdateSafetyParams{},
+		"/tradeview.bridge.MsgUpdateSafetyParamsResponse":  nil,
 
 		// clob
-		"/dydxprotocol.clob.MsgCreateClobPair":                             &clob.MsgCreateClobPair{},
-		"/dydxprotocol.clob.MsgCreateClobPairResponse":                     nil,
-		"/dydxprotocol.clob.MsgUpdateBlockRateLimitConfiguration":          &clob.MsgUpdateBlockRateLimitConfiguration{},
-		"/dydxprotocol.clob.MsgUpdateBlockRateLimitConfigurationResponse":  nil,
-		"/dydxprotocol.clob.MsgUpdateClobPair":                             &clob.MsgUpdateClobPair{},
-		"/dydxprotocol.clob.MsgUpdateClobPairResponse":                     nil,
-		"/dydxprotocol.clob.MsgUpdateEquityTierLimitConfiguration":         &clob.MsgUpdateEquityTierLimitConfiguration{},
-		"/dydxprotocol.clob.MsgUpdateEquityTierLimitConfigurationResponse": nil,
-		"/dydxprotocol.clob.MsgUpdateLiquidationsConfig":                   &clob.MsgUpdateLiquidationsConfig{},
-		"/dydxprotocol.clob.MsgUpdateLiquidationsConfigResponse":           nil,
+		"/tradeview.clob.MsgCreateClobPair":                             &clob.MsgCreateClobPair{},
+		"/tradeview.clob.MsgCreateClobPairResponse":                     nil,
+		"/tradeview.clob.MsgUpdateBlockRateLimitConfiguration":          &clob.MsgUpdateBlockRateLimitConfiguration{},
+		"/tradeview.clob.MsgUpdateBlockRateLimitConfigurationResponse":  nil,
+		"/tradeview.clob.MsgUpdateClobPair":                             &clob.MsgUpdateClobPair{},
+		"/tradeview.clob.MsgUpdateClobPairResponse":                     nil,
+		"/tradeview.clob.MsgUpdateEquityTierLimitConfiguration":         &clob.MsgUpdateEquityTierLimitConfiguration{},
+		"/tradeview.clob.MsgUpdateEquityTierLimitConfigurationResponse": nil,
+		"/tradeview.clob.MsgUpdateLiquidationsConfig":                   &clob.MsgUpdateLiquidationsConfig{},
+		"/tradeview.clob.MsgUpdateLiquidationsConfigResponse":           nil,
 
 		// delaymsg
-		"/dydxprotocol.delaymsg.MsgDelayMessage":         &delaymsg.MsgDelayMessage{},
-		"/dydxprotocol.delaymsg.MsgDelayMessageResponse": nil,
+		"/tradeview.delaymsg.MsgDelayMessage":         &delaymsg.MsgDelayMessage{},
+		"/tradeview.delaymsg.MsgDelayMessageResponse": nil,
 
 		// feetiers
-		"/dydxprotocol.feetiers.MsgUpdatePerpetualFeeParams":           &feetiers.MsgUpdatePerpetualFeeParams{},
-		"/dydxprotocol.feetiers.MsgUpdatePerpetualFeeParamsResponse":   nil,
-		"/dydxprotocol.feetiers.MsgSetMarketFeeDiscountParams":         &feetiers.MsgSetMarketFeeDiscountParams{},
-		"/dydxprotocol.feetiers.MsgSetMarketFeeDiscountParamsResponse": nil,
-		"/dydxprotocol.feetiers.MsgSetStakingTiers":                    &feetiers.MsgSetStakingTiers{},
-		"/dydxprotocol.feetiers.MsgSetStakingTiersResponse":            nil,
+		"/tradeview.feetiers.MsgUpdatePerpetualFeeParams":           &feetiers.MsgUpdatePerpetualFeeParams{},
+		"/tradeview.feetiers.MsgUpdatePerpetualFeeParamsResponse":   nil,
+		"/tradeview.feetiers.MsgSetMarketFeeDiscountParams":         &feetiers.MsgSetMarketFeeDiscountParams{},
+		"/tradeview.feetiers.MsgSetMarketFeeDiscountParamsResponse": nil,
+		"/tradeview.feetiers.MsgSetStakingTiers":                    &feetiers.MsgSetStakingTiers{},
+		"/tradeview.feetiers.MsgSetStakingTiersResponse":            nil,
 
 		// govplus
-		"/dydxprotocol.govplus.MsgSlashValidator":         &govplus.MsgSlashValidator{},
-		"/dydxprotocol.govplus.MsgSlashValidatorResponse": nil,
+		"/tradeview.govplus.MsgSlashValidator":         &govplus.MsgSlashValidator{},
+		"/tradeview.govplus.MsgSlashValidatorResponse": nil,
 
 		// listing
-		"/dydxprotocol.listing.MsgSetMarketsHardCap":                       &listing.MsgSetMarketsHardCap{},
-		"/dydxprotocol.listing.MsgSetMarketsHardCapResponse":               nil,
-		"/dydxprotocol.listing.MsgSetListingVaultDepositParams":            &listing.MsgSetListingVaultDepositParams{},
-		"/dydxprotocol.listing.MsgSetListingVaultDepositParamsResponse":    nil,
-		"/dydxprotocol.listing.MsgUpgradeIsolatedPerpetualToCross":         &listing.MsgUpgradeIsolatedPerpetualToCross{},
-		"/dydxprotocol.listing.MsgUpgradeIsolatedPerpetualToCrossResponse": nil,
+		"/tradeview.listing.MsgSetMarketsHardCap":                       &listing.MsgSetMarketsHardCap{},
+		"/tradeview.listing.MsgSetMarketsHardCapResponse":               nil,
+		"/tradeview.listing.MsgSetListingVaultDepositParams":            &listing.MsgSetListingVaultDepositParams{},
+		"/tradeview.listing.MsgSetListingVaultDepositParamsResponse":    nil,
+		"/tradeview.listing.MsgUpgradeIsolatedPerpetualToCross":         &listing.MsgUpgradeIsolatedPerpetualToCross{},
+		"/tradeview.listing.MsgUpgradeIsolatedPerpetualToCrossResponse": nil,
 
 		// perpetuals
-		"/dydxprotocol.perpetuals.MsgCreatePerpetual":               &perpetuals.MsgCreatePerpetual{},
-		"/dydxprotocol.perpetuals.MsgCreatePerpetualResponse":       nil,
-		"/dydxprotocol.perpetuals.MsgSetLiquidityTier":              &perpetuals.MsgSetLiquidityTier{},
-		"/dydxprotocol.perpetuals.MsgSetLiquidityTierResponse":      nil,
-		"/dydxprotocol.perpetuals.MsgUpdateParams":                  &perpetuals.MsgUpdateParams{},
-		"/dydxprotocol.perpetuals.MsgUpdateParamsResponse":          nil,
-		"/dydxprotocol.perpetuals.MsgUpdatePerpetualParams":         &perpetuals.MsgUpdatePerpetualParams{},
-		"/dydxprotocol.perpetuals.MsgUpdatePerpetualParamsResponse": nil,
+		"/tradeview.perpetuals.MsgCreatePerpetual":               &perpetuals.MsgCreatePerpetual{},
+		"/tradeview.perpetuals.MsgCreatePerpetualResponse":       nil,
+		"/tradeview.perpetuals.MsgSetLiquidityTier":              &perpetuals.MsgSetLiquidityTier{},
+		"/tradeview.perpetuals.MsgSetLiquidityTierResponse":      nil,
+		"/tradeview.perpetuals.MsgUpdateParams":                  &perpetuals.MsgUpdateParams{},
+		"/tradeview.perpetuals.MsgUpdateParamsResponse":          nil,
+		"/tradeview.perpetuals.MsgUpdatePerpetualParams":         &perpetuals.MsgUpdatePerpetualParams{},
+		"/tradeview.perpetuals.MsgUpdatePerpetualParamsResponse": nil,
 
 		// prices
-		"/dydxprotocol.prices.MsgCreateOracleMarket":         &prices.MsgCreateOracleMarket{},
-		"/dydxprotocol.prices.MsgCreateOracleMarketResponse": nil,
-		"/dydxprotocol.prices.MsgUpdateMarketParam":          &prices.MsgUpdateMarketParam{},
-		"/dydxprotocol.prices.MsgUpdateMarketParamResponse":  nil,
+		"/tradeview.prices.MsgCreateOracleMarket":         &prices.MsgCreateOracleMarket{},
+		"/tradeview.prices.MsgCreateOracleMarketResponse": nil,
+		"/tradeview.prices.MsgUpdateMarketParam":          &prices.MsgUpdateMarketParam{},
+		"/tradeview.prices.MsgUpdateMarketParamResponse":  nil,
 
 		// ratelimit
-		"/dydxprotocol.ratelimit.MsgSetLimitParams":         &ratelimit.MsgSetLimitParams{},
-		"/dydxprotocol.ratelimit.MsgSetLimitParamsResponse": nil,
+		"/tradeview.ratelimit.MsgSetLimitParams":         &ratelimit.MsgSetLimitParams{},
+		"/tradeview.ratelimit.MsgSetLimitParamsResponse": nil,
 
 		// revshare
-		"/dydxprotocol.revshare.MsgSetMarketMapperRevShareDetailsForMarket":         &revshare.MsgSetMarketMapperRevShareDetailsForMarket{}, //nolint:lll
-		"/dydxprotocol.revshare.MsgSetMarketMapperRevShareDetailsForMarketResponse": nil,
-		"/dydxprotocol.revshare.MsgSetMarketMapperRevenueShare":                     &revshare.MsgSetMarketMapperRevenueShare{}, //nolint:lll
-		"/dydxprotocol.revshare.MsgSetMarketMapperRevenueShareResponse":             nil,
-		"/dydxprotocol.revshare.MsgSetOrderRouterRevShare":                          &revshare.MsgSetOrderRouterRevShare{}, //nolint:lll
-		"/dydxprotocol.revshare.MsgSetOrderRouterRevShareResponse":                  nil,
-		"/dydxprotocol.revshare.MsgUpdateUnconditionalRevShareConfig":               &revshare.MsgUpdateUnconditionalRevShareConfig{}, //nolint:lll
-		"/dydxprotocol.revshare.MsgUpdateUnconditionalRevShareConfigResponse":       nil,
+		"/tradeview.revshare.MsgSetMarketMapperRevShareDetailsForMarket":         &revshare.MsgSetMarketMapperRevShareDetailsForMarket{}, //nolint:lll
+		"/tradeview.revshare.MsgSetMarketMapperRevShareDetailsForMarketResponse": nil,
+		"/tradeview.revshare.MsgSetMarketMapperRevenueShare":                     &revshare.MsgSetMarketMapperRevenueShare{}, //nolint:lll
+		"/tradeview.revshare.MsgSetMarketMapperRevenueShareResponse":             nil,
+		"/tradeview.revshare.MsgSetOrderRouterRevShare":                          &revshare.MsgSetOrderRouterRevShare{}, //nolint:lll
+		"/tradeview.revshare.MsgSetOrderRouterRevShareResponse":                  nil,
+		"/tradeview.revshare.MsgUpdateUnconditionalRevShareConfig":               &revshare.MsgUpdateUnconditionalRevShareConfig{}, //nolint:lll
+		"/tradeview.revshare.MsgUpdateUnconditionalRevShareConfigResponse":       nil,
 
 		// rewards
-		"/dydxprotocol.rewards.MsgUpdateParams":         &rewards.MsgUpdateParams{},
-		"/dydxprotocol.rewards.MsgUpdateParamsResponse": nil,
+		"/tradeview.rewards.MsgUpdateParams":         &rewards.MsgUpdateParams{},
+		"/tradeview.rewards.MsgUpdateParamsResponse": nil,
 
 		// sending
-		"/dydxprotocol.sending.MsgSendFromModuleToAccount":          &sending.MsgSendFromModuleToAccount{},
-		"/dydxprotocol.sending.MsgSendFromModuleToAccountResponse":  nil,
-		"/dydxprotocol.sending.MsgSendFromAccountToAccount":         &sending.MsgSendFromAccountToAccount{},
-		"/dydxprotocol.sending.MsgSendFromAccountToAccountResponse": nil,
+		"/tradeview.sending.MsgSendFromModuleToAccount":          &sending.MsgSendFromModuleToAccount{},
+		"/tradeview.sending.MsgSendFromModuleToAccountResponse":  nil,
+		"/tradeview.sending.MsgSendFromAccountToAccount":         &sending.MsgSendFromAccountToAccount{},
+		"/tradeview.sending.MsgSendFromAccountToAccountResponse": nil,
 
 		// stats
-		"/dydxprotocol.stats.MsgUpdateParams":         &stats.MsgUpdateParams{},
-		"/dydxprotocol.stats.MsgUpdateParamsResponse": nil,
+		"/tradeview.stats.MsgUpdateParams":         &stats.MsgUpdateParams{},
+		"/tradeview.stats.MsgUpdateParamsResponse": nil,
 
 		// vault
-		"/dydxprotocol.vault.MsgUnlockShares":                 &vault.MsgUnlockShares{},
-		"/dydxprotocol.vault.MsgUnlockSharesResponse":         nil,
-		"/dydxprotocol.vault.MsgUpdateOperatorParams":         &vault.MsgUpdateOperatorParams{},
-		"/dydxprotocol.vault.MsgUpdateOperatorParamsResponse": nil,
+		"/tradeview.vault.MsgUnlockShares":                 &vault.MsgUnlockShares{},
+		"/tradeview.vault.MsgUnlockSharesResponse":         nil,
+		"/tradeview.vault.MsgUpdateOperatorParams":         &vault.MsgUpdateOperatorParams{},
+		"/tradeview.vault.MsgUpdateOperatorParamsResponse": nil,
 
 		// vest
-		"/dydxprotocol.vest.MsgSetVestEntry":            &vest.MsgSetVestEntry{},
-		"/dydxprotocol.vest.MsgSetVestEntryResponse":    nil,
-		"/dydxprotocol.vest.MsgDeleteVestEntry":         &vest.MsgDeleteVestEntry{},
-		"/dydxprotocol.vest.MsgDeleteVestEntryResponse": nil,
+		"/tradeview.vest.MsgSetVestEntry":            &vest.MsgSetVestEntry{},
+		"/tradeview.vest.MsgSetVestEntryResponse":    nil,
+		"/tradeview.vest.MsgDeleteVestEntry":         &vest.MsgDeleteVestEntry{},
+		"/tradeview.vest.MsgDeleteVestEntryResponse": nil,
 	}
 )

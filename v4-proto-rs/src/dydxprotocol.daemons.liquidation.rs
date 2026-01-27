@@ -31,7 +31,7 @@ impl ::prost::Name for LiquidateSubaccountsRequest {
         "dydxprotocol.daemons.liquidation.LiquidateSubaccountsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.daemons.liquidation.LiquidateSubaccountsRequest".into()
+        "/tradeview.daemons.liquidation.LiquidateSubaccountsRequest".into()
     }
 }
 /// LiquidateSubaccountsResponse is a response message for
@@ -45,7 +45,7 @@ impl ::prost::Name for LiquidateSubaccountsResponse {
         "dydxprotocol.daemons.liquidation.LiquidateSubaccountsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.daemons.liquidation.LiquidateSubaccountsResponse".into()
+        "/tradeview.daemons.liquidation.LiquidateSubaccountsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -159,7 +159,7 @@ pub mod liquidation_service_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.daemons.liquidation.LiquidationService/LiquidateSubaccounts",
+                "/tradeview.daemons.liquidation.LiquidationService/LiquidateSubaccounts",
             );
             let mut req = request.into_request();
             req.extensions_mut()

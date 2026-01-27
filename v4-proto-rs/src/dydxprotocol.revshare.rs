@@ -22,7 +22,7 @@ impl ::prost::Name for MarketMapperRevenueShareParams {
         "dydxprotocol.revshare.MarketMapperRevenueShareParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MarketMapperRevenueShareParams".into()
+        "/tradeview.revshare.MarketMapperRevenueShareParams".into()
     }
 }
 /// GenesisState defines `x/revshare`'s genesis state.
@@ -38,7 +38,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.revshare.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.GenesisState".into()
+        "/tradeview.revshare.GenesisState".into()
     }
 }
 /// MarketMapperRevShareDetails specifies any details associated with the market
@@ -56,7 +56,7 @@ impl ::prost::Name for MarketMapperRevShareDetails {
         "dydxprotocol.revshare.MarketMapperRevShareDetails".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MarketMapperRevShareDetails".into()
+        "/tradeview.revshare.MarketMapperRevShareDetails".into()
     }
 }
 /// UnconditionalRevShareConfig stores recipients that
@@ -88,7 +88,7 @@ pub mod unconditional_rev_share_config {
             "dydxprotocol.revshare.UnconditionalRevShareConfig.RecipientConfig".into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.revshare.UnconditionalRevShareConfig.RecipientConfig".into()
+            "/tradeview.revshare.UnconditionalRevShareConfig.RecipientConfig".into()
         }
     }
 }
@@ -99,7 +99,7 @@ impl ::prost::Name for UnconditionalRevShareConfig {
         "dydxprotocol.revshare.UnconditionalRevShareConfig".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.UnconditionalRevShareConfig".into()
+        "/tradeview.revshare.UnconditionalRevShareConfig".into()
     }
 }
 /// Message to set the order router revenue share
@@ -119,7 +119,7 @@ impl ::prost::Name for OrderRouterRevShare {
         "dydxprotocol.revshare.OrderRouterRevShare".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.OrderRouterRevShare".into()
+        "/tradeview.revshare.OrderRouterRevShare".into()
     }
 }
 /// Queries for the default market mapper revenue share params
@@ -132,7 +132,7 @@ impl ::prost::Name for QueryMarketMapperRevenueShareParams {
         "dydxprotocol.revshare.QueryMarketMapperRevenueShareParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.QueryMarketMapperRevenueShareParams".into()
+        "/tradeview.revshare.QueryMarketMapperRevenueShareParams".into()
     }
 }
 /// Response type for QueryMarketMapperRevenueShareParams
@@ -148,7 +148,7 @@ impl ::prost::Name for QueryMarketMapperRevenueShareParamsResponse {
         "dydxprotocol.revshare.QueryMarketMapperRevenueShareParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.QueryMarketMapperRevenueShareParamsResponse".into()
+        "/tradeview.revshare.QueryMarketMapperRevenueShareParamsResponse".into()
     }
 }
 /// Queries market mapper revenue share details for a specific market
@@ -164,7 +164,7 @@ impl ::prost::Name for QueryMarketMapperRevShareDetails {
         "dydxprotocol.revshare.QueryMarketMapperRevShareDetails".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.QueryMarketMapperRevShareDetails".into()
+        "/tradeview.revshare.QueryMarketMapperRevShareDetails".into()
     }
 }
 /// Response type for QueryMarketMapperRevShareDetails
@@ -180,7 +180,7 @@ impl ::prost::Name for QueryMarketMapperRevShareDetailsResponse {
         "dydxprotocol.revshare.QueryMarketMapperRevShareDetailsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.QueryMarketMapperRevShareDetailsResponse".into()
+        "/tradeview.revshare.QueryMarketMapperRevShareDetailsResponse".into()
     }
 }
 /// Queries unconditional revenue share details
@@ -193,7 +193,7 @@ impl ::prost::Name for QueryUnconditionalRevShareConfig {
         "dydxprotocol.revshare.QueryUnconditionalRevShareConfig".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.QueryUnconditionalRevShareConfig".into()
+        "/tradeview.revshare.QueryUnconditionalRevShareConfig".into()
     }
 }
 /// Response type for QueryUnconditionalRevShareConfig
@@ -209,7 +209,7 @@ impl ::prost::Name for QueryUnconditionalRevShareConfigResponse {
         "dydxprotocol.revshare.QueryUnconditionalRevShareConfigResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.QueryUnconditionalRevShareConfigResponse".into()
+        "/tradeview.revshare.QueryUnconditionalRevShareConfigResponse".into()
     }
 }
 /// Queries order router rev shares
@@ -225,7 +225,7 @@ impl ::prost::Name for QueryOrderRouterRevShare {
         "dydxprotocol.revshare.QueryOrderRouterRevShare".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.QueryOrderRouterRevShare".into()
+        "/tradeview.revshare.QueryOrderRouterRevShare".into()
     }
 }
 /// Response type for QueryOrderRouterRevShare
@@ -241,7 +241,7 @@ impl ::prost::Name for QueryOrderRouterRevShareResponse {
         "dydxprotocol.revshare.QueryOrderRouterRevShareResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.QueryOrderRouterRevShareResponse".into()
+        "/tradeview.revshare.QueryOrderRouterRevShareResponse".into()
     }
 }
 /// Generated client implementations.
@@ -356,7 +356,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.revshare.Query/MarketMapperRevenueShareParams",
+                "/tradeview.revshare.Query/MarketMapperRevenueShareParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -386,7 +386,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.revshare.Query/MarketMapperRevShareDetails",
+                "/tradeview.revshare.Query/MarketMapperRevShareDetails",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -416,7 +416,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.revshare.Query/UnconditionalRevShareConfig",
+                "/tradeview.revshare.Query/UnconditionalRevShareConfig",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -446,7 +446,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.revshare.Query/OrderRouterRevShare",
+                "/tradeview.revshare.Query/OrderRouterRevShare",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -473,7 +473,7 @@ impl ::prost::Name for MsgSetMarketMapperRevenueShare {
         "dydxprotocol.revshare.MsgSetMarketMapperRevenueShare".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MsgSetMarketMapperRevenueShare".into()
+        "/tradeview.revshare.MsgSetMarketMapperRevenueShare".into()
     }
 }
 /// Response to a MsgSetMarketMapperRevenueShare
@@ -486,7 +486,7 @@ impl ::prost::Name for MsgSetMarketMapperRevenueShareResponse {
         "dydxprotocol.revshare.MsgSetMarketMapperRevenueShareResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MsgSetMarketMapperRevenueShareResponse".into()
+        "/tradeview.revshare.MsgSetMarketMapperRevenueShareResponse".into()
     }
 }
 /// Msg to set market mapper revenue share details (e.g. expiration timestamp)
@@ -510,7 +510,7 @@ impl ::prost::Name for MsgSetMarketMapperRevShareDetailsForMarket {
         "dydxprotocol.revshare.MsgSetMarketMapperRevShareDetailsForMarket".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MsgSetMarketMapperRevShareDetailsForMarket".into()
+        "/tradeview.revshare.MsgSetMarketMapperRevShareDetailsForMarket".into()
     }
 }
 /// Response to a MsgSetMarketMapperRevShareDetailsForMarket
@@ -523,7 +523,7 @@ impl ::prost::Name for MsgSetMarketMapperRevShareDetailsForMarketResponse {
         "dydxprotocol.revshare.MsgSetMarketMapperRevShareDetailsForMarketResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MsgSetMarketMapperRevShareDetailsForMarketResponse"
+        "/tradeview.revshare.MsgSetMarketMapperRevShareDetailsForMarketResponse"
             .into()
     }
 }
@@ -543,7 +543,7 @@ impl ::prost::Name for MsgUpdateUnconditionalRevShareConfig {
         "dydxprotocol.revshare.MsgUpdateUnconditionalRevShareConfig".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MsgUpdateUnconditionalRevShareConfig".into()
+        "/tradeview.revshare.MsgUpdateUnconditionalRevShareConfig".into()
     }
 }
 /// Response to MsgUpdateUnconditionalRevShareConfig
@@ -556,7 +556,7 @@ impl ::prost::Name for MsgUpdateUnconditionalRevShareConfigResponse {
         "dydxprotocol.revshare.MsgUpdateUnconditionalRevShareConfigResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MsgUpdateUnconditionalRevShareConfigResponse".into()
+        "/tradeview.revshare.MsgUpdateUnconditionalRevShareConfigResponse".into()
     }
 }
 /// Governance message to create or update the order router revenue share
@@ -575,7 +575,7 @@ impl ::prost::Name for MsgSetOrderRouterRevShare {
         "dydxprotocol.revshare.MsgSetOrderRouterRevShare".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MsgSetOrderRouterRevShare".into()
+        "/tradeview.revshare.MsgSetOrderRouterRevShare".into()
     }
 }
 /// Response to MsgSetOrderRouterRevShare
@@ -588,7 +588,7 @@ impl ::prost::Name for MsgSetOrderRouterRevShareResponse {
         "dydxprotocol.revshare.MsgSetOrderRouterRevShareResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.revshare.MsgSetOrderRouterRevShareResponse".into()
+        "/tradeview.revshare.MsgSetOrderRouterRevShareResponse".into()
     }
 }
 /// Generated client implementations.
@@ -703,7 +703,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.revshare.Msg/SetMarketMapperRevenueShare",
+                "/tradeview.revshare.Msg/SetMarketMapperRevenueShare",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -736,7 +736,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.revshare.Msg/SetMarketMapperRevShareDetailsForMarket",
+                "/tradeview.revshare.Msg/SetMarketMapperRevShareDetailsForMarket",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -766,7 +766,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.revshare.Msg/UpdateUnconditionalRevShareConfig",
+                "/tradeview.revshare.Msg/UpdateUnconditionalRevShareConfig",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -796,7 +796,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.revshare.Msg/SetOrderRouterRevShare",
+                "/tradeview.revshare.Msg/SetOrderRouterRevShare",
             );
             let mut req = request.into_request();
             req.extensions_mut()

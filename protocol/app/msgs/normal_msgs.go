@@ -215,55 +215,55 @@ var (
 	// Custom modules
 	NormalMsgsDydxCustom = map[string]sdk.Msg{
 		// affiliates
-		"/dydxprotocol.affiliates.MsgRegisterAffiliate":         &affiliates.MsgRegisterAffiliate{},
-		"/dydxprotocol.affiliates.MsgRegisterAffiliateResponse": nil,
+		"/tradeview.affiliates.MsgRegisterAffiliate":         &affiliates.MsgRegisterAffiliate{},
+		"/tradeview.affiliates.MsgRegisterAffiliateResponse": nil,
 
 		// accountplus
-		"/dydxprotocol.accountplus.MsgAddAuthenticator":            &accountplus.MsgAddAuthenticator{},
-		"/dydxprotocol.accountplus.MsgAddAuthenticatorResponse":    nil,
-		"/dydxprotocol.accountplus.MsgRemoveAuthenticator":         &accountplus.MsgRemoveAuthenticator{},
-		"/dydxprotocol.accountplus.MsgRemoveAuthenticatorResponse": nil,
-		"/dydxprotocol.accountplus.TxExtension":                    nil,
+		"/tradeview.accountplus.MsgAddAuthenticator":            &accountplus.MsgAddAuthenticator{},
+		"/tradeview.accountplus.MsgAddAuthenticatorResponse":    nil,
+		"/tradeview.accountplus.MsgRemoveAuthenticator":         &accountplus.MsgRemoveAuthenticator{},
+		"/tradeview.accountplus.MsgRemoveAuthenticatorResponse": nil,
+		"/tradeview.accountplus.TxExtension":                    nil,
 
 		// clob
-		"/dydxprotocol.clob.MsgBatchCancel":            &clob.MsgBatchCancel{},
-		"/dydxprotocol.clob.MsgBatchCancelResponse":    nil,
-		"/dydxprotocol.clob.MsgCancelOrder":            &clob.MsgCancelOrder{},
-		"/dydxprotocol.clob.MsgCancelOrderResponse":    nil,
-		"/dydxprotocol.clob.MsgPlaceOrder":             &clob.MsgPlaceOrder{},
-		"/dydxprotocol.clob.MsgPlaceOrderResponse":     nil,
-		"/dydxprotocol.clob.MsgUpdateLeverage":         &clob.MsgUpdateLeverage{},
-		"/dydxprotocol.clob.MsgUpdateLeverageResponse": nil,
+		"/tradeview.clob.MsgBatchCancel":            &clob.MsgBatchCancel{},
+		"/tradeview.clob.MsgBatchCancelResponse":    nil,
+		"/tradeview.clob.MsgCancelOrder":            &clob.MsgCancelOrder{},
+		"/tradeview.clob.MsgCancelOrderResponse":    nil,
+		"/tradeview.clob.MsgPlaceOrder":             &clob.MsgPlaceOrder{},
+		"/tradeview.clob.MsgPlaceOrderResponse":     nil,
+		"/tradeview.clob.MsgUpdateLeverage":         &clob.MsgUpdateLeverage{},
+		"/tradeview.clob.MsgUpdateLeverageResponse": nil,
 
 		// listing
-		"/dydxprotocol.listing.MsgCreateMarketPermissionless":         &listing.MsgCreateMarketPermissionless{},
-		"/dydxprotocol.listing.MsgCreateMarketPermissionlessResponse": nil,
+		"/tradeview.listing.MsgCreateMarketPermissionless":         &listing.MsgCreateMarketPermissionless{},
+		"/tradeview.listing.MsgCreateMarketPermissionlessResponse": nil,
 
 		// perpetuals
 
 		// prices
 
 		// sending
-		"/dydxprotocol.sending.MsgCreateTransfer":                 &sending.MsgCreateTransfer{},
-		"/dydxprotocol.sending.MsgCreateTransferResponse":         nil,
-		"/dydxprotocol.sending.MsgDepositToSubaccount":            &sending.MsgDepositToSubaccount{},
-		"/dydxprotocol.sending.MsgDepositToSubaccountResponse":    nil,
-		"/dydxprotocol.sending.MsgWithdrawFromSubaccount":         &sending.MsgWithdrawFromSubaccount{},
-		"/dydxprotocol.sending.MsgWithdrawFromSubaccountResponse": nil,
+		"/tradeview.sending.MsgCreateTransfer":                 &sending.MsgCreateTransfer{},
+		"/tradeview.sending.MsgCreateTransferResponse":         nil,
+		"/tradeview.sending.MsgDepositToSubaccount":            &sending.MsgDepositToSubaccount{},
+		"/tradeview.sending.MsgDepositToSubaccountResponse":    nil,
+		"/tradeview.sending.MsgWithdrawFromSubaccount":         &sending.MsgWithdrawFromSubaccount{},
+		"/tradeview.sending.MsgWithdrawFromSubaccountResponse": nil,
 
 		// vault
-		"/dydxprotocol.vault.MsgAllocateToVault":                    &vault.MsgAllocateToVault{},
-		"/dydxprotocol.vault.MsgAllocateToVaultResponse":            nil,
-		"/dydxprotocol.vault.MsgDepositToMegavault":                 &vault.MsgDepositToMegavault{},
-		"/dydxprotocol.vault.MsgDepositToMegavaultResponse":         nil,
-		"/dydxprotocol.vault.MsgRetrieveFromVault":                  &vault.MsgRetrieveFromVault{},
-		"/dydxprotocol.vault.MsgRetrieveFromVaultResponse":          nil,
-		"/dydxprotocol.vault.MsgSetVaultParams":                     &vault.MsgSetVaultParams{},
-		"/dydxprotocol.vault.MsgSetVaultParamsResponse":             nil,
-		"/dydxprotocol.vault.MsgUpdateDefaultQuotingParams":         &vault.MsgUpdateDefaultQuotingParams{},
-		"/dydxprotocol.vault.MsgUpdateDefaultQuotingParamsResponse": nil,
-		"/dydxprotocol.vault.MsgWithdrawFromMegavault":              &vault.MsgWithdrawFromMegavault{},
-		"/dydxprotocol.vault.MsgWithdrawFromMegavaultResponse":      nil,
+		"/tradeview.vault.MsgAllocateToVault":                    &vault.MsgAllocateToVault{},
+		"/tradeview.vault.MsgAllocateToVaultResponse":            nil,
+		"/tradeview.vault.MsgDepositToMegavault":                 &vault.MsgDepositToMegavault{},
+		"/tradeview.vault.MsgDepositToMegavaultResponse":         nil,
+		"/tradeview.vault.MsgRetrieveFromVault":                  &vault.MsgRetrieveFromVault{},
+		"/tradeview.vault.MsgRetrieveFromVaultResponse":          nil,
+		"/tradeview.vault.MsgSetVaultParams":                     &vault.MsgSetVaultParams{},
+		"/tradeview.vault.MsgSetVaultParamsResponse":             nil,
+		"/tradeview.vault.MsgUpdateDefaultQuotingParams":         &vault.MsgUpdateDefaultQuotingParams{},
+		"/tradeview.vault.MsgUpdateDefaultQuotingParamsResponse": nil,
+		"/tradeview.vault.MsgWithdrawFromMegavault":              &vault.MsgWithdrawFromMegavault{},
+		"/tradeview.vault.MsgWithdrawFromMegavaultResponse":      nil,
 	}
 
 	NormalMsgsSlinky = map[string]sdk.Msg{

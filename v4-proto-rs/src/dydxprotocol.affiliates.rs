@@ -28,7 +28,7 @@ pub mod affiliate_tiers {
             "dydxprotocol.affiliates.AffiliateTiers.Tier".into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.affiliates.AffiliateTiers.Tier".into()
+            "/tradeview.affiliates.AffiliateTiers.Tier".into()
         }
     }
 }
@@ -39,7 +39,7 @@ impl ::prost::Name for AffiliateTiers {
         "dydxprotocol.affiliates.AffiliateTiers".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.AffiliateTiers".into()
+        "/tradeview.affiliates.AffiliateTiers".into()
     }
 }
 /// AffiliateWhitelist specifies the whitelisted affiliates.
@@ -70,7 +70,7 @@ pub mod affiliate_whitelist {
             "dydxprotocol.affiliates.AffiliateWhitelist.Tier".into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.affiliates.AffiliateWhitelist.Tier".into()
+            "/tradeview.affiliates.AffiliateWhitelist.Tier".into()
         }
     }
 }
@@ -81,7 +81,7 @@ impl ::prost::Name for AffiliateWhitelist {
         "dydxprotocol.affiliates.AffiliateWhitelist".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.AffiliateWhitelist".into()
+        "/tradeview.affiliates.AffiliateWhitelist".into()
     }
 }
 /// GenesisState defines generis state of `x/affiliates`
@@ -98,7 +98,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.affiliates.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.GenesisState".into()
+        "/tradeview.affiliates.GenesisState".into()
     }
 }
 /// AffiliateInfoRequest is the request type for the Query/AffiliateInfo RPC
@@ -115,7 +115,7 @@ impl ::prost::Name for AffiliateInfoRequest {
         "dydxprotocol.affiliates.AffiliateInfoRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.AffiliateInfoRequest".into()
+        "/tradeview.affiliates.AffiliateInfoRequest".into()
     }
 }
 /// AffiliateInfoResponse is the response type for the Query/AffiliateInfo RPC
@@ -147,7 +147,7 @@ impl ::prost::Name for AffiliateInfoResponse {
         "dydxprotocol.affiliates.AffiliateInfoResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.AffiliateInfoResponse".into()
+        "/tradeview.affiliates.AffiliateInfoResponse".into()
     }
 }
 /// ReferredByRequest is the request type for the Query/ReferredBy RPC method.
@@ -164,7 +164,7 @@ impl ::prost::Name for ReferredByRequest {
         "dydxprotocol.affiliates.ReferredByRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.ReferredByRequest".into()
+        "/tradeview.affiliates.ReferredByRequest".into()
     }
 }
 /// ReferredByResponse is the response type for the Query/ReferredBy RPC method.
@@ -181,7 +181,7 @@ impl ::prost::Name for ReferredByResponse {
         "dydxprotocol.affiliates.ReferredByResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.ReferredByResponse".into()
+        "/tradeview.affiliates.ReferredByResponse".into()
     }
 }
 /// AllAffiliateTiersRequest is the request type for the Query/AllAffiliateTiers
@@ -195,7 +195,7 @@ impl ::prost::Name for AllAffiliateTiersRequest {
         "dydxprotocol.affiliates.AllAffiliateTiersRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.AllAffiliateTiersRequest".into()
+        "/tradeview.affiliates.AllAffiliateTiersRequest".into()
     }
 }
 /// AllAffiliateTiersResponse is the response type for the
@@ -213,7 +213,7 @@ impl ::prost::Name for AllAffiliateTiersResponse {
         "dydxprotocol.affiliates.AllAffiliateTiersResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.AllAffiliateTiersResponse".into()
+        "/tradeview.affiliates.AllAffiliateTiersResponse".into()
     }
 }
 /// AffiliateWhitelistRequest is the request type for the
@@ -227,7 +227,7 @@ impl ::prost::Name for AffiliateWhitelistRequest {
         "dydxprotocol.affiliates.AffiliateWhitelistRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.AffiliateWhitelistRequest".into()
+        "/tradeview.affiliates.AffiliateWhitelistRequest".into()
     }
 }
 /// AffiliateWhitelistResponse is the response type for the
@@ -244,7 +244,7 @@ impl ::prost::Name for AffiliateWhitelistResponse {
         "dydxprotocol.affiliates.AffiliateWhitelistResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.AffiliateWhitelistResponse".into()
+        "/tradeview.affiliates.AffiliateWhitelistResponse".into()
     }
 }
 /// Generated client implementations.
@@ -358,7 +358,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.affiliates.Query/AffiliateInfo",
+                "/tradeview.affiliates.Query/AffiliateInfo",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -385,7 +385,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.affiliates.Query/ReferredBy",
+                "/tradeview.affiliates.Query/ReferredBy",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -410,7 +410,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.affiliates.Query/AllAffiliateTiers",
+                "/tradeview.affiliates.Query/AllAffiliateTiers",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -437,7 +437,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.affiliates.Query/AffiliateWhitelist",
+                "/tradeview.affiliates.Query/AffiliateWhitelist",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -468,7 +468,7 @@ impl ::prost::Name for MsgRegisterAffiliate {
         "dydxprotocol.affiliates.MsgRegisterAffiliate".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.MsgRegisterAffiliate".into()
+        "/tradeview.affiliates.MsgRegisterAffiliate".into()
     }
 }
 /// Response to MsgRegisterAffiliate
@@ -481,7 +481,7 @@ impl ::prost::Name for MsgRegisterAffiliateResponse {
         "dydxprotocol.affiliates.MsgRegisterAffiliateResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.MsgRegisterAffiliateResponse".into()
+        "/tradeview.affiliates.MsgRegisterAffiliateResponse".into()
     }
 }
 /// Message to update affiliate tiers
@@ -501,7 +501,7 @@ impl ::prost::Name for MsgUpdateAffiliateTiers {
         "dydxprotocol.affiliates.MsgUpdateAffiliateTiers".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.MsgUpdateAffiliateTiers".into()
+        "/tradeview.affiliates.MsgUpdateAffiliateTiers".into()
     }
 }
 /// Response to MsgUpdateAffiliateTiers
@@ -514,7 +514,7 @@ impl ::prost::Name for MsgUpdateAffiliateTiersResponse {
         "dydxprotocol.affiliates.MsgUpdateAffiliateTiersResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.MsgUpdateAffiliateTiersResponse".into()
+        "/tradeview.affiliates.MsgUpdateAffiliateTiersResponse".into()
     }
 }
 /// Message to update affiliate whitelist
@@ -534,7 +534,7 @@ impl ::prost::Name for MsgUpdateAffiliateWhitelist {
         "dydxprotocol.affiliates.MsgUpdateAffiliateWhitelist".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.MsgUpdateAffiliateWhitelist".into()
+        "/tradeview.affiliates.MsgUpdateAffiliateWhitelist".into()
     }
 }
 /// Response to MsgUpdateAffiliateWhitelist
@@ -547,7 +547,7 @@ impl ::prost::Name for MsgUpdateAffiliateWhitelistResponse {
         "dydxprotocol.affiliates.MsgUpdateAffiliateWhitelistResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.affiliates.MsgUpdateAffiliateWhitelistResponse".into()
+        "/tradeview.affiliates.MsgUpdateAffiliateWhitelistResponse".into()
     }
 }
 /// Generated client implementations.
@@ -661,7 +661,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.affiliates.Msg/RegisterAffiliate",
+                "/tradeview.affiliates.Msg/RegisterAffiliate",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -688,7 +688,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.affiliates.Msg/UpdateAffiliateTiers",
+                "/tradeview.affiliates.Msg/UpdateAffiliateTiers",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -718,7 +718,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.affiliates.Msg/UpdateAffiliateWhitelist",
+                "/tradeview.affiliates.Msg/UpdateAffiliateWhitelist",
             );
             let mut req = request.into_request();
             req.extensions_mut()

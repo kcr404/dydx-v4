@@ -20,8 +20,8 @@ func TestUnsupportedMsgSamples_Key(t *testing.T) {
 		"/cosmos.gov.v1beta1.MsgSubmitProposal",
 		"/cosmos.gov.v1beta1.MsgSubmitProposalResponse",
 
-		"/dydxprotocol.vault.MsgSetVaultQuotingParams",
-		"/dydxprotocol.vault.MsgUpdateParams",
+		"/tradeview.vault.MsgSetVaultQuotingParams",
+		"/tradeview.vault.MsgUpdateParams",
 
 		// ICA Controller messages
 		"/ibc.applications.interchain_accounts.controller.v1.MsgRegisterInterchainAccount",

@@ -28,7 +28,7 @@ echo ""
 
 # Get oracle price
 echo "Step 2: Getting oracle price..."
-ORACLE_PRICE=$(curl -s http://localhost:26657/abci_query?path=%22/dydxprotocol.prices.Query/AllMarketPrices%22 2>/dev/null | jq -r '.result.response.value' | base64 -d 2>/dev/null | head -c 50 || echo "N/A")
+ORACLE_PRICE=$(curl -s http://localhost:26657/abci_query?path=%22/tradeview.prices.Query/AllMarketPrices%22 2>/dev/null | jq -r '.result.response.value' | base64 -d 2>/dev/null | head -c 50 || echo "N/A")
 echo "   Oracle data available: $([ ! -z "$ORACLE_PRICE" ] && echo "Yes" || echo "No")"
 echo ""
 

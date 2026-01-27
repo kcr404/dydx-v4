@@ -28,7 +28,7 @@ impl ::prost::Name for VestEntry {
         "dydxprotocol.vest.VestEntry".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vest.VestEntry".into()
+        "/tradeview.vest.VestEntry".into()
     }
 }
 /// GenesisState defines the vest module's genesis state.
@@ -45,7 +45,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.vest.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vest.GenesisState".into()
+        "/tradeview.vest.GenesisState".into()
     }
 }
 /// QueryVestEntryRequest is a request type for the VestEntry RPC method.
@@ -61,7 +61,7 @@ impl ::prost::Name for QueryVestEntryRequest {
         "dydxprotocol.vest.QueryVestEntryRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vest.QueryVestEntryRequest".into()
+        "/tradeview.vest.QueryVestEntryRequest".into()
     }
 }
 /// QueryVestEntryResponse is a response type for the VestEntry RPC method.
@@ -77,7 +77,7 @@ impl ::prost::Name for QueryVestEntryResponse {
         "dydxprotocol.vest.QueryVestEntryResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vest.QueryVestEntryResponse".into()
+        "/tradeview.vest.QueryVestEntryResponse".into()
     }
 }
 /// Generated client implementations.
@@ -191,7 +191,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vest.Query/VestEntry",
+                "/tradeview.vest.Query/VestEntry",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -217,7 +217,7 @@ impl ::prost::Name for MsgDeleteVestEntry {
         "dydxprotocol.vest.MsgDeleteVestEntry".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vest.MsgDeleteVestEntry".into()
+        "/tradeview.vest.MsgDeleteVestEntry".into()
     }
 }
 /// MsgDeleteVestEntryResponse is the Msg/DeleteVestEntry response type.
@@ -230,7 +230,7 @@ impl ::prost::Name for MsgDeleteVestEntryResponse {
         "dydxprotocol.vest.MsgDeleteVestEntryResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vest.MsgDeleteVestEntryResponse".into()
+        "/tradeview.vest.MsgDeleteVestEntryResponse".into()
     }
 }
 /// MsgSetVestEntry is the Msg/SetVestEntry request type.
@@ -250,7 +250,7 @@ impl ::prost::Name for MsgSetVestEntry {
         "dydxprotocol.vest.MsgSetVestEntry".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vest.MsgSetVestEntry".into()
+        "/tradeview.vest.MsgSetVestEntry".into()
     }
 }
 /// MsgSetVestEntryResponse is the Msg/SetVestEntry response type.
@@ -263,7 +263,7 @@ impl ::prost::Name for MsgSetVestEntryResponse {
         "dydxprotocol.vest.MsgSetVestEntryResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vest.MsgSetVestEntryResponse".into()
+        "/tradeview.vest.MsgSetVestEntryResponse".into()
     }
 }
 /// Generated client implementations.
@@ -377,7 +377,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vest.Msg/SetVestEntry",
+                "/tradeview.vest.Msg/SetVestEntry",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -402,7 +402,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vest.Msg/DeleteVestEntry",
+                "/tradeview.vest.Msg/DeleteVestEntry",
             );
             let mut req = request.into_request();
             req.extensions_mut()

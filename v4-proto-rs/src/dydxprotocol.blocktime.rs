@@ -14,7 +14,7 @@ impl ::prost::Name for BlockInfo {
         "dydxprotocol.blocktime.BlockInfo".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.BlockInfo".into()
+        "/tradeview.blocktime.BlockInfo".into()
     }
 }
 /// AllDowntimeInfo stores information for all downtime durations.
@@ -43,7 +43,7 @@ pub mod all_downtime_info {
             "dydxprotocol.blocktime.AllDowntimeInfo.DowntimeInfo".into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.blocktime.AllDowntimeInfo.DowntimeInfo".into()
+            "/tradeview.blocktime.AllDowntimeInfo.DowntimeInfo".into()
         }
     }
 }
@@ -54,7 +54,7 @@ impl ::prost::Name for AllDowntimeInfo {
         "dydxprotocol.blocktime.AllDowntimeInfo".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.AllDowntimeInfo".into()
+        "/tradeview.blocktime.AllDowntimeInfo".into()
     }
 }
 /// DowntimeParams defines the parameters for downtime.
@@ -72,7 +72,7 @@ impl ::prost::Name for DowntimeParams {
         "dydxprotocol.blocktime.DowntimeParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.DowntimeParams".into()
+        "/tradeview.blocktime.DowntimeParams".into()
     }
 }
 /// SynchronyParams defines the parameters for block synchrony.
@@ -94,7 +94,7 @@ impl ::prost::Name for SynchronyParams {
         "dydxprotocol.blocktime.SynchronyParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.SynchronyParams".into()
+        "/tradeview.blocktime.SynchronyParams".into()
     }
 }
 /// GenesisState defines the blocktime module's genesis state.
@@ -110,7 +110,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.blocktime.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.GenesisState".into()
+        "/tradeview.blocktime.GenesisState".into()
     }
 }
 /// QuerySynchronyParamsRequest is a request type for the SynchronyParams
@@ -123,7 +123,7 @@ impl ::prost::Name for QuerySynchronyParamsRequest {
         "dydxprotocol.blocktime.QuerySynchronyParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.QuerySynchronyParamsRequest".into()
+        "/tradeview.blocktime.QuerySynchronyParamsRequest".into()
     }
 }
 /// QuerySynchronyParamsResponse is a response type for the SynchronyParams
@@ -139,7 +139,7 @@ impl ::prost::Name for QuerySynchronyParamsResponse {
         "dydxprotocol.blocktime.QuerySynchronyParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.QuerySynchronyParamsResponse".into()
+        "/tradeview.blocktime.QuerySynchronyParamsResponse".into()
     }
 }
 /// QueryDowntimeParamsRequest is a request type for the DowntimeParams
@@ -153,7 +153,7 @@ impl ::prost::Name for QueryDowntimeParamsRequest {
         "dydxprotocol.blocktime.QueryDowntimeParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.QueryDowntimeParamsRequest".into()
+        "/tradeview.blocktime.QueryDowntimeParamsRequest".into()
     }
 }
 /// QueryDowntimeParamsResponse is a response type for the DowntimeParams
@@ -170,7 +170,7 @@ impl ::prost::Name for QueryDowntimeParamsResponse {
         "dydxprotocol.blocktime.QueryDowntimeParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.QueryDowntimeParamsResponse".into()
+        "/tradeview.blocktime.QueryDowntimeParamsResponse".into()
     }
 }
 /// QueryPreviousBlockInfoRequest is a request type for the PreviousBlockInfo
@@ -184,7 +184,7 @@ impl ::prost::Name for QueryPreviousBlockInfoRequest {
         "dydxprotocol.blocktime.QueryPreviousBlockInfoRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.QueryPreviousBlockInfoRequest".into()
+        "/tradeview.blocktime.QueryPreviousBlockInfoRequest".into()
     }
 }
 /// QueryPreviousBlockInfoResponse is a request type for the PreviousBlockInfo
@@ -201,7 +201,7 @@ impl ::prost::Name for QueryPreviousBlockInfoResponse {
         "dydxprotocol.blocktime.QueryPreviousBlockInfoResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.QueryPreviousBlockInfoResponse".into()
+        "/tradeview.blocktime.QueryPreviousBlockInfoResponse".into()
     }
 }
 /// QueryAllDowntimeInfoRequest is a request type for the AllDowntimeInfo
@@ -215,7 +215,7 @@ impl ::prost::Name for QueryAllDowntimeInfoRequest {
         "dydxprotocol.blocktime.QueryAllDowntimeInfoRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.QueryAllDowntimeInfoRequest".into()
+        "/tradeview.blocktime.QueryAllDowntimeInfoRequest".into()
     }
 }
 /// QueryAllDowntimeInfoResponse is a request type for the AllDowntimeInfo
@@ -232,7 +232,7 @@ impl ::prost::Name for QueryAllDowntimeInfoResponse {
         "dydxprotocol.blocktime.QueryAllDowntimeInfoResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.QueryAllDowntimeInfoResponse".into()
+        "/tradeview.blocktime.QueryAllDowntimeInfoResponse".into()
     }
 }
 /// Generated client implementations.
@@ -346,7 +346,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.blocktime.Query/DowntimeParams",
+                "/tradeview.blocktime.Query/DowntimeParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -373,7 +373,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.blocktime.Query/PreviousBlockInfo",
+                "/tradeview.blocktime.Query/PreviousBlockInfo",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -400,7 +400,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.blocktime.Query/AllDowntimeInfo",
+                "/tradeview.blocktime.Query/AllDowntimeInfo",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -427,7 +427,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.blocktime.Query/SynchronyParams",
+                "/tradeview.blocktime.Query/SynchronyParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -454,7 +454,7 @@ impl ::prost::Name for MsgUpdateDowntimeParams {
         "dydxprotocol.blocktime.MsgUpdateDowntimeParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.MsgUpdateDowntimeParams".into()
+        "/tradeview.blocktime.MsgUpdateDowntimeParams".into()
     }
 }
 /// MsgUpdateDowntimeParamsResponse is the Msg/UpdateDowntimeParams response
@@ -468,7 +468,7 @@ impl ::prost::Name for MsgUpdateDowntimeParamsResponse {
         "dydxprotocol.blocktime.MsgUpdateDowntimeParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.MsgUpdateDowntimeParamsResponse".into()
+        "/tradeview.blocktime.MsgUpdateDowntimeParamsResponse".into()
     }
 }
 /// MsgUpdateSynchronyParams is the Msg/UpdateSynchronyParams request type.
@@ -487,7 +487,7 @@ impl ::prost::Name for MsgUpdateSynchronyParams {
         "dydxprotocol.blocktime.MsgUpdateSynchronyParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.MsgUpdateSynchronyParams".into()
+        "/tradeview.blocktime.MsgUpdateSynchronyParams".into()
     }
 }
 /// MsgUpdateSynchronyParamsResponse is the Msg/UpdateSynchronyParams response
@@ -501,7 +501,7 @@ impl ::prost::Name for MsgUpdateSynchronyParamsResponse {
         "dydxprotocol.blocktime.MsgUpdateSynchronyParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.blocktime.MsgUpdateSynchronyParamsResponse".into()
+        "/tradeview.blocktime.MsgUpdateSynchronyParamsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -615,7 +615,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.blocktime.Msg/UpdateDowntimeParams",
+                "/tradeview.blocktime.Msg/UpdateDowntimeParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -642,7 +642,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.blocktime.Msg/UpdateSynchronyParams",
+                "/tradeview.blocktime.Msg/UpdateSynchronyParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()

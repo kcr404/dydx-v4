@@ -15,7 +15,7 @@ impl ::prost::Name for BlockMessageIds {
         "dydxprotocol.delaymsg.BlockMessageIds".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.BlockMessageIds".into()
+        "/tradeview.delaymsg.BlockMessageIds".into()
     }
 }
 /// DelayedMessage is a message that is delayed until a certain block height.
@@ -38,7 +38,7 @@ impl ::prost::Name for DelayedMessage {
         "dydxprotocol.delaymsg.DelayedMessage".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.DelayedMessage".into()
+        "/tradeview.delaymsg.DelayedMessage".into()
     }
 }
 /// GenesisState defines the delaymsg module's genesis state.
@@ -58,7 +58,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.delaymsg.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.GenesisState".into()
+        "/tradeview.delaymsg.GenesisState".into()
     }
 }
 /// QueryNextDelayedMessageIdRequest is the request type for the
@@ -72,7 +72,7 @@ impl ::prost::Name for QueryNextDelayedMessageIdRequest {
         "dydxprotocol.delaymsg.QueryNextDelayedMessageIdRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.QueryNextDelayedMessageIdRequest".into()
+        "/tradeview.delaymsg.QueryNextDelayedMessageIdRequest".into()
     }
 }
 /// QueryNextDelayedMessageIdResponse is the response type for the
@@ -89,7 +89,7 @@ impl ::prost::Name for QueryNextDelayedMessageIdResponse {
         "dydxprotocol.delaymsg.QueryNextDelayedMessageIdResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.QueryNextDelayedMessageIdResponse".into()
+        "/tradeview.delaymsg.QueryNextDelayedMessageIdResponse".into()
     }
 }
 /// QueryMessageRequest is the request type for the Message RPC method.
@@ -105,7 +105,7 @@ impl ::prost::Name for QueryMessageRequest {
         "dydxprotocol.delaymsg.QueryMessageRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.QueryMessageRequest".into()
+        "/tradeview.delaymsg.QueryMessageRequest".into()
     }
 }
 /// QueryGetMessageResponse is the response type for the Message RPC method.
@@ -121,7 +121,7 @@ impl ::prost::Name for QueryMessageResponse {
         "dydxprotocol.delaymsg.QueryMessageResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.QueryMessageResponse".into()
+        "/tradeview.delaymsg.QueryMessageResponse".into()
     }
 }
 /// QueryBlockMessageIdsRequest is the request type for the BlockMessageIds
@@ -138,7 +138,7 @@ impl ::prost::Name for QueryBlockMessageIdsRequest {
         "dydxprotocol.delaymsg.QueryBlockMessageIdsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.QueryBlockMessageIdsRequest".into()
+        "/tradeview.delaymsg.QueryBlockMessageIdsRequest".into()
     }
 }
 /// QueryGetBlockMessageIdsResponse is the response type for the BlockMessageIds
@@ -155,7 +155,7 @@ impl ::prost::Name for QueryBlockMessageIdsResponse {
         "dydxprotocol.delaymsg.QueryBlockMessageIdsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.QueryBlockMessageIdsResponse".into()
+        "/tradeview.delaymsg.QueryBlockMessageIdsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -269,7 +269,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.delaymsg.Query/NextDelayedMessageId",
+                "/tradeview.delaymsg.Query/NextDelayedMessageId",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -299,7 +299,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.delaymsg.Query/Message",
+                "/tradeview.delaymsg.Query/Message",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -324,7 +324,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.delaymsg.Query/BlockMessageIds",
+                "/tradeview.delaymsg.Query/BlockMessageIds",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -354,7 +354,7 @@ impl ::prost::Name for MsgDelayMessage {
         "dydxprotocol.delaymsg.MsgDelayMessage".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.MsgDelayMessage".into()
+        "/tradeview.delaymsg.MsgDelayMessage".into()
     }
 }
 /// MsgDelayMessageResponse is a response type for the DelayMessage method.
@@ -371,7 +371,7 @@ impl ::prost::Name for MsgDelayMessageResponse {
         "dydxprotocol.delaymsg.MsgDelayMessageResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.delaymsg.MsgDelayMessageResponse".into()
+        "/tradeview.delaymsg.MsgDelayMessageResponse".into()
     }
 }
 /// Generated client implementations.
@@ -486,7 +486,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.delaymsg.Msg/DelayMessage",
+                "/tradeview.delaymsg.Msg/DelayMessage",
             );
             let mut req = request.into_request();
             req.extensions_mut()

@@ -29,7 +29,7 @@ def main():
     for ticker in TICKERS_TO_DELIST:
         # Create clob delisting proposal message
         clob_delisting_message = {}
-        clob_delisting_message["@type"] = "/dydxprotocol.clob.MsgUpdateClobPair"
+        clob_delisting_message["@type"] = "/tradeview.clob.MsgUpdateClobPair"
         clob_delisting_message["authority"] = "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"
 
         perpetual_id = ticker_to_perpetual_id[ticker]

@@ -18,7 +18,7 @@ impl ::prost::Name for LimitParams {
         "dydxprotocol.ratelimit.LimitParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.LimitParams".into()
+        "/tradeview.ratelimit.LimitParams".into()
     }
 }
 /// Limiter defines one rate-limiter on a specfic denom.
@@ -46,7 +46,7 @@ impl ::prost::Name for Limiter {
         "dydxprotocol.ratelimit.Limiter".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.Limiter".into()
+        "/tradeview.ratelimit.Limiter".into()
     }
 }
 /// DenomCapacity stores a list of rate limit capacity for a denom.
@@ -69,7 +69,7 @@ impl ::prost::Name for DenomCapacity {
         "dydxprotocol.ratelimit.DenomCapacity".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.DenomCapacity".into()
+        "/tradeview.ratelimit.DenomCapacity".into()
     }
 }
 /// LimiterCapacity contains a pair of limiter and its corresponding capacity.
@@ -87,7 +87,7 @@ impl ::prost::Name for LimiterCapacity {
         "dydxprotocol.ratelimit.LimiterCapacity".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.LimiterCapacity".into()
+        "/tradeview.ratelimit.LimiterCapacity".into()
     }
 }
 /// GenesisState defines the ratelimit module's genesis state.
@@ -104,7 +104,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.ratelimit.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.GenesisState".into()
+        "/tradeview.ratelimit.GenesisState".into()
     }
 }
 /// PendingSendPacket contains the channel_id and sequence pair to identify a
@@ -123,7 +123,7 @@ impl ::prost::Name for PendingSendPacket {
         "dydxprotocol.ratelimit.PendingSendPacket".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.PendingSendPacket".into()
+        "/tradeview.ratelimit.PendingSendPacket".into()
     }
 }
 /// ListLimitParamsRequest is a request type of the ListLimitParams RPC method.
@@ -136,7 +136,7 @@ impl ::prost::Name for ListLimitParamsRequest {
         "dydxprotocol.ratelimit.ListLimitParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.ListLimitParamsRequest".into()
+        "/tradeview.ratelimit.ListLimitParamsRequest".into()
     }
 }
 /// ListLimitParamsResponse is a response type of the ListLimitParams RPC method.
@@ -152,7 +152,7 @@ impl ::prost::Name for ListLimitParamsResponse {
         "dydxprotocol.ratelimit.ListLimitParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.ListLimitParamsResponse".into()
+        "/tradeview.ratelimit.ListLimitParamsResponse".into()
     }
 }
 /// QueryCapacityByDenomRequest is a request type for the CapacityByDenom RPC
@@ -169,7 +169,7 @@ impl ::prost::Name for QueryCapacityByDenomRequest {
         "dydxprotocol.ratelimit.QueryCapacityByDenomRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.QueryCapacityByDenomRequest".into()
+        "/tradeview.ratelimit.QueryCapacityByDenomRequest".into()
     }
 }
 /// QueryCapacityByDenomResponse is a response type of the CapacityByDenom RPC
@@ -186,7 +186,7 @@ impl ::prost::Name for QueryCapacityByDenomResponse {
         "dydxprotocol.ratelimit.QueryCapacityByDenomResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.QueryCapacityByDenomResponse".into()
+        "/tradeview.ratelimit.QueryCapacityByDenomResponse".into()
     }
 }
 /// QueryAllPendingSendPacketsRequest is a request type for the
@@ -200,7 +200,7 @@ impl ::prost::Name for QueryAllPendingSendPacketsRequest {
         "dydxprotocol.ratelimit.QueryAllPendingSendPacketsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.QueryAllPendingSendPacketsRequest".into()
+        "/tradeview.ratelimit.QueryAllPendingSendPacketsRequest".into()
     }
 }
 /// QueryAllPendingSendPacketsResponse is a response type of the
@@ -217,7 +217,7 @@ impl ::prost::Name for QueryAllPendingSendPacketsResponse {
         "dydxprotocol.ratelimit.QueryAllPendingSendPacketsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.QueryAllPendingSendPacketsResponse".into()
+        "/tradeview.ratelimit.QueryAllPendingSendPacketsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -331,7 +331,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.ratelimit.Query/ListLimitParams",
+                "/tradeview.ratelimit.Query/ListLimitParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -358,7 +358,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.ratelimit.Query/CapacityByDenom",
+                "/tradeview.ratelimit.Query/CapacityByDenom",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -385,7 +385,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.ratelimit.Query/AllPendingSendPackets",
+                "/tradeview.ratelimit.Query/AllPendingSendPackets",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -415,7 +415,7 @@ impl ::prost::Name for MsgSetLimitParams {
         "dydxprotocol.ratelimit.MsgSetLimitParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.MsgSetLimitParams".into()
+        "/tradeview.ratelimit.MsgSetLimitParams".into()
     }
 }
 /// MsgSetLimitParamsResponse is the Msg/SetLimitParams response type.
@@ -428,7 +428,7 @@ impl ::prost::Name for MsgSetLimitParamsResponse {
         "dydxprotocol.ratelimit.MsgSetLimitParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.ratelimit.MsgSetLimitParamsResponse".into()
+        "/tradeview.ratelimit.MsgSetLimitParamsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -542,7 +542,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.ratelimit.Msg/SetLimitParams",
+                "/tradeview.ratelimit.Msg/SetLimitParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()

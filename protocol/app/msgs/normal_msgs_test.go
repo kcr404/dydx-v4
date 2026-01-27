@@ -115,55 +115,55 @@ func TestNormalMsgs_Key(t *testing.T) {
 		"/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
 
 		// accountplus
-		"/dydxprotocol.accountplus.MsgAddAuthenticator",
-		"/dydxprotocol.accountplus.MsgAddAuthenticatorResponse",
-		"/dydxprotocol.accountplus.MsgRemoveAuthenticator",
-		"/dydxprotocol.accountplus.MsgRemoveAuthenticatorResponse",
-		"/dydxprotocol.accountplus.TxExtension",
+		"/tradeview.accountplus.MsgAddAuthenticator",
+		"/tradeview.accountplus.MsgAddAuthenticatorResponse",
+		"/tradeview.accountplus.MsgRemoveAuthenticator",
+		"/tradeview.accountplus.MsgRemoveAuthenticatorResponse",
+		"/tradeview.accountplus.TxExtension",
 
 		// affiliates
-		"/dydxprotocol.affiliates.MsgRegisterAffiliate",
-		"/dydxprotocol.affiliates.MsgRegisterAffiliateResponse",
+		"/tradeview.affiliates.MsgRegisterAffiliate",
+		"/tradeview.affiliates.MsgRegisterAffiliateResponse",
 
 		// clob
-		"/dydxprotocol.clob.MsgBatchCancel",
-		"/dydxprotocol.clob.MsgBatchCancelResponse",
-		"/dydxprotocol.clob.MsgCancelOrder",
-		"/dydxprotocol.clob.MsgCancelOrderResponse",
-		"/dydxprotocol.clob.MsgPlaceOrder",
-		"/dydxprotocol.clob.MsgPlaceOrderResponse",
-		"/dydxprotocol.clob.MsgUpdateLeverage",
-		"/dydxprotocol.clob.MsgUpdateLeverageResponse",
+		"/tradeview.clob.MsgBatchCancel",
+		"/tradeview.clob.MsgBatchCancelResponse",
+		"/tradeview.clob.MsgCancelOrder",
+		"/tradeview.clob.MsgCancelOrderResponse",
+		"/tradeview.clob.MsgPlaceOrder",
+		"/tradeview.clob.MsgPlaceOrderResponse",
+		"/tradeview.clob.MsgUpdateLeverage",
+		"/tradeview.clob.MsgUpdateLeverageResponse",
 
 		// listing
-		"/dydxprotocol.listing.MsgCreateMarketPermissionless",
-		"/dydxprotocol.listing.MsgCreateMarketPermissionlessResponse",
+		"/tradeview.listing.MsgCreateMarketPermissionless",
+		"/tradeview.listing.MsgCreateMarketPermissionlessResponse",
 
 		// perpetuals
 
 		// prices
 
 		// sending
-		"/dydxprotocol.sending.MsgCreateTransfer",
-		"/dydxprotocol.sending.MsgCreateTransferResponse",
-		"/dydxprotocol.sending.MsgDepositToSubaccount",
-		"/dydxprotocol.sending.MsgDepositToSubaccountResponse",
-		"/dydxprotocol.sending.MsgWithdrawFromSubaccount",
-		"/dydxprotocol.sending.MsgWithdrawFromSubaccountResponse",
+		"/tradeview.sending.MsgCreateTransfer",
+		"/tradeview.sending.MsgCreateTransferResponse",
+		"/tradeview.sending.MsgDepositToSubaccount",
+		"/tradeview.sending.MsgDepositToSubaccountResponse",
+		"/tradeview.sending.MsgWithdrawFromSubaccount",
+		"/tradeview.sending.MsgWithdrawFromSubaccountResponse",
 
 		// vault
-		"/dydxprotocol.vault.MsgAllocateToVault",
-		"/dydxprotocol.vault.MsgAllocateToVaultResponse",
-		"/dydxprotocol.vault.MsgDepositToMegavault",
-		"/dydxprotocol.vault.MsgDepositToMegavaultResponse",
-		"/dydxprotocol.vault.MsgRetrieveFromVault",
-		"/dydxprotocol.vault.MsgRetrieveFromVaultResponse",
-		"/dydxprotocol.vault.MsgSetVaultParams",
-		"/dydxprotocol.vault.MsgSetVaultParamsResponse",
-		"/dydxprotocol.vault.MsgUpdateDefaultQuotingParams",
-		"/dydxprotocol.vault.MsgUpdateDefaultQuotingParamsResponse",
-		"/dydxprotocol.vault.MsgWithdrawFromMegavault",
-		"/dydxprotocol.vault.MsgWithdrawFromMegavaultResponse",
+		"/tradeview.vault.MsgAllocateToVault",
+		"/tradeview.vault.MsgAllocateToVaultResponse",
+		"/tradeview.vault.MsgDepositToMegavault",
+		"/tradeview.vault.MsgDepositToMegavaultResponse",
+		"/tradeview.vault.MsgRetrieveFromVault",
+		"/tradeview.vault.MsgRetrieveFromVaultResponse",
+		"/tradeview.vault.MsgSetVaultParams",
+		"/tradeview.vault.MsgSetVaultParamsResponse",
+		"/tradeview.vault.MsgUpdateDefaultQuotingParams",
+		"/tradeview.vault.MsgUpdateDefaultQuotingParamsResponse",
+		"/tradeview.vault.MsgWithdrawFromMegavault",
+		"/tradeview.vault.MsgWithdrawFromMegavaultResponse",
 
 		// ibc application module: ICA
 		"/ibc.applications.interchain_accounts.v1.InterchainAccount",

@@ -22,7 +22,7 @@ impl ::prost::Name for BridgeEvent {
         "dydxprotocol.bridge.BridgeEvent".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.BridgeEvent".into()
+        "/tradeview.bridge.BridgeEvent".into()
     }
 }
 /// BridgeEventInfo stores information about the most recently processed bridge
@@ -44,7 +44,7 @@ impl ::prost::Name for BridgeEventInfo {
         "dydxprotocol.bridge.BridgeEventInfo".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.BridgeEventInfo".into()
+        "/tradeview.bridge.BridgeEventInfo".into()
     }
 }
 /// EventParams stores parameters about which events to recognize and which
@@ -68,7 +68,7 @@ impl ::prost::Name for EventParams {
         "dydxprotocol.bridge.EventParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.EventParams".into()
+        "/tradeview.bridge.EventParams".into()
     }
 }
 /// ProposeParams stores parameters for proposing to the module.
@@ -104,7 +104,7 @@ impl ::prost::Name for ProposeParams {
         "dydxprotocol.bridge.ProposeParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.ProposeParams".into()
+        "/tradeview.bridge.ProposeParams".into()
     }
 }
 /// SafetyParams stores safety parameters for the module.
@@ -125,7 +125,7 @@ impl ::prost::Name for SafetyParams {
         "dydxprotocol.bridge.SafetyParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.SafetyParams".into()
+        "/tradeview.bridge.SafetyParams".into()
     }
 }
 /// GenesisState defines the bridge module's genesis state.
@@ -151,7 +151,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.bridge.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.GenesisState".into()
+        "/tradeview.bridge.GenesisState".into()
     }
 }
 /// MsgAcknowledgeBridges is the Msg/AcknowledgeBridges request type.
@@ -168,7 +168,7 @@ impl ::prost::Name for MsgAcknowledgeBridges {
         "dydxprotocol.bridge.MsgAcknowledgeBridges".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgAcknowledgeBridges".into()
+        "/tradeview.bridge.MsgAcknowledgeBridges".into()
     }
 }
 /// MsgAcknowledgeBridgesResponse is the Msg/AcknowledgeBridgesResponse response
@@ -182,7 +182,7 @@ impl ::prost::Name for MsgAcknowledgeBridgesResponse {
         "dydxprotocol.bridge.MsgAcknowledgeBridgesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgAcknowledgeBridgesResponse".into()
+        "/tradeview.bridge.MsgAcknowledgeBridgesResponse".into()
     }
 }
 /// MsgCompleteBridge is the Msg/CompleteBridgeResponse request type.
@@ -201,7 +201,7 @@ impl ::prost::Name for MsgCompleteBridge {
         "dydxprotocol.bridge.MsgCompleteBridge".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgCompleteBridge".into()
+        "/tradeview.bridge.MsgCompleteBridge".into()
     }
 }
 /// MsgCompleteBridgeResponse is the Msg/CompleteBridgeResponse response type.
@@ -214,7 +214,7 @@ impl ::prost::Name for MsgCompleteBridgeResponse {
         "dydxprotocol.bridge.MsgCompleteBridgeResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgCompleteBridgeResponse".into()
+        "/tradeview.bridge.MsgCompleteBridgeResponse".into()
     }
 }
 /// MsgUpdateEventParams is the Msg/UpdateEventParams request type.
@@ -233,7 +233,7 @@ impl ::prost::Name for MsgUpdateEventParams {
         "dydxprotocol.bridge.MsgUpdateEventParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgUpdateEventParams".into()
+        "/tradeview.bridge.MsgUpdateEventParams".into()
     }
 }
 /// MsgUpdateEventParamsResponse is the Msg/UpdateEventParams response type.
@@ -246,7 +246,7 @@ impl ::prost::Name for MsgUpdateEventParamsResponse {
         "dydxprotocol.bridge.MsgUpdateEventParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgUpdateEventParamsResponse".into()
+        "/tradeview.bridge.MsgUpdateEventParamsResponse".into()
     }
 }
 /// MsgUpdateProposeParams is the Msg/UpdateProposeParams request type.
@@ -265,7 +265,7 @@ impl ::prost::Name for MsgUpdateProposeParams {
         "dydxprotocol.bridge.MsgUpdateProposeParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgUpdateProposeParams".into()
+        "/tradeview.bridge.MsgUpdateProposeParams".into()
     }
 }
 /// MsgUpdateProposeParamsResponse is the Msg/UpdateProposeParams response type.
@@ -278,7 +278,7 @@ impl ::prost::Name for MsgUpdateProposeParamsResponse {
         "dydxprotocol.bridge.MsgUpdateProposeParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgUpdateProposeParamsResponse".into()
+        "/tradeview.bridge.MsgUpdateProposeParamsResponse".into()
     }
 }
 /// MsgUpdateSafetyParams is the Msg/UpdateSafetyParams request type.
@@ -297,7 +297,7 @@ impl ::prost::Name for MsgUpdateSafetyParams {
         "dydxprotocol.bridge.MsgUpdateSafetyParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgUpdateSafetyParams".into()
+        "/tradeview.bridge.MsgUpdateSafetyParams".into()
     }
 }
 /// MsgUpdateSafetyParamsResponse is the Msg/UpdateSafetyParams response type.
@@ -310,7 +310,7 @@ impl ::prost::Name for MsgUpdateSafetyParamsResponse {
         "dydxprotocol.bridge.MsgUpdateSafetyParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.MsgUpdateSafetyParamsResponse".into()
+        "/tradeview.bridge.MsgUpdateSafetyParamsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -425,7 +425,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Msg/AcknowledgeBridges",
+                "/tradeview.bridge.Msg/AcknowledgeBridges",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -452,7 +452,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Msg/CompleteBridge",
+                "/tradeview.bridge.Msg/CompleteBridge",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -477,7 +477,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Msg/UpdateEventParams",
+                "/tradeview.bridge.Msg/UpdateEventParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -502,7 +502,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Msg/UpdateProposeParams",
+                "/tradeview.bridge.Msg/UpdateProposeParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -529,7 +529,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Msg/UpdateSafetyParams",
+                "/tradeview.bridge.Msg/UpdateSafetyParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -550,7 +550,7 @@ impl ::prost::Name for QueryEventParamsRequest {
         "dydxprotocol.bridge.QueryEventParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryEventParamsRequest".into()
+        "/tradeview.bridge.QueryEventParamsRequest".into()
     }
 }
 /// QueryEventParamsResponse is a response type for the EventParams RPC method.
@@ -566,7 +566,7 @@ impl ::prost::Name for QueryEventParamsResponse {
         "dydxprotocol.bridge.QueryEventParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryEventParamsResponse".into()
+        "/tradeview.bridge.QueryEventParamsResponse".into()
     }
 }
 /// QueryProposeParamsRequest is a request type for the ProposeParams RPC method.
@@ -579,7 +579,7 @@ impl ::prost::Name for QueryProposeParamsRequest {
         "dydxprotocol.bridge.QueryProposeParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryProposeParamsRequest".into()
+        "/tradeview.bridge.QueryProposeParamsRequest".into()
     }
 }
 /// QueryProposeParamsResponse is a response type for the ProposeParams RPC
@@ -596,7 +596,7 @@ impl ::prost::Name for QueryProposeParamsResponse {
         "dydxprotocol.bridge.QueryProposeParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryProposeParamsResponse".into()
+        "/tradeview.bridge.QueryProposeParamsResponse".into()
     }
 }
 /// QuerySafetyParamsRequest is a request type for the SafetyParams RPC method.
@@ -609,7 +609,7 @@ impl ::prost::Name for QuerySafetyParamsRequest {
         "dydxprotocol.bridge.QuerySafetyParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QuerySafetyParamsRequest".into()
+        "/tradeview.bridge.QuerySafetyParamsRequest".into()
     }
 }
 /// QuerySafetyParamsResponse is a response type for the SafetyParams RPC method.
@@ -625,7 +625,7 @@ impl ::prost::Name for QuerySafetyParamsResponse {
         "dydxprotocol.bridge.QuerySafetyParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QuerySafetyParamsResponse".into()
+        "/tradeview.bridge.QuerySafetyParamsResponse".into()
     }
 }
 /// QueryAcknowledgedEventInfoRequest is a request type for the
@@ -639,7 +639,7 @@ impl ::prost::Name for QueryAcknowledgedEventInfoRequest {
         "dydxprotocol.bridge.QueryAcknowledgedEventInfoRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryAcknowledgedEventInfoRequest".into()
+        "/tradeview.bridge.QueryAcknowledgedEventInfoRequest".into()
     }
 }
 /// QueryAcknowledgedEventInfoResponse is a response type for the
@@ -656,7 +656,7 @@ impl ::prost::Name for QueryAcknowledgedEventInfoResponse {
         "dydxprotocol.bridge.QueryAcknowledgedEventInfoResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryAcknowledgedEventInfoResponse".into()
+        "/tradeview.bridge.QueryAcknowledgedEventInfoResponse".into()
     }
 }
 /// QueryRecognizedEventInfoRequest is a request type for the
@@ -670,7 +670,7 @@ impl ::prost::Name for QueryRecognizedEventInfoRequest {
         "dydxprotocol.bridge.QueryRecognizedEventInfoRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryRecognizedEventInfoRequest".into()
+        "/tradeview.bridge.QueryRecognizedEventInfoRequest".into()
     }
 }
 /// QueryRecognizedEventInfoResponse is a response type for the
@@ -687,7 +687,7 @@ impl ::prost::Name for QueryRecognizedEventInfoResponse {
         "dydxprotocol.bridge.QueryRecognizedEventInfoResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryRecognizedEventInfoResponse".into()
+        "/tradeview.bridge.QueryRecognizedEventInfoResponse".into()
     }
 }
 /// QueryDelayedCompleteBridgeMessagesRequest is a request type for the
@@ -704,7 +704,7 @@ impl ::prost::Name for QueryDelayedCompleteBridgeMessagesRequest {
         "dydxprotocol.bridge.QueryDelayedCompleteBridgeMessagesRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryDelayedCompleteBridgeMessagesRequest".into()
+        "/tradeview.bridge.QueryDelayedCompleteBridgeMessagesRequest".into()
     }
 }
 /// QueryDelayedCompleteBridgeMessagesResponse is a response type for the
@@ -721,7 +721,7 @@ impl ::prost::Name for QueryDelayedCompleteBridgeMessagesResponse {
         "dydxprotocol.bridge.QueryDelayedCompleteBridgeMessagesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.QueryDelayedCompleteBridgeMessagesResponse".into()
+        "/tradeview.bridge.QueryDelayedCompleteBridgeMessagesResponse".into()
     }
 }
 /// DelayedCompleteBridgeMessage is a message type for the response of
@@ -741,7 +741,7 @@ impl ::prost::Name for DelayedCompleteBridgeMessage {
         "dydxprotocol.bridge.DelayedCompleteBridgeMessage".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.bridge.DelayedCompleteBridgeMessage".into()
+        "/tradeview.bridge.DelayedCompleteBridgeMessage".into()
     }
 }
 /// Generated client implementations.
@@ -855,7 +855,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Query/EventParams",
+                "/tradeview.bridge.Query/EventParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -880,7 +880,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Query/ProposeParams",
+                "/tradeview.bridge.Query/ProposeParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -905,7 +905,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Query/SafetyParams",
+                "/tradeview.bridge.Query/SafetyParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -932,7 +932,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Query/AcknowledgedEventInfo",
+                "/tradeview.bridge.Query/AcknowledgedEventInfo",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -961,7 +961,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Query/RecognizedEventInfo",
+                "/tradeview.bridge.Query/RecognizedEventInfo",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -991,7 +991,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.bridge.Query/DelayedCompleteBridgeMessages",
+                "/tradeview.bridge.Query/DelayedCompleteBridgeMessages",
             );
             let mut req = request.into_request();
             req.extensions_mut()

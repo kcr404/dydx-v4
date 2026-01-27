@@ -46,7 +46,7 @@ impl ::prost::Name for Asset {
         "dydxprotocol.assets.Asset".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.assets.Asset".into()
+        "/tradeview.assets.Asset".into()
     }
 }
 /// GenesisState defines the assets module's genesis state.
@@ -62,7 +62,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.assets.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.assets.GenesisState".into()
+        "/tradeview.assets.GenesisState".into()
     }
 }
 /// Queries an Asset by id.
@@ -78,7 +78,7 @@ impl ::prost::Name for QueryAssetRequest {
         "dydxprotocol.assets.QueryAssetRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.assets.QueryAssetRequest".into()
+        "/tradeview.assets.QueryAssetRequest".into()
     }
 }
 /// QueryAssetResponse is response type for the Asset RPC method.
@@ -94,7 +94,7 @@ impl ::prost::Name for QueryAssetResponse {
         "dydxprotocol.assets.QueryAssetResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.assets.QueryAssetResponse".into()
+        "/tradeview.assets.QueryAssetResponse".into()
     }
 }
 /// Queries a list of Asset items.
@@ -112,7 +112,7 @@ impl ::prost::Name for QueryAllAssetsRequest {
         "dydxprotocol.assets.QueryAllAssetsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.assets.QueryAllAssetsRequest".into()
+        "/tradeview.assets.QueryAllAssetsRequest".into()
     }
 }
 /// QueryAllAssetsResponse is response type for the AllAssets RPC method.
@@ -132,7 +132,7 @@ impl ::prost::Name for QueryAllAssetsResponse {
         "dydxprotocol.assets.QueryAllAssetsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.assets.QueryAllAssetsResponse".into()
+        "/tradeview.assets.QueryAllAssetsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -246,7 +246,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.assets.Query/Asset",
+                "/tradeview.assets.Query/Asset",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -271,7 +271,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.assets.Query/AllAssets",
+                "/tradeview.assets.Query/AllAssets",
             );
             let mut req = request.into_request();
             req.extensions_mut()

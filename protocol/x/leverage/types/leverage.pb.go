@@ -6,6 +6,10 @@ package types
 import (
 	context "context"
 	fmt "fmt"
+	io "io"
+	math "math"
+	math_bits "math/bits"
+
 	_ "github.com/cosmos/cosmos-proto"
 	_ "github.com/cosmos/cosmos-sdk/types/msgservice"
 	_ "github.com/cosmos/gogoproto/gogoproto"
@@ -14,9 +18,6 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
-	io "io"
-	math "math"
-	math_bits "math/bits"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -301,7 +302,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) UpdateLeverage(ctx context.Context, in *MsgUpdateLeverage, opts ...grpc.CallOption) (*MsgUpdateLeverageResponse, error) {
 	out := new(MsgUpdateLeverageResponse)
-	err := c.cc.Invoke(ctx, "/dydxprotocol.leverage.Msg/UpdateLeverage", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/tradeview.leverage.Msg/UpdateLeverage", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -335,7 +336,7 @@ func _Msg_UpdateLeverage_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/dydxprotocol.leverage.Msg/UpdateLeverage",
+		FullMethod: "/tradeview.leverage.Msg/UpdateLeverage",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).UpdateLeverage(ctx, req.(*MsgUpdateLeverage))

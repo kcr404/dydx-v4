@@ -46,7 +46,7 @@ impl ::prost::Name for EpochInfo {
         "dydxprotocol.epochs.EpochInfo".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.epochs.EpochInfo".into()
+        "/tradeview.epochs.EpochInfo".into()
     }
 }
 /// GenesisState defines the epochs module's genesis state.
@@ -63,7 +63,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.epochs.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.epochs.GenesisState".into()
+        "/tradeview.epochs.GenesisState".into()
     }
 }
 /// QueryGetEpochInfoRequest is request type for the GetEpochInfo RPC method.
@@ -79,7 +79,7 @@ impl ::prost::Name for QueryGetEpochInfoRequest {
         "dydxprotocol.epochs.QueryGetEpochInfoRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.epochs.QueryGetEpochInfoRequest".into()
+        "/tradeview.epochs.QueryGetEpochInfoRequest".into()
     }
 }
 /// QueryEpochInfoResponse is response type for the GetEpochInfo RPC method.
@@ -95,7 +95,7 @@ impl ::prost::Name for QueryEpochInfoResponse {
         "dydxprotocol.epochs.QueryEpochInfoResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.epochs.QueryEpochInfoResponse".into()
+        "/tradeview.epochs.QueryEpochInfoResponse".into()
     }
 }
 /// QueryAllEpochInfoRequest is request type for the AllEpochInfo RPC method.
@@ -113,7 +113,7 @@ impl ::prost::Name for QueryAllEpochInfoRequest {
         "dydxprotocol.epochs.QueryAllEpochInfoRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.epochs.QueryAllEpochInfoRequest".into()
+        "/tradeview.epochs.QueryAllEpochInfoRequest".into()
     }
 }
 /// QueryEpochInfoAllResponse is response type for the AllEpochInfo RPC method.
@@ -133,7 +133,7 @@ impl ::prost::Name for QueryEpochInfoAllResponse {
         "dydxprotocol.epochs.QueryEpochInfoAllResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.epochs.QueryEpochInfoAllResponse".into()
+        "/tradeview.epochs.QueryEpochInfoAllResponse".into()
     }
 }
 /// Generated client implementations.
@@ -247,7 +247,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.epochs.Query/EpochInfo",
+                "/tradeview.epochs.Query/EpochInfo",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -272,7 +272,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.epochs.Query/EpochInfoAll",
+                "/tradeview.epochs.Query/EpochInfoAll",
             );
             let mut req = request.into_request();
             req.extensions_mut()

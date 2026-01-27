@@ -20,7 +20,7 @@ impl ::prost::Name for ListingVaultDepositParams {
         "dydxprotocol.listing.ListingVaultDepositParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.ListingVaultDepositParams".into()
+        "/tradeview.listing.ListingVaultDepositParams".into()
     }
 }
 /// GenesisState defines `x/listing`'s genesis state.
@@ -41,7 +41,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.listing.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.GenesisState".into()
+        "/tradeview.listing.GenesisState".into()
     }
 }
 /// Queries for the hard cap on listed markets
@@ -54,7 +54,7 @@ impl ::prost::Name for QueryMarketsHardCap {
         "dydxprotocol.listing.QueryMarketsHardCap".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.QueryMarketsHardCap".into()
+        "/tradeview.listing.QueryMarketsHardCap".into()
     }
 }
 /// Response type indicating the hard cap on listed markets
@@ -70,7 +70,7 @@ impl ::prost::Name for QueryMarketsHardCapResponse {
         "dydxprotocol.listing.QueryMarketsHardCapResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.QueryMarketsHardCapResponse".into()
+        "/tradeview.listing.QueryMarketsHardCapResponse".into()
     }
 }
 /// Queries the listing vault deposit params
@@ -83,7 +83,7 @@ impl ::prost::Name for QueryListingVaultDepositParams {
         "dydxprotocol.listing.QueryListingVaultDepositParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.QueryListingVaultDepositParams".into()
+        "/tradeview.listing.QueryListingVaultDepositParams".into()
     }
 }
 /// Response type for QueryListingVaultDepositParams
@@ -99,7 +99,7 @@ impl ::prost::Name for QueryListingVaultDepositParamsResponse {
         "dydxprotocol.listing.QueryListingVaultDepositParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.QueryListingVaultDepositParamsResponse".into()
+        "/tradeview.listing.QueryListingVaultDepositParamsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -213,7 +213,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.listing.Query/MarketsHardCap",
+                "/tradeview.listing.Query/MarketsHardCap",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -238,7 +238,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.listing.Query/ListingVaultDepositParams",
+                "/tradeview.listing.Query/ListingVaultDepositParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -269,7 +269,7 @@ impl ::prost::Name for MsgSetMarketsHardCap {
         "dydxprotocol.listing.MsgSetMarketsHardCap".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.MsgSetMarketsHardCap".into()
+        "/tradeview.listing.MsgSetMarketsHardCap".into()
     }
 }
 /// MsgSetMarketsHardCapResponse defines the MsgSetMarketsHardCap response
@@ -282,7 +282,7 @@ impl ::prost::Name for MsgSetMarketsHardCapResponse {
         "dydxprotocol.listing.MsgSetMarketsHardCapResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.MsgSetMarketsHardCapResponse".into()
+        "/tradeview.listing.MsgSetMarketsHardCapResponse".into()
     }
 }
 /// MsgCreateMarketPermissionless is a message used to create new markets without
@@ -303,7 +303,7 @@ impl ::prost::Name for MsgCreateMarketPermissionless {
         "dydxprotocol.listing.MsgCreateMarketPermissionless".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.MsgCreateMarketPermissionless".into()
+        "/tradeview.listing.MsgCreateMarketPermissionless".into()
     }
 }
 /// MsgCreateMarketPermissionlessResponse defines the
@@ -317,7 +317,7 @@ impl ::prost::Name for MsgCreateMarketPermissionlessResponse {
         "dydxprotocol.listing.MsgCreateMarketPermissionlessResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.MsgCreateMarketPermissionlessResponse".into()
+        "/tradeview.listing.MsgCreateMarketPermissionlessResponse".into()
     }
 }
 /// MsgSetListingVaultDepositParams is a message used to set PML megavault
@@ -337,7 +337,7 @@ impl ::prost::Name for MsgSetListingVaultDepositParams {
         "dydxprotocol.listing.MsgSetListingVaultDepositParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.MsgSetListingVaultDepositParams".into()
+        "/tradeview.listing.MsgSetListingVaultDepositParams".into()
     }
 }
 /// MsgSetListingVaultDepositParamsResponse defines the
@@ -351,7 +351,7 @@ impl ::prost::Name for MsgSetListingVaultDepositParamsResponse {
         "dydxprotocol.listing.MsgSetListingVaultDepositParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.MsgSetListingVaultDepositParamsResponse".into()
+        "/tradeview.listing.MsgSetListingVaultDepositParamsResponse".into()
     }
 }
 /// MsgUpgradeIsolatedPerpetualToCross is used to upgrade a market from
@@ -371,7 +371,7 @@ impl ::prost::Name for MsgUpgradeIsolatedPerpetualToCross {
         "dydxprotocol.listing.MsgUpgradeIsolatedPerpetualToCross".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.MsgUpgradeIsolatedPerpetualToCross".into()
+        "/tradeview.listing.MsgUpgradeIsolatedPerpetualToCross".into()
     }
 }
 /// MsgUpgradeIsolatedPerpetualToCrossResponse defines the
@@ -385,7 +385,7 @@ impl ::prost::Name for MsgUpgradeIsolatedPerpetualToCrossResponse {
         "dydxprotocol.listing.MsgUpgradeIsolatedPerpetualToCrossResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.listing.MsgUpgradeIsolatedPerpetualToCrossResponse".into()
+        "/tradeview.listing.MsgUpgradeIsolatedPerpetualToCrossResponse".into()
     }
 }
 /// Generated client implementations.
@@ -499,7 +499,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.listing.Msg/SetMarketsHardCap",
+                "/tradeview.listing.Msg/SetMarketsHardCap",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -526,7 +526,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.listing.Msg/CreateMarketPermissionless",
+                "/tradeview.listing.Msg/CreateMarketPermissionless",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -556,7 +556,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.listing.Msg/SetListingVaultDepositParams",
+                "/tradeview.listing.Msg/SetListingVaultDepositParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -587,7 +587,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.listing.Msg/UpgradeIsolatedPerpetualToCross",
+                "/tradeview.listing.Msg/UpgradeIsolatedPerpetualToCross",
             );
             let mut req = request.into_request();
             req.extensions_mut()

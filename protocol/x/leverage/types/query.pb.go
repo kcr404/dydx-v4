@@ -6,6 +6,10 @@ package types
 import (
 	context "context"
 	fmt "fmt"
+	io "io"
+	math "math"
+	math_bits "math/bits"
+
 	query "github.com/cosmos/cosmos-sdk/types/query"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	grpc1 "github.com/cosmos/gogoproto/grpc"
@@ -13,9 +17,6 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
-	io "io"
-	math "math"
-	math_bits "math/bits"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.
@@ -374,7 +375,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/dydxprotocol.leverage.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/tradeview.leverage.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -383,7 +384,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) Leverage(ctx context.Context, in *QueryLeverageRequest, opts ...grpc.CallOption) (*QueryLeverageResponse, error) {
 	out := new(QueryLeverageResponse)
-	err := c.cc.Invoke(ctx, "/dydxprotocol.leverage.Query/Leverage", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/tradeview.leverage.Query/Leverage", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -392,7 +393,7 @@ func (c *queryClient) Leverage(ctx context.Context, in *QueryLeverageRequest, op
 
 func (c *queryClient) AllLeverage(ctx context.Context, in *QueryAllLeverageRequest, opts ...grpc.CallOption) (*QueryAllLeverageResponse, error) {
 	out := new(QueryAllLeverageResponse)
-	err := c.cc.Invoke(ctx, "/dydxprotocol.leverage.Query/AllLeverage", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/tradeview.leverage.Query/AllLeverage", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -437,7 +438,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/dydxprotocol.leverage.Query/Params",
+		FullMethod: "/tradeview.leverage.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -455,7 +456,7 @@ func _Query_Leverage_Handler(srv interface{}, ctx context.Context, dec func(inte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/dydxprotocol.leverage.Query/Leverage",
+		FullMethod: "/tradeview.leverage.Query/Leverage",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Leverage(ctx, req.(*QueryLeverageRequest))
@@ -473,7 +474,7 @@ func _Query_AllLeverage_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/dydxprotocol.leverage.Query/AllLeverage",
+		FullMethod: "/tradeview.leverage.Query/AllLeverage",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).AllLeverage(ctx, req.(*QueryAllLeverageRequest))

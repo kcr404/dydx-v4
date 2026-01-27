@@ -33,7 +33,7 @@ mod test {
             good_til_oneof: None,
         };
         let any = msg.to_any();
-        let url = "/dydxprotocol.clob.MsgCancelOrder";
+        let url = "/tradeview.clob.MsgCancelOrder";
         assert_eq!(any.type_url, url);
     }
 

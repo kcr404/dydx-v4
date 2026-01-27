@@ -56,7 +56,7 @@ impl ::prost::Name for BlockRateLimitConfiguration {
         "dydxprotocol.clob.BlockRateLimitConfiguration".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.BlockRateLimitConfiguration".into()
+        "/tradeview.clob.BlockRateLimitConfiguration".into()
     }
 }
 /// Defines a rate limit over a specific number of blocks.
@@ -78,7 +78,7 @@ impl ::prost::Name for MaxPerNBlocksRateLimit {
         "dydxprotocol.clob.MaxPerNBlocksRateLimit".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MaxPerNBlocksRateLimit".into()
+        "/tradeview.clob.MaxPerNBlocksRateLimit".into()
     }
 }
 /// PerpetualClobMetadata contains metadata for a `ClobPair`
@@ -96,7 +96,7 @@ impl ::prost::Name for PerpetualClobMetadata {
         "dydxprotocol.clob.PerpetualClobMetadata".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.PerpetualClobMetadata".into()
+        "/tradeview.clob.PerpetualClobMetadata".into()
     }
 }
 /// PerpetualClobMetadata contains metadata for a `ClobPair`
@@ -117,7 +117,7 @@ impl ::prost::Name for SpotClobMetadata {
         "dydxprotocol.clob.SpotClobMetadata".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.SpotClobMetadata".into()
+        "/tradeview.clob.SpotClobMetadata".into()
     }
 }
 /// ClobPair represents a single CLOB pair for a given product
@@ -233,7 +233,7 @@ impl ::prost::Name for ClobPair {
         "dydxprotocol.clob.ClobPair".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.ClobPair".into()
+        "/tradeview.clob.ClobPair".into()
     }
 }
 /// Defines the set of equity tiers to limit how many open orders
@@ -256,7 +256,7 @@ impl ::prost::Name for EquityTierLimitConfiguration {
         "dydxprotocol.clob.EquityTierLimitConfiguration".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.EquityTierLimitConfiguration".into()
+        "/tradeview.clob.EquityTierLimitConfiguration".into()
     }
 }
 /// Defines an equity tier limit.
@@ -276,7 +276,7 @@ impl ::prost::Name for EquityTierLimit {
         "dydxprotocol.clob.EquityTierLimit".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.EquityTierLimit".into()
+        "/tradeview.clob.EquityTierLimit".into()
     }
 }
 /// ClobStagedFinalizeBlockEvent defines a CLOB event staged during
@@ -304,7 +304,7 @@ impl ::prost::Name for ClobStagedFinalizeBlockEvent {
         "dydxprotocol.clob.ClobStagedFinalizeBlockEvent".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.ClobStagedFinalizeBlockEvent".into()
+        "/tradeview.clob.ClobStagedFinalizeBlockEvent".into()
     }
 }
 /// LiquidationsConfig stores all configurable fields related to liquidations.
@@ -334,7 +334,7 @@ impl ::prost::Name for LiquidationsConfig {
         "dydxprotocol.clob.LiquidationsConfig".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.LiquidationsConfig".into()
+        "/tradeview.clob.LiquidationsConfig".into()
     }
 }
 /// PositionBlockLimits stores all configurable fields related to limits
@@ -358,7 +358,7 @@ impl ::prost::Name for PositionBlockLimits {
         "dydxprotocol.clob.PositionBlockLimits".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.PositionBlockLimits".into()
+        "/tradeview.clob.PositionBlockLimits".into()
     }
 }
 /// SubaccountBlockLimits stores all configurable fields related to limits
@@ -382,7 +382,7 @@ impl ::prost::Name for SubaccountBlockLimits {
         "dydxprotocol.clob.SubaccountBlockLimits".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.SubaccountBlockLimits".into()
+        "/tradeview.clob.SubaccountBlockLimits".into()
     }
 }
 /// FillablePriceConfig stores all configurable fields related to calculating
@@ -404,7 +404,7 @@ impl ::prost::Name for FillablePriceConfig {
         "dydxprotocol.clob.FillablePriceConfig".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.FillablePriceConfig".into()
+        "/tradeview.clob.FillablePriceConfig".into()
     }
 }
 /// GenesisState defines the clob module's genesis state.
@@ -426,7 +426,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.clob.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.GenesisState".into()
+        "/tradeview.clob.GenesisState".into()
     }
 }
 /// PerpetualLiquidationInfo holds information about a liquidation that occurred
@@ -450,7 +450,7 @@ impl ::prost::Name for PerpetualLiquidationInfo {
         "dydxprotocol.clob.PerpetualLiquidationInfo".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.PerpetualLiquidationInfo".into()
+        "/tradeview.clob.PerpetualLiquidationInfo".into()
     }
 }
 /// SubaccountLiquidationInfo holds liquidation information per-subaccount in the
@@ -477,7 +477,7 @@ impl ::prost::Name for SubaccountLiquidationInfo {
         "dydxprotocol.clob.SubaccountLiquidationInfo".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.SubaccountLiquidationInfo".into()
+        "/tradeview.clob.SubaccountLiquidationInfo".into()
     }
 }
 /// SubaccountOpenPositionInfo holds information about open positions for a
@@ -505,7 +505,7 @@ impl ::prost::Name for SubaccountOpenPositionInfo {
         "dydxprotocol.clob.SubaccountOpenPositionInfo".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.SubaccountOpenPositionInfo".into()
+        "/tradeview.clob.SubaccountOpenPositionInfo".into()
     }
 }
 /// OrderId refers to a single order belonging to a Subaccount.
@@ -548,7 +548,7 @@ impl ::prost::Name for OrderId {
         "dydxprotocol.clob.OrderId".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.OrderId".into()
+        "/tradeview.clob.OrderId".into()
     }
 }
 /// OrdersFilledDuringLatestBlock represents a list of `OrderIds` that were
@@ -567,7 +567,7 @@ impl ::prost::Name for OrdersFilledDuringLatestBlock {
         "dydxprotocol.clob.OrdersFilledDuringLatestBlock".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.OrdersFilledDuringLatestBlock".into()
+        "/tradeview.clob.OrdersFilledDuringLatestBlock".into()
     }
 }
 /// PotentiallyPrunableOrders represents a list of orders that may be prunable
@@ -586,7 +586,7 @@ impl ::prost::Name for PotentiallyPrunableOrders {
         "dydxprotocol.clob.PotentiallyPrunableOrders".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.PotentiallyPrunableOrders".into()
+        "/tradeview.clob.PotentiallyPrunableOrders".into()
     }
 }
 /// OrderFillState represents the fill amount of an order according to on-chain
@@ -610,7 +610,7 @@ impl ::prost::Name for OrderFillState {
         "dydxprotocol.clob.OrderFillState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.OrderFillState".into()
+        "/tradeview.clob.OrderFillState".into()
     }
 }
 /// StatefulOrderTimeSliceValue represents the type of the value of the
@@ -636,7 +636,7 @@ impl ::prost::Name for StatefulOrderTimeSliceValue {
         "dydxprotocol.clob.StatefulOrderTimeSliceValue".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StatefulOrderTimeSliceValue".into()
+        "/tradeview.clob.StatefulOrderTimeSliceValue".into()
     }
 }
 /// LongTermOrderPlacement represents the placement of a stateful order in
@@ -658,7 +658,7 @@ impl ::prost::Name for LongTermOrderPlacement {
         "dydxprotocol.clob.LongTermOrderPlacement".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.LongTermOrderPlacement".into()
+        "/tradeview.clob.LongTermOrderPlacement".into()
     }
 }
 /// TwapOrderPlacement represents the placement of a TWAP order in
@@ -683,7 +683,7 @@ impl ::prost::Name for TwapOrderPlacement {
         "dydxprotocol.clob.TwapOrderPlacement".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.TwapOrderPlacement".into()
+        "/tradeview.clob.TwapOrderPlacement".into()
     }
 }
 /// ConditionalOrderPlacement represents the placement of a conditional order in
@@ -709,7 +709,7 @@ impl ::prost::Name for ConditionalOrderPlacement {
         "dydxprotocol.clob.ConditionalOrderPlacement".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.ConditionalOrderPlacement".into()
+        "/tradeview.clob.ConditionalOrderPlacement".into()
     }
 }
 /// Order represents a single order belonging to a `Subaccount`
@@ -947,7 +947,7 @@ impl ::prost::Name for Order {
         "dydxprotocol.clob.Order".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.Order".into()
+        "/tradeview.clob.Order".into()
     }
 }
 /// TwapParameters represents the necessary configuration for a TWAP order.
@@ -975,7 +975,7 @@ impl ::prost::Name for TwapParameters {
         "dydxprotocol.clob.TwapParameters".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.TwapParameters".into()
+        "/tradeview.clob.TwapParameters".into()
     }
 }
 /// BuilderCodeParameters represents the metadata for the partner or builder of
@@ -997,7 +997,7 @@ impl ::prost::Name for BuilderCodeParameters {
         "dydxprotocol.clob.BuilderCodeParameters".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.BuilderCodeParameters".into()
+        "/tradeview.clob.BuilderCodeParameters".into()
     }
 }
 /// TransactionOrdering represents a unique location in the block where a
@@ -1020,7 +1020,7 @@ impl ::prost::Name for TransactionOrdering {
         "dydxprotocol.clob.TransactionOrdering".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.TransactionOrdering".into()
+        "/tradeview.clob.TransactionOrdering".into()
     }
 }
 /// StreamLiquidationOrder represents an protocol-generated IOC liquidation
@@ -1052,7 +1052,7 @@ impl ::prost::Name for StreamLiquidationOrder {
         "dydxprotocol.clob.StreamLiquidationOrder".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StreamLiquidationOrder".into()
+        "/tradeview.clob.StreamLiquidationOrder".into()
     }
 }
 /// ClobMatch represents an operations queue entry around all different types
@@ -1084,7 +1084,7 @@ impl ::prost::Name for ClobMatch {
         "dydxprotocol.clob.ClobMatch".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.ClobMatch".into()
+        "/tradeview.clob.ClobMatch".into()
     }
 }
 /// MakerFill represents the filled amount of a matched maker order.
@@ -1105,7 +1105,7 @@ impl ::prost::Name for MakerFill {
         "dydxprotocol.clob.MakerFill".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MakerFill".into()
+        "/tradeview.clob.MakerFill".into()
     }
 }
 /// MatchOrders is an injected message used for matching orders.
@@ -1125,7 +1125,7 @@ impl ::prost::Name for MatchOrders {
         "dydxprotocol.clob.MatchOrders".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MatchOrders".into()
+        "/tradeview.clob.MatchOrders".into()
     }
 }
 /// MatchPerpetualLiquidation is an injected message used for liquidating a
@@ -1158,7 +1158,7 @@ impl ::prost::Name for MatchPerpetualLiquidation {
         "dydxprotocol.clob.MatchPerpetualLiquidation".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MatchPerpetualLiquidation".into()
+        "/tradeview.clob.MatchPerpetualLiquidation".into()
     }
 }
 /// MatchPerpetualDeleveraging is an injected message used for deleveraging a
@@ -1205,7 +1205,7 @@ pub mod match_perpetual_deleveraging {
             "dydxprotocol.clob.MatchPerpetualDeleveraging.Fill".into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.clob.MatchPerpetualDeleveraging.Fill".into()
+            "/tradeview.clob.MatchPerpetualDeleveraging.Fill".into()
         }
     }
 }
@@ -1216,7 +1216,7 @@ impl ::prost::Name for MatchPerpetualDeleveraging {
         "dydxprotocol.clob.MatchPerpetualDeleveraging".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MatchPerpetualDeleveraging".into()
+        "/tradeview.clob.MatchPerpetualDeleveraging".into()
     }
 }
 /// MEVMatch represents all necessary data to calculate MEV for a regular match.
@@ -1250,7 +1250,7 @@ impl ::prost::Name for MevMatch {
         "dydxprotocol.clob.MEVMatch".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MEVMatch".into()
+        "/tradeview.clob.MEVMatch".into()
     }
 }
 /// MEVLiquidationMatch represents all necessary data to calculate MEV for a
@@ -1285,7 +1285,7 @@ impl ::prost::Name for MevLiquidationMatch {
         "dydxprotocol.clob.MEVLiquidationMatch".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MEVLiquidationMatch".into()
+        "/tradeview.clob.MEVLiquidationMatch".into()
     }
 }
 /// ClobMidPrice contains the mid price of a CLOB pair, represented by it's ID.
@@ -1303,7 +1303,7 @@ impl ::prost::Name for ClobMidPrice {
         "dydxprotocol.clob.ClobMidPrice".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.ClobMidPrice".into()
+        "/tradeview.clob.ClobMidPrice".into()
     }
 }
 /// ValidatorMevMatches contains all matches from the validator's local
@@ -1322,7 +1322,7 @@ impl ::prost::Name for ValidatorMevMatches {
         "dydxprotocol.clob.ValidatorMevMatches".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.ValidatorMevMatches".into()
+        "/tradeview.clob.ValidatorMevMatches".into()
     }
 }
 /// MevNodeToNodeMetrics is a data structure for encapsulating all MEV node <>
@@ -1345,7 +1345,7 @@ impl ::prost::Name for MevNodeToNodeMetrics {
         "dydxprotocol.clob.MevNodeToNodeMetrics".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MevNodeToNodeMetrics".into()
+        "/tradeview.clob.MevNodeToNodeMetrics".into()
     }
 }
 /// OrderRemoval is a request type used for forced removal of stateful orders.
@@ -1474,7 +1474,7 @@ impl ::prost::Name for OrderRemoval {
         "dydxprotocol.clob.OrderRemoval".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.OrderRemoval".into()
+        "/tradeview.clob.OrderRemoval".into()
     }
 }
 /// MsgCreateClobPair is a message used by x/gov for creating a new clob pair.
@@ -1494,7 +1494,7 @@ impl ::prost::Name for MsgCreateClobPair {
         "dydxprotocol.clob.MsgCreateClobPair".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgCreateClobPair".into()
+        "/tradeview.clob.MsgCreateClobPair".into()
     }
 }
 /// MsgCreateClobPairResponse defines the CreateClobPair response type.
@@ -1507,7 +1507,7 @@ impl ::prost::Name for MsgCreateClobPairResponse {
         "dydxprotocol.clob.MsgCreateClobPairResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgCreateClobPairResponse".into()
+        "/tradeview.clob.MsgCreateClobPairResponse".into()
     }
 }
 /// MsgProposedOperations is a message injected by block proposers to
@@ -1525,7 +1525,7 @@ impl ::prost::Name for MsgProposedOperations {
         "dydxprotocol.clob.MsgProposedOperations".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgProposedOperations".into()
+        "/tradeview.clob.MsgProposedOperations".into()
     }
 }
 /// MsgProposedOperationsResponse is the response type of the message injected
@@ -1539,7 +1539,7 @@ impl ::prost::Name for MsgProposedOperationsResponse {
         "dydxprotocol.clob.MsgProposedOperationsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgProposedOperationsResponse".into()
+        "/tradeview.clob.MsgProposedOperationsResponse".into()
     }
 }
 /// MsgPlaceOrder is a request type used for placing orders.
@@ -1555,7 +1555,7 @@ impl ::prost::Name for MsgPlaceOrder {
         "dydxprotocol.clob.MsgPlaceOrder".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgPlaceOrder".into()
+        "/tradeview.clob.MsgPlaceOrder".into()
     }
 }
 /// MsgPlaceOrderResponse is a response type used for placing orders.
@@ -1568,7 +1568,7 @@ impl ::prost::Name for MsgPlaceOrderResponse {
         "dydxprotocol.clob.MsgPlaceOrderResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgPlaceOrderResponse".into()
+        "/tradeview.clob.MsgPlaceOrderResponse".into()
     }
 }
 /// MsgCancelOrder is a request type used for canceling orders.
@@ -1605,7 +1605,7 @@ impl ::prost::Name for MsgCancelOrder {
         "dydxprotocol.clob.MsgCancelOrder".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgCancelOrder".into()
+        "/tradeview.clob.MsgCancelOrder".into()
     }
 }
 /// MsgCancelOrderResponse is a response type used for canceling orders.
@@ -1618,7 +1618,7 @@ impl ::prost::Name for MsgCancelOrderResponse {
         "dydxprotocol.clob.MsgCancelOrderResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgCancelOrderResponse".into()
+        "/tradeview.clob.MsgCancelOrderResponse".into()
     }
 }
 /// MsgBatchCancel is a request type used for batch canceling orders.
@@ -1643,7 +1643,7 @@ impl ::prost::Name for MsgBatchCancel {
         "dydxprotocol.clob.MsgBatchCancel".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgBatchCancel".into()
+        "/tradeview.clob.MsgBatchCancel".into()
     }
 }
 /// OrderBatch represents a batch of orders all belonging to a single clob pair
@@ -1667,7 +1667,7 @@ impl ::prost::Name for OrderBatch {
         "dydxprotocol.clob.OrderBatch".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.OrderBatch".into()
+        "/tradeview.clob.OrderBatch".into()
     }
 }
 /// MsgBatchCancelResponse is a response type used for batch canceling orders.
@@ -1688,7 +1688,7 @@ impl ::prost::Name for MsgBatchCancelResponse {
         "dydxprotocol.clob.MsgBatchCancelResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgBatchCancelResponse".into()
+        "/tradeview.clob.MsgBatchCancelResponse".into()
     }
 }
 /// MsgUpdateClobPair is a request type used for updating a ClobPair in state.
@@ -1708,7 +1708,7 @@ impl ::prost::Name for MsgUpdateClobPair {
         "dydxprotocol.clob.MsgUpdateClobPair".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgUpdateClobPair".into()
+        "/tradeview.clob.MsgUpdateClobPair".into()
     }
 }
 /// MsgUpdateClobPairResponse is a response type used for setting a ClobPair's
@@ -1722,7 +1722,7 @@ impl ::prost::Name for MsgUpdateClobPairResponse {
         "dydxprotocol.clob.MsgUpdateClobPairResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgUpdateClobPairResponse".into()
+        "/tradeview.clob.MsgUpdateClobPairResponse".into()
     }
 }
 /// OperationRaw represents an operation in the proposed operations.
@@ -1755,7 +1755,7 @@ impl ::prost::Name for OperationRaw {
         "dydxprotocol.clob.OperationRaw".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.OperationRaw".into()
+        "/tradeview.clob.OperationRaw".into()
     }
 }
 /// MsgUpdateEquityTierLimitConfiguration is the Msg/EquityTierLimitConfiguration
@@ -1776,7 +1776,7 @@ impl ::prost::Name for MsgUpdateEquityTierLimitConfiguration {
         "dydxprotocol.clob.MsgUpdateEquityTierLimitConfiguration".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgUpdateEquityTierLimitConfiguration".into()
+        "/tradeview.clob.MsgUpdateEquityTierLimitConfiguration".into()
     }
 }
 /// MsgUpdateEquityTierLimitConfiguration is the Msg/EquityTierLimitConfiguration
@@ -1790,7 +1790,7 @@ impl ::prost::Name for MsgUpdateEquityTierLimitConfigurationResponse {
         "dydxprotocol.clob.MsgUpdateEquityTierLimitConfigurationResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgUpdateEquityTierLimitConfigurationResponse".into()
+        "/tradeview.clob.MsgUpdateEquityTierLimitConfigurationResponse".into()
     }
 }
 /// MsgUpdateBlockRateLimitConfiguration is the Msg/BlockRateLimitConfiguration
@@ -1811,7 +1811,7 @@ impl ::prost::Name for MsgUpdateBlockRateLimitConfiguration {
         "dydxprotocol.clob.MsgUpdateBlockRateLimitConfiguration".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgUpdateBlockRateLimitConfiguration".into()
+        "/tradeview.clob.MsgUpdateBlockRateLimitConfiguration".into()
     }
 }
 /// MsgUpdateBlockRateLimitConfiguration is a response type for updating the
@@ -1825,7 +1825,7 @@ impl ::prost::Name for MsgUpdateBlockRateLimitConfigurationResponse {
         "dydxprotocol.clob.MsgUpdateBlockRateLimitConfigurationResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgUpdateBlockRateLimitConfigurationResponse".into()
+        "/tradeview.clob.MsgUpdateBlockRateLimitConfigurationResponse".into()
     }
 }
 /// MsgUpdateLiquidationsConfig is a request type for updating the liquidations
@@ -1847,7 +1847,7 @@ impl ::prost::Name for MsgUpdateLiquidationsConfig {
         "dydxprotocol.clob.MsgUpdateLiquidationsConfig".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgUpdateLiquidationsConfig".into()
+        "/tradeview.clob.MsgUpdateLiquidationsConfig".into()
     }
 }
 /// MsgUpdateLiquidationsConfig is the Msg/LiquidationsConfig response type.
@@ -1860,7 +1860,7 @@ impl ::prost::Name for MsgUpdateLiquidationsConfigResponse {
         "dydxprotocol.clob.MsgUpdateLiquidationsConfigResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MsgUpdateLiquidationsConfigResponse".into()
+        "/tradeview.clob.MsgUpdateLiquidationsConfigResponse".into()
     }
 }
 /// Generated client implementations.
@@ -1975,7 +1975,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Msg/ProposedOperations",
+                "/tradeview.clob.Msg/ProposedOperations",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2000,7 +2000,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Msg/PlaceOrder",
+                "/tradeview.clob.Msg/PlaceOrder",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2025,7 +2025,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Msg/CancelOrder",
+                "/tradeview.clob.Msg/CancelOrder",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2050,7 +2050,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Msg/BatchCancel",
+                "/tradeview.clob.Msg/BatchCancel",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2075,7 +2075,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Msg/CreateClobPair",
+                "/tradeview.clob.Msg/CreateClobPair",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2103,7 +2103,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Msg/UpdateClobPair",
+                "/tradeview.clob.Msg/UpdateClobPair",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2131,7 +2131,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Msg/UpdateEquityTierLimitConfiguration",
+                "/tradeview.clob.Msg/UpdateEquityTierLimitConfiguration",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2162,7 +2162,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Msg/UpdateBlockRateLimitConfiguration",
+                "/tradeview.clob.Msg/UpdateBlockRateLimitConfiguration",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2192,7 +2192,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Msg/UpdateLiquidationsConfig",
+                "/tradeview.clob.Msg/UpdateLiquidationsConfig",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2237,7 +2237,7 @@ impl ::prost::Name for Operation {
         "dydxprotocol.clob.Operation".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.Operation".into()
+        "/tradeview.clob.Operation".into()
     }
 }
 /// InternalOperation represents an internal operation in the operations to
@@ -2274,7 +2274,7 @@ impl ::prost::Name for InternalOperation {
         "dydxprotocol.clob.InternalOperation".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.InternalOperation".into()
+        "/tradeview.clob.InternalOperation".into()
     }
 }
 /// ProcessProposerMatchesEvents is used for communicating which events occurred
@@ -2317,7 +2317,7 @@ impl ::prost::Name for ProcessProposerMatchesEvents {
         "dydxprotocol.clob.ProcessProposerMatchesEvents".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.ProcessProposerMatchesEvents".into()
+        "/tradeview.clob.ProcessProposerMatchesEvents".into()
     }
 }
 /// QueryGetClobPairRequest is request type for the ClobPair method.
@@ -2333,7 +2333,7 @@ impl ::prost::Name for QueryGetClobPairRequest {
         "dydxprotocol.clob.QueryGetClobPairRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryGetClobPairRequest".into()
+        "/tradeview.clob.QueryGetClobPairRequest".into()
     }
 }
 /// QueryClobPairResponse is response type for the ClobPair method.
@@ -2349,7 +2349,7 @@ impl ::prost::Name for QueryClobPairResponse {
         "dydxprotocol.clob.QueryClobPairResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryClobPairResponse".into()
+        "/tradeview.clob.QueryClobPairResponse".into()
     }
 }
 /// QueryAllClobPairRequest is request type for the ClobPairAll method.
@@ -2367,7 +2367,7 @@ impl ::prost::Name for QueryAllClobPairRequest {
         "dydxprotocol.clob.QueryAllClobPairRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryAllClobPairRequest".into()
+        "/tradeview.clob.QueryAllClobPairRequest".into()
     }
 }
 /// QueryClobPairAllResponse is response type for the ClobPairAll method.
@@ -2387,7 +2387,7 @@ impl ::prost::Name for QueryClobPairAllResponse {
         "dydxprotocol.clob.QueryClobPairAllResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryClobPairAllResponse".into()
+        "/tradeview.clob.QueryClobPairAllResponse".into()
     }
 }
 /// MevNodeToNodeCalculationRequest is a request message used to run the
@@ -2411,7 +2411,7 @@ impl ::prost::Name for MevNodeToNodeCalculationRequest {
         "dydxprotocol.clob.MevNodeToNodeCalculationRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MevNodeToNodeCalculationRequest".into()
+        "/tradeview.clob.MevNodeToNodeCalculationRequest".into()
     }
 }
 /// MevNodeToNodeCalculationResponse is a response message that contains the
@@ -2443,7 +2443,7 @@ pub mod mev_node_to_node_calculation_response {
                 .into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.clob.MevNodeToNodeCalculationResponse.MevAndVolumePerClob"
+            "/tradeview.clob.MevNodeToNodeCalculationResponse.MevAndVolumePerClob"
                 .into()
         }
     }
@@ -2455,7 +2455,7 @@ impl ::prost::Name for MevNodeToNodeCalculationResponse {
         "dydxprotocol.clob.MevNodeToNodeCalculationResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.MevNodeToNodeCalculationResponse".into()
+        "/tradeview.clob.MevNodeToNodeCalculationResponse".into()
     }
 }
 /// QueryEquityTierLimitConfigurationRequest is a request message for
@@ -2469,7 +2469,7 @@ impl ::prost::Name for QueryEquityTierLimitConfigurationRequest {
         "dydxprotocol.clob.QueryEquityTierLimitConfigurationRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryEquityTierLimitConfigurationRequest".into()
+        "/tradeview.clob.QueryEquityTierLimitConfigurationRequest".into()
     }
 }
 /// QueryEquityTierLimitConfigurationResponse is a response message that contains
@@ -2486,7 +2486,7 @@ impl ::prost::Name for QueryEquityTierLimitConfigurationResponse {
         "dydxprotocol.clob.QueryEquityTierLimitConfigurationResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryEquityTierLimitConfigurationResponse".into()
+        "/tradeview.clob.QueryEquityTierLimitConfigurationResponse".into()
     }
 }
 /// QueryBlockRateLimitConfigurationRequest is a request message for
@@ -2500,7 +2500,7 @@ impl ::prost::Name for QueryBlockRateLimitConfigurationRequest {
         "dydxprotocol.clob.QueryBlockRateLimitConfigurationRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryBlockRateLimitConfigurationRequest".into()
+        "/tradeview.clob.QueryBlockRateLimitConfigurationRequest".into()
     }
 }
 /// QueryBlockRateLimitConfigurationResponse is a response message that contains
@@ -2517,7 +2517,7 @@ impl ::prost::Name for QueryBlockRateLimitConfigurationResponse {
         "dydxprotocol.clob.QueryBlockRateLimitConfigurationResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryBlockRateLimitConfigurationResponse".into()
+        "/tradeview.clob.QueryBlockRateLimitConfigurationResponse".into()
     }
 }
 /// QueryStatefulOrderRequest is a request message for StatefulOrder.
@@ -2534,7 +2534,7 @@ impl ::prost::Name for QueryStatefulOrderRequest {
         "dydxprotocol.clob.QueryStatefulOrderRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryStatefulOrderRequest".into()
+        "/tradeview.clob.QueryStatefulOrderRequest".into()
     }
 }
 /// QueryStatefulOrderResponse is a response message that contains the stateful
@@ -2558,7 +2558,7 @@ impl ::prost::Name for QueryStatefulOrderResponse {
         "dydxprotocol.clob.QueryStatefulOrderResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryStatefulOrderResponse".into()
+        "/tradeview.clob.QueryStatefulOrderResponse".into()
     }
 }
 /// QueryLiquidationsConfigurationRequest is a request message for
@@ -2572,7 +2572,7 @@ impl ::prost::Name for QueryLiquidationsConfigurationRequest {
         "dydxprotocol.clob.QueryLiquidationsConfigurationRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryLiquidationsConfigurationRequest".into()
+        "/tradeview.clob.QueryLiquidationsConfigurationRequest".into()
     }
 }
 /// QueryLiquidationsConfigurationResponse is a response message that contains
@@ -2589,7 +2589,7 @@ impl ::prost::Name for QueryLiquidationsConfigurationResponse {
         "dydxprotocol.clob.QueryLiquidationsConfigurationResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryLiquidationsConfigurationResponse".into()
+        "/tradeview.clob.QueryLiquidationsConfigurationResponse".into()
     }
 }
 /// QueryNextClobPairIdRequest is a request message for the next clob pair id
@@ -2602,7 +2602,7 @@ impl ::prost::Name for QueryNextClobPairIdRequest {
         "dydxprotocol.clob.QueryNextClobPairIdRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryNextClobPairIdRequest".into()
+        "/tradeview.clob.QueryNextClobPairIdRequest".into()
     }
 }
 /// QueryNextClobPairIdResponse is a response message for the next clob pair id
@@ -2618,7 +2618,7 @@ impl ::prost::Name for QueryNextClobPairIdResponse {
         "dydxprotocol.clob.QueryNextClobPairIdResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.QueryNextClobPairIdResponse".into()
+        "/tradeview.clob.QueryNextClobPairIdResponse".into()
     }
 }
 /// StreamOrderbookUpdatesRequest is a request message for the
@@ -2647,7 +2647,7 @@ impl ::prost::Name for StreamOrderbookUpdatesRequest {
         "dydxprotocol.clob.StreamOrderbookUpdatesRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StreamOrderbookUpdatesRequest".into()
+        "/tradeview.clob.StreamOrderbookUpdatesRequest".into()
     }
 }
 /// StreamOrderbookUpdatesResponse is a response message for the
@@ -2665,7 +2665,7 @@ impl ::prost::Name for StreamOrderbookUpdatesResponse {
         "dydxprotocol.clob.StreamOrderbookUpdatesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StreamOrderbookUpdatesResponse".into()
+        "/tradeview.clob.StreamOrderbookUpdatesResponse".into()
     }
 }
 /// StreamUpdate is an update that will be pushed through the
@@ -2708,7 +2708,7 @@ impl ::prost::Name for StreamUpdate {
         "dydxprotocol.clob.StreamUpdate".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StreamUpdate".into()
+        "/tradeview.clob.StreamUpdate".into()
     }
 }
 /// StreamOrderbookUpdate provides information on an orderbook update. Used in
@@ -2735,7 +2735,7 @@ impl ::prost::Name for StreamOrderbookUpdate {
         "dydxprotocol.clob.StreamOrderbookUpdate".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StreamOrderbookUpdate".into()
+        "/tradeview.clob.StreamOrderbookUpdate".into()
     }
 }
 /// StreamOrderbookFill provides information on an orderbook fill. Used in
@@ -2761,7 +2761,7 @@ impl ::prost::Name for StreamOrderbookFill {
         "dydxprotocol.clob.StreamOrderbookFill".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StreamOrderbookFill".into()
+        "/tradeview.clob.StreamOrderbookFill".into()
     }
 }
 /// StreamTakerOrder provides information on a taker order that was attempted
@@ -2797,7 +2797,7 @@ impl ::prost::Name for StreamTakerOrder {
         "dydxprotocol.clob.StreamTakerOrder".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StreamTakerOrder".into()
+        "/tradeview.clob.StreamTakerOrder".into()
     }
 }
 /// StreamTakerOrderStatus is a representation of a taker order
@@ -2828,7 +2828,7 @@ impl ::prost::Name for StreamTakerOrderStatus {
         "dydxprotocol.clob.StreamTakerOrderStatus".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StreamTakerOrderStatus".into()
+        "/tradeview.clob.StreamTakerOrderStatus".into()
     }
 }
 /// Generated client implementations.
@@ -2942,7 +2942,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Query/ClobPair",
+                "/tradeview.clob.Query/ClobPair",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2967,7 +2967,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Query/ClobPairAll",
+                "/tradeview.clob.Query/ClobPairAll",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -2992,7 +2992,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Query/MevNodeToNodeCalculation",
+                "/tradeview.clob.Query/MevNodeToNodeCalculation",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -3024,7 +3024,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Query/EquityTierLimitConfiguration",
+                "/tradeview.clob.Query/EquityTierLimitConfiguration",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -3056,7 +3056,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Query/BlockRateLimitConfiguration",
+                "/tradeview.clob.Query/BlockRateLimitConfiguration",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -3088,7 +3088,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Query/LiquidationsConfiguration",
+                "/tradeview.clob.Query/LiquidationsConfiguration",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -3118,7 +3118,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Query/StatefulOrder",
+                "/tradeview.clob.Query/StatefulOrder",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -3143,7 +3143,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Query/NextClobPairId",
+                "/tradeview.clob.Query/NextClobPairId",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -3171,7 +3171,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.clob.Query/StreamOrderbookUpdates",
+                "/tradeview.clob.Query/StreamOrderbookUpdates",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -3211,6 +3211,6 @@ impl ::prost::Name for StagedFinalizeBlockEvent {
         "dydxprotocol.clob.StagedFinalizeBlockEvent".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.clob.StagedFinalizeBlockEvent".into()
+        "/tradeview.clob.StagedFinalizeBlockEvent".into()
     }
 }

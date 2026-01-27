@@ -16,7 +16,7 @@ impl ::prost::Name for VaultId {
         "dydxprotocol.vault.VaultId".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.VaultId".into()
+        "/tradeview.vault.VaultId".into()
     }
 }
 /// VaultType represents different types of vaults.
@@ -128,7 +128,7 @@ impl ::prost::Name for QuotingParams {
         "dydxprotocol.vault.QuotingParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QuotingParams".into()
+        "/tradeview.vault.QuotingParams".into()
     }
 }
 /// VaultParams stores vault parameters.
@@ -148,7 +148,7 @@ impl ::prost::Name for VaultParams {
         "dydxprotocol.vault.VaultParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.VaultParams".into()
+        "/tradeview.vault.VaultParams".into()
     }
 }
 /// OperatorParams stores parameters regarding megavault operator.
@@ -168,7 +168,7 @@ impl ::prost::Name for OperatorParams {
         "dydxprotocol.vault.OperatorParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.OperatorParams".into()
+        "/tradeview.vault.OperatorParams".into()
     }
 }
 /// OperatorMetadata stores metadata regarding megavault operator.
@@ -188,7 +188,7 @@ impl ::prost::Name for OperatorMetadata {
         "dydxprotocol.vault.OperatorMetadata".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.OperatorMetadata".into()
+        "/tradeview.vault.OperatorMetadata".into()
     }
 }
 /// Deprecated: Params stores `x/vault` parameters.
@@ -230,7 +230,7 @@ impl ::prost::Name for Params {
         "dydxprotocol.vault.Params".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.Params".into()
+        "/tradeview.vault.Params".into()
     }
 }
 /// NumShares represents the number of shares.
@@ -247,7 +247,7 @@ impl ::prost::Name for NumShares {
         "dydxprotocol.vault.NumShares".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.NumShares".into()
+        "/tradeview.vault.NumShares".into()
     }
 }
 /// OwnerShare is a type for owner shares.
@@ -265,7 +265,7 @@ impl ::prost::Name for OwnerShare {
         "dydxprotocol.vault.OwnerShare".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.OwnerShare".into()
+        "/tradeview.vault.OwnerShare".into()
     }
 }
 /// OwnerShareUnlocks stores share unlocks for an owner.
@@ -285,7 +285,7 @@ impl ::prost::Name for OwnerShareUnlocks {
         "dydxprotocol.vault.OwnerShareUnlocks".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.OwnerShareUnlocks".into()
+        "/tradeview.vault.OwnerShareUnlocks".into()
     }
 }
 /// ShareUnlock stores a single instance of `shares` number of shares
@@ -306,7 +306,7 @@ impl ::prost::Name for ShareUnlock {
         "dydxprotocol.vault.ShareUnlock".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.ShareUnlock".into()
+        "/tradeview.vault.ShareUnlock".into()
     }
 }
 /// GenesisState defines `x/vault`'s genesis state.
@@ -338,7 +338,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.vault.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.GenesisState".into()
+        "/tradeview.vault.GenesisState".into()
     }
 }
 /// Vault defines the state of a vault.
@@ -361,7 +361,7 @@ impl ::prost::Name for Vault {
         "dydxprotocol.vault.Vault".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.Vault".into()
+        "/tradeview.vault.Vault".into()
     }
 }
 /// GenesisStateV6 defines `x/vault`'s genesis state in v6.x.
@@ -382,7 +382,7 @@ impl ::prost::Name for GenesisStateV6 {
         "dydxprotocol.vault.GenesisStateV6".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.GenesisStateV6".into()
+        "/tradeview.vault.GenesisStateV6".into()
     }
 }
 /// VaultV6 defines the state of a vault.
@@ -412,7 +412,7 @@ impl ::prost::Name for VaultV6 {
         "dydxprotocol.vault.VaultV6".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.VaultV6".into()
+        "/tradeview.vault.VaultV6".into()
     }
 }
 /// QueryParamsRequest is a request type for the Params RPC method.
@@ -425,7 +425,7 @@ impl ::prost::Name for QueryParamsRequest {
         "dydxprotocol.vault.QueryParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryParamsRequest".into()
+        "/tradeview.vault.QueryParamsRequest".into()
     }
 }
 /// QueryParamsResponse is a response type for the Params RPC method.
@@ -443,7 +443,7 @@ impl ::prost::Name for QueryParamsResponse {
         "dydxprotocol.vault.QueryParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryParamsResponse".into()
+        "/tradeview.vault.QueryParamsResponse".into()
     }
 }
 /// QueryVaultRequest is a request type for the Vault RPC method.
@@ -461,7 +461,7 @@ impl ::prost::Name for QueryVaultRequest {
         "dydxprotocol.vault.QueryVaultRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryVaultRequest".into()
+        "/tradeview.vault.QueryVaultRequest".into()
     }
 }
 /// QueryVaultResponse is a response type for the Vault RPC method.
@@ -487,7 +487,7 @@ impl ::prost::Name for QueryVaultResponse {
         "dydxprotocol.vault.QueryVaultResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryVaultResponse".into()
+        "/tradeview.vault.QueryVaultResponse".into()
     }
 }
 /// QueryAllVaultsRequest is a request type for the AllVaults RPC method.
@@ -505,7 +505,7 @@ impl ::prost::Name for QueryAllVaultsRequest {
         "dydxprotocol.vault.QueryAllVaultsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryAllVaultsRequest".into()
+        "/tradeview.vault.QueryAllVaultsRequest".into()
     }
 }
 /// QueryAllVaultsResponse is a response type for the AllVaults RPC method.
@@ -525,7 +525,7 @@ impl ::prost::Name for QueryAllVaultsResponse {
         "dydxprotocol.vault.QueryAllVaultsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryAllVaultsResponse".into()
+        "/tradeview.vault.QueryAllVaultsResponse".into()
     }
 }
 /// QueryMegavaultTotalSharesRequest is a request type for the
@@ -539,7 +539,7 @@ impl ::prost::Name for QueryMegavaultTotalSharesRequest {
         "dydxprotocol.vault.QueryMegavaultTotalSharesRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryMegavaultTotalSharesRequest".into()
+        "/tradeview.vault.QueryMegavaultTotalSharesRequest".into()
     }
 }
 /// QueryMegavaultTotalSharesResponse is a response type for the
@@ -556,7 +556,7 @@ impl ::prost::Name for QueryMegavaultTotalSharesResponse {
         "dydxprotocol.vault.QueryMegavaultTotalSharesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryMegavaultTotalSharesResponse".into()
+        "/tradeview.vault.QueryMegavaultTotalSharesResponse".into()
     }
 }
 /// QueryMegavaultOwnerSharesRequest is a request type for the
@@ -573,7 +573,7 @@ impl ::prost::Name for QueryMegavaultOwnerSharesRequest {
         "dydxprotocol.vault.QueryMegavaultOwnerSharesRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryMegavaultOwnerSharesRequest".into()
+        "/tradeview.vault.QueryMegavaultOwnerSharesRequest".into()
     }
 }
 /// QueryMegavaultOwnerSharesResponse is a response type for the
@@ -604,7 +604,7 @@ impl ::prost::Name for QueryMegavaultOwnerSharesResponse {
         "dydxprotocol.vault.QueryMegavaultOwnerSharesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryMegavaultOwnerSharesResponse".into()
+        "/tradeview.vault.QueryMegavaultOwnerSharesResponse".into()
     }
 }
 /// QueryMegavaultAllOwnerSharesRequest is a request type for the
@@ -623,7 +623,7 @@ impl ::prost::Name for QueryMegavaultAllOwnerSharesRequest {
         "dydxprotocol.vault.QueryMegavaultAllOwnerSharesRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryMegavaultAllOwnerSharesRequest".into()
+        "/tradeview.vault.QueryMegavaultAllOwnerSharesRequest".into()
     }
 }
 /// QueryMegavaultAllOwnerSharesResponse is a response type for the
@@ -644,7 +644,7 @@ impl ::prost::Name for QueryMegavaultAllOwnerSharesResponse {
         "dydxprotocol.vault.QueryMegavaultAllOwnerSharesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryMegavaultAllOwnerSharesResponse".into()
+        "/tradeview.vault.QueryMegavaultAllOwnerSharesResponse".into()
     }
 }
 /// QueryVaultParamsRequest is a request for the VaultParams RPC method.
@@ -662,7 +662,7 @@ impl ::prost::Name for QueryVaultParamsRequest {
         "dydxprotocol.vault.QueryVaultParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryVaultParamsRequest".into()
+        "/tradeview.vault.QueryVaultParamsRequest".into()
     }
 }
 /// QueryVaultParamsResponse is a response for the VaultParams RPC method.
@@ -680,7 +680,7 @@ impl ::prost::Name for QueryVaultParamsResponse {
         "dydxprotocol.vault.QueryVaultParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryVaultParamsResponse".into()
+        "/tradeview.vault.QueryVaultParamsResponse".into()
     }
 }
 /// QueryMegavaultWithdrawalInfoRequest is a request type for the
@@ -698,7 +698,7 @@ impl ::prost::Name for QueryMegavaultWithdrawalInfoRequest {
         "dydxprotocol.vault.QueryMegavaultWithdrawalInfoRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryMegavaultWithdrawalInfoRequest".into()
+        "/tradeview.vault.QueryMegavaultWithdrawalInfoRequest".into()
     }
 }
 /// QueryMegavaultWithdrawalInfoResponse is a response type for the
@@ -728,7 +728,7 @@ impl ::prost::Name for QueryMegavaultWithdrawalInfoResponse {
         "dydxprotocol.vault.QueryMegavaultWithdrawalInfoResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.QueryMegavaultWithdrawalInfoResponse".into()
+        "/tradeview.vault.QueryMegavaultWithdrawalInfoResponse".into()
     }
 }
 /// Generated client implementations.
@@ -842,7 +842,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Query/Params",
+                "/tradeview.vault.Query/Params",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -867,7 +867,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Query/Vault",
+                "/tradeview.vault.Query/Vault",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -892,7 +892,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Query/AllVaults",
+                "/tradeview.vault.Query/AllVaults",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -917,7 +917,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Query/MegavaultTotalShares",
+                "/tradeview.vault.Query/MegavaultTotalShares",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -944,7 +944,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Query/MegavaultOwnerShares",
+                "/tradeview.vault.Query/MegavaultOwnerShares",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -971,7 +971,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Query/MegavaultAllOwnerShares",
+                "/tradeview.vault.Query/MegavaultAllOwnerShares",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1001,7 +1001,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Query/VaultParams",
+                "/tradeview.vault.Query/VaultParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1026,7 +1026,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Query/MegavaultWithdrawalInfo",
+                "/tradeview.vault.Query/MegavaultWithdrawalInfo",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1058,7 +1058,7 @@ impl ::prost::Name for MsgDepositToMegavault {
         "dydxprotocol.vault.MsgDepositToMegavault".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgDepositToMegavault".into()
+        "/tradeview.vault.MsgDepositToMegavault".into()
     }
 }
 /// MsgDepositToMegavaultResponse is the Msg/DepositToMegavault response type.
@@ -1075,7 +1075,7 @@ impl ::prost::Name for MsgDepositToMegavaultResponse {
         "dydxprotocol.vault.MsgDepositToMegavaultResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgDepositToMegavaultResponse".into()
+        "/tradeview.vault.MsgDepositToMegavaultResponse".into()
     }
 }
 /// MsgWithdrawFromMegavault withdraws the specified shares from megavault to
@@ -1100,7 +1100,7 @@ impl ::prost::Name for MsgWithdrawFromMegavault {
         "dydxprotocol.vault.MsgWithdrawFromMegavault".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgWithdrawFromMegavault".into()
+        "/tradeview.vault.MsgWithdrawFromMegavault".into()
     }
 }
 /// MsgWithdrawFromMegavaultResponse is the Msg/WithdrawFromMegavault response
@@ -1118,7 +1118,7 @@ impl ::prost::Name for MsgWithdrawFromMegavaultResponse {
         "dydxprotocol.vault.MsgWithdrawFromMegavaultResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgWithdrawFromMegavaultResponse".into()
+        "/tradeview.vault.MsgWithdrawFromMegavaultResponse".into()
     }
 }
 /// MsgUpdateDefaultQuotingParams is the Msg/UpdateDefaultQuotingParams request
@@ -1138,7 +1138,7 @@ impl ::prost::Name for MsgUpdateDefaultQuotingParams {
         "dydxprotocol.vault.MsgUpdateDefaultQuotingParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgUpdateDefaultQuotingParams".into()
+        "/tradeview.vault.MsgUpdateDefaultQuotingParams".into()
     }
 }
 /// MsgUpdateDefaultQuotingParamsResponse is the Msg/UpdateDefaultQuotingParams
@@ -1152,7 +1152,7 @@ impl ::prost::Name for MsgUpdateDefaultQuotingParamsResponse {
         "dydxprotocol.vault.MsgUpdateDefaultQuotingParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgUpdateDefaultQuotingParamsResponse".into()
+        "/tradeview.vault.MsgUpdateDefaultQuotingParamsResponse".into()
     }
 }
 /// MsgSetVaultParams is the Msg/SetVaultParams request type.
@@ -1174,7 +1174,7 @@ impl ::prost::Name for MsgSetVaultParams {
         "dydxprotocol.vault.MsgSetVaultParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgSetVaultParams".into()
+        "/tradeview.vault.MsgSetVaultParams".into()
     }
 }
 /// MsgSetVaultParamsResponse is the Msg/SetVaultParams response type.
@@ -1187,7 +1187,7 @@ impl ::prost::Name for MsgSetVaultParamsResponse {
         "dydxprotocol.vault.MsgSetVaultParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgSetVaultParamsResponse".into()
+        "/tradeview.vault.MsgSetVaultParamsResponse".into()
     }
 }
 /// MsgUnlockShares is the Msg/UnlockShares request type.
@@ -1206,7 +1206,7 @@ impl ::prost::Name for MsgUnlockShares {
         "dydxprotocol.vault.MsgUnlockShares".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgUnlockShares".into()
+        "/tradeview.vault.MsgUnlockShares".into()
     }
 }
 /// MsgUnlockSharesResponse is the Msg/UnlockShares response type.
@@ -1223,7 +1223,7 @@ impl ::prost::Name for MsgUnlockSharesResponse {
         "dydxprotocol.vault.MsgUnlockSharesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgUnlockSharesResponse".into()
+        "/tradeview.vault.MsgUnlockSharesResponse".into()
     }
 }
 /// MsgUpdateOperatorParams is the Msg/UpdateOperatorParams request type.
@@ -1242,7 +1242,7 @@ impl ::prost::Name for MsgUpdateOperatorParams {
         "dydxprotocol.vault.MsgUpdateOperatorParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgUpdateOperatorParams".into()
+        "/tradeview.vault.MsgUpdateOperatorParams".into()
     }
 }
 /// MsgUpdateVaultParamsResponse is the Msg/UpdateOperatorParams response type.
@@ -1255,7 +1255,7 @@ impl ::prost::Name for MsgUpdateOperatorParamsResponse {
         "dydxprotocol.vault.MsgUpdateOperatorParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgUpdateOperatorParamsResponse".into()
+        "/tradeview.vault.MsgUpdateOperatorParamsResponse".into()
     }
 }
 /// MsgAllocateToVault is the Msg/AllocateToVault request type.
@@ -1277,7 +1277,7 @@ impl ::prost::Name for MsgAllocateToVault {
         "dydxprotocol.vault.MsgAllocateToVault".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgAllocateToVault".into()
+        "/tradeview.vault.MsgAllocateToVault".into()
     }
 }
 /// MsgAllocateToVaultResponse is the Msg/AllocateToVault response type.
@@ -1290,7 +1290,7 @@ impl ::prost::Name for MsgAllocateToVaultResponse {
         "dydxprotocol.vault.MsgAllocateToVaultResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgAllocateToVaultResponse".into()
+        "/tradeview.vault.MsgAllocateToVaultResponse".into()
     }
 }
 /// MsgRetrieveFromVault is the Msg/RetrieveFromVault request type.
@@ -1312,7 +1312,7 @@ impl ::prost::Name for MsgRetrieveFromVault {
         "dydxprotocol.vault.MsgRetrieveFromVault".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgRetrieveFromVault".into()
+        "/tradeview.vault.MsgRetrieveFromVault".into()
     }
 }
 /// MsgRetrieveFromVaultResponse is the Msg/RetrieveFromVault response type.
@@ -1325,7 +1325,7 @@ impl ::prost::Name for MsgRetrieveFromVaultResponse {
         "dydxprotocol.vault.MsgRetrieveFromVaultResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgRetrieveFromVaultResponse".into()
+        "/tradeview.vault.MsgRetrieveFromVaultResponse".into()
     }
 }
 /// MsgUpdateParams is the Msg/UpdateParams request type.
@@ -1345,7 +1345,7 @@ impl ::prost::Name for MsgUpdateParams {
         "dydxprotocol.vault.MsgUpdateParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgUpdateParams".into()
+        "/tradeview.vault.MsgUpdateParams".into()
     }
 }
 /// MsgSetVaultQuotingParams is the Msg/SetVaultQuotingParams request type.
@@ -1368,7 +1368,7 @@ impl ::prost::Name for MsgSetVaultQuotingParams {
         "dydxprotocol.vault.MsgSetVaultQuotingParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.vault.MsgSetVaultQuotingParams".into()
+        "/tradeview.vault.MsgSetVaultQuotingParams".into()
     }
 }
 /// Generated client implementations.
@@ -1482,7 +1482,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Msg/DepositToMegavault",
+                "/tradeview.vault.Msg/DepositToMegavault",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1507,7 +1507,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Msg/WithdrawFromMegavault",
+                "/tradeview.vault.Msg/WithdrawFromMegavault",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1534,7 +1534,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Msg/UpdateDefaultQuotingParams",
+                "/tradeview.vault.Msg/UpdateDefaultQuotingParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1564,7 +1564,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Msg/UpdateOperatorParams",
+                "/tradeview.vault.Msg/UpdateOperatorParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1591,7 +1591,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Msg/SetVaultParams",
+                "/tradeview.vault.Msg/SetVaultParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1617,7 +1617,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Msg/UnlockShares",
+                "/tradeview.vault.Msg/UnlockShares",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1642,7 +1642,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Msg/AllocateToVault",
+                "/tradeview.vault.Msg/AllocateToVault",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1667,7 +1667,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.vault.Msg/RetrieveFromVault",
+                "/tradeview.vault.Msg/RetrieveFromVault",
             );
             let mut req = request.into_request();
             req.extensions_mut()

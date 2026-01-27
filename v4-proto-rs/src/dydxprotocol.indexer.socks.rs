@@ -19,7 +19,7 @@ impl ::prost::Name for OrderbookMessage {
         "dydxprotocol.indexer.socks.OrderbookMessage".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.socks.OrderbookMessage".into()
+        "/tradeview.indexer.socks.OrderbookMessage".into()
     }
 }
 /// Message to be sent through the 'to-websockets-subaccounts` kafka topic.
@@ -51,7 +51,7 @@ impl ::prost::Name for SubaccountMessage {
         "dydxprotocol.indexer.socks.SubaccountMessage".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.socks.SubaccountMessage".into()
+        "/tradeview.indexer.socks.SubaccountMessage".into()
     }
 }
 /// Message to be sent through the 'to-websockets-trades` kafka topic.
@@ -77,7 +77,7 @@ impl ::prost::Name for TradeMessage {
         "dydxprotocol.indexer.socks.TradeMessage".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.socks.TradeMessage".into()
+        "/tradeview.indexer.socks.TradeMessage".into()
     }
 }
 /// Message to be sent through the 'to-websockets-markets` kafka topic.
@@ -97,7 +97,7 @@ impl ::prost::Name for MarketMessage {
         "dydxprotocol.indexer.socks.MarketMessage".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.socks.MarketMessage".into()
+        "/tradeview.indexer.socks.MarketMessage".into()
     }
 }
 /// Message to be sent through the 'to-websockets-candles` kafka topic.
@@ -186,7 +186,7 @@ impl ::prost::Name for CandleMessage {
         "dydxprotocol.indexer.socks.CandleMessage".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.socks.CandleMessage".into()
+        "/tradeview.indexer.socks.CandleMessage".into()
     }
 }
 /// Message to be sent through the 'to-websockets-block-height` kafka topic.
@@ -209,6 +209,6 @@ impl ::prost::Name for BlockHeightMessage {
         "dydxprotocol.indexer.socks.BlockHeightMessage".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.socks.BlockHeightMessage".into()
+        "/tradeview.indexer.socks.BlockHeightMessage".into()
     }
 }

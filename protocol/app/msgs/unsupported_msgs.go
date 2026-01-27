@@ -34,10 +34,10 @@ var (
 		// vault
 		// MsgSetVaultQuotingParams is deprecated since v6.x and replaced by MsgSetVaultParams.
 		// nolint:staticcheck
-		"/dydxprotocol.vault.MsgSetVaultQuotingParams": &vaulttypes.MsgSetVaultQuotingParams{},
+		"/tradeview.vault.MsgSetVaultQuotingParams": &vaulttypes.MsgSetVaultQuotingParams{},
 		// MsgUpdateParams is deprecated since v6.x and replaced by MsgUpdateDefaultQuotingParams.
 		// nolint:staticcheck
-		"/dydxprotocol.vault.MsgUpdateParams": &vaulttypes.MsgUpdateParams{},
+		"/tradeview.vault.MsgUpdateParams": &vaulttypes.MsgUpdateParams{},
 
 		// Disable MsgVerifyInvariant in the crisis module, since:
 		// 1. We currently do not rely on crisis module for any invariant assertion.

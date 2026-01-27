@@ -14,7 +14,7 @@ impl ::prost::Name for AccountState {
         "dydxprotocol.accountplus.AccountState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.AccountState".into()
+        "/tradeview.accountplus.AccountState".into()
     }
 }
 /// Timestamp nonce details
@@ -34,7 +34,7 @@ impl ::prost::Name for TimestampNonceDetails {
         "dydxprotocol.accountplus.TimestampNonceDetails".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.TimestampNonceDetails".into()
+        "/tradeview.accountplus.TimestampNonceDetails".into()
     }
 }
 /// AccountAuthenticator represents a foundational model for all authenticators.
@@ -64,7 +64,7 @@ impl ::prost::Name for AccountAuthenticator {
         "dydxprotocol.accountplus.AccountAuthenticator".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.AccountAuthenticator".into()
+        "/tradeview.accountplus.AccountAuthenticator".into()
     }
 }
 /// Params defines the parameters for the module.
@@ -83,7 +83,7 @@ impl ::prost::Name for Params {
         "dydxprotocol.accountplus.Params".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.Params".into()
+        "/tradeview.accountplus.Params".into()
     }
 }
 /// AuthenticatorData represents a genesis exported account with Authenticators.
@@ -106,7 +106,7 @@ impl ::prost::Name for AuthenticatorData {
         "dydxprotocol.accountplus.AuthenticatorData".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.AuthenticatorData".into()
+        "/tradeview.accountplus.AuthenticatorData".into()
     }
 }
 /// Module genesis state
@@ -132,7 +132,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.accountplus.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.GenesisState".into()
+        "/tradeview.accountplus.GenesisState".into()
     }
 }
 /// AccountStateRequest is request type for the Query/AccountState RPC method.
@@ -148,7 +148,7 @@ impl ::prost::Name for AccountStateRequest {
         "dydxprotocol.accountplus.AccountStateRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.AccountStateRequest".into()
+        "/tradeview.accountplus.AccountStateRequest".into()
     }
 }
 /// AccountStateResponse is response type for the Query/GetAccountState RPC
@@ -165,7 +165,7 @@ impl ::prost::Name for AccountStateResponse {
         "dydxprotocol.accountplus.AccountStateResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.AccountStateResponse".into()
+        "/tradeview.accountplus.AccountStateResponse".into()
     }
 }
 /// QueryParamsRequest is request type for the Query/Params RPC method.
@@ -178,7 +178,7 @@ impl ::prost::Name for QueryParamsRequest {
         "dydxprotocol.accountplus.QueryParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.QueryParamsRequest".into()
+        "/tradeview.accountplus.QueryParamsRequest".into()
     }
 }
 /// QueryParamsResponse is response type for the Query/Params RPC method.
@@ -195,7 +195,7 @@ impl ::prost::Name for QueryParamsResponse {
         "dydxprotocol.accountplus.QueryParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.QueryParamsResponse".into()
+        "/tradeview.accountplus.QueryParamsResponse".into()
     }
 }
 /// MsgGetAuthenticatorsRequest defines the Msg/GetAuthenticators request type.
@@ -211,7 +211,7 @@ impl ::prost::Name for GetAuthenticatorsRequest {
         "dydxprotocol.accountplus.GetAuthenticatorsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.GetAuthenticatorsRequest".into()
+        "/tradeview.accountplus.GetAuthenticatorsRequest".into()
     }
 }
 /// MsgGetAuthenticatorsResponse defines the Msg/GetAuthenticators response type.
@@ -227,7 +227,7 @@ impl ::prost::Name for GetAuthenticatorsResponse {
         "dydxprotocol.accountplus.GetAuthenticatorsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.GetAuthenticatorsResponse".into()
+        "/tradeview.accountplus.GetAuthenticatorsResponse".into()
     }
 }
 /// MsgGetAuthenticatorRequest defines the Msg/GetAuthenticator request type.
@@ -245,7 +245,7 @@ impl ::prost::Name for GetAuthenticatorRequest {
         "dydxprotocol.accountplus.GetAuthenticatorRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.GetAuthenticatorRequest".into()
+        "/tradeview.accountplus.GetAuthenticatorRequest".into()
     }
 }
 /// MsgGetAuthenticatorResponse defines the Msg/GetAuthenticator response type.
@@ -261,7 +261,7 @@ impl ::prost::Name for GetAuthenticatorResponse {
         "dydxprotocol.accountplus.GetAuthenticatorResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.GetAuthenticatorResponse".into()
+        "/tradeview.accountplus.GetAuthenticatorResponse".into()
     }
 }
 /// Generated client implementations.
@@ -375,7 +375,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.accountplus.Query/Params",
+                "/tradeview.accountplus.Query/Params",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -400,7 +400,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.accountplus.Query/GetAuthenticator",
+                "/tradeview.accountplus.Query/GetAuthenticator",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -427,7 +427,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.accountplus.Query/GetAuthenticators",
+                "/tradeview.accountplus.Query/GetAuthenticators",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -457,7 +457,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.accountplus.Query/AccountState",
+                "/tradeview.accountplus.Query/AccountState",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -485,7 +485,7 @@ impl ::prost::Name for MsgAddAuthenticator {
         "dydxprotocol.accountplus.MsgAddAuthenticator".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.MsgAddAuthenticator".into()
+        "/tradeview.accountplus.MsgAddAuthenticator".into()
     }
 }
 /// MsgAddAuthenticatorResponse defines the Msg/AddAuthenticator response type.
@@ -501,7 +501,7 @@ impl ::prost::Name for MsgAddAuthenticatorResponse {
         "dydxprotocol.accountplus.MsgAddAuthenticatorResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.MsgAddAuthenticatorResponse".into()
+        "/tradeview.accountplus.MsgAddAuthenticatorResponse".into()
     }
 }
 /// MsgRemoveAuthenticatorRequest defines the Msg/RemoveAuthenticator request
@@ -520,7 +520,7 @@ impl ::prost::Name for MsgRemoveAuthenticator {
         "dydxprotocol.accountplus.MsgRemoveAuthenticator".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.MsgRemoveAuthenticator".into()
+        "/tradeview.accountplus.MsgRemoveAuthenticator".into()
     }
 }
 /// MsgRemoveAuthenticatorResponse defines the Msg/RemoveAuthenticator response
@@ -537,7 +537,7 @@ impl ::prost::Name for MsgRemoveAuthenticatorResponse {
         "dydxprotocol.accountplus.MsgRemoveAuthenticatorResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.MsgRemoveAuthenticatorResponse".into()
+        "/tradeview.accountplus.MsgRemoveAuthenticatorResponse".into()
     }
 }
 /// MsgSetActiveState sets the active state of the module.
@@ -556,7 +556,7 @@ impl ::prost::Name for MsgSetActiveState {
         "dydxprotocol.accountplus.MsgSetActiveState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.MsgSetActiveState".into()
+        "/tradeview.accountplus.MsgSetActiveState".into()
     }
 }
 /// MsgSetActiveStateResponse defines the Msg/SetActiveState response type.
@@ -569,7 +569,7 @@ impl ::prost::Name for MsgSetActiveStateResponse {
         "dydxprotocol.accountplus.MsgSetActiveStateResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.MsgSetActiveStateResponse".into()
+        "/tradeview.accountplus.MsgSetActiveStateResponse".into()
     }
 }
 /// TxExtension allows for additional authenticator-specific data in
@@ -588,7 +588,7 @@ impl ::prost::Name for TxExtension {
         "dydxprotocol.accountplus.TxExtension".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.accountplus.TxExtension".into()
+        "/tradeview.accountplus.TxExtension".into()
     }
 }
 /// Generated client implementations.
@@ -702,7 +702,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.accountplus.Msg/AddAuthenticator",
+                "/tradeview.accountplus.Msg/AddAuthenticator",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -729,7 +729,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.accountplus.Msg/RemoveAuthenticator",
+                "/tradeview.accountplus.Msg/RemoveAuthenticator",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -760,7 +760,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.accountplus.Msg/SetActiveState",
+                "/tradeview.accountplus.Msg/SetActiveState",
             );
             let mut req = request.into_request();
             req.extensions_mut()

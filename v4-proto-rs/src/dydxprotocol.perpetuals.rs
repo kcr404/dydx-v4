@@ -20,7 +20,7 @@ impl ::prost::Name for Perpetual {
         "dydxprotocol.perpetuals.Perpetual".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.Perpetual".into()
+        "/tradeview.perpetuals.Perpetual".into()
     }
 }
 /// PerpetualParams represents the parameters of a perpetual on the dYdX
@@ -62,7 +62,7 @@ impl ::prost::Name for PerpetualParams {
         "dydxprotocol.perpetuals.PerpetualParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.PerpetualParams".into()
+        "/tradeview.perpetuals.PerpetualParams".into()
     }
 }
 /// MarketPremiums stores a list of premiums for a single perpetual market.
@@ -84,7 +84,7 @@ impl ::prost::Name for MarketPremiums {
         "dydxprotocol.perpetuals.MarketPremiums".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MarketPremiums".into()
+        "/tradeview.perpetuals.MarketPremiums".into()
     }
 }
 /// PremiumStore is a struct to store a perpetual premiums for all
@@ -115,7 +115,7 @@ impl ::prost::Name for PremiumStore {
         "dydxprotocol.perpetuals.PremiumStore".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.PremiumStore".into()
+        "/tradeview.perpetuals.PremiumStore".into()
     }
 }
 /// LiquidityTier stores margin information.
@@ -169,7 +169,7 @@ impl ::prost::Name for LiquidityTier {
         "dydxprotocol.perpetuals.LiquidityTier".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.LiquidityTier".into()
+        "/tradeview.perpetuals.LiquidityTier".into()
     }
 }
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Hash, PartialOrd, Ord, ::prost::Enumeration)]
@@ -229,7 +229,7 @@ impl ::prost::Name for Params {
         "dydxprotocol.perpetuals.Params".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.Params".into()
+        "/tradeview.perpetuals.Params".into()
     }
 }
 /// GenesisState defines the perpetuals module's genesis state.
@@ -249,7 +249,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.perpetuals.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.GenesisState".into()
+        "/tradeview.perpetuals.GenesisState".into()
     }
 }
 /// Queries a Perpetual by id.
@@ -265,7 +265,7 @@ impl ::prost::Name for QueryPerpetualRequest {
         "dydxprotocol.perpetuals.QueryPerpetualRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryPerpetualRequest".into()
+        "/tradeview.perpetuals.QueryPerpetualRequest".into()
     }
 }
 /// QueryPerpetualResponse is response type for the Perpetual RPC method.
@@ -281,7 +281,7 @@ impl ::prost::Name for QueryPerpetualResponse {
         "dydxprotocol.perpetuals.QueryPerpetualResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryPerpetualResponse".into()
+        "/tradeview.perpetuals.QueryPerpetualResponse".into()
     }
 }
 /// Queries a list of Perpetual items.
@@ -299,7 +299,7 @@ impl ::prost::Name for QueryAllPerpetualsRequest {
         "dydxprotocol.perpetuals.QueryAllPerpetualsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryAllPerpetualsRequest".into()
+        "/tradeview.perpetuals.QueryAllPerpetualsRequest".into()
     }
 }
 /// QueryAllPerpetualsResponse is response type for the AllPerpetuals RPC method.
@@ -319,7 +319,7 @@ impl ::prost::Name for QueryAllPerpetualsResponse {
         "dydxprotocol.perpetuals.QueryAllPerpetualsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryAllPerpetualsResponse".into()
+        "/tradeview.perpetuals.QueryAllPerpetualsResponse".into()
     }
 }
 /// Queries a list of LiquidityTier items.
@@ -337,7 +337,7 @@ impl ::prost::Name for QueryAllLiquidityTiersRequest {
         "dydxprotocol.perpetuals.QueryAllLiquidityTiersRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryAllLiquidityTiersRequest".into()
+        "/tradeview.perpetuals.QueryAllLiquidityTiersRequest".into()
     }
 }
 /// QueryAllLiquidityTiersResponse is response type for the AllLiquidityTiers RPC
@@ -358,7 +358,7 @@ impl ::prost::Name for QueryAllLiquidityTiersResponse {
         "dydxprotocol.perpetuals.QueryAllLiquidityTiersResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryAllLiquidityTiersResponse".into()
+        "/tradeview.perpetuals.QueryAllLiquidityTiersResponse".into()
     }
 }
 /// QueryPremiumVotesRequest is the request type for the PremiumVotes RPC method.
@@ -371,7 +371,7 @@ impl ::prost::Name for QueryPremiumVotesRequest {
         "dydxprotocol.perpetuals.QueryPremiumVotesRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryPremiumVotesRequest".into()
+        "/tradeview.perpetuals.QueryPremiumVotesRequest".into()
     }
 }
 /// QueryPremiumVotesResponse is the response type for the PremiumVotes RPC
@@ -388,7 +388,7 @@ impl ::prost::Name for QueryPremiumVotesResponse {
         "dydxprotocol.perpetuals.QueryPremiumVotesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryPremiumVotesResponse".into()
+        "/tradeview.perpetuals.QueryPremiumVotesResponse".into()
     }
 }
 /// QueryPremiumSamplesRequest is the request type for the PremiumSamples RPC
@@ -402,7 +402,7 @@ impl ::prost::Name for QueryPremiumSamplesRequest {
         "dydxprotocol.perpetuals.QueryPremiumSamplesRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryPremiumSamplesRequest".into()
+        "/tradeview.perpetuals.QueryPremiumSamplesRequest".into()
     }
 }
 /// QueryPremiumSamplesResponse is the response type for the PremiumSamples RPC
@@ -419,7 +419,7 @@ impl ::prost::Name for QueryPremiumSamplesResponse {
         "dydxprotocol.perpetuals.QueryPremiumSamplesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryPremiumSamplesResponse".into()
+        "/tradeview.perpetuals.QueryPremiumSamplesResponse".into()
     }
 }
 /// QueryParamsResponse is the response type for the Params RPC method.
@@ -432,7 +432,7 @@ impl ::prost::Name for QueryParamsRequest {
         "dydxprotocol.perpetuals.QueryParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryParamsRequest".into()
+        "/tradeview.perpetuals.QueryParamsRequest".into()
     }
 }
 /// QueryParamsResponse is the response type for the Params RPC method.
@@ -448,7 +448,7 @@ impl ::prost::Name for QueryParamsResponse {
         "dydxprotocol.perpetuals.QueryParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryParamsResponse".into()
+        "/tradeview.perpetuals.QueryParamsResponse".into()
     }
 }
 /// QueryNextPerpetualIdRequest is the request type for the NextPerpetualId RPC
@@ -461,7 +461,7 @@ impl ::prost::Name for QueryNextPerpetualIdRequest {
         "dydxprotocol.perpetuals.QueryNextPerpetualIdRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryNextPerpetualIdRequest".into()
+        "/tradeview.perpetuals.QueryNextPerpetualIdRequest".into()
     }
 }
 /// QueryNextPerpetualIdResponse is the response type for the NextPerpetualId RPC
@@ -477,7 +477,7 @@ impl ::prost::Name for QueryNextPerpetualIdResponse {
         "dydxprotocol.perpetuals.QueryNextPerpetualIdResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.QueryNextPerpetualIdResponse".into()
+        "/tradeview.perpetuals.QueryNextPerpetualIdResponse".into()
     }
 }
 /// Generated client implementations.
@@ -591,7 +591,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Query/Perpetual",
+                "/tradeview.perpetuals.Query/Perpetual",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -616,7 +616,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Query/AllPerpetuals",
+                "/tradeview.perpetuals.Query/AllPerpetuals",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -643,7 +643,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Query/AllLiquidityTiers",
+                "/tradeview.perpetuals.Query/AllLiquidityTiers",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -670,7 +670,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Query/PremiumVotes",
+                "/tradeview.perpetuals.Query/PremiumVotes",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -697,7 +697,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Query/PremiumSamples",
+                "/tradeview.perpetuals.Query/PremiumSamples",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -724,7 +724,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Query/Params",
+                "/tradeview.perpetuals.Query/Params",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -749,7 +749,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Query/NextPerpetualId",
+                "/tradeview.perpetuals.Query/NextPerpetualId",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -777,7 +777,7 @@ impl ::prost::Name for MsgCreatePerpetual {
         "dydxprotocol.perpetuals.MsgCreatePerpetual".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgCreatePerpetual".into()
+        "/tradeview.perpetuals.MsgCreatePerpetual".into()
     }
 }
 /// MsgCreatePerpetualResponse defines the CreatePerpetual
@@ -791,7 +791,7 @@ impl ::prost::Name for MsgCreatePerpetualResponse {
         "dydxprotocol.perpetuals.MsgCreatePerpetualResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgCreatePerpetualResponse".into()
+        "/tradeview.perpetuals.MsgCreatePerpetualResponse".into()
     }
 }
 /// MsgSetLiquidityTier is a message used by x/gov to create or update a
@@ -812,7 +812,7 @@ impl ::prost::Name for MsgSetLiquidityTier {
         "dydxprotocol.perpetuals.MsgSetLiquidityTier".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgSetLiquidityTier".into()
+        "/tradeview.perpetuals.MsgSetLiquidityTier".into()
     }
 }
 /// MsgSetLiquidityTierResponse defines the SetLiquidityTier response type.
@@ -825,7 +825,7 @@ impl ::prost::Name for MsgSetLiquidityTierResponse {
         "dydxprotocol.perpetuals.MsgSetLiquidityTierResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgSetLiquidityTierResponse".into()
+        "/tradeview.perpetuals.MsgSetLiquidityTierResponse".into()
     }
 }
 /// MsgUpdatePerpetualParams is a message used by x/gov to update the parameters
@@ -845,7 +845,7 @@ impl ::prost::Name for MsgUpdatePerpetualParams {
         "dydxprotocol.perpetuals.MsgUpdatePerpetualParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgUpdatePerpetualParams".into()
+        "/tradeview.perpetuals.MsgUpdatePerpetualParams".into()
     }
 }
 /// MsgUpdatePerpetualParamsResponse defines the UpdatePerpetualParams
@@ -859,7 +859,7 @@ impl ::prost::Name for MsgUpdatePerpetualParamsResponse {
         "dydxprotocol.perpetuals.MsgUpdatePerpetualParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgUpdatePerpetualParamsResponse".into()
+        "/tradeview.perpetuals.MsgUpdatePerpetualParamsResponse".into()
     }
 }
 /// FundingPremium represents a funding premium value for a perpetual
@@ -880,7 +880,7 @@ impl ::prost::Name for FundingPremium {
         "dydxprotocol.perpetuals.FundingPremium".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.FundingPremium".into()
+        "/tradeview.perpetuals.FundingPremium".into()
     }
 }
 /// MsgAddPremiumVotes is a request type for the AddPremiumVotes method.
@@ -896,7 +896,7 @@ impl ::prost::Name for MsgAddPremiumVotes {
         "dydxprotocol.perpetuals.MsgAddPremiumVotes".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgAddPremiumVotes".into()
+        "/tradeview.perpetuals.MsgAddPremiumVotes".into()
     }
 }
 /// MsgAddPremiumVotesResponse defines the AddPremiumVotes
@@ -910,7 +910,7 @@ impl ::prost::Name for MsgAddPremiumVotesResponse {
         "dydxprotocol.perpetuals.MsgAddPremiumVotesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgAddPremiumVotesResponse".into()
+        "/tradeview.perpetuals.MsgAddPremiumVotesResponse".into()
     }
 }
 /// MsgUpdateParams is a message used by x/gov to update the parameters of the
@@ -930,7 +930,7 @@ impl ::prost::Name for MsgUpdateParams {
         "dydxprotocol.perpetuals.MsgUpdateParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgUpdateParams".into()
+        "/tradeview.perpetuals.MsgUpdateParams".into()
     }
 }
 /// MsgUpdateParamsResponse defines the UpdateParams response type.
@@ -943,7 +943,7 @@ impl ::prost::Name for MsgUpdateParamsResponse {
         "dydxprotocol.perpetuals.MsgUpdateParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.perpetuals.MsgUpdateParamsResponse".into()
+        "/tradeview.perpetuals.MsgUpdateParamsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -1058,7 +1058,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Msg/AddPremiumVotes",
+                "/tradeview.perpetuals.Msg/AddPremiumVotes",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1085,7 +1085,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Msg/CreatePerpetual",
+                "/tradeview.perpetuals.Msg/CreatePerpetual",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1113,7 +1113,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Msg/SetLiquidityTier",
+                "/tradeview.perpetuals.Msg/SetLiquidityTier",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1140,7 +1140,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Msg/UpdatePerpetualParams",
+                "/tradeview.perpetuals.Msg/UpdatePerpetualParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -1170,7 +1170,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.perpetuals.Msg/UpdateParams",
+                "/tradeview.perpetuals.Msg/UpdateParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()

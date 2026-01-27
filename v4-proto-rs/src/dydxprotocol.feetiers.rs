@@ -13,7 +13,7 @@ impl ::prost::Name for PerpetualFeeParams {
         "dydxprotocol.feetiers.PerpetualFeeParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.feetiers.PerpetualFeeParams".into()
+        "/tradeview.feetiers.PerpetualFeeParams".into()
     }
 }
 /// A fee tier for perpetuals
@@ -45,7 +45,7 @@ impl ::prost::Name for PerpetualFeeTier {
         "dydxprotocol.feetiers.PerpetualFeeTier".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.feetiers.PerpetualFeeTier".into()
+        "/tradeview.feetiers.PerpetualFeeTier".into()
     }
 }
 /// GenesisState defines the feetiers module's genesis state.
@@ -62,7 +62,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.feetiers.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.feetiers.GenesisState".into()
+        "/tradeview.feetiers.GenesisState".into()
     }
 }
 /// QueryPerpetualFeeParamsRequest is a request type for the PerpetualFeeParams
@@ -76,7 +76,7 @@ impl ::prost::Name for QueryPerpetualFeeParamsRequest {
         "dydxprotocol.feetiers.QueryPerpetualFeeParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.feetiers.QueryPerpetualFeeParamsRequest".into()
+        "/tradeview.feetiers.QueryPerpetualFeeParamsRequest".into()
     }
 }
 /// QueryPerpetualFeeParamsResponse is a response type for the PerpetualFeeParams
@@ -93,7 +93,7 @@ impl ::prost::Name for QueryPerpetualFeeParamsResponse {
         "dydxprotocol.feetiers.QueryPerpetualFeeParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.feetiers.QueryPerpetualFeeParamsResponse".into()
+        "/tradeview.feetiers.QueryPerpetualFeeParamsResponse".into()
     }
 }
 /// QueryUserFeeTierRequest is a request type for the UserFeeTier RPC method.
@@ -109,7 +109,7 @@ impl ::prost::Name for QueryUserFeeTierRequest {
         "dydxprotocol.feetiers.QueryUserFeeTierRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.feetiers.QueryUserFeeTierRequest".into()
+        "/tradeview.feetiers.QueryUserFeeTierRequest".into()
     }
 }
 /// QueryUserFeeTierResponse is a request type for the UserFeeTier RPC method.
@@ -128,7 +128,7 @@ impl ::prost::Name for QueryUserFeeTierResponse {
         "dydxprotocol.feetiers.QueryUserFeeTierResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.feetiers.QueryUserFeeTierResponse".into()
+        "/tradeview.feetiers.QueryUserFeeTierResponse".into()
     }
 }
 /// Generated client implementations.
@@ -242,7 +242,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.feetiers.Query/PerpetualFeeParams",
+                "/tradeview.feetiers.Query/PerpetualFeeParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -269,7 +269,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.feetiers.Query/UserFeeTier",
+                "/tradeview.feetiers.Query/UserFeeTier",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -294,7 +294,7 @@ impl ::prost::Name for MsgUpdatePerpetualFeeParams {
         "dydxprotocol.feetiers.MsgUpdatePerpetualFeeParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.feetiers.MsgUpdatePerpetualFeeParams".into()
+        "/tradeview.feetiers.MsgUpdatePerpetualFeeParams".into()
     }
 }
 /// MsgUpdatePerpetualFeeParamsResponse is the Msg/UpdatePerpetualFeeParams
@@ -308,7 +308,7 @@ impl ::prost::Name for MsgUpdatePerpetualFeeParamsResponse {
         "dydxprotocol.feetiers.MsgUpdatePerpetualFeeParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.feetiers.MsgUpdatePerpetualFeeParamsResponse".into()
+        "/tradeview.feetiers.MsgUpdatePerpetualFeeParamsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -422,7 +422,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.feetiers.Msg/UpdatePerpetualFeeParams",
+                "/tradeview.feetiers.Msg/UpdatePerpetualFeeParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()

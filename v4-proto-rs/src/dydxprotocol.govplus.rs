@@ -9,7 +9,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.govplus.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.govplus.GenesisState".into()
+        "/tradeview.govplus.GenesisState".into()
     }
 }
 /// Generated client implementations.
@@ -146,7 +146,7 @@ impl ::prost::Name for MsgSlashValidator {
         "dydxprotocol.govplus.MsgSlashValidator".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.govplus.MsgSlashValidator".into()
+        "/tradeview.govplus.MsgSlashValidator".into()
     }
 }
 /// MsgSlashValidatorResponse is the Msg/SlashValidator response type.
@@ -159,7 +159,7 @@ impl ::prost::Name for MsgSlashValidatorResponse {
         "dydxprotocol.govplus.MsgSlashValidatorResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.govplus.MsgSlashValidatorResponse".into()
+        "/tradeview.govplus.MsgSlashValidatorResponse".into()
     }
 }
 /// Generated client implementations.
@@ -274,7 +274,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.govplus.Msg/SlashValidator",
+                "/tradeview.govplus.Msg/SlashValidator",
             );
             let mut req = request.into_request();
             req.extensions_mut()

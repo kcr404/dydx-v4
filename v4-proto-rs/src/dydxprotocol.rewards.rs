@@ -29,7 +29,7 @@ impl ::prost::Name for Params {
         "dydxprotocol.rewards.Params".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.rewards.Params".into()
+        "/tradeview.rewards.Params".into()
     }
 }
 /// GenesisState defines the rewards module's genesis state.
@@ -46,7 +46,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.rewards.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.rewards.GenesisState".into()
+        "/tradeview.rewards.GenesisState".into()
     }
 }
 /// QueryParamsRequest is a request type for the Params RPC method.
@@ -59,7 +59,7 @@ impl ::prost::Name for QueryParamsRequest {
         "dydxprotocol.rewards.QueryParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.rewards.QueryParamsRequest".into()
+        "/tradeview.rewards.QueryParamsRequest".into()
     }
 }
 /// QueryParamsResponse is a response type for the Params RPC method.
@@ -75,7 +75,7 @@ impl ::prost::Name for QueryParamsResponse {
         "dydxprotocol.rewards.QueryParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.rewards.QueryParamsResponse".into()
+        "/tradeview.rewards.QueryParamsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -189,7 +189,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.rewards.Query/Params",
+                "/tradeview.rewards.Query/Params",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -214,7 +214,7 @@ impl ::prost::Name for RewardShare {
         "dydxprotocol.rewards.RewardShare".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.rewards.RewardShare".into()
+        "/tradeview.rewards.RewardShare".into()
     }
 }
 /// MsgUpdateParams is the Msg/UpdateParams request type.
@@ -233,7 +233,7 @@ impl ::prost::Name for MsgUpdateParams {
         "dydxprotocol.rewards.MsgUpdateParams".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.rewards.MsgUpdateParams".into()
+        "/tradeview.rewards.MsgUpdateParams".into()
     }
 }
 /// MsgUpdateParamsResponse is the Msg/UpdateParams response type.
@@ -246,7 +246,7 @@ impl ::prost::Name for MsgUpdateParamsResponse {
         "dydxprotocol.rewards.MsgUpdateParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.rewards.MsgUpdateParamsResponse".into()
+        "/tradeview.rewards.MsgUpdateParamsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -360,7 +360,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.rewards.Msg/UpdateParams",
+                "/tradeview.rewards.Msg/UpdateParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()

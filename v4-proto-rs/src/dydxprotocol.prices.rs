@@ -24,7 +24,7 @@ impl ::prost::Name for MarketPrice {
         "dydxprotocol.prices.MarketPrice".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.MarketPrice".into()
+        "/tradeview.prices.MarketPrice".into()
     }
 }
 /// StreamPriceUpdate provides information on a price update.
@@ -47,7 +47,7 @@ impl ::prost::Name for StreamPriceUpdate {
         "dydxprotocol.prices.StreamPriceUpdate".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.StreamPriceUpdate".into()
+        "/tradeview.prices.StreamPriceUpdate".into()
     }
 }
 /// MarketParam represents the x/prices configuration for markets, including
@@ -95,7 +95,7 @@ impl ::prost::Name for MarketParam {
         "dydxprotocol.prices.MarketParam".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.MarketParam".into()
+        "/tradeview.prices.MarketParam".into()
     }
 }
 /// GenesisState defines the prices module's genesis state.
@@ -113,7 +113,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.prices.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.GenesisState".into()
+        "/tradeview.prices.GenesisState".into()
     }
 }
 /// QueryMarketPriceRequest is request type for the Query/Params `MarketPrice`
@@ -130,7 +130,7 @@ impl ::prost::Name for QueryMarketPriceRequest {
         "dydxprotocol.prices.QueryMarketPriceRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryMarketPriceRequest".into()
+        "/tradeview.prices.QueryMarketPriceRequest".into()
     }
 }
 /// QueryMarketPriceResponse is response type for the Query/Params `MarketPrice`
@@ -147,7 +147,7 @@ impl ::prost::Name for QueryMarketPriceResponse {
         "dydxprotocol.prices.QueryMarketPriceResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryMarketPriceResponse".into()
+        "/tradeview.prices.QueryMarketPriceResponse".into()
     }
 }
 /// QueryAllMarketPricesRequest is request type for the Query/Params
@@ -166,7 +166,7 @@ impl ::prost::Name for QueryAllMarketPricesRequest {
         "dydxprotocol.prices.QueryAllMarketPricesRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryAllMarketPricesRequest".into()
+        "/tradeview.prices.QueryAllMarketPricesRequest".into()
     }
 }
 /// QueryAllMarketPricesResponse is response type for the Query/Params
@@ -187,7 +187,7 @@ impl ::prost::Name for QueryAllMarketPricesResponse {
         "dydxprotocol.prices.QueryAllMarketPricesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryAllMarketPricesResponse".into()
+        "/tradeview.prices.QueryAllMarketPricesResponse".into()
     }
 }
 /// QueryMarketParamsRequest is request type for the Query/Params `MarketParams`
@@ -204,7 +204,7 @@ impl ::prost::Name for QueryMarketParamRequest {
         "dydxprotocol.prices.QueryMarketParamRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryMarketParamRequest".into()
+        "/tradeview.prices.QueryMarketParamRequest".into()
     }
 }
 /// QueryMarketParamResponse is response type for the Query/Params `MarketParams`
@@ -221,7 +221,7 @@ impl ::prost::Name for QueryMarketParamResponse {
         "dydxprotocol.prices.QueryMarketParamResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryMarketParamResponse".into()
+        "/tradeview.prices.QueryMarketParamResponse".into()
     }
 }
 /// QueryAllMarketParamsRequest is request type for the Query/Params
@@ -240,7 +240,7 @@ impl ::prost::Name for QueryAllMarketParamsRequest {
         "dydxprotocol.prices.QueryAllMarketParamsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryAllMarketParamsRequest".into()
+        "/tradeview.prices.QueryAllMarketParamsRequest".into()
     }
 }
 /// QueryAllMarketParamsResponse is response type for the Query/Params
@@ -261,7 +261,7 @@ impl ::prost::Name for QueryAllMarketParamsResponse {
         "dydxprotocol.prices.QueryAllMarketParamsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryAllMarketParamsResponse".into()
+        "/tradeview.prices.QueryAllMarketParamsResponse".into()
     }
 }
 /// QueryNextMarketIdRequest is request type for the Query/Params `NextMarketId`
@@ -274,7 +274,7 @@ impl ::prost::Name for QueryNextMarketIdRequest {
         "dydxprotocol.prices.QueryNextMarketIdRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryNextMarketIdRequest".into()
+        "/tradeview.prices.QueryNextMarketIdRequest".into()
     }
 }
 /// QueryNextMarketIdResponse is response type for the Query/Params
@@ -291,7 +291,7 @@ impl ::prost::Name for QueryNextMarketIdResponse {
         "dydxprotocol.prices.QueryNextMarketIdResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.QueryNextMarketIdResponse".into()
+        "/tradeview.prices.QueryNextMarketIdResponse".into()
     }
 }
 /// Generated client implementations.
@@ -405,7 +405,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.prices.Query/MarketPrice",
+                "/tradeview.prices.Query/MarketPrice",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -430,7 +430,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.prices.Query/AllMarketPrices",
+                "/tradeview.prices.Query/AllMarketPrices",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -455,7 +455,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.prices.Query/MarketParam",
+                "/tradeview.prices.Query/MarketParam",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -480,7 +480,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.prices.Query/AllMarketParams",
+                "/tradeview.prices.Query/AllMarketParams",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -505,7 +505,7 @@ pub mod query_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.prices.Query/NextMarketId",
+                "/tradeview.prices.Query/NextMarketId",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -532,7 +532,7 @@ impl ::prost::Name for MsgCreateOracleMarket {
         "dydxprotocol.prices.MsgCreateOracleMarket".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.MsgCreateOracleMarket".into()
+        "/tradeview.prices.MsgCreateOracleMarket".into()
     }
 }
 /// MsgCreateOracleMarketResponse defines the CreateOracleMarket response type.
@@ -545,7 +545,7 @@ impl ::prost::Name for MsgCreateOracleMarketResponse {
         "dydxprotocol.prices.MsgCreateOracleMarketResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.MsgCreateOracleMarketResponse".into()
+        "/tradeview.prices.MsgCreateOracleMarketResponse".into()
     }
 }
 /// MsgUpdateMarketPrices is a request type for the UpdateMarketPrices method.
@@ -575,7 +575,7 @@ pub mod msg_update_market_prices {
             "dydxprotocol.prices.MsgUpdateMarketPrices.MarketPrice".into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.prices.MsgUpdateMarketPrices.MarketPrice".into()
+            "/tradeview.prices.MsgUpdateMarketPrices.MarketPrice".into()
         }
     }
 }
@@ -586,7 +586,7 @@ impl ::prost::Name for MsgUpdateMarketPrices {
         "dydxprotocol.prices.MsgUpdateMarketPrices".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.MsgUpdateMarketPrices".into()
+        "/tradeview.prices.MsgUpdateMarketPrices".into()
     }
 }
 /// MsgUpdateMarketPricesResponse defines the MsgUpdateMarketPrices response
@@ -600,7 +600,7 @@ impl ::prost::Name for MsgUpdateMarketPricesResponse {
         "dydxprotocol.prices.MsgUpdateMarketPricesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.MsgUpdateMarketPricesResponse".into()
+        "/tradeview.prices.MsgUpdateMarketPricesResponse".into()
     }
 }
 /// MsgUpdateMarketParam is a message used by x/gov for updating the parameters
@@ -620,7 +620,7 @@ impl ::prost::Name for MsgUpdateMarketParam {
         "dydxprotocol.prices.MsgUpdateMarketParam".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.MsgUpdateMarketParam".into()
+        "/tradeview.prices.MsgUpdateMarketParam".into()
     }
 }
 /// MsgUpdateMarketParamResponse defines the UpdateMarketParam response type.
@@ -633,7 +633,7 @@ impl ::prost::Name for MsgUpdateMarketParamResponse {
         "dydxprotocol.prices.MsgUpdateMarketParamResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.prices.MsgUpdateMarketParamResponse".into()
+        "/tradeview.prices.MsgUpdateMarketParamResponse".into()
     }
 }
 /// Generated client implementations.
@@ -748,7 +748,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.prices.Msg/UpdateMarketPrices",
+                "/tradeview.prices.Msg/UpdateMarketPrices",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -775,7 +775,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.prices.Msg/CreateOracleMarket",
+                "/tradeview.prices.Msg/CreateOracleMarket",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -803,7 +803,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.prices.Msg/UpdateMarketParam",
+                "/tradeview.prices.Msg/UpdateMarketParam",
             );
             let mut req = request.into_request();
             req.extensions_mut()

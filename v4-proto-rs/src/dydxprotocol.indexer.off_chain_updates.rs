@@ -77,7 +77,7 @@ impl ::prost::Name for OrderPlaceV1 {
         "dydxprotocol.indexer.off_chain_updates.OrderPlaceV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.off_chain_updates.OrderPlaceV1".into()
+        "/tradeview.indexer.off_chain_updates.OrderPlaceV1".into()
     }
 }
 /// OrderRemove messages contain the id of the order removed, the reason for the
@@ -167,7 +167,7 @@ impl ::prost::Name for OrderRemoveV1 {
         "dydxprotocol.indexer.off_chain_updates.OrderRemoveV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.off_chain_updates.OrderRemoveV1".into()
+        "/tradeview.indexer.off_chain_updates.OrderRemoveV1".into()
     }
 }
 /// OrderUpdate messages contain the id of the order being updated, and the
@@ -186,7 +186,7 @@ impl ::prost::Name for OrderUpdateV1 {
         "dydxprotocol.indexer.off_chain_updates.OrderUpdateV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.off_chain_updates.OrderUpdateV1".into()
+        "/tradeview.indexer.off_chain_updates.OrderUpdateV1".into()
     }
 }
 /// OrderReplace messages contain the old order ID and the replacement order.
@@ -209,7 +209,7 @@ impl ::prost::Name for OrderReplaceV1 {
         "dydxprotocol.indexer.off_chain_updates.OrderReplaceV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.off_chain_updates.OrderReplaceV1".into()
+        "/tradeview.indexer.off_chain_updates.OrderReplaceV1".into()
     }
 }
 /// An OffChainUpdate message is the message type which will be sent on Kafka to
@@ -244,6 +244,6 @@ impl ::prost::Name for OffChainUpdateV1 {
         "dydxprotocol.indexer.off_chain_updates.OffChainUpdateV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.off_chain_updates.OffChainUpdateV1".into()
+        "/tradeview.indexer.off_chain_updates.OffChainUpdateV1".into()
     }
 }

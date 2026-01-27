@@ -11,7 +11,7 @@ impl ::prost::Name for GenesisState {
         "dydxprotocol.sending.GenesisState".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.GenesisState".into()
+        "/tradeview.sending.GenesisState".into()
     }
 }
 /// Generated client implementations.
@@ -132,7 +132,7 @@ impl ::prost::Name for Transfer {
         "dydxprotocol.sending.Transfer".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.Transfer".into()
+        "/tradeview.sending.Transfer".into()
     }
 }
 /// MsgDepositToSubaccount represents a single transfer from an `x/bank`
@@ -159,7 +159,7 @@ impl ::prost::Name for MsgDepositToSubaccount {
         "dydxprotocol.sending.MsgDepositToSubaccount".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.MsgDepositToSubaccount".into()
+        "/tradeview.sending.MsgDepositToSubaccount".into()
     }
 }
 /// MsgWithdrawFromSubaccount represents a single transfer from an
@@ -186,7 +186,7 @@ impl ::prost::Name for MsgWithdrawFromSubaccount {
         "dydxprotocol.sending.MsgWithdrawFromSubaccount".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.MsgWithdrawFromSubaccount".into()
+        "/tradeview.sending.MsgWithdrawFromSubaccount".into()
     }
 }
 /// MsgSendFromModuleToAccount represents a single transfer from a module
@@ -215,7 +215,7 @@ impl ::prost::Name for MsgSendFromModuleToAccount {
         "dydxprotocol.sending.MsgSendFromModuleToAccount".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.MsgSendFromModuleToAccount".into()
+        "/tradeview.sending.MsgSendFromModuleToAccount".into()
     }
 }
 /// MsgCreateTransfer is a request type used for initiating new transfers.
@@ -231,7 +231,7 @@ impl ::prost::Name for MsgCreateTransfer {
         "dydxprotocol.sending.MsgCreateTransfer".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.MsgCreateTransfer".into()
+        "/tradeview.sending.MsgCreateTransfer".into()
     }
 }
 /// MsgCreateTransferResponse is a response type used for new transfers.
@@ -244,7 +244,7 @@ impl ::prost::Name for MsgCreateTransferResponse {
         "dydxprotocol.sending.MsgCreateTransferResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.MsgCreateTransferResponse".into()
+        "/tradeview.sending.MsgCreateTransferResponse".into()
     }
 }
 /// MsgDepositToSubaccountResponse is a response type used for new
@@ -258,7 +258,7 @@ impl ::prost::Name for MsgDepositToSubaccountResponse {
         "dydxprotocol.sending.MsgDepositToSubaccountResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.MsgDepositToSubaccountResponse".into()
+        "/tradeview.sending.MsgDepositToSubaccountResponse".into()
     }
 }
 /// MsgWithdrawFromSubaccountResponse is a response type used for new
@@ -272,7 +272,7 @@ impl ::prost::Name for MsgWithdrawFromSubaccountResponse {
         "dydxprotocol.sending.MsgWithdrawFromSubaccountResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.MsgWithdrawFromSubaccountResponse".into()
+        "/tradeview.sending.MsgWithdrawFromSubaccountResponse".into()
     }
 }
 /// MsgSendFromModuleToAccountResponse is a response type used for new
@@ -286,7 +286,7 @@ impl ::prost::Name for MsgSendFromModuleToAccountResponse {
         "dydxprotocol.sending.MsgSendFromModuleToAccountResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.sending.MsgSendFromModuleToAccountResponse".into()
+        "/tradeview.sending.MsgSendFromModuleToAccountResponse".into()
     }
 }
 /// Generated client implementations.
@@ -400,7 +400,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.sending.Msg/CreateTransfer",
+                "/tradeview.sending.Msg/CreateTransfer",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -426,7 +426,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.sending.Msg/DepositToSubaccount",
+                "/tradeview.sending.Msg/DepositToSubaccount",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -454,7 +454,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.sending.Msg/WithdrawFromSubaccount",
+                "/tradeview.sending.Msg/WithdrawFromSubaccount",
             );
             let mut req = request.into_request();
             req.extensions_mut()
@@ -482,7 +482,7 @@ pub mod msg_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.sending.Msg/SendFromModuleToAccount",
+                "/tradeview.sending.Msg/SendFromModuleToAccount",
             );
             let mut req = request.into_request();
             req.extensions_mut()

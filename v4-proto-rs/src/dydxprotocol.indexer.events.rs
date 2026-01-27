@@ -22,7 +22,7 @@ impl ::prost::Name for FundingUpdateV1 {
         "dydxprotocol.indexer.events.FundingUpdateV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.FundingUpdateV1".into()
+        "/tradeview.indexer.events.FundingUpdateV1".into()
     }
 }
 /// FundingEvent message contains a list of per-market funding values. The
@@ -104,7 +104,7 @@ impl ::prost::Name for FundingEventV1 {
         "dydxprotocol.indexer.events.FundingEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.FundingEventV1".into()
+        "/tradeview.indexer.events.FundingEventV1".into()
     }
 }
 /// MarketEvent message contains all the information about a market event on
@@ -138,7 +138,7 @@ impl ::prost::Name for MarketEventV1 {
         "dydxprotocol.indexer.events.MarketEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.MarketEventV1".into()
+        "/tradeview.indexer.events.MarketEventV1".into()
     }
 }
 /// MarketPriceUpdateEvent message contains all the information about a price
@@ -158,7 +158,7 @@ impl ::prost::Name for MarketPriceUpdateEventV1 {
         "dydxprotocol.indexer.events.MarketPriceUpdateEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.MarketPriceUpdateEventV1".into()
+        "/tradeview.indexer.events.MarketPriceUpdateEventV1".into()
     }
 }
 /// shared fields between MarketCreateEvent and MarketModifyEvent
@@ -179,7 +179,7 @@ impl ::prost::Name for MarketBaseEventV1 {
         "dydxprotocol.indexer.events.MarketBaseEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.MarketBaseEventV1".into()
+        "/tradeview.indexer.events.MarketBaseEventV1".into()
     }
 }
 /// MarketCreateEvent message contains all the information about a new market on
@@ -202,7 +202,7 @@ impl ::prost::Name for MarketCreateEventV1 {
         "dydxprotocol.indexer.events.MarketCreateEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.MarketCreateEventV1".into()
+        "/tradeview.indexer.events.MarketCreateEventV1".into()
     }
 }
 /// MarketModifyEvent message contains all the information about a market update
@@ -219,7 +219,7 @@ impl ::prost::Name for MarketModifyEventV1 {
         "dydxprotocol.indexer.events.MarketModifyEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.MarketModifyEventV1".into()
+        "/tradeview.indexer.events.MarketModifyEventV1".into()
     }
 }
 /// SourceOfFunds is the source of funds in a transfer event.
@@ -251,7 +251,7 @@ impl ::prost::Name for SourceOfFunds {
         "dydxprotocol.indexer.events.SourceOfFunds".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.SourceOfFunds".into()
+        "/tradeview.indexer.events.SourceOfFunds".into()
     }
 }
 /// TransferEvent message contains all the information about a transfer,
@@ -292,7 +292,7 @@ impl ::prost::Name for TransferEventV1 {
         "dydxprotocol.indexer.events.TransferEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.TransferEventV1".into()
+        "/tradeview.indexer.events.TransferEventV1".into()
     }
 }
 /// OrderFillEvent message contains all the information from an order match in
@@ -367,7 +367,7 @@ impl ::prost::Name for OrderFillEventV1 {
         "dydxprotocol.indexer.events.OrderFillEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.OrderFillEventV1".into()
+        "/tradeview.indexer.events.OrderFillEventV1".into()
     }
 }
 /// DeleveragingEvent message contains all the information for a deleveraging
@@ -408,7 +408,7 @@ impl ::prost::Name for DeleveragingEventV1 {
         "dydxprotocol.indexer.events.DeleveragingEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.DeleveragingEventV1".into()
+        "/tradeview.indexer.events.DeleveragingEventV1".into()
     }
 }
 /// LiquidationOrder represents the liquidation taker order to be included in a
@@ -446,7 +446,7 @@ impl ::prost::Name for LiquidationOrderV1 {
         "dydxprotocol.indexer.events.LiquidationOrderV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.LiquidationOrderV1".into()
+        "/tradeview.indexer.events.LiquidationOrderV1".into()
     }
 }
 /// SubaccountUpdateEvent message contains information about an update to a
@@ -477,7 +477,7 @@ impl ::prost::Name for SubaccountUpdateEventV1 {
         "dydxprotocol.indexer.events.SubaccountUpdateEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.SubaccountUpdateEventV1".into()
+        "/tradeview.indexer.events.SubaccountUpdateEventV1".into()
     }
 }
 /// StatefulOrderEvent message contains information about a change to a stateful
@@ -507,7 +507,7 @@ pub mod stateful_order_event_v1 {
                 .into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.indexer.events.StatefulOrderEventV1.StatefulOrderPlacementV1"
+            "/tradeview.indexer.events.StatefulOrderEventV1.StatefulOrderPlacementV1"
                 .into()
         }
     }
@@ -530,7 +530,7 @@ pub mod stateful_order_event_v1 {
                 .into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.indexer.events.StatefulOrderEventV1.StatefulOrderRemovalV1"
+            "/tradeview.indexer.events.StatefulOrderEventV1.StatefulOrderRemovalV1"
                 .into()
         }
     }
@@ -549,7 +549,7 @@ pub mod stateful_order_event_v1 {
                 .into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.indexer.events.StatefulOrderEventV1.ConditionalOrderPlacementV1"
+            "/tradeview.indexer.events.StatefulOrderEventV1.ConditionalOrderPlacementV1"
                 .into()
         }
     }
@@ -570,7 +570,7 @@ pub mod stateful_order_event_v1 {
                 .into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.indexer.events.StatefulOrderEventV1.ConditionalOrderTriggeredV1"
+            "/tradeview.indexer.events.StatefulOrderEventV1.ConditionalOrderTriggeredV1"
                 .into()
         }
     }
@@ -588,7 +588,7 @@ pub mod stateful_order_event_v1 {
                 .into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.indexer.events.StatefulOrderEventV1.LongTermOrderPlacementV1"
+            "/tradeview.indexer.events.StatefulOrderEventV1.LongTermOrderPlacementV1"
                 .into()
         }
     }
@@ -611,7 +611,7 @@ pub mod stateful_order_event_v1 {
                 .into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.indexer.events.StatefulOrderEventV1.LongTermOrderReplacementV1"
+            "/tradeview.indexer.events.StatefulOrderEventV1.LongTermOrderReplacementV1"
                 .into()
         }
     }
@@ -629,7 +629,7 @@ pub mod stateful_order_event_v1 {
                 .into()
         }
         fn type_url() -> ::prost::alloc::string::String {
-            "/dydxprotocol.indexer.events.StatefulOrderEventV1.TwapOrderPlacementV1"
+            "/tradeview.indexer.events.StatefulOrderEventV1.TwapOrderPlacementV1"
                 .into()
         }
     }
@@ -660,7 +660,7 @@ impl ::prost::Name for StatefulOrderEventV1 {
         "dydxprotocol.indexer.events.StatefulOrderEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.StatefulOrderEventV1".into()
+        "/tradeview.indexer.events.StatefulOrderEventV1".into()
     }
 }
 /// AssetCreateEventV1 message contains all the information about an new Asset on
@@ -697,7 +697,7 @@ impl ::prost::Name for AssetCreateEventV1 {
         "dydxprotocol.indexer.events.AssetCreateEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.AssetCreateEventV1".into()
+        "/tradeview.indexer.events.AssetCreateEventV1".into()
     }
 }
 /// PerpetualMarketCreateEventV1 message contains all the information about a
@@ -760,7 +760,7 @@ impl ::prost::Name for PerpetualMarketCreateEventV1 {
         "dydxprotocol.indexer.events.PerpetualMarketCreateEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.PerpetualMarketCreateEventV1".into()
+        "/tradeview.indexer.events.PerpetualMarketCreateEventV1".into()
     }
 }
 /// PerpetualMarketCreateEventV2 message contains all the information about a
@@ -825,7 +825,7 @@ impl ::prost::Name for PerpetualMarketCreateEventV2 {
         "dydxprotocol.indexer.events.PerpetualMarketCreateEventV2".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.PerpetualMarketCreateEventV2".into()
+        "/tradeview.indexer.events.PerpetualMarketCreateEventV2".into()
     }
 }
 /// PerpetualMarketCreateEventV3 message contains all the information about a
@@ -892,7 +892,7 @@ impl ::prost::Name for PerpetualMarketCreateEventV3 {
         "dydxprotocol.indexer.events.PerpetualMarketCreateEventV3".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.PerpetualMarketCreateEventV3".into()
+        "/tradeview.indexer.events.PerpetualMarketCreateEventV3".into()
     }
 }
 /// LiquidityTierUpsertEventV1 message contains all the information to
@@ -929,7 +929,7 @@ impl ::prost::Name for LiquidityTierUpsertEventV1 {
         "dydxprotocol.indexer.events.LiquidityTierUpsertEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.LiquidityTierUpsertEventV1".into()
+        "/tradeview.indexer.events.LiquidityTierUpsertEventV1".into()
     }
 }
 /// UpdateClobPairEventV1 message contains all the information about an update to
@@ -967,7 +967,7 @@ impl ::prost::Name for UpdateClobPairEventV1 {
         "dydxprotocol.indexer.events.UpdateClobPairEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.UpdateClobPairEventV1".into()
+        "/tradeview.indexer.events.UpdateClobPairEventV1".into()
     }
 }
 /// UpdatePerpetualEventV1 message contains all the information about an update
@@ -1007,7 +1007,7 @@ impl ::prost::Name for UpdatePerpetualEventV1 {
         "dydxprotocol.indexer.events.UpdatePerpetualEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.UpdatePerpetualEventV1".into()
+        "/tradeview.indexer.events.UpdatePerpetualEventV1".into()
     }
 }
 /// UpdatePerpetualEventV2 message contains all the information about an update
@@ -1049,7 +1049,7 @@ impl ::prost::Name for UpdatePerpetualEventV2 {
         "dydxprotocol.indexer.events.UpdatePerpetualEventV2".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.UpdatePerpetualEventV2".into()
+        "/tradeview.indexer.events.UpdatePerpetualEventV2".into()
     }
 }
 /// UpdatePerpetualEventV3 message contains all the information about an update
@@ -1093,7 +1093,7 @@ impl ::prost::Name for UpdatePerpetualEventV3 {
         "dydxprotocol.indexer.events.UpdatePerpetualEventV3".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.UpdatePerpetualEventV3".into()
+        "/tradeview.indexer.events.UpdatePerpetualEventV3".into()
     }
 }
 /// TradingRewardsEventV1 is communicates all trading rewards for all accounts
@@ -1111,7 +1111,7 @@ impl ::prost::Name for TradingRewardsEventV1 {
         "dydxprotocol.indexer.events.TradingRewardsEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.TradingRewardsEventV1".into()
+        "/tradeview.indexer.events.TradingRewardsEventV1".into()
     }
 }
 /// AddressTradingReward contains info on an instance of an address receiving a
@@ -1133,7 +1133,7 @@ impl ::prost::Name for AddressTradingReward {
         "dydxprotocol.indexer.events.AddressTradingReward".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.AddressTradingReward".into()
+        "/tradeview.indexer.events.AddressTradingReward".into()
     }
 }
 /// OpenInterestUpdateEventV1 is used for open interest update events
@@ -1150,7 +1150,7 @@ impl ::prost::Name for OpenInterestUpdateEventV1 {
         "dydxprotocol.indexer.events.OpenInterestUpdateEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.OpenInterestUpdateEventV1".into()
+        "/tradeview.indexer.events.OpenInterestUpdateEventV1".into()
     }
 }
 /// OpenInterestUpdate contains a single open interest update for a perpetual
@@ -1170,7 +1170,7 @@ impl ::prost::Name for OpenInterestUpdate {
         "dydxprotocol.indexer.events.OpenInterestUpdate".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.OpenInterestUpdate".into()
+        "/tradeview.indexer.events.OpenInterestUpdate".into()
     }
 }
 /// LiquidationEventV2 message contains all the information needed to update
@@ -1214,7 +1214,7 @@ impl ::prost::Name for LiquidityTierUpsertEventV2 {
         "dydxprotocol.indexer.events.LiquidityTierUpsertEventV2".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.LiquidityTierUpsertEventV2".into()
+        "/tradeview.indexer.events.LiquidityTierUpsertEventV2".into()
     }
 }
 /// Event emitted when a referee is registered with an affiliate.
@@ -1234,7 +1234,7 @@ impl ::prost::Name for RegisterAffiliateEventV1 {
         "dydxprotocol.indexer.events.RegisterAffiliateEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.RegisterAffiliateEventV1".into()
+        "/tradeview.indexer.events.RegisterAffiliateEventV1".into()
     }
 }
 /// Event emitted when a vault is created / updated.
@@ -1257,6 +1257,6 @@ impl ::prost::Name for UpsertVaultEventV1 {
         "dydxprotocol.indexer.events.UpsertVaultEventV1".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.indexer.events.UpsertVaultEventV1".into()
+        "/tradeview.indexer.events.UpsertVaultEventV1".into()
     }
 }

@@ -13,7 +13,7 @@ impl ::prost::Name for AddBridgeEventsRequest {
         "dydxprotocol.daemons.bridge.AddBridgeEventsRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.daemons.bridge.AddBridgeEventsRequest".into()
+        "/tradeview.daemons.bridge.AddBridgeEventsRequest".into()
     }
 }
 /// AddBridgeEventsResponse is a response message for BridgeEventRequest.
@@ -26,7 +26,7 @@ impl ::prost::Name for AddBridgeEventsResponse {
         "dydxprotocol.daemons.bridge.AddBridgeEventsResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.daemons.bridge.AddBridgeEventsResponse".into()
+        "/tradeview.daemons.bridge.AddBridgeEventsResponse".into()
     }
 }
 /// Generated client implementations.
@@ -140,7 +140,7 @@ pub mod bridge_service_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.daemons.bridge.BridgeService/AddBridgeEvents",
+                "/tradeview.daemons.bridge.BridgeService/AddBridgeEvents",
             );
             let mut req = request.into_request();
             req.extensions_mut()

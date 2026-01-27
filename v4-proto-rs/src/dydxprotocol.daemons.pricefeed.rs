@@ -12,7 +12,7 @@ impl ::prost::Name for UpdateMarketPricesRequest {
         "dydxprotocol.daemons.pricefeed.UpdateMarketPricesRequest".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.daemons.pricefeed.UpdateMarketPricesRequest".into()
+        "/tradeview.daemons.pricefeed.UpdateMarketPricesRequest".into()
     }
 }
 /// UpdateMarketPricesResponse is a response message for updating market prices.
@@ -25,7 +25,7 @@ impl ::prost::Name for UpdateMarketPricesResponse {
         "dydxprotocol.daemons.pricefeed.UpdateMarketPricesResponse".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.daemons.pricefeed.UpdateMarketPricesResponse".into()
+        "/tradeview.daemons.pricefeed.UpdateMarketPricesResponse".into()
     }
 }
 /// ExchangePrice represents a specific exchange's market price
@@ -45,7 +45,7 @@ impl ::prost::Name for ExchangePrice {
         "dydxprotocol.daemons.pricefeed.ExchangePrice".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.daemons.pricefeed.ExchangePrice".into()
+        "/tradeview.daemons.pricefeed.ExchangePrice".into()
     }
 }
 /// MarketPriceUpdate represents an update to a single market
@@ -63,7 +63,7 @@ impl ::prost::Name for MarketPriceUpdate {
         "dydxprotocol.daemons.pricefeed.MarketPriceUpdate".into()
     }
     fn type_url() -> ::prost::alloc::string::String {
-        "/dydxprotocol.daemons.pricefeed.MarketPriceUpdate".into()
+        "/tradeview.daemons.pricefeed.MarketPriceUpdate".into()
     }
 }
 /// Generated client implementations.
@@ -177,7 +177,7 @@ pub mod price_feed_service_client {
                 })?;
             let codec = tonic::codec::ProstCodec::default();
             let path = http::uri::PathAndQuery::from_static(
-                "/dydxprotocol.daemons.pricefeed.PriceFeedService/UpdateMarketPrices",
+                "/tradeview.daemons.pricefeed.PriceFeedService/UpdateMarketPrices",
             );
             let mut req = request.into_request();
             req.extensions_mut()
