@@ -23,7 +23,7 @@ impl<M: Name> ToAny for M {}
 mod test {
     use super::ToAny;
     use crate::cosmos_sdk_proto::cosmos::bank::v1beta1::MsgSend;
-    use crate::dydxprotocol::clob::MsgCancelOrder;
+    use crate::tradeview::clob::MsgCancelOrder;
 
     #[test]
     /// Tests the conversion of `MsgCancelOrder` to `cosmos_sdk_proto::Any`.

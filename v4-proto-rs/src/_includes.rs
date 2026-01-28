@@ -332,105 +332,105 @@ pub mod cosmos {
 pub mod cosmos_proto {
     include!("cosmos_proto.rs");
 }
-pub mod dydxprotocol {
+pub mod tradeview {
     pub mod accountplus {
-        include!("dydxprotocol.accountplus.rs");
+        include!("tradeview.accountplus.rs");
     }
     pub mod affiliates {
-        include!("dydxprotocol.affiliates.rs");
+        include!("tradeview.affiliates.rs");
     }
     pub mod assets {
-        include!("dydxprotocol.assets.rs");
+        include!("tradeview.assets.rs");
     }
     pub mod blocktime {
-        include!("dydxprotocol.blocktime.rs");
+        include!("tradeview.blocktime.rs");
     }
     pub mod bridge {
-        include!("dydxprotocol.bridge.rs");
+        include!("tradeview.bridge.rs");
     }
     pub mod clob {
-        include!("dydxprotocol.clob.rs");
+        include!("tradeview.clob.rs");
     }
     pub mod daemons {
         pub mod bridge {
-            include!("dydxprotocol.daemons.bridge.rs");
+            include!("tradeview.daemons.bridge.rs");
         }
         pub mod liquidation {
-            include!("dydxprotocol.daemons.liquidation.rs");
+            include!("tradeview.daemons.liquidation.rs");
         }
         pub mod pricefeed {
-            include!("dydxprotocol.daemons.pricefeed.rs");
+            include!("tradeview.daemons.pricefeed.rs");
         }
     }
     pub mod delaymsg {
-        include!("dydxprotocol.delaymsg.rs");
+        include!("tradeview.delaymsg.rs");
     }
     pub mod epochs {
-        include!("dydxprotocol.epochs.rs");
+        include!("tradeview.epochs.rs");
     }
     pub mod feetiers {
-        include!("dydxprotocol.feetiers.rs");
+        include!("tradeview.feetiers.rs");
     }
     pub mod govplus {
-        include!("dydxprotocol.govplus.rs");
+        include!("tradeview.govplus.rs");
     }
     pub mod indexer {
         pub mod events {
-            include!("dydxprotocol.indexer.events.rs");
+            include!("tradeview.indexer.events.rs");
         }
         pub mod indexer_manager {
-            include!("dydxprotocol.indexer.indexer_manager.rs");
+            include!("tradeview.indexer.indexer_manager.rs");
         }
         pub mod off_chain_updates {
-            include!("dydxprotocol.indexer.off_chain_updates.rs");
+            include!("tradeview.indexer.off_chain_updates.rs");
         }
         pub mod protocol {
             pub mod v1 {
-                include!("dydxprotocol.indexer.protocol.v1.rs");
+                include!("tradeview.indexer.protocol.v1.rs");
             }
         }
         pub mod redis {
-            include!("dydxprotocol.indexer.redis.rs");
+            include!("tradeview.indexer.redis.rs");
         }
         pub mod shared {
-            include!("dydxprotocol.indexer.shared.rs");
+            include!("tradeview.indexer.shared.rs");
         }
         pub mod socks {
-            include!("dydxprotocol.indexer.socks.rs");
+            include!("tradeview.indexer.socks.rs");
         }
     }
     pub mod listing {
-        include!("dydxprotocol.listing.rs");
+        include!("tradeview.listing.rs");
     }
     pub mod perpetuals {
-        include!("dydxprotocol.perpetuals.rs");
+        include!("tradeview.perpetuals.rs");
     }
     pub mod prices {
-        include!("dydxprotocol.prices.rs");
+        include!("tradeview.prices.rs");
     }
     pub mod ratelimit {
-        include!("dydxprotocol.ratelimit.rs");
+        include!("tradeview.ratelimit.rs");
     }
     pub mod revshare {
-        include!("dydxprotocol.revshare.rs");
+        include!("tradeview.revshare.rs");
     }
     pub mod rewards {
-        include!("dydxprotocol.rewards.rs");
+        include!("tradeview.rewards.rs");
     }
     pub mod sending {
-        include!("dydxprotocol.sending.rs");
+        include!("tradeview.sending.rs");
     }
     pub mod stats {
-        include!("dydxprotocol.stats.rs");
+        include!("tradeview.stats.rs");
     }
     pub mod subaccounts {
-        include!("dydxprotocol.subaccounts.rs");
+        include!("tradeview.subaccounts.rs");
     }
     pub mod vault {
-        include!("dydxprotocol.vault.rs");
+        include!("tradeview.vault.rs");
     }
     pub mod vest {
-        include!("dydxprotocol.vest.rs");
+        include!("tradeview.vest.rs");
     }
 }
 pub mod google {
