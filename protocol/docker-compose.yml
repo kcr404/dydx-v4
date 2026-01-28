@@ -23,13 +23,17 @@ services:
       - "4294967295" # Effectively disable the daemon monitor because bridge daemon is flaky in localnet.
       - --grpc-streaming-enabled
       - "true"
-      # - --indexer-kafka-conn-str=34.219.179.201:9092
-      # - --indexer-send-offchain-data=true
+      - --indexer-kafka-conn-str=kafka:9092
+      - --indexer-send-offchain-data=true
     environment:
       # See https://docs.datadoghq.com/profiler/enabling/go/ for DD_ specific environment variables
       - DD_ENV=localnet_${USER}
       - DD_AGENT_HOST=datadog-agent
+      - DD_AGENT_HOST=datadog-agent
       - DAEMON_HOME=/tradeview/chain/.alice
+    networks:
+      - dydx_network
+      - default
     volumes:
       - ./localnet/tradeview0:/tradeview/chain/.alice/data
     ports:
@@ -153,3 +157,7 @@ services:
     ports:
       - "8125:8215"
       - "8126:8126"
+
+networks:
+  dydx_network:
+    external: true

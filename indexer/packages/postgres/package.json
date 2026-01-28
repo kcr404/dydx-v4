@@ -12,8 +12,7 @@
     "@types/node": "^18.0.3",
     "@types/pg": "^8.6.5",
     "@types/uuid": "^8.3.4",
-    "jest": "^28.1.2",
-    "typescript": "^4.7.4"
+    "jest": "^28.1.2"
   },
   "scripts": {
     "migrate:make": "knex migrate:make -x ts",
@@ -51,6 +50,7 @@
     "objection-unique": "^1.2.2",
     "pg": "^8.7.3",
     "ts-node": "^10.8.2",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "typescript": "^4.7.4"
   }
 }

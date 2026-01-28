@@ -1,9 +1,10 @@
 version: '3'
 services:
   kafka:
+    container_name: kafka
     image: blacktop/kafka:2.6
     ports:
-      - 9092:9092
+      - 9099:9092
     environment:
       KAFKA_ADVERTISED_HOST_NAME: kafka
       KAFKA_CREATE_TOPICS:
@@ -20,6 +21,9 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL_SAME_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
       DD_AGENT_HOST: datadog-agent
+    networks:
+      - default      # Keeps protocol_default for Slinky/Prometheus
+      - dydx_network # Adds the bridge to Kafka
     healthcheck:
       test: ["CMD-SHELL", "kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --topic to-websockets-candles --describe"]
       interval: 5s
@@ -29,7 +33,7 @@ services:
       com.datadoghq.ad.logs: '[{"source": "indexer", "service": "kafka"}]'
   postgres:
     build:
-      context: .
+      context: .  
       dockerfile: Dockerfile.postgres.local
     ports:
       - 5435:5432
@@ -102,6 +106,9 @@ services:
       - DD_ENV=localnet_${USER}
       - DD_AGENT_HOST=datadog-agent
       - REDIS_URL=redis://redis:6379
+      - FIREBASE_PRIVATE_KEY_BASE64=LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUV2Z0lCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktnd2dnU2tBZ0VBQW9JQkFRRFk4TDJsNE5PczRET1YKK1RXaHVVcGVMNkZGMmJTQnM4RFNVUlJ5eXdIRG1udXNHTSsrNjJvb1dnNFRUOGtUY3JZVmJWSlk0NGlyTkVwOAp5MkpqeTlwODVyNm9iOEU4L2lsNDZVdlZ2TkIyZ2JOb0txVVN6YWIrRVFkcmxRbXpUMnNMNVQvODhIRXRkU0lSCmJVT0NMeFpQV2tCK1ZVeUNMZUl3SlpKMEZrdlZ3MDNUSnd4a2xlSmVpSlJPM2RCeVVZZUNCdzNxTDZlRjhYZjEKMGpBL1A4NEJLakg2a3lRVWEwV2FQR1k0dmV0VE5GbFBObDFyNG1xQXNUTzdadmpiSnBHdmY0TDdUblk0SUtSbQpvTkVvSXJMRmFGSFFjanZVWHk1V0Q4VEg1ZXVWRjdTMGcxNGZBYStHNXhyUjhwOGJtc0V5SjNxQzAzWHhMNVpWCldoaWNYdWROQWdNQkFBRUNnZ0VBTHRXV1U4dmNWdXVXSjNBRVJKUlFlbEgxRXJQajFNWitQOGx5VFRBSGd2ZUUKY0l4d3VTcHdvaUtDL0dkU3BTaTBKNThRMHBEWXJnRmRmV0NaTHF0UlVYcXRPWWJhNUhTSWRvcURMVE1VbkNqMwpGdXR4OU1QQ0pBS0FKQmtxWFhRdFM0V2tFVkxGVkVkLzRkeEJZVWNTSFhLQ0R1UVNYdDVTQVF2emVLMWhsTld0CmtQNkFTL2FkU0duTG1ZY1N0WW1NdXhKbDd3OHpLVHRmaEFaaVdqVXpkUVY4V1BjbERJRXpHSC96L1VoODR6Z2gKVDlpSDhMZFRUMU5GcW1OQmxXZzBua2ZXMXFwemdPdmk3aUF3bnJCTElheWNrOHM5eFpxR1NNdTBoREIvMVMzWAp2S2FsdG8wSFBJazAxSitWOFBKMWtsVDRGK3VzTUVjZXV0eGRwYWxiVHdLQmdRRC9QdjRvdElOa2tpRlVvanZnCjVHbUsyS2xNa0N3QnNOWEJSd0I5OVJxQ2RhTDZ4TU9XSlI5dTVPazhrNnhaYVJadjc2YU1nUUVFME14eUt1ZXUKKy9EdElvTnhZWXhPL0ZBeExEd2taOG44SmIxemtoT0tWZEpYa2xiQzRMaC9WZXhkM084Zm9DMnRMVnBtS2tNWApLcnlBczA1aFFQdE9OeGtJK3dHUVl6Tmc1d0tCZ1FEWmxNaGhnenpIKzRTa1VMSGo1QkJyOXAyRzJKcmp5VzJYCnN2azAyazZYV0U1Q1A1QStkdEJ5UDNxbkRzRS9vUmNKRUtPMnpiNmhLSjBtYk9Zcm5idGZuMmVtKzUwS01nY0sKc09WNGxJSEEyemdCRTIxMDZQdEVjWHlSaXVGMjlzOGQzN2t2WDkyRmRNekhPT3JBTmtUS0F4aEdSSHN5UkhhOQpGYTJiNWxyTHF3S0JnQk5mUm83MFZGeVhzcXZudkQrdlZrdFJjbGY3UVR2SG5oR1RQL2hQVi9tNnorblVjVHUrCkNZcXpHUGllQktDc2x5VmJ2UHBBK0VEVFVCRUNMSjlkUThYYnJybzJPeDNyakhLTzl1bVVid0lTSXpUWVMxOWUKY0I1eFh1QmZpZUV3TmtaUmRGeWtIWk5kTTlVNU0rcFlOZ0pXbVlaTUZrYXphOVVBcC9lN2I3VFZBb0dCQUp1OQpjWWpLNVhESHlmUExodWwyVDRMWDdYMmVBWkJXbDhsajVCayt3YzUyK04xV25pcjM1TkJDTzhya050TVN2V2hSCnJyMmttM1REbTJqcnZmMHVVL1pvSlV0VEF0OVBXOWI5TStPUmVTYlFRMUFSMWVFKytzdk01N3ROeTREWnZQckgKTHNpSU9BblV4dGM3R0Ywbyt5Z1Yrd1FnOUlYUWw2VlVwUVhZWnRrdEFvR0JBS2pVaUs4MW5JQ0lZQ2FRcG94YwpIYnc2WDBWcXJWTkI1L2Z1eEMyeUU1NnArUU5BdysyUWJQc0tEV2M0OVpvOWQwZVVFbmEwdXpaWWI5UTNTQ0VCCklsZklnZE10Y3M2MlJLMTlwV0wxdGNRdjlyMXFsMWRPbHk1ZDZTcEhxbWNWNTdpN0VjK2lvS3BQMU51aitHRUwKM1htL24xQWtGb0hEdkF0OUR1Tm5qdWd0Ci0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0K
+      - FIREBASE_PROJECT_ID=tradeview-1c136
+      - FIREBASE_CLIENT_EMAIL=firebase-adminsdk-fbsvc@tradeview-1c136.iam.gserviceaccount.com
     labels:
       com.datadoghq.ad.logs: '[{"source": "indexer", "service": "ender"}]'
     depends_on:
@@ -123,6 +130,7 @@ services:
       - DD_AGENT_HOST=datadog-agent
       - REDIS_URL=redis://redis:6379
       - RATE_LIMIT_REDIS_URL=redis://redis:6379
+      - REDIS_READONLY_URL=redis://redis:6379 
       - PORT=3002
       - RATE_LIMIT_ENABLED=false
       - INDEXER_LEVEL_GEOBLOCKING_ENABLED=false
@@ -176,7 +184,8 @@ services:
       # Note that DD_SERVICE and DD_VERSION are read by default from package.json
       - DD_PROFILING_ENABLED=true
       - DD_ENV=localnet_${USER}
-      - DD_AGENT_HOST=datadog-agent
+      - DD_AGENT_HOST=datadog-agent            # May also be needed
+      - KAFKA_BROKER_URLS=kafka:9092
     labels:
       com.datadoghq.ad.logs: '[{"source": "indexer", "service": "roundtable"}]'
     depends_on:
@@ -197,6 +206,11 @@ services:
       - DD_ENV=localnet_${USER}
       - DD_AGENT_HOST=datadog-agent
       - REDIS_URL=redis://redis:6379
+      - REDIS_READONLY_URL=redis://redis:6379 
+      - DB_HOSTNAME=postgres
+      - DB_READONLY_HOSTNAME=postgres
+      - DB_PORT=5432
+      - KAFKA_BROKER_URLS=kafka:9092
     labels:
       com.datadoghq.ad.logs: '[{"source": "indexer", "service": "vulcan"}]'
     ports:
@@ -204,3 +218,22 @@ services:
     depends_on:
       kafka:
         condition: service_healthy
+
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - 5050:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+      - PGADMIN_CONFIG_SESSION_COOKIE_SECURE=False
+      - PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION=False
+      - PGADMIN_CONFIG_SESSION_COOKIE_SAMESITE='Lax'
+    links:
+      - postgres
+    depends_on:
+      - postgres
+
+networks:
+  dydx_network:
+    external: true
