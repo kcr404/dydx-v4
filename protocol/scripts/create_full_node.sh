@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# This script is used to create a non validating full node for the dydx protocol. 
-# It will install all the necessary dependencies, download the dydxprotocold binary, 
+# This script is used to create a non validating full node for the tradeview protocol. 
+# It will install all the necessary dependencies, download the tradeviewd binary, 
 # initialize the node, create a service for the node, and download a snapshot to speed up the syncing process.
 
 
@@ -28,7 +28,7 @@ if [ $(free -g | grep Mem | awk '{print $2}') -lt 64 ]; then
 fi
 
 VERSION="v4.1.0"
-WORKDIR=$HOME/.dydxprotocol
+WORKDIR=$HOME/.tradeview
 CHAIN_ID="dydx-mainnet-1"
 SEED_NODES=("ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:23856", 
 "65b740ee326c9260c30af1f044e9cda63c73f7c1@seeds.kingnodes.net:23856", 
@@ -74,45 +74,45 @@ fi
 # Install Cosmovisor
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
 
-# Download dydxprotocold binaries and initialize node
+# Download tradeviewd binaries and initialize node
 mkdir -p $WORKDIR
 cd $WORKDIR
-FILE_REGEX="dydxprotocold-v[0-9]+\.[0-9]+\.[0-9]+-linux-$ARCH.tar.gz"
-curl -s "https://api.github.com/repos/dydxprotocol/v4-chain/releases/tags/protocol/$VERSION" \
+FILE_REGEX="tradeviewd-v[0-9]+\.[0-9]+\.[0-9]+-linux-$ARCH.tar.gz"
+curl -s "https://api.github.com/repos/tradeview/v4-chain/releases/tags/protocol/$VERSION" \
 | grep -E $FILE_REGEX \
 | cut -d : -f 2,3 \
 | tr -d \" \
 | wget -qi -
-tar -xvf dydxprotocold-v*-linux-$ARCH.tar.gz && rm dydxprotocold-v*-linux-$ARCH.tar.gz
+tar -xvf tradeviewd-v*-linux-$ARCH.tar.gz && rm tradeviewd-v*-linux-$ARCH.tar.gz
 cd $WORKDIR/build
-mv dydxprotocold-*-linux-$ARCH dydxprotocold
-chmod +x dydxprotocold
-./dydxprotocold init --chain-id=$CHAIN_ID $NODE_NAME
+mv tradeviewd-*-linux-$ARCH tradeviewd
+chmod +x tradeviewd
+./tradeviewd init --chain-id=$CHAIN_ID $NODE_NAME
 
 # Create cosmovisor directories and move binaries
-mkdir -p $HOME/.dydxprotocol/cosmovisor/genesis/bin
-mkdir -p $HOME/.dydxprotocol/cosmovisor/upgrades
-mv dydxprotocold $HOME/.dydxprotocol/cosmovisor/genesis/bin/
+mkdir -p $HOME/.tradeview/cosmovisor/genesis/bin
+mkdir -p $HOME/.tradeview/cosmovisor/upgrades
+mv tradeviewd $HOME/.tradeview/cosmovisor/genesis/bin/
 
 # Update config
 curl https://dydx-rpc.lavenderfive.com/genesis | python3 -c 'import json,sys;print(json.dumps(json.load(sys.stdin)["result"]["genesis"], indent=2))' > $WORKDIR/config/genesis.json
 sed -i 's/seeds = ""/seeds = "'"${SEED_NODES[*]}"'"/' $WORKDIR/config/config.toml
 
 # Create Service
-sudo tee /etc/systemd/system/dydxprotocold.service > /dev/null << EOF
+sudo tee /etc/systemd/system/tradeviewd.service > /dev/null << EOF
 [Unit]
-Description=dydx node service
+Description=tradeview node service
 After=network-online.target
 
 [Service]
 User=$USER
 ExecStart=/$HOME/go/bin/cosmovisor run start --non-validating-full-node=true
-WorkingDirectory=$HOME/.dydxprotocol
+WorkingDirectory=$HOME/.tradeview
 Restart=always
 RestartSec=5
 LimitNOFILE=4096
-Environment="DAEMON_HOME=$HOME/.dydxprotocol"
-Environment="DAEMON_NAME=dydxprotocold"
+Environment="DAEMON_HOME=$HOME/.tradeview"
+Environment="DAEMON_NAME=tradeviewd"
 Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
 Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
 Environment="UNSAFE_SKIP_BACKUP=true"
@@ -122,7 +122,7 @@ WantedBy=multi-user.target
 EOF
 
 sudo systemctl daemon-reload
-sudo systemctl enable dydxprotocold
+sudo systemctl enable tradeviewd
 
 
 # Get snapshot
@@ -139,5 +139,5 @@ rm snapshot.tar.lz4
 
 
 echo "Full node setup complete"
-echo "To start the node run 'sudo systemctl start dydxprotocold'"
-echo "To stop the node run 'sudo systemctl stop dydxprotocold'"
+echo "To start the node run 'sudo systemctl start tradeviewd'"
+echo "To stop the node run 'sudo systemctl stop tradeviewd'"
