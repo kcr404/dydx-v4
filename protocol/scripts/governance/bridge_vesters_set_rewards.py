@@ -57,7 +57,7 @@ VOTING_PERIOD_DAYS = 4
 ########################################################################## 
 ### Script contants - do not change                                    ###
 ########################################################################## 
-GOV_MODULE_ADDRESS="dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky" # Governance module account
+GOV_MODULE_ADDRESS="tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4" # Governance module account
 COMMUNITY_VESTER_ADDRESS="dydx1wxje320an3karyc6mjw4zghs300dmrjkwn7xtk"
 REWARDS_VESTER_ADDRESS="dydx1ltyc6y4skclzafvpznpt2qjwmfwgsndp458rmp"
 DELAY_MSG_MODULE_ADDRESS="dydx1mkkvp26dngu6n8rmalaxyp3gwkjuzztq5zx6tr"

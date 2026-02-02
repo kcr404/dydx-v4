@@ -143,7 +143,7 @@ def main():
     proposal = {
         "messages": [{
             "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
-            "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+            "authority": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
             "plan": {
                 "name": upgrade_name,
                 "height": str(upgrade_height),

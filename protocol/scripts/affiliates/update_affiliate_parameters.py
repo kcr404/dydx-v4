@@ -101,7 +101,7 @@ def main():
                     "messages": [
                         {
                             "@type": "/tradeview.affiliates.MsgUpdateAffiliateParameters",
-                            "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky",
+                            "authority": "tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4",
                             "affiliate_parameters": {
                                 "maximum_30d_commission_per_referred_quote_quantums": int(args.max_30d_commission),
                                 "referee_minimum_fee_tier_idx": int(args.referee_min_fee_tier),
