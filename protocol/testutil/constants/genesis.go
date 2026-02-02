@@ -123,7 +123,7 @@ const GenesisState = `{
           ]
         },
         {
-          "address": "tradeview1v88c3xv9xyv3eetdx0tvcmq7ung3dywp5upwc6",
+          "address": "tradeview1v88c3xv9xyv3eetdx0tvcmq7ung3dywpx0z6xt",
           "coins": [
             {
               "denom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
