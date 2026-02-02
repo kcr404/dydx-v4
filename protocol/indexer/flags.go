@@ -86,7 +86,6 @@ func GetIndexerFlagValuesFromOptions(
 		kafkaAddrs = strings.Split(kafkaConnStr, ",")
 	}
 
-	fmt.Println("kafaka======", kafkaAddrs)
 	return IndexerFlags{
 		KafkaAddrs:       kafkaAddrs,
 		MaxRetries:       maxRetries,
