@@ -58,7 +58,7 @@ VOTING_PERIOD_DAYS = 4
 ### Script contants - do not change                                    ###
 ########################################################################## 
 GOV_MODULE_ADDRESS="tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4" # Governance module account
-COMMUNITY_VESTER_ADDRESS="dydx1wxje320an3karyc6mjw4zghs300dmrjkwn7xtk"
+COMMUNITY_VESTER_ADDRESS="tradeview1wxje320an3karyc6mjw4zghs300dmrjkuqaj48"
 REWARDS_VESTER_ADDRESS="tradeview1ltyc6y4skclzafvpznpt2qjwmfwgsndp88yh9s"
 DELAY_MSG_MODULE_ADDRESS="dydx1mkkvp26dngu6n8rmalaxyp3gwkjuzztq5zx6tr"
 DEPOSIT=f"10000{NINE_ZEROS}{NINE_ZEROS}{NATIVE_TOKEN_DENOM}" # 10,000 native tokens
