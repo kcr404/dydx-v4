@@ -1,0 +1,11 @@
+{
+  "name": "tradeview-order-testing",
+  "version": "1.0.0",
+  "description": "Tradeview short-term order testing suite",
+  "main": "test_short_term_grpc.js",
+  "dependencies": {
+    "@dydxprotocol/v4-client-js": "^2.0.0",
+    "long": "^5.2.3",
+    "axios": "^1.6.0"
+  }
+}

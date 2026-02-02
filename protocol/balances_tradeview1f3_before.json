@@ -1,0 +1,11 @@
+{
+  "balances": [
+    {
+      "denom": "atvx",
+      "amount": "3000000000000000000"
+    }
+  ],
+  "pagination": {
+    "total": "1"
+  }
+}

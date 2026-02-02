@@ -1,18 +1,18 @@
 #!/bin/bash
-# FINAL Short-Term Order Test - MUST GET INCLUDED IN BLOCKS
+# Tradeview SHORT-TERM Order Test - MUST GET INCLUDED IN BLOCKS
 # This script will NOT exit until orders are confirmed in blocks
 
 set -e
 
 echo "========================================="
-echo "  SHORT-TERM ORDER - BLOCK INCLUSION TEST"
+echo "  TRADEVIEW SHORT-TERM ORDER - BLOCK INCLUSION TEST"
 echo "========================================="
 echo ""
 
-ALICE="dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4"
-BOB="dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs"
-CHAIN_ID="localdydxprotocol"
-FEES="5000000000000000adv4tnt,5000ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
+ALICE="tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
+BOB="tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
+CHAIN_ID="localtradeview"
+FEES="5000000000000000atvx"
 
 # CLOB Pair 0 (BTC) parameters
 CLOB_PAIR=0
@@ -39,11 +39,11 @@ echo ""
 
 # Place Alice's order
 echo "[Alice] Placing BUY order..."
-ALICE_TX=$(docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
+ALICE_TX=$(docker exec protocol-tradeviewd0-1 tradeviewd tx clob place-order \
   "$ALICE" 0 $CLIENT_ID $CLOB_PAIR 1 $QUANTUMS $SUBTICKS $GTB \
-  --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
+  --from alice --home /tradeview/chain/.alice --keyring-backend test \
   --chain-id $CHAIN_ID --fees "$FEES" --gas 200000 \
-  --broadcast-mode block \
+  --broadcast-mode sync \
   -y 2>&1)
 
 ALICE_TXHASH=$(echo "$ALICE_TX" | grep -oP 'txhash: \K[0-9A-F]+' || echo "")
@@ -56,6 +56,8 @@ if [ "$ALICE_CODE" = "0" ]; then
 else
     echo "❌ Alice FAILED (code: $ALICE_CODE)"
     echo "$ALICE_TX" | grep "raw_log"
+    echo "Full transaction log:"
+    echo "$ALICE_TX"
     exit 1
 fi
 
@@ -68,23 +70,27 @@ GTB=$((CURRENT_HEIGHT + 3))
 # Place Bob's order
 echo ""
 echo "[Bob] Placing SELL order..."
-BOB_TX=$(docker exec protocol-dydxprotocold1-1 dydxprotocold tx clob place-order \
+BOB_TX=$(docker exec protocol-tradeviewd0-1 tradeviewd tx clob place-order \
   "$BOB" 0 $((CLIENT_ID + 1)) $CLOB_PAIR 2 $QUANTUMS $SUBTICKS $GTB \
-  --from bob --home /dydxprotocol/chain/.bob --keyring-backend test \
+  --from bob --home /tradeview/chain/.bob --keyring-backend test \
   --chain-id $CHAIN_ID --fees "$FEES" --gas 200000 \
-  --broadcast-mode block \
+  --broadcast-mode sync \
   -y 2>&1)
 
 BOB_TXHASH=$(echo "$BOB_TX" | grep -oP 'txhash: \K[0-9A-F]+' || echo "")
 BOB_CODE=$(echo "$BOB_TX" | grep -oP 'code: \K[0-9]+' || echo "1")
 BOB_HEIGHT=$(echo "$BOB_TX" | grep -oP 'height: "\K[0-9]+' || echo "0")
 
+echo "Full transaction log for Bob:" >> debug.log
+echo "$BOB_TX" >> debug.log
 if [ "$BOB_CODE" = "0" ]; then
     echo "✅ Bob: $BOB_TXHASH"
     echo "   Included at height: $BOB_HEIGHT"
 else
     echo "❌ Bob FAILED (code: $BOB_CODE)"
     echo "$BOB_TX" | grep "raw_log"
+    echo "Full transaction log:"
+    echo "$BOB_TX"
     exit 1
 fi
 
@@ -94,11 +100,11 @@ sleep 3
 
 echo ""
 echo "[Alice] Querying transaction..."
-./build/dydxprotocold q tx $ALICE_TXHASH 2>&1 | grep -E "(height|code|txhash)" || echo "Query failed"
+./build/tradeviewd q tx $ALICE_TXHASH 2>&1 | grep -E "(height|code|txhash)" || echo "Query failed"
 
 echo ""
 echo "[Bob] Querying transaction..."
-./build/dydxprotocold q tx $BOB_TXHASH 2>&1 | grep -E "(height|code|txhash)" || echo "Query failed"
+./build/tradeviewd q tx $BOB_TXHASH 2>&1 | grep -E "(height|code|txhash)" || echo "Query failed"
 
 echo ""
 echo "Step 4: Checking for match events..."

@@ -23,19 +23,19 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 echo "1. Bridge Event Parameters:"
-./build/dydxprotocold query bridge get-event-params --node http://localhost:26657
+./build/tradeviewd query bridge get-event-params --node http://localhost:26657
 echo ""
 
 echo "2. Bridge Acknowledged Event Info:"
-./build/dydxprotocold query bridge get-acknowledged-event-info --node http://localhost:26657
+./build/tradeviewd query bridge get-acknowledged-event-info --node http://localhost:26657
 echo ""
 
 echo "3. Bridge Recognized Event Info:"
-./build/dydxprotocold query bridge get-recognized-event-info --node http://localhost:26657
+./build/tradeviewd query bridge get-recognized-event-info --node http://localhost:26657
 echo ""
 
 echo "4. Bridge Safety Parameters:"
-./build/dydxprotocold query bridge get-safety-params --node http://localhost:26657
+./build/tradeviewd query bridge get-safety-params --node http://localhost:26657
 echo ""
 
 # 2. IBC Module Tests
@@ -45,7 +45,7 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 echo "1. IBC Channels:"
-CHANNELS=$(./build/dydxprotocold query ibc channel channels --node http://localhost:26657 2>&1)
+CHANNELS=$(./build/tradeviewd query ibc channel channels --node http://localhost:26657 2>&1)
 if echo "$CHANNELS" | grep -q "channel"; then
     echo "$CHANNELS"
 else
@@ -54,7 +54,7 @@ fi
 echo ""
 
 echo "2. IBC Clients:"
-CLIENTS=$(./build/dydxprotocold query ibc client states --node http://localhost:26657 2>&1)
+CLIENTS=$(./build/tradeviewd query ibc client states --node http://localhost:26657 2>&1)
 if echo "$CLIENTS" | grep -q "client"; then
     echo "$CLIENTS"
 else

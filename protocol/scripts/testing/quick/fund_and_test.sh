@@ -9,20 +9,20 @@ echo "  Fund Subaccounts & Test Orders"
 echo "========================================="
 echo ""
 
-ALICE="dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4"
-BOB="dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs"
-CHAIN_ID="localdydxprotocol"
+ALICE="tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
+BOB="tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
+CHAIN_ID="localtradeview"
 USDC_DENOM="ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
-NATIVE_DENOM="adv4tnt"
+NATIVE_DENOM="atvx"
 
 echo "Step 1: Checking current balances..."
 echo ""
 echo "Alice's bank balance:"
-docker exec protocol-dydxprotocold0-1 dydxprotocold query bank balances $ALICE --output json 2>&1 | jq '.balances' || echo "No balances"
+docker exec protocol-tradeviewd0-1 tradeviewd query bank balances $ALICE --output json 2>&1 | jq '.balances' || echo "No balances"
 
 echo ""
 echo "Bob's bank balance:"
-docker exec protocol-dydxprotocold1-1 dydxprotocold query bank balances $BOB --output json 2>&1 | jq '.balances' || echo "No balances"
+docker exec protocol-tradeviewd0-1 tradeviewd query bank balances $BOB --output json 2>&1 | jq '.balances' || echo "No balances"
 
 echo ""
 echo "Alice's subaccount:"
@@ -40,9 +40,9 @@ echo ""
 
 # Alice deposit
 echo "Depositing 1000 USDC to Alice's subaccount..."
-ALICE_DEPOSIT=$(docker exec protocol-dydxprotocold0-1 dydxprotocold tx sending deposit-to-subaccount \
+ALICE_DEPOSIT=$(docker exec protocol-tradeviewd0-1 tradeviewd tx sending deposit-to-subaccount \
   $ALICE 0 0 1000000000 \
-  --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
+  --from alice --home /tradeview/chain/.alice --keyring-backend test \
   --chain-id $CHAIN_ID \
   --fees "5000000000000000${NATIVE_DENOM}" \
   --gas 200000 \
@@ -56,9 +56,9 @@ sleep 2
 # Bob deposit
 echo ""
 echo "Depositing 1000 USDC to Bob's subaccount..."
-BOB_DEPOSIT=$(docker exec protocol-dydxprotocold1-1 dydxprotocold tx sending deposit-to-subaccount \
+BOB_DEPOSIT=$(docker exec protocol-tradeviewd0-1 tradeviewd tx sending deposit-to-subaccount \
   $BOB 0 0 1000000000 \
-  --from bob --home /dydxprotocol/chain/.bob --keyring-backend test \
+  --from bob --home /tradeview/chain/.bob --keyring-backend test \
   --chain-id $CHAIN_ID \
   --fees "5000000000000000${NATIVE_DENOM}" \
   --gas 200000 \
@@ -100,9 +100,9 @@ echo ""
 
 # Alice BUY
 echo "[Alice] Placing BUY order..."
-ALICE_ORDER=$(docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
+ALICE_ORDER=$(docker exec protocol-tradeviewd0-1 tradeviewd tx clob place-order \
   "$ALICE" 0 $CLIENT_ID_ALICE 0 1 1000000 100000 $GTB \
-  --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
+  --from alice --home /tradeview/chain/.alice --keyring-backend test \
   --chain-id $CHAIN_ID \
   --fees "5000000000000000${NATIVE_DENOM},5000${USDC_DENOM}" \
   --gas 200000 \
@@ -117,9 +117,9 @@ sleep 1
 
 # Bob SELL
 echo "[Bob] Placing SELL order..."
-BOB_ORDER=$(docker exec protocol-dydxprotocold1-1 dydxprotocold tx clob place-order \
+BOB_ORDER=$(docker exec protocol-tradeviewd0-1 tradeviewd tx clob place-order \
   "$BOB" 0 $CLIENT_ID_BOB 0 2 1000000 100000 $GTB \
-  --from bob --home /dydxprotocol/chain/.bob --keyring-backend test \
+  --from bob --home /tradeview/chain/.bob --keyring-backend test \
   --chain-id $CHAIN_ID \
   --fees "5000000000000000${NATIVE_DENOM},5000${USDC_DENOM}" \
   --gas 200000 \

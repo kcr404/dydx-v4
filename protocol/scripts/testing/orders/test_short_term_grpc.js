@@ -1,20 +1,29 @@
 #!/usr/bin/env node
 /**
- * Short-Term Order Submission via gRPC
- * This script places orders directly into MemClob using the dYdX v4 client
+ * Tradeview Short-Term Order Submission via gRPC
+ * Places orders directly into MemClob using the Tradeview v4 client
  */
 
 const { CompositeClient, Network, OrderFlags, Order_Side, Order_TimeInForce } = require('@dydxprotocol/v4-client-js');
 const { LocalWallet } = require('@dydxprotocol/v4-client-js');
+const Long = require('long');
 
-// Configuration
-const NETWORK = Network.local(); // Local testnet
-const ALICE_MNEMONIC = "merge panther lobster crazy road hollow amused security before critic about cliff exhibit cause coyote talent happy where lion river tobacco option coconut small";
-const BOB_MNEMONIC = "color black kingdom feed sure spread team month grow ill banner speed decade rule office burst uncle pure pump battle ready alone what taxi";
+// Configuration - Tradeview explicit endpoints
+const NETWORK = new Network(
+    'testnet',
+    'tradeview',
+    'http://localhost:26657'
+);
+NETWORK.chainId = 'localtradeview';
+NETWORK.validatorUrl = 'http://localhost:26657';
+NETWORK.restUrl = 'http://localhost:1317';
+NETWORK.indexerUrl = 'http://34.219.179.201:3002';
+const ALICE_MNEMONIC = process.env.ALICE_MNEMONIC || "merge panther lobster crazy road hollow amused security before critic about cliff exhibit cause coyote talent happy where lion river tobacco option coconut small";
+const BOB_MNEMONIC = process.env.BOB_MNEMONIC || "color black kingdom feed sure spread team month grow ill banner speed decade rule office burst uncle pure pump battle ready alone what taxi";
 
 async function placeShortTermOrder() {
     console.log("=========================================");
-    console.log("  Short-Term Order via gRPC Client");
+    console.log("  Tradeview SHORT-TERM Order via gRPC");
     console.log("=========================================\n");
 
     try {

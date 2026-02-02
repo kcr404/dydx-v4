@@ -1,6 +1,7 @@
 package cli
 
 import (
+	"fmt"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/client/tx"
@@ -85,25 +86,38 @@ func CmdPlaceOrder() *cobra.Command {
 				return err
 			}
 
-			msg := types.NewMsgPlaceOrder(
-				types.Order{
-					OrderId: types.OrderId{
-						ClientId: argClientId,
-						SubaccountId: satypes.SubaccountId{
-							Owner:  argOwner,
-							Number: argSubaccountNumber,
-						},
-						ClobPairId: argClobPairId,
-						OrderFlags: types.OrderIdFlags_ShortTerm,
+			gtbt, err := cmd.Flags().GetUint32("good-til-block-time")
+			if err != nil {
+				return err
+			}
+
+		
+			order := types.Order{
+				OrderId: types.OrderId{
+					ClientId: argClientId,
+					SubaccountId: satypes.SubaccountId{
+						Owner:  argOwner,
+						Number: argSubaccountNumber,
 					},
-					Side:                  types.Order_Side(argSide),
-					Quantums:              argQuantums,
-					Subticks:              argSubticks,
-					GoodTilOneof:          &types.Order_GoodTilBlock{GoodTilBlock: argGoodTilBlock},
-					BuilderCodeParameters: builderParams,
-					OrderRouterAddress:    orderRouterRevShareAddr,
+					ClobPairId: argClobPairId,
 				},
-			)
+				Side:                  types.Order_Side(argSide),
+				Quantums:              argQuantums,
+				Subticks:              argSubticks,
+				BuilderCodeParameters: builderParams,
+				OrderRouterAddress:    orderRouterRevShareAddr,
+			}
+
+			if gtbt > 0 {
+				order.GoodTilOneof = &types.Order_GoodTilBlockTime{GoodTilBlockTime: gtbt}
+				order.OrderId.OrderFlags = types.OrderIdFlags_LongTerm
+			} else {
+				order.GoodTilOneof = &types.Order_GoodTilBlock{GoodTilBlock: argGoodTilBlock}
+				order.OrderId.OrderFlags = types.OrderIdFlags_ShortTerm
+			}
+
+			msg := types.NewMsgPlaceOrder(order)
+			fmt.Printf("DEBUG MSG: %+v\nOrderFlags: %d\nGoodTilOneof: %+v\n", msg, order.OrderId.OrderFlags, order.GoodTilOneof)
 			if err := msg.ValidateBasic(); err != nil {
 				return err
 			}
@@ -129,6 +143,7 @@ func CmdPlaceOrder() *cobra.Command {
 		},
 	}
 
+
 	flags.AddTxFlagsToCmd(cmd)
 	customflags.AddTxPermissionedKeyFlagsToCmd(cmd)
 
@@ -136,6 +151,8 @@ func CmdPlaceOrder() *cobra.Command {
 	cmd.Flags().String("builder-address", "", "Builder address for revenue sharing")
 	cmd.Flags().Uint32("builder-ppm", 0, "Builder fee in parts per million")
 	cmd.Flags().String("order-router-address", "", "Order router address for revenue sharing")
+	cmd.Flags().Uint32("good-til-block-time", 0, "GoodTilBlockTime (seconds) for stateful orders. If set, creates a LongTerm order.")
+
 
 	return cmd
 }

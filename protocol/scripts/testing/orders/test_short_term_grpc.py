@@ -53,7 +53,7 @@ def place_order_grpc(address, subaccount, client_id, clob_pair, side, quantums, 
         '-plaintext',
         '-d', json.dumps(order_json),
         'localhost:9090',  # gRPC port
-        'dydxprotocol.clob.MsgService/PlaceOrder'
+        'dydxprotocol.clob.Msg/PlaceOrder'
     ]
     
     print(f"   Calling gRPC endpoint...")
@@ -73,8 +73,8 @@ def main():
     print("=========================================\n")
     
     # Configuration
-    ALICE = "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4"
-    BOB = "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs"
+    ALICE = "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
+    BOB = "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
     
     print("Step 1: Getting current block height...")
     current_height = get_current_height()

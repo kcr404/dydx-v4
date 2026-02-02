@@ -2,14 +2,14 @@
 set -e
 
 # Setup Environment
-export CHAIN_ID="localdydxprotocol"
-export FEES="5000000000000000adv4tnt"
+export CHAIN_ID="localtradeview"
+export FEES="5000000000000000atvx"
 export NODE="http://localhost:26657"
 
 echo "Fetching keys..."
-export ALICE=$(./build/dydxprotocold keys show alice --home ./tmp_keyring --keyring-backend test -a)
-export BOB=$(./build/dydxprotocold keys show bob --home ./tmp_keyring --keyring-backend test -a)
-export VAL_ADDR=$(./build/dydxprotocold keys show alice --home ./tmp_keyring --keyring-backend test --bech val -a)
+export ALICE=$(./build/tradeviewd keys show alice --home ./tmp_keyring --keyring-backend test -a)
+export BOB=$(./build/tradeviewd keys show bob --home ./tmp_keyring --keyring-backend test -a)
+export VAL_ADDR=$(./build/tradeviewd keys show alice --home ./tmp_keyring --keyring-backend test --bech val -a)
 
 echo "Alice: $ALICE"
 echo "Bob: $BOB"
@@ -17,8 +17,8 @@ echo "Validator: $VAL_ADDR"
 
 # Helper function
 dydx_tx() {
-  echo "Running: dydxprotocold tx $@"
-  ./build/dydxprotocold tx "$@" --home ./tmp_keyring --keyring-backend test --chain-id "$CHAIN_ID" --fees "$FEES" --gas 200000 -y --node "$NODE" --broadcast-mode sync
+  echo "Running: tradeviewd tx $@"
+  ./build/tradeviewd tx "$@" --home ./tmp_keyring --keyring-backend test --chain-id "$CHAIN_ID" --fees "$FEES" --gas 200000 -y --node "$NODE" --broadcast-mode sync
   sleep 4 # Wait for block inclusion
 }
 
@@ -56,11 +56,11 @@ echo "---------------------------------------------------"
 echo "4. Testing Staking"
 echo "---------------------------------------------------"
 # Delegate
-dydx_tx staking delegate "$VAL_ADDR" 100000000adv4tnt --from "$ALICE"
+dydx_tx staking delegate "$VAL_ADDR" 100000000atvx --from "$ALICE"
 
 # Query Delegation
 echo "Querying delegations..."
-./build/dydxprotocold query staking delegations "$ALICE" --node "$NODE"
+./build/tradeviewd query staking delegations "$ALICE" --node "$NODE"
 
 echo "---------------------------------------------------"
 echo "Tests Completed!"

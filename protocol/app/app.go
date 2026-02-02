@@ -1556,6 +1556,8 @@ func New(
 		panic(err)
 	}
 	reflectionv1.RegisterReflectionServiceServer(app.GRPCQueryRouter(), reflectionSvc)
+	
+	clobmoduletypes.RegisterMsgServer(app.GRPCQueryRouter(), clobmodulekeeper.NewMsgServerImpl(app.ClobKeeper))
 
 	// initialize stores
 	app.MountKVStores(keys)

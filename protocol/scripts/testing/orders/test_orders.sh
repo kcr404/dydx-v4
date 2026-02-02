@@ -1,19 +1,19 @@
 #!/bin/bash
 # Unified Order Testing Script - Using Docker containers
-# Based on dYdX v4 local devnet runbook
+# Tradeview local devnet order placement and validation
 
 set -e
 
 echo "========================================="
-echo "  dYdX Order Testing Suite"
+echo "  Tradeview Order Testing Suite"
 echo "========================================="
 echo ""
 
-# Configuration
-ALICE="dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4"
-BOB="dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs"
-CHAIN_ID="localdydxprotocol"
-FEES="5000000000000000adv4tnt,5000ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
+# Configuration - Tradeview mainnet
+ALICE="tradeview199tqg4wdlnu4qjlxchpd7seg454937hjrjm7f4"
+BOB="tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g6jq5jj"
+CHAIN_ID="localtradeview"
+FEES="5000000000000000atvx"
 
 # Check chain is running
 echo "Step 1: Verifying chain status..."
@@ -28,7 +28,7 @@ echo ""
 
 # Get oracle price
 echo "Step 2: Getting oracle price..."
-ORACLE_PRICE=$(curl -s http://localhost:26657/abci_query?path=%22/dydxprotocol.prices.Query/AllMarketPrices%22 2>/dev/null | jq -r '.result.response.value' | base64 -d 2>/dev/null | head -c 50 || echo "N/A")
+ORACLE_PRICE=$(curl -s http://localhost:26657/abci_query?path=%22/tradeview.prices.Query/AllMarketPrices%22 2>/dev/null | jq -r '.result.response.value' | base64 -d 2>/dev/null | head -c 50 || echo "N/A")
 echo "   Oracle data available: $([ ! -z "$ORACLE_PRICE" ] && echo "Yes" || echo "No")"
 echo ""
 
@@ -55,9 +55,9 @@ echo ""
 
 # Alice BUY order
 echo "   [Alice] Placing BUY order (1M quantums @ 100k subticks)..."
-ALICE_OUTPUT=$(docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
+ALICE_OUTPUT=$(docker exec protocol-tradeviewd0-1 tradeviewd tx clob place-order \
   "$ALICE" 0 $CLIENT_ID_ALICE 0 1 1000000 100000 $GTB \
-  --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
+  --from alice --home /tradeview/chain/.alice --keyring-backend test \
   --chain-id $CHAIN_ID \
   --fees "$FEES" \
   --gas 200000 --broadcast-mode sync -y --node tcp://localhost:26657 2>&1)
@@ -74,9 +74,9 @@ sleep 1
 
 # Bob SELL order
 echo "   [Bob] Placing SELL order (1M quantums @ 100k subticks)..."
-BOB_OUTPUT=$(docker exec protocol-dydxprotocold1-1 dydxprotocold tx clob place-order \
+BOB_OUTPUT=$(docker exec protocol-tradeviewd0-1 tradeviewd tx clob place-order \
   "$BOB" 0 $CLIENT_ID_BOB 0 2 1000000 100000 $GTB \
-  --from bob --home /dydxprotocol/chain/.bob --keyring-backend test \
+  --from bob --home /tradeview/chain/.bob --keyring-backend test \
   --chain-id $CHAIN_ID \
   --fees "$FEES" \
   --gas 200000 --broadcast-mode sync -y --node tcp://localhost:26657 2>&1)
@@ -151,10 +151,10 @@ echo ""
 
 # Alice BUY stateful order
 echo "   [Alice] Placing STATEFUL BUY order..."
-ALICE_LT_OUTPUT=$(docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
+ALICE_LT_OUTPUT=$(docker exec protocol-tradeviewd0-1 tradeviewd tx clob place-order \
   "$ALICE" 0 $CLIENT_ID_ALICE_LT 0 1 1000000 100000 0 \
   --good-til-block-time $GTBT \
-  --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
+  --from alice --home /tradeview/chain/.alice --keyring-backend test \
   --chain-id $CHAIN_ID \
   --fees "$FEES" \
   --gas 200000 --broadcast-mode sync -y --node tcp://localhost:26657 2>&1)
@@ -171,10 +171,10 @@ sleep 1
 
 # Bob SELL stateful order
 echo "   [Bob] Placing STATEFUL SELL order..."
-BOB_LT_OUTPUT=$(docker exec protocol-dydxprotocold1-1 dydxprotocold tx clob place-order \
+BOB_LT_OUTPUT=$(docker exec protocol-tradeviewd0-1 tradeviewd tx clob place-order \
   "$BOB" 0 $CLIENT_ID_BOB_LT 0 2 1000000 100000 0 \
   --good-til-block-time $GTBT \
-  --from bob --home /dydxprotocol/chain/.bob --keyring-backend test \
+  --from bob --home /tradeview/chain/.bob --keyring-backend test \
   --chain-id $CHAIN_ID \
   --fees "$FEES" \
   --gas 200000 --broadcast-mode sync -y --node tcp://localhost:26657 2>&1)
