@@ -68,8 +68,6 @@ func GetIndexerFlagValuesFromOptions(
 ) IndexerFlags {
 	option := appOpts.Get(FlagKafkaConnStr)
 	kafkaConnStr, err := cast.ToStringE(option)
-	fmt.Println("kafkaconstring======", kafkaConnStr)
-	fmt.Println("option======", option)
 	if option == nil || err != nil {
 		return IndexerFlags{
 			KafkaAddrs:       []string{},
