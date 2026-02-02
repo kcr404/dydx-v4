@@ -1,7 +1,6 @@
 package indexer
 
 import (
-	"fmt"
 	"strings"
 
 	servertypes "github.com/cosmos/cosmos-sdk/server/types"
