@@ -23,12 +23,12 @@ func TestSetupConfig_SealsConfig(t *testing.T) {
 func TestSetAddressPrefixes(t *testing.T) {
 	sdkConfig := sdk.GetConfig()
 
-	require.Equal(t, "dydx", sdkConfig.GetBech32AccountAddrPrefix())
-	require.Equal(t, "dydxpub", sdkConfig.GetBech32AccountPubPrefix())
+	require.Equal(t, "tradeview", sdkConfig.GetBech32AccountAddrPrefix())
+	require.Equal(t, "tradeviewpub", sdkConfig.GetBech32AccountPubPrefix())
 
-	require.Equal(t, "dydxvaloper", sdkConfig.GetBech32ValidatorAddrPrefix())
-	require.Equal(t, "dydxvaloperpub", sdkConfig.GetBech32ValidatorPubPrefix())
+	require.Equal(t, "tradeviewvaloper", sdkConfig.GetBech32ValidatorAddrPrefix())
+	require.Equal(t, "tradeviewvaloperpub", sdkConfig.GetBech32ValidatorPubPrefix())
 
-	require.Equal(t, "dydxvalcons", sdkConfig.GetBech32ConsensusAddrPrefix())
-	require.Equal(t, "dydxvalconspub", sdkConfig.GetBech32ConsensusPubPrefix())
+	require.Equal(t, "tradeviewvalcons", sdkConfig.GetBech32ConsensusAddrPrefix())
+	require.Equal(t, "tradeviewvalconspub", sdkConfig.GetBech32ConsensusPubPrefix())
 }
