@@ -1,4 +1,4 @@
-FROM dydxprotocol-base
+FROM tradeview-base
 
 RUN apk add --no-cache bash dasel jq
 
