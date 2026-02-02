@@ -6,7 +6,7 @@ set -exo pipefail
 
 source "./genesis.sh"
 
-CHAIN_ID="localtradeview"
+CHAIN_ID="tradeview-dev"
 
 # Define mnemonics for all validators.
 MNEMONICS=(
