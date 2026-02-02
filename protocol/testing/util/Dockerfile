@@ -1,5 +1,5 @@
-FROM dydxprotocol-base
+FROM tradeview-base
 
-COPY ./testing/util/new-validator.sh /dydxprotocol/new-validator.sh
+COPY ./testing/util/new-validator.sh /tradeview/new-validator.sh
 
-ENTRYPOINT ["/dydxprotocol/new-validator.sh"]
+ENTRYPOINT ["/tradeview/new-validator.sh"]
