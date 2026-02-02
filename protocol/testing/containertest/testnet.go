@@ -163,9 +163,9 @@ func (t *Testnet) cleanupExistingResources() {
 func (t *Testnet) initializeNode(moniker string) (*Node, error) {
 	var entrypointCommand string
 	if t.isPreupgradeGenesis {
-		entrypointCommand = "/dydxprotocol/preupgrade_entrypoint.sh"
+		entrypointCommand = "/tradeview/preupgrade_entrypoint.sh"
 	} else {
-		entrypointCommand = "dydxprotocold"
+		entrypointCommand = "tradeviewd"
 	}
 
 	// Generate dynamic persistent peers using the unique ID
@@ -179,7 +179,7 @@ func (t *Testnet) initializeNode(moniker string) (*Node, error) {
 	resource, err := t.pool.RunWithOptions(
 		&dockertest.RunOptions{
 			Name:       fmt.Sprintf("testnet-local-%s-%s", moniker, t.uniqueId),
-			Repository: "dydxprotocol-container-test",
+			Repository: "tradeview-container-test",
 			Tag:        "",
 			NetworkID:  t.network.Network.ID,
 			ExposedPorts: []string{
@@ -190,15 +190,15 @@ func (t *Testnet) initializeNode(moniker string) (*Node, error) {
 				entrypointCommand,
 				"start",
 				"--home",
-				fmt.Sprintf("/dydxprotocol/chain/.%s", moniker),
+				fmt.Sprintf("/tradeview/chain/.%s", moniker),
 				"--p2p.persistent_peers",
 				persistentPeers,
 				"--bridge-daemon-eth-rpc-endpoint",
 				"https://eth-sepolia.g.alchemy.com/v2/demo",
 			},
 			Env: []string{
-				"DAEMON_NAME=dydxprotocold",
-				fmt.Sprintf("DAEMON_HOME=/dydxprotocol/chain/.%s", moniker),
+				"DAEMON_NAME=tradeviewd",
+				fmt.Sprintf("DAEMON_HOME=/tradeview/chain/.%s", moniker),
 				fmt.Sprintf("UPGRADE_TO_VERSION=%s", version.CurrentVersion),
 			},
 			ExtraHosts: []string{

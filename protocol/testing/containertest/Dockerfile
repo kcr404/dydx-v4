@@ -1,21 +1,21 @@
-FROM dydxprotocol-base
+FROM tradeview-base
 
-COPY ./testing/containertest/dydxprotocold_preupgrade* /bin/
-COPY ./testing/containertest/containertest.sh /dydxprotocol/containertest.sh
-COPY ./testing/containertest/preupgrade_entrypoint.sh /dydxprotocol/preupgrade_entrypoint.sh
-COPY ./testing/containertest/preupgrade_genesis.json /dydxprotocol/preupgrade_genesis.json
-COPY ./testing/genesis.sh /dydxprotocol/genesis.sh
-COPY ./daemons/pricefeed/client/constants/testdata /dydxprotocol/exchange_config
-COPY ./testing/delaymsg_config /dydxprotocol/delaymsg_config
-COPY ./testing/version/. /dydxprotocol/
+COPY ./testing/containertest/tradeviewd_preupgrade* /bin/
+COPY ./testing/containertest/containertest.sh /tradeview/containertest.sh
+COPY ./testing/containertest/preupgrade_entrypoint.sh /tradeview/preupgrade_entrypoint.sh
+COPY ./testing/containertest/preupgrade_genesis.json /tradeview/preupgrade_genesis.json
+COPY ./testing/genesis.sh /tradeview/genesis.sh
+COPY ./daemons/pricefeed/client/constants/testdata /tradeview/exchange_config
+COPY ./testing/delaymsg_config /tradeview/delaymsg_config
+COPY ./testing/version/. /tradeview/
 
 RUN go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
 
-RUN /dydxprotocol/containertest.sh
+RUN /tradeview/containertest.sh
 
-COPY ./testing/containertest/config/pricefeed_exchange_config.toml /dydxprotocol/chain/.alice/config/pricefeed_exchange_config.toml
-COPY ./testing/containertest/config/pricefeed_exchange_config.toml /dydxprotocol/chain/.bob/config/pricefeed_exchange_config.toml
-COPY ./testing/containertest/config/pricefeed_exchange_config.toml /dydxprotocol/chain/.carl/config/pricefeed_exchange_config.toml
-COPY ./testing/containertest/config/pricefeed_exchange_config.toml /dydxprotocol/chain/.dave/config/pricefeed_exchange_config.toml
+COPY ./testing/containertest/config/pricefeed_exchange_config.toml /tradeview/chain/.alice/config/pricefeed_exchange_config.toml
+COPY ./testing/containertest/config/pricefeed_exchange_config.toml /tradeview/chain/.bob/config/pricefeed_exchange_config.toml
+COPY ./testing/containertest/config/pricefeed_exchange_config.toml /tradeview/chain/.carl/config/pricefeed_exchange_config.toml
+COPY ./testing/containertest/config/pricefeed_exchange_config.toml /tradeview/chain/.dave/config/pricefeed_exchange_config.toml
 
-ENTRYPOINT ["dydxprotocold"]
+ENTRYPOINT ["tradeviewd"]
