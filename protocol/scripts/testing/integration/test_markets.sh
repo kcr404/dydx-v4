@@ -52,7 +52,7 @@ for MARKET_ID in $MARKETS_TO_TEST; do
     # Alice BUY order
     echo "   [Alice] Placing BUY order..."
     ALICE_OUTPUT=$(docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
-      "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4" 0 $CLIENT_ID_ALICE $MARKET_ID 1 1000000 100000 $GTB \
+      "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy" 0 $CLIENT_ID_ALICE $MARKET_ID 1 1000000 100000 $GTB \
       --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
       --chain-id $CHAIN_ID --fees "$FEES" --gas 200000 \
       --broadcast-mode sync -y --node tcp://localhost:26657 2>&1)
@@ -70,7 +70,7 @@ for MARKET_ID in $MARKETS_TO_TEST; do
     # Bob SELL order
     echo "   [Bob] Placing SELL order..."
     BOB_OUTPUT=$(docker exec protocol-dydxprotocold1-1 dydxprotocold tx clob place-order \
-      "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs" 0 $CLIENT_ID_BOB $MARKET_ID 2 1000000 100000 $GTB \
+      "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp" 0 $CLIENT_ID_BOB $MARKET_ID 2 1000000 100000 $GTB \
       --from bob --home /dydxprotocol/chain/.bob --keyring-backend test \
       --chain-id $CHAIN_ID --fees "$FEES" --gas 200000 \
       --broadcast-mode sync -y --node tcp://localhost:26657 2>&1)

@@ -37,13 +37,13 @@ apk add --no-cache jq > /dev/null 2>&1
 cd /data/chain/.alice/config
 jq '.app_state.subaccounts.subaccounts += [
   {
-    \"id\": {\"owner\": \"dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4\", \"number\": 0},
+    \"id\": {\"owner\": \"tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy\", \"number\": 0},
     \"asset_positions\": [{\"asset_id\": 0, \"quantums\": \"1000000000\", \"index\": 0}],
     \"perpetual_positions\": [],
     \"margin_enabled\": true
   },
   {
-    \"id\": {\"owner\": \"dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs\", \"number\": 0},
+    \"id\": {\"owner\": \"tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp\", \"number\": 0},
     \"asset_positions\": [{\"asset_id\": 0, \"quantums\": \"1000000000\", \"index\": 0}],
     \"perpetual_positions\": [],
     \"margin_enabled\": true

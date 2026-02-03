@@ -173,7 +173,7 @@ GTB=$(($(curl -s http://localhost:26657/status | jq -r '.result.sync_info.latest
 
 # Alice BUY on pair 2
 docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
-  "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4" 0 999001 2 1 100000 100000 $GTB \
+  "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy" 0 999001 2 1 100000 100000 $GTB \
   --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
   --chain-id localdydxprotocol \
   --fees "5000000000000000adv4tnt,5000ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5" \

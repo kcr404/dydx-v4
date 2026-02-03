@@ -199,7 +199,7 @@ QUANTUMS=$((SIZE_BTC * 100000000))        # 10,000,000
 
 # Place order
 docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
-  "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4" 0 123456 0 1 \
+  "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy" 0 123456 0 1 \
   $QUANTUMS $SUBTICKS $GTB \
   --from alice --keyring-backend test --chain-id localdydxprotocol \
   --fees "5000000000000000adv4tnt" --gas 200000 -y
@@ -346,7 +346,7 @@ GTB=$(($(curl -s http://localhost:26657/status | jq -r '.result.sync_info.latest
 
 # Place order
 docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
-  "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4" 0 $CLIENT_ID $PAIR_ID 1 \
+  "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy" 0 $CLIENT_ID $PAIR_ID 1 \
   $QUANTUMS $SUBTICKS $GTB \
   --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
   --chain-id localdydxprotocol --fees "5000000000000000adv4tnt" \

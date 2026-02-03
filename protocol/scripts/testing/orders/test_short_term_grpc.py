@@ -73,8 +73,8 @@ def main():
     print("=========================================\n")
     
     # Configuration
-    ALICE = "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4"
-    BOB = "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs"
+    ALICE = "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
+    BOB = "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
     
     print("Step 1: Getting current block height...")
     current_height = get_current_height()

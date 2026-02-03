@@ -25,8 +25,8 @@ async def main():
     
     # Create wallets
     print("Step 2: Creating wallets...")
-    alice_wallet = await clients.Wallet.from_mnemonic(node, ALICE_MNEMONIC, "dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4")
-    bob_wallet = await clients.Wallet.from_mnemonic(node, BOB_MNEMONIC, "dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs")
+    alice_wallet = await clients.Wallet.from_mnemonic(node, ALICE_MNEMONIC, "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy")
+    bob_wallet = await clients.Wallet.from_mnemonic(node, BOB_MNEMONIC, "tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp")
     print(f"   Alice: {alice_wallet.address()}")
     print(f"   Bob: {bob_wallet.address()}\n")
     
