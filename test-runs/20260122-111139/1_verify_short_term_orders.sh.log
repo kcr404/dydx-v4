@@ -13,9 +13,9 @@ Method 1: Checking MsgProposedOperations
 Method 2: Checking Subaccount State
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Alice's subaccount (owner: dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4, number: 0):
+Alice's subaccount (owner: tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy, number: 0):
 
-Bob's subaccount (owner: dydx10fx7sy6ywd5senxae9dwytf8jxek3t2gcen2vs, number: 0):
+Bob's subaccount (owner: tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp, number: 0):
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Method 3: CLOB Pair State
