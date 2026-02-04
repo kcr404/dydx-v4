@@ -7,7 +7,7 @@
 
 ## 📁 Directory Structure
 
-```
+```bash
 scripts/
 ├── markets/          (2 files)
 ├── governance/       (9 files)
@@ -25,21 +25,25 @@ scripts/
 ## 🏪 Markets Scripts (2 files)
 
 ### 1. `launch_markets.py` ⭐ Main Script
+
 **Purpose**: Automates launching new markets on dYdX v4
 
 **What it does**:
+
 - Syncs market map from mainnet to testnet/staging
 - Makes Alice a market authority via governance proposal
 - Creates and launches new markets automatically
 - Handles retries and error recovery
 
 **Key Features**:
+
 - Queries mainnet market map
 - Compares with local/staging market map
 - Adds missing markets via governance
 - Submits `create-markets` and `create-market` transactions
 
 **Usage**:
+
 ```bash
 python3 scripts/markets/launch_markets.py \
   --chain-id dydxprotocol-testnet \
@@ -48,6 +52,7 @@ python3 scripts/markets/launch_markets.py \
 ```
 
 **Requirements**:
+
 - Python 3 with `yaml`, `json` modules
 - Alice must have authority (script handles this)
 - Sufficient native tokens for fees
@@ -57,9 +62,11 @@ python3 scripts/markets/launch_markets.py \
 ---
 
 ### 2. `get_isolated_market_insurance_fund.py`
+
 **Purpose**: Calculates insurance fund for isolated markets
 
 **What it does**:
+
 - Queries market parameters
 - Calculates required insurance fund
 - Useful for market risk management
@@ -73,14 +80,17 @@ python3 scripts/markets/launch_markets.py \
 ### Shell Scripts (5 files)
 
 #### 1. `enable_all_clob_pairs.sh` ⭐ Useful
+
 **Purpose**: Generates governance proposal to enable trading on all CLOB pairs
 
 **What it does**:
+
 - Takes CLOB pairs JSON as input
 - Generates `MsgUpdateClobPair` proposal
 - Sets all pairs to ACTIVE status
 
 **Usage**:
+
 ```bash
 # 1. Get clob pairs
 curl -X GET "http://localhost:1317/dydxprotocol/clob/clob_pair" > /tmp/clob_pairs.json
@@ -98,6 +108,7 @@ dydxprotocold tx gov submit-proposal /tmp/proposal.json \
 ---
 
 #### 2. `submit_and_vote_proposal.sh`
+
 **Purpose**: Submit and auto-vote on governance proposals
 
 **Usage**: Automated governance for testing
@@ -105,6 +116,7 @@ dydxprotocold tx gov submit-proposal /tmp/proposal.json \
 ---
 
 #### 3. `submit_proposal.sh`
+
 **Purpose**: Submit governance proposals
 
 **Usage**: Generic proposal submission
@@ -112,6 +124,7 @@ dydxprotocold tx gov submit-proposal /tmp/proposal.json \
 ---
 
 #### 4. `vote_in_dev.sh`, `vote_in_staging.sh`, `vote_in_testnet.sh`
+
 **Purpose**: Vote on proposals in different environments
 
 **Usage**: Environment-specific voting scripts
@@ -121,6 +134,7 @@ dydxprotocold tx gov submit-proposal /tmp/proposal.json \
 ### Python Scripts (4 files)
 
 #### 1. `bridge_vesters_set_rewards.py`
+
 **Purpose**: Configure bridge vesting rewards
 
 **Use Case**: Bridge module configuration
@@ -128,6 +142,7 @@ dydxprotocold tx gov submit-proposal /tmp/proposal.json \
 ---
 
 #### 2. `community_treasury_sending.py`
+
 **Purpose**: Community treasury fund transfers
 
 **Use Case**: Treasury management
@@ -135,6 +150,7 @@ dydxprotocold tx gov submit-proposal /tmp/proposal.json \
 ---
 
 #### 3. `create_delisting_proposal.py`
+
 **Purpose**: Generate market delisting proposals
 
 **Use Case**: Market lifecycle management
@@ -144,14 +160,17 @@ dydxprotocold tx gov submit-proposal /tmp/proposal.json \
 ## 🏦 Vault Scripts (1 file)
 
 ### `get_vault.go` ⭐ Utility Tool
+
 **Purpose**: Derives vault address from vault type and number
 
 **What it does**:
+
 - Takes vault type (e.g., "clob") and number
 - Calculates the corresponding subaccount address
 - Used for vault deposits/queries
 
 **Usage**:
+
 ```bash
 # Get BTC vault address (CLOB pair 0)
 go run scripts/vault/get_vault.go -type clob -number 0
@@ -161,17 +180,19 @@ go run scripts/vault/get_vault.go -type clob -number 1
 ```
 
 **Output Example**:
+
 ```
 Using the following configuration (modifiable via flags):
 type: VAULT_TYPE_CLOB
 number: 0
 
 Vault:
-  Owner: dydx1c0m5x87llaunl5sgv3q5vd7j5uha26d2q2r2q0
+  Owner: tradeview1c0m5x87llaunl5sgv3q5vd7j5uha26d2jeq777
   Number: 0
 ```
 
-**Use Case**: 
+**Use Case**:
+
 - Finding vault addresses for deposits
 - Querying vault balances
 - Understanding vault structure
@@ -180,7 +201,7 @@ Vault:
 
 ## 🧪 Can We Run These on Local Chain?
 
-### ✅ CAN RUN (with local chain):
+### ✅ CAN RUN (with local chain)
 
 1. **`get_vault.go`** - ✅ YES
    - Pure calculation, no chain interaction
@@ -192,21 +213,21 @@ Vault:
    - Requires local REST endpoint
    - Useful for enabling markets
 
-### ⚠️ REQUIRES MODIFICATION:
+### ⚠️ REQUIRES MODIFICATION
 
-3. **`launch_markets.py`** - ⚠️ PARTIAL
+1. **`launch_markets.py`** - ⚠️ PARTIAL
    - Designed for testnet/staging
    - Would need modification for local chain
    - Requires governance setup
 
-4. **Governance scripts** - ⚠️ PARTIAL
+2. **Governance scripts** - ⚠️ PARTIAL
    - Can work with local chain
    - Need to adjust node URLs
    - Require funded accounts
 
-### ❌ NOT SUITABLE FOR LOCAL:
+### ❌ NOT SUITABLE FOR LOCAL
 
-5. **Market sync scripts** - ❌ NO
+1. **Market sync scripts** - ❌ NO
    - Require mainnet connection
    - Not useful for isolated local testing
 
@@ -215,14 +236,16 @@ Vault:
 ## 📝 Practical Examples
 
 ### Example 1: Get Vault Address
+
 ```bash
 # Get BTC vault (pair 0)
 go run scripts/vault/get_vault.go -type clob -number 0
 
-# Output: dydx1c0m5x87llaunl5sgv3q5vd7j5uha26d2q2r2q0
+# Output: tradeview1c0m5x87llaunl5sgv3q5vd7j5uha26d2jeq777
 ```
 
 ### Example 2: Enable All Markets (Local)
+
 ```bash
 # 1. Query local CLOB pairs
 curl -s "http://localhost:1317/dydxprotocol/clob/clob_pair" > /tmp/local_pairs.json
@@ -238,6 +261,7 @@ docker exec protocol-dydxprotocold0-1 dydxprotocold tx gov submit-proposal \
 ```
 
 ### Example 3: Vote on Proposal (Local)
+
 ```bash
 # Vote yes on proposal 1
 docker exec protocol-dydxprotocold0-1 dydxprotocold tx gov vote 1 yes \
@@ -249,16 +273,19 @@ docker exec protocol-dydxprotocold0-1 dydxprotocold tx gov vote 1 yes \
 
 ## 🎯 Summary
 
-### Most Useful for Local Testing:
+### Most Useful for Local Testing
+
 1. ✅ `get_vault.go` - Vault address calculator
 2. ✅ `enable_all_clob_pairs.sh` - Bulk enable markets
 3. ✅ Governance voting scripts - Test governance
 
-### Production/Staging Only:
+### Production/Staging Only
+
 1. ❌ `launch_markets.py` - Market synchronization
 2. ❌ Market insurance fund scripts - Production analysis
 
-### Key Takeaways:
+### Key Takeaways
+
 - **Vault scripts**: Utility tools, work anywhere
 - **Governance scripts**: Can adapt for local testing
 - **Market scripts**: Designed for production/staging sync
@@ -266,6 +293,7 @@ docker exec protocol-dydxprotocold0-1 dydxprotocold tx gov vote 1 yes \
 ---
 
 **Next Steps:**
+
 1. Test `get_vault.go` on local chain
 2. Try enabling markets with governance script
 3. Explore other subdirectories (affiliates, revshare, etc.)

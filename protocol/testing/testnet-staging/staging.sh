@@ -138,9 +138,9 @@ FAUCET_ACCOUNTS=(
 VAULT_ACCOUNTS=(
 	"tradeview1c0m5x87llaunl5sgv3q5vd7j5uha26d2jeq777" # BTC vault
 	"tradeview14rplxdyycc6wxmgl8fggppgq4774l70zefzrgl" # ETH vault
-	"dydx190te44zcctdgk0qmqtenve2m00g3r2dn7ntd72" # LINK vault
-	"dydx1a83cjn83vqh5ss2vccg6uuaeky7947xldp9r2e" # POL vault
-	"dydx1nkz8xcar6sxedw0yva6jzjplw7hfg6pp6e7h0l" # CRV vault
+	"tradeview190te44zcctdgk0qmqtenve2m00g3r2dnvqgeqm" # LINK vault
+	"tradeview1a83cjn83vqh5ss2vccg6uuaeky7947xlljxh5g" # POL vault
+	"tradeview1nkz8xcar6sxedw0yva6jzjplw7hfg6ppg2ar3w" # CRV vault
 )
 # Number of each vault above, which for CLOB vaults is the ID of the clob pair it quotes on.
 VAULT_NUMBERS=(

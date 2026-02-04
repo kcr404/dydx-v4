@@ -77,7 +77,7 @@ export const defaultAddress3: string = 'tradeview199tqg4wdlnu4qjlxchpd7seg454937
 export const blockedAddress: string = 'dydx1f9k5qldwmqrnwy8hcgp4fw6heuvszt35egvtx2';
 // Vault address for vault id 0 was generated using
 // script protocol/scripts/vault/get_vault.go
-export const vaultAddress: string = 'dydx1c0m5x87llaunl5sgv3q5vd7j5uha26d2q2r2q0';
+export const vaultAddress: string = 'tradeview1c0m5x87llaunl5sgv3q5vd7j5uha26d2jeq777';
 
 // ============== Subaccounts ==============
 export const defaultWalletAddress: string = 'tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy';
