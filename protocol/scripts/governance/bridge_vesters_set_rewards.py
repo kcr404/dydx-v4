@@ -60,7 +60,7 @@ VOTING_PERIOD_DAYS = 4
 GOV_MODULE_ADDRESS="tradeview10d07y265gmmuvt4z0w9aw880jnsr700jpg74g4" # Governance module account
 COMMUNITY_VESTER_ADDRESS="tradeview1wxje320an3karyc6mjw4zghs300dmrjkuqaj48"
 REWARDS_VESTER_ADDRESS="tradeview1ltyc6y4skclzafvpznpt2qjwmfwgsndp88yh9s"
-DELAY_MSG_MODULE_ADDRESS="dydx1mkkvp26dngu6n8rmalaxyp3gwkjuzztq5zx6tr"
+DELAY_MSG_MODULE_ADDRESS="tradeview1mkkvp26dngu6n8rmalaxyp3gwkjuzztqx39w4j"
 DEPOSIT=f"10000{NINE_ZEROS}{NINE_ZEROS}{NATIVE_TOKEN_DENOM}" # 10,000 native tokens
 OUTPUT_FILE='proposal_bridge_vesters_set_rewards.json'
 
