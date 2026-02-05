@@ -83,7 +83,7 @@ const GenesisState = `{
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "tradeview1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
+          "address": "tradeview1nzuttarf5k2j0nug5yzhr6p74t9avehnhyure2",
           "pub_key": null,
           "account_number": "4",
           "sequence": "0"
@@ -158,7 +158,7 @@ const GenesisState = `{
           ]
         },
         {
-          "address": "tradeview1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m",
+          "address": "tradeview1nzuttarf5k2j0nug5yzhr6p74t9avehnhyure2",
           "coins": [
             {
               "denom": "atvx",
@@ -4536,7 +4536,7 @@ const GenesisState = `{
           ],
           "id": {
             "number": 0,
-            "owner": "tradeview1nzuttarf5k2j0nug5yzhr6p74t9avehn9hlh8m"
+            "owner": "tradeview1nzuttarf5k2j0nug5yzhr6p74t9avehnhyure2"
           },
           "margin_enabled": true
         }
