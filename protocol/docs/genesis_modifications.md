@@ -10,7 +10,7 @@ The `testing/genesis.sh` script configures the genesis state for local developme
 
 The script defines several constants at the beginning that control the initial state:
 
-- `NATIVE_TOKEN`: Set to "adv4tnt" for testnet
+- `NATIVE_TOKEN`: Set to "atvx" for testnet
 - `USDC_DENOM`: IBC denomination for USDC
 - `TESTNET_VALIDATOR_NATIVE_TOKEN_BALANCE`: Each validator gets 1 million native tokens
 - `FAUCET_NATIVE_TOKEN_BALANCE`: Faucet account gets 50 million native tokens

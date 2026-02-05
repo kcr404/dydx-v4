@@ -13,7 +13,7 @@ ALICE="tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
 BOB="tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
 CHAIN_ID="localtradeview"
 USDC_DENOM="ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
-NATIVE_DENOM="adv4tnt"
+NATIVE_DENOM="atvx"
 
 echo "Step 1: Checking current balances..."
 echo ""

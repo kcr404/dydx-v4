@@ -202,7 +202,7 @@ docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
   "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy" 0 123456 0 1 \
   $QUANTUMS $SUBTICKS $GTB \
   --from alice --keyring-backend test --chain-id localtradeview \
-  --fees "5000000000000000adv4tnt" --gas 200000 -y
+  --fees "5000000000000000atvx" --gas 200000 -y
 ```
 
 ### Example 2: Different Pair (Pair 2)
@@ -349,7 +349,7 @@ docker exec protocol-dydxprotocold0-1 dydxprotocold tx clob place-order \
   "tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy" 0 $CLIENT_ID $PAIR_ID 1 \
   $QUANTUMS $SUBTICKS $GTB \
   --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
-  --chain-id localtradeview --fees "5000000000000000adv4tnt" \
+  --chain-id localtradeview --fees "5000000000000000atvx" \
   --gas 200000 -y
 ```
 

@@ -20,10 +20,10 @@ BOB=$(./build/dydxprotocold keys show bob --home ./tmp_keyring --keyring-backend
 
 echo "Placing matched orders at height $H with GTB $GTB"
 # Alice buys 10 at 100
-./build/dydxprotocold tx clob place-order "$ALICE" 0 301 35 1 1000000 100000 "$GTB" --home ./tmp_keyring --keyring-backend test --chain-id localtradeview --fees 5000000000000000adv4tnt --gas 200000 -y --node http://localhost:26657 --broadcast-mode sync --from "$ALICE"
+./build/dydxprotocold tx clob place-order "$ALICE" 0 301 35 1 1000000 100000 "$GTB" --home ./tmp_keyring --keyring-backend test --chain-id localtradeview --fees 5000000000000000atvx --gas 200000 -y --node http://localhost:26657 --broadcast-mode sync --from "$ALICE"
 
 # Bob sells 10 at 100
-./build/dydxprotocold tx clob place-order "$BOB" 0 302 35 2 1000000 100000 "$GTB" --home ./tmp_keyring --keyring-backend test --chain-id localtradeview --fees 5000000000000000adv4tnt --gas 200000 -y --node http://localhost:26657 --broadcast-mode sync --from "$BOB"
+./build/dydxprotocold tx clob place-order "$BOB" 0 302 35 2 1000000 100000 "$GTB" --home ./tmp_keyring --keyring-backend test --chain-id localtradeview --fees 5000000000000000atvx --gas 200000 -y --node http://localhost:26657 --broadcast-mode sync --from "$BOB"
 
 sleep 5
 echo "Checking mempool again..."

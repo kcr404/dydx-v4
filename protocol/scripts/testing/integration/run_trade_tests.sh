@@ -3,7 +3,7 @@ set -e
 
 # Setup Environment
 export CHAIN_ID="localtradeview"
-export FEES="5000000000000000adv4tnt"
+export FEES="5000000000000000atvx"
 export NODE="http://localhost:26657"
 
 echo "Fetching keys..."

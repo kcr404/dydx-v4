@@ -3,7 +3,7 @@ set -e
 
 # Setup Environment
 export CHAIN_ID="localtradeview"
-export FEES="5000000000000000adv4tnt"
+export FEES="5000000000000000atvx"
 export NODE="http://localhost:26657"
 
 echo "Fetching keys..."
@@ -56,7 +56,7 @@ echo "---------------------------------------------------"
 echo "4. Testing Staking"
 echo "---------------------------------------------------"
 # Delegate
-dydx_tx staking delegate "$VAL_ADDR" 100000000adv4tnt --from "$ALICE"
+dydx_tx staking delegate "$VAL_ADDR" 100000000atvx --from "$ALICE"
 
 # Query Delegation
 echo "Querying delegations..."

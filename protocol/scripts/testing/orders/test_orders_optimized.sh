@@ -12,7 +12,7 @@ echo ""
 ALICE="tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
 BOB="tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
 CHAIN_ID="localtradeview"
-FEES="5000000000000000adv4tnt,5000ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
+FEES="5000000000000000atvx,5000ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
 
 echo "Step 1: Verifying subaccount funding..."
 ALICE_BALANCE=$(curl -s "http://localhost:1317/dydxprotocol/subaccounts/subaccount/$ALICE/0" 2>/dev/null | jq -r '.subaccount.asset_positions[0].quantums // "0"')

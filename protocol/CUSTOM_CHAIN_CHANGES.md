@@ -57,7 +57,7 @@ This document outlines all the changes required to convert the dYdX Chain protoc
 
   ```bash
   # In genesis.sh, update:
-  NATIVE_TOKEN="uyourtoken"              # Change from "adv4tnt"
+  NATIVE_TOKEN="uyourtoken"              # Change from "atvx"
   NATIVE_TOKEN_WHOLE_COIN="yourtoken"    # Change from "dv4tnt"
   COIN_NAME="Your Custom Token"          # Change from "dYdX V4 Testnet Token"
   ```
@@ -70,7 +70,7 @@ This document outlines all the changes required to convert the dYdX Chain protoc
   ```go
   const (
     // Update these to use your token denomination
-    minGasPriceStakeToken = "25000000000uyourtoken"  // Change from "adv4tnt"
+    minGasPriceStakeToken = "25000000000uyourtoken"  // Change from "atvx"
     // ... update references throughout the file
   )
   ```

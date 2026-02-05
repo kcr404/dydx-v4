@@ -62,7 +62,7 @@ func TestUpdateRewardsModuleParams(t *testing.T) {
 				Authority: authtypes.NewModuleAddress(govtypes.ModuleName).String(),
 				Params: rewardstypes.Params{
 					TreasuryAccount:  GENESIS_REWARD_PARAMS.TreasuryAccount,
-					Denom:            "7adv4tnt", // cannot start with number
+					Denom:            "7atvx", // cannot start with number
 					DenomExponent:    GENESIS_REWARD_PARAMS.DenomExponent,
 					MarketId:         GENESIS_REWARD_PARAMS.MarketId,
 					FeeMultiplierPpm: GENESIS_REWARD_PARAMS.FeeMultiplierPpm,
