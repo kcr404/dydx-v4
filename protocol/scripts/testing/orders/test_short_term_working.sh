@@ -11,7 +11,7 @@ echo ""
 
 ALICE="tradeview199tqg4wdlnu4qjlxchpd7seg454937hj39sxzy"
 BOB="tradeview10fx7sy6ywd5senxae9dwytf8jxek3t2g22s7jp"
-CHAIN_ID="localdydxprotocol"
+CHAIN_ID="localtradeview"
 FEES="5000000000000000adv4tnt,5000ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
 
 # CLOB Pair 0 (BTC) parameters

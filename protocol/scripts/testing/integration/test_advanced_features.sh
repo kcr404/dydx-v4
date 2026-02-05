@@ -4,7 +4,7 @@
 set -e
 
 CLI="./build/dydxprotocold"
-CHAIN_ID="localdydxprotocol"
+CHAIN_ID="localtradeview"
 KEYRING="--keyring-backend test"
 
 echo "========================================="

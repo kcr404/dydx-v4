@@ -2,7 +2,7 @@
 set -e
 
 # Setup Environment
-export CHAIN_ID="localdydxprotocol"
+export CHAIN_ID="localtradeview"
 export FEES="5000000000000000adv4tnt"
 export NODE="http://localhost:26657"
 

@@ -7,7 +7,7 @@ package constants
 //nolint:all
 const GenesisState = `{
   "genesis_time": "2023-07-10T19:23:15.891430637Z",
-  "chain_id": "localdydxprotocol",
+  "chain_id": "localtradeview",
   "initial_height": "1",
   "consensus_params": {
     "block": {

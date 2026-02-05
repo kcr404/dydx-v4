@@ -9,7 +9,7 @@ echo "  Multi-Market Order Testing"
 echo "========================================="
 echo ""
 
-CHAIN_ID="localdydxprotocol"
+CHAIN_ID="localtradeview"
 FEES="5000000000000000adv4tnt,5000ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
 
 # Step 1: List available markets via REST API

@@ -34,7 +34,7 @@ host = '127.0.0.1'
 port = 3001
 
 [[chains]]
-id = 'localdydxprotocol'
+id = 'localtradeview'
 rpc_addr = 'http://127.0.0.1:26657'
 grpc_addr = 'http://127.0.0.1:9090'
 event_source = { mode = 'push', url = 'ws://127.0.0.1:26657/websocket', batch_delay = '500ms' }

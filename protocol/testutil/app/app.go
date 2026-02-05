@@ -73,7 +73,7 @@ import (
 	"golang.org/x/exp/slices"
 )
 
-// localdydxprotocol Alice config/priv_validator_key.json.
+// localtradeview Alice config/priv_validator_key.json.
 const alicePrivValidatorKeyJson = `{
   "address": "124B880684400B4C0086BD4EE882DCC5B61CF7E3",
   "pub_key": {
@@ -87,7 +87,7 @@ const alicePrivValidatorKeyJson = `{
 }
 `
 
-// localdydxprotocol Alice config/node_key.json.
+// localtradeview Alice config/node_key.json.
 const aliceNodeKeyJson = `{
   "priv_key": {
     "type": "tendermint/PrivKeyEd25519",

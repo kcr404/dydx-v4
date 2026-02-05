@@ -257,7 +257,7 @@ curl -s "http://localhost:1317/dydxprotocol/clob/clob_pair" > /tmp/local_pairs.j
 docker exec protocol-dydxprotocold0-1 dydxprotocold tx gov submit-proposal \
   /tmp/enable_proposal.json \
   --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
-  --chain-id localdydxprotocol --fees 400000000000000000adv4tnt --yes
+  --chain-id localtradeview --fees 400000000000000000adv4tnt --yes
 ```
 
 ### Example 3: Vote on Proposal (Local)
@@ -266,7 +266,7 @@ docker exec protocol-dydxprotocold0-1 dydxprotocold tx gov submit-proposal \
 # Vote yes on proposal 1
 docker exec protocol-dydxprotocold0-1 dydxprotocold tx gov vote 1 yes \
   --from alice --home /dydxprotocol/chain/.alice --keyring-backend test \
-  --chain-id localdydxprotocol --fees 5000000000000000adv4tnt --yes
+  --chain-id localtradeview --fees 5000000000000000adv4tnt --yes
 ```
 
 ---
