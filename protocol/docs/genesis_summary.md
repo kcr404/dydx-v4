@@ -41,7 +41,7 @@
 ### 3. **Auth**
 
 - **Params** – max memo characters `256`, tx sig limit `7`, tx size cost per byte `10`
-- **Initial Accounts** – two base accounts with addresses `dydx1madmz...` and `dydx1e2tvx...`, both with zero balance initially.
+- **Initial Accounts** – two base accounts with addresses `tradeview1madmz...` and `tradeview1e2tvx...`, both with zero balance initially.
 
 ### 4. **Bank**
 
@@ -127,7 +127,7 @@
 
 ### 19. **Revshare**
 
-- Address `dydx17xpfv...` with zero revenue share.
+- Address `tradeview17xpfv...` with zero revenue share.
 
 ### 20. **Rewards**
 
@@ -146,7 +146,7 @@
 ### 23. **Vault**
 
 - Default quoting params (layers, spread mins, buffers, skew factor, order size, expiration, activation threshold).
-- Operator account `dydx10d07y...` with metadata “Governance”.
+- Operator account `tradeview10d07y...` with metadata “Governance”.
 
 ### 24. **Vesting**
 

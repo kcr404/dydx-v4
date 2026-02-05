@@ -388,7 +388,7 @@ Gets owner shares by their address.
 Usage:
 
 ```bash
-dydxprotocold query vault owner-shares dydx1...
+dydxprotocold query vault owner-shares tradeview1...
 ```
 
 ### Transaction Commands
@@ -400,7 +400,7 @@ Deposits funds to the megavault.
 Usage:
 
 ```bash
-dydxprotocold tx vault deposit-to-megavault dydx1... 0 1000000
+dydxprotocold tx vault deposit-to-megavault tradeview1... 0 1000000
 ```
 
 #### `set-vault-params [authority] [vault_type] [vault_number] [status] [quoting_params_json]`
@@ -410,7 +410,7 @@ Sets parameters for a vault.
 Usage:
 
 ```bash
-dydxprotocold tx vault set-vault-params dydx1... clob 0 quoting '{}'
+dydxprotocold tx vault set-vault-params tradeview1... clob 0 quoting '{}'
 ```
 
 #### `allocate-to-vault [authority] [vault_type] [vault_number] [quote_quantums]`
@@ -420,7 +420,7 @@ Allocates funds to a sub vault.
 Usage:
 
 ```bash
-dydxprotocold tx vault allocate-to-vault dydx1... clob 0 1000000
+dydxprotocold tx vault allocate-to-vault tradeview1... clob 0 1000000
 ```
 
 #### `retrieve-from-vault [authority] [vault_type] [vault_number] [quote_quantums]`
@@ -430,7 +430,7 @@ Retrieves funds from a sub vault.
 Usage:
 
 ```bash
-dydxprotocold tx vault retrieve-from-vault dydx1... clob 0 1000000
+dydxprotocold tx vault retrieve-from-vault tradeview1... clob 0 1000000
 ```
 
 #### `withdraw-from-megavault [withdrawer_owner] [withdrawer_number] [shares] [min_quote_quantums]`
@@ -440,7 +440,7 @@ Withdraws funds from the megavault.
 Usage:
 
 ```bash
-dydxprotocold tx vault withdraw-from-megavault dydx1... 0 1000000 900000
+dydxprotocold tx vault withdraw-from-megavault tradeview1... 0 1000000 900000
 ```
 
 #### `update-default-quoting-params [authority] [quoting_params_json]`
@@ -450,7 +450,7 @@ Updates default quoting parameters.
 Usage:
 
 ```bash
-dydxprotocold tx vault update-default-quoting-params dydx1... '{"activation_threshold_quote_quantums":"1000000000","order_size_pct_ppm":100000}'
+dydxprotocold tx vault update-default-quoting-params tradeview1... '{"activation_threshold_quote_quantums":"1000000000","order_size_pct_ppm":100000}'
 ```
 
 ## Dependencies

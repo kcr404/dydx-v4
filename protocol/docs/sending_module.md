@@ -307,7 +307,7 @@ dydxprotocold tx sending create-transfer [sender_owner] [sender_number] [recipie
 Example:
 
 ```bash
-dydxprotocold tx sending create-transfer dydx1... 0 dydx1... 0 1000000
+dydxprotocold tx sending create-transfer tradeview1... 0 tradeview1... 0 1000000
 ```
 
 #### `deposit-to-subaccount`
@@ -323,7 +323,7 @@ dydxprotocold tx sending deposit-to-subaccount [sender] [recipient_owner] [recip
 Example:
 
 ```bash
-dydxprotocold tx sending deposit-to-subaccount dydx1... dydx1... 0 1000000
+dydxprotocold tx sending deposit-to-subaccount tradeview1... tradeview1... 0 1000000
 ```
 
 #### `withdraw-from-subaccount`
@@ -339,7 +339,7 @@ dydxprotocold tx sending withdraw-from-subaccount [sender_owner] [sender_number]
 Example:
 
 ```bash
-dydxprotocold tx sending withdraw-from-subaccount dydx1... 0 dydx1... 1000000
+dydxprotocold tx sending withdraw-from-subaccount tradeview1... 0 tradeview1... 1000000
 ```
 
 ## Integration with Other Modules

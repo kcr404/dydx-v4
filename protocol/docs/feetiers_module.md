@@ -352,7 +352,7 @@ Get the fee tier of a User.
 Usage:
 
 ```bash
-dydxprotocold query feetiers get-user-fee-tier dydx1...
+dydxprotocold query feetiers get-user-fee-tier tradeview1...
 ```
 
 #### `get-market-fee-discount-params [clob_pair_id]`
@@ -383,7 +383,7 @@ Get the staking tier and discount of a user.
 Usage:
 
 ```bash
-dydxprotocold query feetiers user-staking-tier dydx1...
+dydxprotocold query feetiers user-staking-tier tradeview1...
 ```
 
 ### Transaction Commands
