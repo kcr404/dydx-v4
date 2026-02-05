@@ -178,8 +178,8 @@ create_pregenesis_file() {
 
 	# Do not pass in test accounts and faucet accounts to `edit_genesis`. This skips
 	# initializing USDC balance in the subacounts.
-	# Using "*" as a subscript results in a single arg: "dydx1... dydx1... dydx1..."
-	# Using "@" as a subscript results in separate args: "dydx1..." "dydx1..." "dydx1..."
+	# Using "*" as a subscript results in a single arg: "tradeview1... tradeview1... tradeview1..."
+	# Using "@" as a subscript results in separate args: "tradeview1..." "tradeview1..." "tradeview1..."
 	# Note: `edit_genesis` must be called before `add-genesis-account`.
 	edit_genesis "$VAL_CONFIG_DIR" "" "" "" "" "$TMP_EXCHANGE_CONFIG_JSON_DIR" "./testing/delaymsg_config" "" ""
 	overwrite_genesis_public_testnet
