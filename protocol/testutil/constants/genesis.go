@@ -171,7 +171,7 @@ const GenesisState = `{
           ]
         },
         {
-          "address": "tradeview1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv",
+          "address": "tradeview1zlefkpe3g0vvm9a4h0jf9000lmqutlh9qa38wa",
           "coins": [
             {
               "denom": "atvx",
